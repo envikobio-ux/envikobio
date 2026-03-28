@@ -51,7 +51,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
-            <Button asChild className="bg-gray-900 hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-lg">
+            <Button asChild className="bg-brand-600 hover:bg-brand-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
@@ -86,7 +86,7 @@ export default function Header() {
                 </Link>
               ))}
               <div className="pt-2">
-                <Button asChild className="w-full bg-gray-900 hover:bg-gray-800">
+                <Button asChild className="w-full bg-brand-600 hover:bg-brand-700">
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>
