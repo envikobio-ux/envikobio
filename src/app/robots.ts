@@ -5,7 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/_next/', '/static/'],
+      disallow: ['/api/', '/private/'],
     },
+    sitemap: 'https://www.envikobio.com/sitemap.xml',
   };
 }

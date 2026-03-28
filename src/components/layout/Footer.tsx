@@ -26,8 +26,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <Link href="/" className="inline-block mb-4">
-              <span className="text-xl font-bold text-white">Shanghai Enviko Biotechnology Co., Ltd.</span>
+            <Link href="/" className="inline-block mb-4 group">
+              <span className="text-xl font-medium text-white group-hover:text-gray-300 transition-colors duration-300">Enviko Biotechnology</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
@@ -113,7 +113,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-gray-400">
-              © {new Date().getFullYear()} Shanghai Enviko Biotechnology Co., Ltd. All rights reserved.
+              © {new Date().getFullYear()} Enviko Biotechnology. All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-gray-400">
               <Link href="/privacy" className="hover:text-white transition-colors">
