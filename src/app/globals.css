@@ -35,18 +35,18 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  /* 品牌绿色 - 淡雅清晰风格 */
-  --color-brand-50: oklch(0.99 0.01 145);
-  --color-brand-100: oklch(0.96 0.03 145);
-  --color-brand-200: oklch(0.92 0.05 145);
-  --color-brand-300: oklch(0.85 0.07 145);
-  --color-brand-400: oklch(0.78 0.09 145);
-  --color-brand-500: oklch(0.72 0.10 145);
-  --color-brand-600: oklch(0.65 0.11 145);
-  --color-brand-700: oklch(0.55 0.10 145);
-  --color-brand-800: oklch(0.45 0.09 145);
-  --color-brand-900: oklch(0.35 0.08 145);
-  --color-brand-950: oklch(0.25 0.07 145);
+  /* 品牌绿色 - #A1BA80 */
+  --color-brand-50: #f5f8f1;
+  --color-brand-100: #ebf0e3;
+  --color-brand-200: #d7e1c7;
+  --color-brand-300: #bdd2a5;
+  --color-brand-400: #a9c38c;
+  --color-brand-500: #A1BA80;
+  --color-brand-600: #8aa86c;
+  --color-brand-700: #6e8956;
+  --color-brand-800: #566b44;
+  --color-brand-900: #3d4d31;
+  --color-brand-950: #283420;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -146,6 +146,19 @@
 
 body {
   @apply font-sans;
+}
+
+/* 颜色规范 */
+.text-gray-900 {
+  color: #333333 !important;
+}
+
+.text-gray-600 {
+  color: #666666 !important;
+}
+
+.text-gray-400 {
+  color: #D9D9D9 !important;
 }
 
 /* 字体规范 - 统一细体风格 */
