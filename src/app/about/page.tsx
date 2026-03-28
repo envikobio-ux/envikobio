@@ -38,9 +38,9 @@ const values = [
     description: 'Centered on technological innovation, combining biosynthesis technology with advanced R&D to create science-leading health products.',
   },
   {
-    icon: Users,
-    title: 'Personalization',
-    description: 'Providing personalized health and beauty solutions to meet each customer\'s unique needs and aspirations.',
+    icon: Award,
+    title: 'Global Partnership',
+    description: 'Building long-term B2B partnerships worldwide, providing OEM/ODM services and bulk ingredient supply for international clients.',
   },
   {
     icon: Shield,
