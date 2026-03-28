@@ -14,10 +14,10 @@ import {
 } from 'lucide-react';
 
 const stats = [
-  { value: '50+', label: 'Products', suffix: '' },
-  { value: '100+', label: 'Units Delivered', suffix: '' },
-  { value: '5+', label: 'Years Experience', suffix: '' },
-  { value: '10+', label: 'Years of Innovation', suffix: '' },
+  { value: 'UltiWell®', label: 'Brand' },
+  { value: '2023', label: 'Founded' },
+  { value: '全球', label: 'Global Markets' },
+  { value: '100%', label: 'Quality Commitment' },
 ];
 
 const researchAreas = [

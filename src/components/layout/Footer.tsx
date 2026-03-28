@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
@@ -43,16 +42,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-4 group">
-              <div className="w-20 h-20 relative bg-white rounded-xl p-1 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-xl">
-                <Image
-                  src="/logo.jpg"
-                  alt="Enviko Biotechnology"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </Link>
+            <div className="mb-4">
+              <h3 className="text-xl font-normal text-white tracking-wide">
+                Shanghai Enviko Biotechnology Co., Ltd.
+              </h3>
+            </div>
             <p className="text-gray-400 text-sm mb-4 max-w-sm">
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
             </p>

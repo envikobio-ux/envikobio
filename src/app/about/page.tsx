@@ -1,82 +1,80 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp } from 'lucide-react';
+import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp, FlaskConical, Shield, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Enviko\'s mission, history, and commitment to sustainable biosynthesis solutions.',
+  description: 'Learn about Enviko Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
 };
 
+// 真实的公司里程碑（根据PDF文档）
 const timeline = [
   {
-    year: '2019',
-    title: 'Foundation',
-    description: 'Shanghai Enviko Biotechnology Co., Ltd. was established with a vision for sustainable biosynthesis.',
+    year: '2023.07',
+    title: '公司成立',
+    description: '上海埃卫克生物科技有限公司正式成立，开启生物科技与营养学融合的创新之旅。',
   },
   {
-    year: '2020',
-    title: 'R&D Expansion',
-    description: 'Expanded research facilities and established partnerships with leading universities.',
+    year: '2023.10',
+    title: 'UltiWell品牌注册',
+    description: 'UltiWell®品牌成功注册并开始生产，定位为追求极致美好的健康品牌。',
   },
   {
-    year: '2021',
-    title: 'Product Launch',
-    description: 'Successfully launched first bio-based pharmaceutical compounds.',
+    year: '2024.01',
+    title: '线上营销启动',
+    description: '小红书、抖音、微信小程序等线上渠道正式开始营销运营。',
   },
   {
-    year: '2022',
-    title: 'Market Growth',
-    description: 'Expanded into cosmetics and agricultural sectors with innovative solutions.',
-  },
-  {
-    year: '2023',
-    title: 'Global Reach',
-    description: 'Established international partnerships and expanded distribution networks.',
+    year: '2024.12',
+    title: '入驻保税区',
+    description: '公司入驻上海外高桥保税区盛大天地，拓展国际化业务版图。',
   },
 ];
 
 const values = [
   {
-    icon: Award,
-    title: 'Scientific Excellence',
-    description: 'We maintain the highest standards in research and development, ensuring every product meets rigorous quality benchmarks.',
-  },
-  {
-    icon: Target,
-    title: 'Sustainability',
-    description: 'Environmental responsibility is at the core of everything we do, from sourcing to production.',
+    icon: Lightbulb,
+    title: '科技创新',
+    description: '以科技创新为核心，将生物合成技术与先进研发相结合，打造科技领先的保健产品。',
   },
   {
     icon: Users,
-    title: 'Collaboration',
-    description: 'We believe in the power of partnerships, working closely with clients, universities, and industry leaders.',
+    title: '个性化定制',
+    description: '提供个性化的健康美丽方案，满足每位客户独特的需求与追求。',
   },
   {
-    icon: Lightbulb,
-    title: 'Innovation',
-    description: 'Continuous improvement and breakthrough discoveries drive our mission to revolutionize biosynthesis.',
+    icon: Shield,
+    title: '品质保障',
+    description: '严格的质量控制流程，确保所有原料和成品符合食品安全标准和法规要求。',
+  },
+  {
+    icon: Globe,
+    title: '可持续发展',
+    description: '重视环境保护和可持续发展，开发和推广环保的生产方法和包装材料。',
   },
 ];
 
-const teamMembers = [
+const businessAreas = [
   {
-    name: 'Dr. Sarah Chen',
-    role: 'Chief Scientific Officer',
-    description: 'Leading research initiatives in sustainable biosynthesis with over 15 years of industry experience.',
     icon: Beaker,
+    title: '生物技术研发',
+    description: '利用先进的生物技术进行食品原料的研究与开发，开发新型发酵技术、酶工程和基因编辑技术。',
   },
   {
-    name: 'Dr. Michael Zhang',
-    role: 'Head of R&D',
-    description: 'Pioneering metabolic engineering techniques for pharmaceutical biosynthesis applications.',
     icon: Microscope,
+    title: '食品原料配方',
+    description: '提供定制化的配方服务，研究和开发新型功能性食品原料，如富含特定维生素、矿物质或生物活性成分。',
   },
   {
-    name: 'Dr. Lisa Wang',
-    role: 'Director of Operations',
-    description: 'Overseeing production processes and ensuring quality standards across all product lines.',
+    icon: FlaskConical,
+    title: '剂型创新',
+    description: '开发多样化的剂型，如软胶囊、片剂、粉剂、液体等，创新包装技术以提高产品稳定性。',
+  },
+  {
     icon: TrendingUp,
+    title: '市场趋势研究',
+    description: '关注全球食品科技和营养补充品的市场趋势，预测和满足未来的需求。',
   },
 ];
 
@@ -84,91 +82,73 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <Image
-            src="/hero-lab.jpeg"
-            alt="Laboratory"
-            fill
-            className="object-cover"
-          />
-        </div>
+      <section className="relative bg-white py-16 overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-              Our Journey and Mission
+            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
+              关于埃卫克
             </h1>
             <p className="text-lg text-gray-600">
-              At Enviko, we are committed to advancing sustainable biosynthesis solutions that revolutionize industries. 
-              Our history is rooted in scientific excellence and innovation, driving us to develop environmentally 
-              friendly products for diverse sectors.
+              上海埃卫克生物科技有限公司创立于2023年7月，是一家融合生物科学和营养学前沿知识的科技公司。
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-white">
+      <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative h-[350px] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/about-team.jpeg"
-                alt="Our Team"
+                src="/hero-lab.jpeg"
+                alt="实验室"
                 fill
                 className="object-cover"
               />
             </div>
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
-                Our Mission
+              <h2 className="text-3xl font-normal text-gray-900 mb-6">
+                我们的使命
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                With a dedicated team of experts, Enviko continuously pushes the boundaries of biotechnology 
-                to create high-quality, sustainable bio-based products that meet industry needs and promote 
-                environmental responsibility.
+              <p className="text-lg text-gray-600 mb-4">
+                为全球用户提供最优质的保健产品，通过科学的方法改善生活质量，提高身体免疫力和抵抗力，预防和改善各种健康问题。
               </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Our core values of scientific excellence, sustainability, and collaboration guide every project 
-                we undertake, ensuring innovative solutions that benefit both industry and the planet.
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Shanghai Enviko Biotechnology Co., Ltd.'s history of innovation and our unwavering commitment 
-                to sustainability define our identity as a leader in biosynthesis technology.
-              </p>
-              <div className="bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl p-6 text-white">
-                <h3 className="text-xl font-bold mb-3">Our Vision</h3>
-                <p className="text-brand-50">
-                  To be the global leader in sustainable biosynthesis, transforming industries through 
-                  innovative bio-based solutions that contribute to a healthier planet.
+              <div className="bg-gray-50 rounded-2xl p-6 mt-6">
+                <h3 className="text-xl font-medium text-gray-900 mb-3">我们的愿景</h3>
+                <p className="text-gray-600">
+                  通过创新的生物合成技术生产高品质、纯净、天然保健产品的企业。坚信通过优质的保健食品可以帮助人们实现更健康、更美好的生活。
                 </p>
               </div>
+              <p className="text-sm text-gray-500 mt-4">
+                公司拥有一支由专业科学家、生物技术工程师和营养学专家组成的团队，致力于开发和生产出卓越的保健产品。
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Timeline */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Our History
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              发展历程
             </h2>
             <p className="text-lg text-gray-600">
-              A journey of innovation and sustainable growth
+              埃卫克的成长与创新之路
             </p>
           </div>
-          <div className="relative">
+          <div className="relative max-w-4xl mx-auto">
             <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-brand-200"></div>
             <div className="space-y-12">
               {timeline.map((item, index) => (
                 <div key={index} className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                   <div className={`flex-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                     <div className="bg-white rounded-xl shadow-lg p-6 inline-block">
-                      <div className="text-brand-600 font-bold text-lg mb-2">{item.year}</div>
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
-                      <p className="text-gray-600">{item.description}</p>
+                      <div className="text-brand-600 font-medium text-lg mb-2">{item.year}</div>
+                      <h3 className="text-lg font-medium text-gray-900 mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-sm">{item.description}</p>
                     </div>
                   </div>
                   <div className="w-4 h-4 bg-brand-600 rounded-full border-4 border-white shadow-lg z-10"></div>
@@ -180,26 +160,56 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
-      <section className="py-20 bg-white">
+      {/* Business Areas */}
+      <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Our Core Values
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              业务范围
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              At Enviko, we are driven by a commitment to innovation, sustainability, and improving lives 
-              through biosynthesis. Our values guide every decision we make.
+              我们致力于为客户提供全方位的生物技术解决方案
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {businessAreas.map((area, index) => (
+              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 mx-auto bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                    <area.icon className="w-7 h-7 text-brand-600" />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900 mb-3">
+                    {area.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {area.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              核心价值观
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              科技领先、美丽自信
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-14 h-14 mx-auto bg-brand-100 rounded-xl flex items-center justify-center mb-4">
                     <value.icon className="w-7 h-7 text-brand-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-lg font-medium text-gray-900 mb-3">
                     {value.title}
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -212,41 +222,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Brand Introduction */}
+      <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Our Expert Team
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-normal text-gray-900 mb-6">
+              UltiWell® 品牌
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              A dedicated team of scientists, researchers, and industry experts driving innovation in biosynthesis
+            <p className="text-lg text-gray-600 mb-6">
+              UltiWell®定位为突破传统、引领潮流的健康追求者，致力于打造全新的高品质保健食品体验，为寻求全方位健康与美好生活的客户提供创新的保健解决方案。
             </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
-                <div className="relative h-64 overflow-hidden">
-                  <Image
-                    src="/about-team.jpeg"
-                    alt={member.name}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 w-14 h-14 bg-white rounded-full flex items-center justify-center">
-                    <member.icon className="w-7 h-7 text-brand-600" />
-                  </div>
-                </div>
-                <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-brand-600 text-sm mb-3">{member.role}</p>
-                  <p className="text-gray-600 text-sm">
-                    {member.description}
-                  </p>
-                </div>
-              </div>
-            ))}
+            <div className="bg-brand-50 rounded-2xl p-8">
+              <p className="text-brand-700 font-medium text-xl mb-2">品牌理念</p>
+              <p className="text-brand-600 text-2xl font-light">「Ultimate Wellness」</p>
+              <p className="text-brand-600 mt-2">追求极致美好和健康</p>
+            </div>
           </div>
         </div>
       </section>
