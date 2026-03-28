@@ -220,14 +220,14 @@ export default function Footer() {
 
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-sm text-white/60">
+            <p className="text-sm text-white">
               © {new Date().getFullYear()} Enviko Biotechnology. All rights reserved.
             </p>
-            <div className="flex gap-4 text-sm text-white/60">
-              <Link href="/privacy" className="hover:text-white transition-colors">
+            <div className="flex gap-4 text-sm text-white">
+              <Link href="/privacy" className="hover:opacity-80 transition-opacity">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-white transition-colors">
+              <Link href="/terms" className="hover:opacity-80 transition-opacity">
                 Terms of Service
               </Link>
             </div>
