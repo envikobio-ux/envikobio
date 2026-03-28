@@ -24,8 +24,8 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="w-10 h-10 relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+            <Link href="/" className="group">
+              <div className="w-14 h-14 relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
                 <Image
                   src="/logo.jpg"
                   alt="Enviko Biotechnology"
@@ -33,7 +33,6 @@ export default function Header() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-lg font-medium text-gray-800 group-hover:text-gray-600 transition-colors duration-300">Enviko Biotechnology</span>
             </Link>
           </div>
 

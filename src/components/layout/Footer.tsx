@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const footerNavigation = {
@@ -27,7 +28,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4 group">
-              <span className="text-xl font-medium text-white group-hover:text-gray-300 transition-colors duration-300">Enviko Biotechnology</span>
+              <div className="w-20 h-20 relative bg-white rounded-xl p-1 transition-transform duration-300 group-hover:scale-105">
+                <Image
+                  src="/logo.jpg"
+                  alt="Enviko Biotechnology"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
