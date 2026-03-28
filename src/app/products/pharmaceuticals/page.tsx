@@ -93,7 +93,7 @@ export default function PharmaceuticalsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
+      <section className="relative bg-white py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/pharma-research.jpeg"
