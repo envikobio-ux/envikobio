@@ -94,7 +94,7 @@ export default function Footer() {
                 Shanghai Enviko Biotechnology Co., Ltd.
               </h3>
             </div>
-            <p className="text-white/80 text-sm mb-4 max-w-sm">
+            <p className="text-sm mb-4 max-w-sm" style={{ color: '#D9D9D9' }}>
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
             </p>
             <div className="space-y-2 text-sm text-white/80">
