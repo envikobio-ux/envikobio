@@ -83,7 +83,6 @@ export default function Home() {
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500 animate-gradient inline-block">
                   Sustainable Future
                 </span>{' '}
-                <span className="text-gray-400">with</span>{' '}
                 <span className="text-gray-400">Enviko</span>
               </h1>
               <p className="text-lg text-gray-600 mb-6 max-w-xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
