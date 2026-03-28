@@ -148,6 +148,28 @@ body {
   @apply font-sans;
 }
 
+/* 字体规范 - 统一细体风格 */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-normal;
+}
+
+p, span, li, a, label {
+  @apply font-normal;
+}
+
+/* 强调文字使用 medium 而非 bold */
+.font-bold {
+  font-weight: 500 !important;
+}
+
+.font-semibold {
+  font-weight: 500 !important;
+}
+
+.font-medium {
+  font-weight: 400 !important;
+}
+
 /* 自定义动画 */
 @keyframes fadeInUp {
   from {

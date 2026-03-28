@@ -115,7 +115,7 @@ export default function AboutPage() {
                 为全球用户提供最优质的保健产品，通过科学的方法改善生活质量，提高身体免疫力和抵抗力，预防和改善各种健康问题。
               </p>
               <div className="bg-gray-50 rounded-2xl p-6 mt-6">
-                <h3 className="text-xl font-medium text-gray-900 mb-3">我们的愿景</h3>
+                <h3 className="text-xl font-normal text-gray-900 mb-3">我们的愿景</h3>
                 <p className="text-gray-600">
                   通过创新的生物合成技术生产高品质、纯净、天然保健产品的企业。坚信通过优质的保健食品可以帮助人们实现更健康、更美好的生活。
                 </p>
@@ -233,7 +233,7 @@ export default function AboutPage() {
               UltiWell®定位为突破传统、引领潮流的健康追求者，致力于打造全新的高品质保健食品体验，为寻求全方位健康与美好生活的客户提供创新的保健解决方案。
             </p>
             <div className="bg-brand-50 rounded-2xl p-8">
-              <p className="text-brand-700 font-medium text-xl mb-2">品牌理念</p>
+              <p className="text-brand-700 font-normal text-xl mb-2">品牌理念</p>
               <p className="text-brand-600 text-2xl font-light">「Ultimate Wellness」</p>
               <p className="text-brand-600 mt-2">追求极致美好和健康</p>
             </div>

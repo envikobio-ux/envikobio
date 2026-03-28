@@ -142,7 +142,7 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
               Our Research Areas
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -165,7 +165,7 @@ export default function Home() {
                   <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-white">
                     <area.icon className="w-7 h-7 text-brand-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  <h3 className="text-xl font-medium text-gray-900 mb-4">
                     {area.title}
                   </h3>
                   <p className="text-gray-600 mb-6">
@@ -187,7 +187,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
               Cutting-Edge Technologies
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -211,7 +211,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-b-xl">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                  <h3 className="text-xl font-medium text-gray-900 mb-3">
                     {tech.title}
                   </h3>
                   <p className="text-gray-600 text-sm">
@@ -238,7 +238,7 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-medium text-white mb-6">
                 Making a Tangible Difference Through Biosynthesis
               </h2>
               <p className="text-lg text-brand-100 mb-8">
@@ -261,7 +261,7 @@ export default function Home() {
                     <Beaker className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Joint Research Programs</h3>
+                    <h3 className="font-medium text-white">Joint Research Programs</h3>
                     <p className="text-sm text-brand-100">Partnering with universities to explore novel pathways</p>
                   </div>
                 </div>
@@ -270,7 +270,7 @@ export default function Home() {
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Technology Licensing</h3>
+                    <h3 className="font-medium text-white">Technology Licensing</h3>
                     <p className="text-sm text-brand-100">Accessing advanced technologies for production efficiency</p>
                   </div>
                 </div>
@@ -279,7 +279,7 @@ export default function Home() {
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-white">Market Expansion</h3>
+                    <h3 className="font-medium text-white">Market Expansion</h3>
                     <p className="text-sm text-brand-100">Collaborating with distributors worldwide</p>
                   </div>
                 </div>
@@ -292,7 +292,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-6">
             Ready to Partner with Enviko?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">

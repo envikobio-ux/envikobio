@@ -103,7 +103,7 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
               Company
             </h3>
             <ul className="space-y-2">
@@ -122,7 +122,7 @@ export default function Footer() {
 
           {/* Industries */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
               Industries
             </h3>
             <ul className="space-y-2">
@@ -141,7 +141,7 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div>
-            <h3 className="text-sm font-semibold text-white uppercase tracking-wider mb-4">
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
               Newsletter
             </h3>
             <p className="text-sm text-brand-100 mb-4">

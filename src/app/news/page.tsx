@@ -167,7 +167,7 @@ export default function NewsPage() {
                 <CardContent className="p-6">
                   {/* Category & Date */}
                   <div className="flex items-center justify-between mb-3">
-                    <span className={`text-xs font-medium px-2 py-1 rounded ${categoryColors[article.category] || 'bg-gray-100 text-gray-700'}`}>
+                    <span className={`text-xs font-normal px-2 py-1 rounded ${categoryColors[article.category] || 'bg-gray-100 text-gray-700'}`}>
                       {article.category}
                     </span>
                     <div className="flex items-center text-xs text-gray-500">
@@ -195,7 +195,7 @@ export default function NewsPage() {
                       href={article.sourceUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="text-brand-600 hover:text-brand-700 text-sm font-medium inline-flex items-center transition-colors"
+                      className="text-brand-600 hover:text-brand-700 text-sm font-normal inline-flex items-center transition-colors"
                     >
                       Read <ExternalLink className="w-3 h-3 ml-1" />
                     </a>
