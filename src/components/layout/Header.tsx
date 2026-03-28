@@ -33,7 +33,7 @@ export default function Header() {
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-gray-900">Shanghai Enviko Biotechnology Co., Ltd.</span>
+              <span className="text-lg font-semibold text-gray-800">Shanghai Enviko Biotechnology Co., Ltd.</span>
             </Link>
           </div>
 
@@ -43,7 +43,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-gray-700 hover:text-brand-600 transition-colors"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
               >
                 {item.name}
               </Link>
@@ -52,7 +52,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
-            <Button asChild className="bg-brand-600 hover:bg-brand-700">
+            <Button asChild className="bg-gray-900 hover:bg-gray-800">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>
@@ -80,14 +80,14 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-brand-600 hover:bg-gray-50 rounded-lg transition-colors"
+                  className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <div className="pt-2">
-                <Button asChild className="w-full bg-brand-600 hover:bg-brand-700">
+                <Button asChild className="w-full bg-gray-900 hover:bg-gray-800">
                   <Link href="/contact">Get in Touch</Link>
                 </Button>
               </div>

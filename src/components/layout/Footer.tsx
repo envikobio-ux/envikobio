@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { Mail, Phone, MapPin } from 'lucide-react';
 
 const footerNavigation = {
@@ -27,34 +26,26 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 relative flex-shrink-0 bg-white rounded-lg p-1">
-                <Image
-                  src="/logo.jpg"
-                  alt="Shanghai Enviko Biotechnology Co., Ltd."
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <span className="text-lg font-bold leading-tight">Shanghai Enviko<br/>Biotechnology Co., Ltd.</span>
+            <Link href="/" className="inline-block mb-4">
+              <span className="text-xl font-bold text-white">Shanghai Enviko Biotechnology Co., Ltd.</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-brand-500 mt-0.5" />
+                <MapPin className="h-4 w-4 text-gray-400 mt-0.5" />
                 <span>Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-brand-500" />
-                <a href="mailto:info@envikobio.com" className="hover:text-brand-400 transition-colors">
+                <Mail className="h-4 w-4 text-gray-400" />
+                <a href="mailto:info@envikobio.com" className="hover:text-white transition-colors">
                   info@envikobio.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-brand-500" />
-                <a href="tel:+8613918629532" className="hover:text-brand-400 transition-colors">
+                <Phone className="h-4 w-4 text-gray-400" />
+                <a href="tel:+8613918629532" className="hover:text-white transition-colors">
                   +86 13918629532 (WhatsApp)
                 </a>
               </div>
@@ -71,7 +62,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -90,7 +81,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -109,7 +100,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-white transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -125,10 +116,10 @@ export default function Footer() {
               © {new Date().getFullYear()} Shanghai Enviko Biotechnology Co., Ltd. All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-gray-400">
-              <Link href="/privacy" className="hover:text-brand-400 transition-colors">
+              <Link href="/privacy" className="hover:text-white transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-brand-400 transition-colors">
+              <Link href="/terms" className="hover:text-white transition-colors">
                 Terms of Service
               </Link>
             </div>
