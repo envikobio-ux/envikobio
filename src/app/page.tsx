@@ -80,10 +80,12 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="animate-fade-in-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal mb-4">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500 animate-gradient inline-block">
+                <span className="text-gray-400">
                   Sustainable Future
                 </span>{' '}
-                <span className="text-gray-400">Enviko</span>
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500 animate-gradient inline-block">
+                  Enviko
+                </span>
               </h1>
               <p className="text-lg text-gray-600 mb-6 max-w-xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
                 Enviko is dedicated to revolutionizing product development through advanced biosynthesis techniques. 
