@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -30,6 +31,7 @@ const solutions = [
       'Custom compound development',
       'Quality-controlled production',
     ],
+    image: '/pharma-research.jpeg',
   },
   {
     id: 'cosmetics',
@@ -44,6 +46,7 @@ const solutions = [
       'Clean beauty solutions',
       'Custom ingredient development',
     ],
+    image: '/cosmetic-ingredients.jpeg',
   },
   {
     id: 'agriculture',
@@ -58,6 +61,7 @@ const solutions = [
       'Environmental sustainability',
       'Integrated pest management',
     ],
+    image: '/agriculture-sustainable.jpeg',
   },
 ];
 
@@ -66,16 +70,19 @@ const technologies = [
     icon: Factory,
     title: 'Advanced Fermentation Technology',
     description: 'Our fermentation technology allows for precise control over the biosynthesis process, optimizing yield and product quality.',
+    image: '/fermentation-tech.jpeg',
   },
   {
     icon: Microscope,
     title: 'High-Resolution Analytics',
     description: 'We employ state-of-the-art analytical techniques to ensure the purity and efficacy of our biosynthesized products.',
+    image: '/analytics-equipment.jpeg',
   },
   {
     icon: Beaker,
     title: 'Metabolic Engineering',
     description: 'Our team utilizes metabolic engineering to optimize biosynthetic pathways, creating customized solutions for specific needs.',
+    image: '/hero-lab.jpeg',
   },
 ];
 
@@ -83,8 +90,16 @@ export default function SolutionsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/fermentation-tech.jpeg"
+            alt="Solutions Background"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
               Custom Biosynthesis Solutions
@@ -104,39 +119,48 @@ export default function SolutionsPage() {
           <div className="space-y-20">
             {solutions.map((solution, index) => (
               <div key={solution.id} id={solution.id} className="scroll-mt-20">
-                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? '' : ''}`}>
                   <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
-                    <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mb-6">
-                      <solution.icon className="w-8 h-8 text-green-600" />
+                    <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                      <Image
+                        src={solution.image}
+                        alt={solution.title}
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-6 left-6 w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <solution.icon className="w-8 h-8 text-green-600" />
+                      </div>
                     </div>
+                  </div>
+                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
                     <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                       {solution.title}
                     </h2>
                     <p className="text-lg text-gray-600 mb-8">
                       {solution.description}
                     </p>
-                    <Button asChild className="bg-green-600 hover:bg-green-700">
-                      <Link href="/contact">
-                        Get Started <ArrowRight className="ml-2 h-4 w-4" />
-                      </Link>
-                    </Button>
-                  </div>
-                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
-                    <Card className="border-0 shadow-xl">
-                      <CardContent className="p-8">
-                        <h3 className="text-xl font-semibold text-gray-900 mb-6">
+                    <Card className="border-0 shadow-lg mb-6">
+                      <CardContent className="p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">
                           Key Features
                         </h3>
-                        <div className="grid gap-3">
+                        <div className="grid sm:grid-cols-2 gap-3">
                           {solution.features.map((feature, idx) => (
-                            <div key={idx} className="flex items-start gap-3">
+                            <div key={idx} className="flex items-start gap-2">
                               <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                              <span className="text-gray-700">{feature}</span>
+                              <span className="text-gray-700 text-sm">{feature}</span>
                             </div>
                           ))}
                         </div>
                       </CardContent>
                     </Card>
+                    <Button asChild className="bg-green-600 hover:bg-green-700">
+                      <Link href="/contact">
+                        Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
                   </div>
                 </div>
               </div>
@@ -158,15 +182,24 @@ export default function SolutionsPage() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {technologies.map((tech, index) => (
-              <Card key={index} className="border-0 shadow-lg text-center">
-                <CardContent className="p-8">
-                  <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-600 to-emerald-500 rounded-full flex items-center justify-center mb-6">
-                    <tech.icon className="w-8 h-8 text-white" />
+              <Card key={index} className="border-0 shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={tech.image}
+                    alt={tech.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                    <tech.icon className="w-6 h-6 text-green-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {tech.title}
                   </h3>
-                  <p className="text-gray-600">
+                  <p className="text-gray-600 text-sm">
                     {tech.description}
                   </p>
                 </CardContent>
@@ -177,15 +210,24 @@ export default function SolutionsPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-emerald-500 text-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/agriculture-sustainable.jpeg"
+            alt="Sustainable Future"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+        </div>
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Industry?
           </h2>
-          <p className="text-lg text-green-50 mb-8">
+          <p className="text-lg text-green-100 mb-8">
             Partner with Enviko to develop sustainable biosynthesis solutions tailored to your specific needs.
           </p>
-          <Button asChild size="lg" variant="secondary" className="bg-white text-green-600 hover:bg-gray-100">
+          <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
             <Link href="/contact">
               Contact Us Today <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

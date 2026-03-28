@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
+import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
-import { Award, Target, Users, Lightbulb } from 'lucide-react';
+import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us',
@@ -58,12 +59,41 @@ const values = [
   },
 ];
 
+const teamMembers = [
+  {
+    name: 'Dr. Sarah Chen',
+    role: 'Chief Scientific Officer',
+    description: 'Leading research initiatives in sustainable biosynthesis with over 15 years of industry experience.',
+    icon: Beaker,
+  },
+  {
+    name: 'Dr. Michael Zhang',
+    role: 'Head of R&D',
+    description: 'Pioneering metabolic engineering techniques for pharmaceutical biosynthesis applications.',
+    icon: Microscope,
+  },
+  {
+    name: 'Dr. Lisa Wang',
+    role: 'Director of Operations',
+    description: 'Overseeing production processes and ensuring quality standards across all product lines.',
+    icon: TrendingUp,
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/hero-lab.jpeg"
+            alt="Laboratory"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
               Our Journey and Mission
@@ -81,6 +111,14 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/about-team.jpeg"
+                alt="Our Team"
+                fill
+                className="object-cover"
+              />
+            </div>
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                 Our Mission
@@ -94,17 +132,17 @@ export default function AboutPage() {
                 Our core values of scientific excellence, sustainability, and collaboration guide every project 
                 we undertake, ensuring innovative solutions that benefit both industry and the planet.
               </p>
-              <p className="text-lg text-gray-600">
+              <p className="text-lg text-gray-600 mb-6">
                 Shanghai Enviko Biotechnology Co., Ltd.'s history of innovation and our unwavering commitment 
                 to sustainability define our identity as a leader in biosynthesis technology.
               </p>
-            </div>
-            <div className="bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl p-8 text-white">
-              <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
-              <p className="text-green-50 text-lg">
-                To be the global leader in sustainable biosynthesis, transforming industries through 
-                innovative bio-based solutions that contribute to a healthier planet and improved quality of life.
-              </p>
+              <div className="bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl p-6 text-white">
+                <h3 className="text-xl font-bold mb-3">Our Vision</h3>
+                <p className="text-green-50">
+                  To be the global leader in sustainable biosynthesis, transforming industries through 
+                  innovative bio-based solutions that contribute to a healthier planet.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -156,7 +194,7 @@ export default function AboutPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="border-0 shadow-lg">
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
                   <div className="w-14 h-14 mx-auto bg-green-100 rounded-xl flex items-center justify-center mb-4">
                     <value.icon className="w-7 h-7 text-green-600" />
@@ -186,18 +224,25 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                <div className="aspect-square bg-gradient-to-br from-green-100 to-emerald-100 flex items-center justify-center">
-                  <div className="w-24 h-24 bg-gradient-to-br from-green-600 to-emerald-500 rounded-full flex items-center justify-center">
-                    <Users className="w-12 h-12 text-white" />
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white rounded-xl shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                <div className="relative h-64 overflow-hidden">
+                  <Image
+                    src="/about-team.jpeg"
+                    alt={member.name}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 w-14 h-14 bg-white rounded-full flex items-center justify-center">
+                    <member.icon className="w-7 h-7 text-green-600" />
                   </div>
                 </div>
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-1">Expert Team Member</h3>
-                  <p className="text-green-600 text-sm mb-3">Research Director</p>
+                  <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
+                  <p className="text-green-600 text-sm mb-3">{member.role}</p>
                   <p className="text-gray-600 text-sm">
-                    Leading research initiatives in sustainable biosynthesis with years of industry experience.
+                    {member.description}
                   </p>
                 </div>
               </div>

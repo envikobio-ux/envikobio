@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
@@ -13,10 +14,10 @@ import {
 } from 'lucide-react';
 
 const stats = [
-  { value: '0+', label: 'Products', suffix: '' },
+  { value: '50+', label: 'Products', suffix: '' },
   { value: '100+', label: 'Units Delivered', suffix: '' },
   { value: '5+', label: 'Years Experience', suffix: '' },
-  { value: '1+', label: 'Years of Innovation', suffix: '' },
+  { value: '10+', label: 'Years of Innovation', suffix: '' },
 ];
 
 const researchAreas = [
@@ -25,18 +26,21 @@ const researchAreas = [
     title: 'Pharmaceutical Biosynthesis',
     description: 'Developing innovative biosynthesis pathways for producing complex pharmaceutical compounds, reducing costs and environmental impact.',
     href: '/solutions#pharmaceuticals',
+    image: '/pharma-research.jpeg',
   },
   {
     icon: Leaf,
     title: 'Cosmetic Biosynthesis',
     description: 'Creating sustainable and natural cosmetic ingredients through biosynthesis, replacing environmentally harmful alternatives.',
     href: '/solutions#cosmetics',
+    image: '/cosmetic-ingredients.jpeg',
   },
   {
     icon: TrendingUp,
     title: 'Sustainable Agriculture',
     description: 'Researching bio-based pesticides and fertilizers to promote sustainable agriculture and minimize environmental damage.',
     href: '/solutions#agriculture',
+    image: '/agriculture-sustainable.jpeg',
   },
 ];
 
@@ -45,16 +49,19 @@ const technologies = [
     icon: Factory,
     title: 'Advanced Fermentation Technology',
     description: 'Precise control over biosynthesis processes, optimizing yield and product quality for a wide range of bio-based products.',
+    image: '/fermentation-tech.jpeg',
   },
   {
     icon: Microscope,
     title: 'High-Resolution Analytics',
     description: 'State-of-the-art analytical techniques ensuring the purity and efficacy of our biosynthesized products.',
+    image: '/analytics-equipment.jpeg',
   },
   {
     icon: Award,
     title: 'Metabolic Engineering Expertise',
     description: 'Optimizing biosynthetic pathways through metabolic engineering to create customized solutions for specific needs.',
+    image: '/hero-lab.jpeg',
   },
 ];
 
@@ -99,16 +106,18 @@ export default function Home() {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-square rounded-2xl bg-gradient-to-br from-green-600 to-emerald-500 p-1">
-                <div className="w-full h-full rounded-2xl bg-white flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-green-600 to-emerald-500 rounded-full flex items-center justify-center">
-                      <Beaker className="w-16 h-16 text-white" />
-                    </div>
-                    <p className="text-gray-600 text-lg">
-                      Pioneering Sustainable<br />Biosynthesis Solutions
-                    </p>
-                  </div>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+                <Image
+                  src="/hero-lab.jpeg"
+                  alt="Biotechnology Laboratory"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent flex items-end justify-center pb-8">
+                  <p className="text-white text-lg font-medium text-center px-4">
+                    Pioneering Sustainable<br />Biosynthesis Solutions
+                  </p>
                 </div>
               </div>
             </div>
@@ -146,9 +155,17 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {researchAreas.map((area, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={area.image}
+                    alt={area.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
                 <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6">
+                  <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-white">
                     <area.icon className="w-7 h-7 text-green-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
@@ -183,16 +200,27 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {technologies.map((tech, index) => (
-              <div key={index} className="text-center p-6">
-                <div className="w-16 h-16 mx-auto bg-gradient-to-br from-green-600 to-emerald-500 rounded-full flex items-center justify-center mb-6">
-                  <tech.icon className="w-8 h-8 text-white" />
+              <div key={index} className="group">
+                <div className="relative h-48 rounded-t-xl overflow-hidden">
+                  <Image
+                    src={tech.image}
+                    alt={tech.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                    <tech.icon className="w-6 h-6 text-green-600" />
+                  </div>
                 </div>
-                <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                  {tech.title}
-                </h3>
-                <p className="text-gray-600">
-                  {tech.description}
-                </p>
+                <div className="bg-gray-50 p-6 rounded-b-xl">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {tech.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {tech.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -200,34 +228,43 @@ export default function Home() {
       </section>
 
       {/* Impact Section */}
-      <section className="py-20 bg-gradient-to-br from-green-600 to-emerald-500 text-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/agriculture-sustainable.jpeg"
+            alt="Sustainable Agriculture"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-green-800/90"></div>
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+              <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
                 Making a Tangible Difference Through Biosynthesis
               </h2>
-              <p className="text-lg text-green-50 mb-8">
+              <p className="text-lg text-green-100 mb-8">
                 At Enviko, we are committed to creating a positive impact on global health and sustainability. 
                 Our biosynthesis solutions are designed to address critical challenges.
               </p>
               <ul className="space-y-4">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-200 flex-shrink-0 mt-0.5" />
+                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
                     <span className="text-green-50">{feature}</span>
                   </li>
                 ))}
               </ul>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8">
+            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
                     <Beaker className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Joint Research Programs</h3>
+                    <h3 className="font-semibold text-white">Joint Research Programs</h3>
                     <p className="text-sm text-green-100">Partnering with universities to explore novel pathways</p>
                   </div>
                 </div>
@@ -236,7 +273,7 @@ export default function Home() {
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Technology Licensing</h3>
+                    <h3 className="font-semibold text-white">Technology Licensing</h3>
                     <p className="text-sm text-green-100">Accessing advanced technologies for production efficiency</p>
                   </div>
                 </div>
@@ -245,7 +282,7 @@ export default function Home() {
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Market Expansion</h3>
+                    <h3 className="font-semibold text-white">Market Expansion</h3>
                     <p className="text-sm text-green-100">Collaborating with distributors worldwide</p>
                   </div>
                 </div>
