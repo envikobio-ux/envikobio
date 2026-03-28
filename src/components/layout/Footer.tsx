@@ -84,7 +84,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="text-white" style={{ backgroundColor: '#A1BA80' }}>
+    <footer className="text-white" style={{ backgroundColor: '#8C8C8C' }}>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
@@ -202,8 +202,8 @@ export default function Footer() {
                 <Button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full bg-white hover:bg-gray-100 transition-all duration-300 hover:scale-[1.02]"
-                  style={{ color: '#A1BA80' }}
+                  className="w-full transition-all duration-300 hover:scale-[1.02] text-white"
+                  style={{ backgroundColor: '#A1BA80' }}
                 >
                   {isSubmitting ? (
                     'Subscribing...'
