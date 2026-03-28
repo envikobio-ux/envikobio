@@ -31,12 +31,12 @@ export default function Footer() {
               <div className="w-10 h-10 relative flex-shrink-0 bg-white rounded-lg p-1">
                 <Image
                   src="/logo.jpg"
-                  alt="Enviko Bio"
+                  alt="Shanghai Enviko Biotechnology Co., Ltd."
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold">Enviko Bio</span>
+              <span className="text-lg font-bold leading-tight">Shanghai Enviko<br/>Biotechnology Co., Ltd.</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.

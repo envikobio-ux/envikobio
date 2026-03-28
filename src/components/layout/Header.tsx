@@ -28,12 +28,12 @@ export default function Header() {
               <div className="w-10 h-10 relative flex-shrink-0">
                 <Image
                   src="/logo.jpg"
-                  alt="Enviko Bio"
+                  alt="Shanghai Enviko Biotechnology Co., Ltd."
                   fill
                   className="object-contain"
                 />
               </div>
-              <span className="text-xl font-bold text-gray-900">Enviko Bio</span>
+              <span className="text-xl font-bold text-gray-900">Shanghai Enviko Biotechnology Co., Ltd.</span>
             </Link>
           </div>
 
