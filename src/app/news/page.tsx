@@ -161,7 +161,7 @@ export default function NewsPage() {
             {newsArticles.map((article, index) => (
               <Card 
                 key={article.id} 
-                className="border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 group cursor-pointer"
+                className="border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
                 style={{ animationDelay: `${index * 50}ms` }}
               >
                 <CardContent className="p-6">
@@ -177,7 +177,7 @@ export default function NewsPage() {
                   </div>
                   
                   {/* Title */}
-                  <h3 className="text-lg font-normal text-gray-900 mb-3 line-clamp-2 group-hover:text-gray-600 transition-colors">
+                  <h3 className="text-lg font-normal text-gray-900 mb-3 line-clamp-2">
                     {article.title}
                   </h3>
                   
@@ -196,7 +196,6 @@ export default function NewsPage() {
                       target="_blank" 
                       rel="noopener noreferrer"
                       className="text-brand-600 hover:text-brand-700 text-sm font-medium inline-flex items-center transition-colors"
-                      onClick={(e) => e.stopPropagation()}
                     >
                       Read <ExternalLink className="w-3 h-3 ml-1" />
                     </a>
