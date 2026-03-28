@@ -75,21 +75,19 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 overflow-hidden">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section className="relative bg-white overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
+          <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="animate-fade-in-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 mb-6">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 mb-4">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500 animate-gradient inline-block">
                   Sustainable Future
                 </span>{' '}
                 with Enviko
               </h1>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
+              <p className="text-lg text-gray-600 mb-6 max-w-xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
                 Enviko is dedicated to revolutionizing product development through advanced biosynthesis techniques. 
-                We serve diverse sectors, including pharmaceuticals, cosmetics, food, pesticides, and agriculture, 
-                delivering sustainable and innovative solutions tailored to meet your specific needs.
+                We serve pharmaceuticals, cosmetics, food, and agriculture sectors with innovative solutions.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 opacity-0" style={{animationFillMode: 'forwards'}}>
                 <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
@@ -105,7 +103,7 @@ export default function Home() {
               </div>
             </div>
             <div className="relative animate-fade-in-up delay-400 opacity-0" style={{animationFillMode: 'forwards'}}>
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl animate-float">
+              <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl animate-float">
                 <Image
                   src="/hero-lab.jpeg"
                   alt="Biotechnology Laboratory"
@@ -113,9 +111,9 @@ export default function Home() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent flex items-end justify-center pb-8">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent flex items-end justify-center pb-6">
                   <p className="text-white text-lg font-medium text-center px-4">
-                    Pioneering Sustainable<br />Biosynthesis Solutions
+                    Pioneering Sustainable Biosynthesis Solutions
                   </p>
                 </div>
               </div>
