@@ -45,7 +45,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-brand-600 text-white">
+    <footer className="bg-brand-700 text-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Company Info */}
@@ -85,7 +85,7 @@ export default function Footer() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-9 h-9 bg-brand-500 hover:bg-white border border-brand-400 hover:border-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    className="w-9 h-9 bg-brand-600 hover:bg-white border border-brand-500 hover:border-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
                     aria-label={social.name}
                   >
                     {social.icon ? (
@@ -148,7 +148,7 @@ export default function Footer() {
               Subscribe to get the latest news and updates.
             </p>
             {isSubscribed ? (
-              <div className="bg-brand-500 border border-brand-400 rounded-lg p-3 text-sm text-white">
+              <div className="bg-brand-600 border border-brand-500 rounded-lg p-3 text-sm text-white">
                 ✓ Thank you for subscribing!
               </div>
             ) : (
@@ -160,7 +160,7 @@ export default function Footer() {
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter your email"
                     required
-                    className="w-full px-4 py-2.5 bg-brand-500 border border-brand-400 rounded-lg text-sm text-white placeholder-brand-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all"
+                    className="w-full px-4 py-2.5 bg-brand-600 border border-brand-500 rounded-lg text-sm text-white placeholder-brand-200 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all"
                   />
                 </div>
                 <Button 
@@ -181,7 +181,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-brand-500 mt-8 pt-8">
+        <div className="border-t border-brand-600 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-brand-200">
               © {new Date().getFullYear()} Enviko Biotechnology. All rights reserved.
