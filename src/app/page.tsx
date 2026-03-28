@@ -240,18 +240,18 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-medium text-white mb-6">
+              <h2 className="text-3xl sm:text-4xl font-medium mb-6" style={{ color: '#A1BA80' }}>
                 Making a Tangible Difference Through Biosynthesis
               </h2>
-              <p className="text-lg text-white/80 mb-8">
+              <p className="text-lg mb-8" style={{ color: '#A1BA80', opacity: 0.85 }}>
                 At Enviko, we are committed to creating a positive impact on global health and sustainability. 
                 Our biosynthesis solutions are designed to address critical challenges.
               </p>
               <ul className="space-y-4">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-white/60 flex-shrink-0 mt-0.5" />
-                    <span className="text-white/90">{feature}</span>
+                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: '#A1BA80', opacity: 0.7 }} />
+                    <span style={{ color: '#A1BA80', opacity: 0.9 }}>{feature}</span>
                   </li>
                 ))}
               </ul>
