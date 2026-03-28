@@ -25,7 +25,7 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="group">
-              <div className="w-14 h-14 relative flex-shrink-0 transition-transform duration-300 group-hover:scale-105">
+              <div className="w-14 h-14 relative flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
                 <Image
                   src="/logo.jpg"
                   alt="Enviko Biotechnology"
@@ -42,7 +42,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+                className="text-sm font-normal text-gray-600 hover:text-gray-900 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.name}
               </Link>
@@ -51,7 +51,7 @@ export default function Header() {
 
           {/* CTA Button */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
-            <Button asChild className="bg-gray-900 hover:bg-gray-800">
+            <Button asChild className="bg-gray-900 hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-lg">
               <Link href="/contact">Get in Touch</Link>
             </Button>
           </div>

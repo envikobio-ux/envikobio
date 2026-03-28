@@ -28,7 +28,7 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="inline-block mb-4 group">
-              <div className="w-20 h-20 relative bg-white rounded-xl p-1 transition-transform duration-300 group-hover:scale-105">
+              <div className="w-20 h-20 relative bg-white rounded-xl p-1 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-xl">
                 <Image
                   src="/logo.jpg"
                   alt="Enviko Biotechnology"

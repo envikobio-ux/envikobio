@@ -79,34 +79,33 @@ export default function Home() {
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-                for a{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500">
+            <div className="animate-fade-in-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal text-gray-900 mb-6">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500 animate-gradient inline-block">
                   Sustainable Future
                 </span>{' '}
                 with Enviko
               </h1>
-              <p className="text-lg text-gray-600 mb-8 max-w-2xl">
+              <p className="text-lg text-gray-600 mb-8 max-w-2xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
                 Enviko is dedicated to revolutionizing product development through advanced biosynthesis techniques. 
                 We serve diverse sectors, including pharmaceuticals, cosmetics, food, pesticides, and agriculture, 
                 delivering sustainable and innovative solutions tailored to meet your specific needs.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
+              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 opacity-0" style={{animationFillMode: 'forwards'}}>
+                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700 transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <Link href="/about">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg">
+                <Button asChild variant="outline" size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
                   <Link href="/solutions">
                     Our Solutions
                   </Link>
                 </Button>
               </div>
             </div>
-            <div className="relative">
-              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative animate-fade-in-up delay-400 opacity-0" style={{animationFillMode: 'forwards'}}>
+              <div className="aspect-square rounded-2xl overflow-hidden shadow-2xl animate-float">
                 <Image
                   src="/hero-lab.jpeg"
                   alt="Biotechnology Laboratory"
@@ -130,8 +129,8 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <div className="text-4xl sm:text-5xl font-bold text-brand-600 mb-2">
+              <div key={index} className="text-center animate-fade-in-up opacity-0" style={{animationDelay: `${index * 100 + 500}ms`, animationFillMode: 'forwards'}}>
+                <div className="text-4xl sm:text-5xl font-normal text-brand-600 mb-2 transition-all duration-300 hover:scale-110 cursor-default">
                   {stat.value}
                 </div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
