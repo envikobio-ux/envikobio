@@ -256,33 +256,33 @@ export default function Home() {
                 ))}
               </ul>
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
+            <div className="rounded-2xl p-8 border border-white/20" style={{ backgroundColor: '#A1BA80' }}>
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
                     <Beaker className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-medium text-white">Joint Research Programs</h3>
-                    <p className="text-sm text-white/70">Partnering with universities to explore novel pathways</p>
+                    <p className="text-sm text-white/80">Partnering with universities to explore novel pathways</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
                     <Award className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-medium text-white">Technology Licensing</h3>
-                    <p className="text-sm text-white/70">Accessing advanced technologies for production efficiency</p>
+                    <p className="text-sm text-white/80">Accessing advanced technologies for production efficiency</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center">
+                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
                     <TrendingUp className="w-6 h-6 text-white" />
                   </div>
                   <div>
                     <h3 className="font-medium text-white">Market Expansion</h3>
-                    <p className="text-sm text-white/70">Collaborating with distributors worldwide</p>
+                    <p className="text-sm text-white/80">Collaborating with distributors worldwide</p>
                   </div>
                 </div>
               </div>
