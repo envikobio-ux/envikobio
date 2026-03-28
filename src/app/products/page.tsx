@@ -94,7 +94,7 @@ export default function ProductsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/fermentation-tech.jpeg"
@@ -113,7 +113,7 @@ export default function ProductsPage() {
               serving pharmaceutical, cosmetic, food, and agricultural industries worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+              <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
                 <a href="/Envikobio-Product-Catalogue-2026.pdf" download>
                   <Download className="mr-2 h-4 w-4" />
                   Download Product Catalogue
@@ -144,7 +144,7 @@ export default function ProductsPage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <category.icon className="w-6 h-6 text-green-600" />
+                    <category.icon className="w-6 h-6 text-brand-600" />
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -157,12 +157,12 @@ export default function ProductsPage() {
                   <div className="grid grid-cols-2 gap-2 mb-6">
                     {category.products.slice(0, 6).map((product, idx) => (
                       <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle className="w-3 h-3 text-green-600 flex-shrink-0" />
+                        <CheckCircle className="w-3 h-3 text-brand-600 flex-shrink-0" />
                         <span className="text-xs">{product}</span>
                       </div>
                     ))}
                   </div>
-                  <Button asChild variant="outline" className="w-full border-green-600 text-green-600 hover:bg-green-50">
+                  <Button asChild variant="outline" className="w-full border-brand-600 text-brand-600 hover:bg-brand-50">
                     <Link href={category.href}>
                       View Products <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
@@ -196,7 +196,7 @@ export default function ProductsPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-brand-600 flex-shrink-0" />
                     <span className="text-gray-700">{feature}</span>
                   </div>
                 ))}
@@ -257,17 +257,17 @@ export default function ProductsPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl font-bold text-white mb-6">
             Ready to Get Started?
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             Contact us to discuss how our products can meet your specific needs.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+            <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
               <Link href="/contact">
                 Contact Us <ArrowRight className="ml-2 h-4 w-4" />
               </Link>

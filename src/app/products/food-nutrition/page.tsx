@@ -90,7 +90,7 @@ export default function FoodNutritionPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/cosmetic-ingredients.jpeg"
@@ -102,7 +102,7 @@ export default function FoodNutritionPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Utensils className="w-4 h-4" />
                 Food Nutrition & Additives
               </div>
@@ -114,7 +114,7 @@ export default function FoodNutritionPage() {
                 Clean label ingredients for healthier products.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
                   <Link href="/contact">
                     Request Sample <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -152,7 +152,7 @@ export default function FoodNutritionPage() {
           </div>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-green-600 text-white">
+              <thead className="bg-brand-600 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-semibold">Product Name</th>
                   <th className="px-6 py-4 text-left font-semibold">Sweetness Multiple</th>
@@ -163,7 +163,7 @@ export default function FoodNutritionPage() {
                 {sweeteners.map((item, index) => (
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-gray-900">{item.name}</td>
-                    <td className="px-6 py-4 text-green-600 font-medium">{item.sweetness}</td>
+                    <td className="px-6 py-4 text-brand-600 font-medium">{item.sweetness}</td>
                     <td className="px-6 py-4 text-gray-600">{item.calories}</td>
                   </tr>
                 ))}
@@ -186,7 +186,7 @@ export default function FoodNutritionPage() {
           </div>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-green-600 text-white">
+              <thead className="bg-brand-600 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-semibold">Product Name</th>
                   <th className="px-6 py-4 text-left font-semibold">Source/Process</th>
@@ -198,7 +198,7 @@ export default function FoodNutritionPage() {
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-gray-900">{item.name}</td>
                     <td className="px-6 py-4 text-gray-600">{item.source}</td>
-                    <td className="px-6 py-4 text-green-600">{item.function}</td>
+                    <td className="px-6 py-4 text-brand-600">{item.function}</td>
                   </tr>
                 ))}
               </tbody>
@@ -222,13 +222,13 @@ export default function FoodNutritionPage() {
             {alternativeProteins.map((protein, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8 text-center">
-                  <div className="w-16 h-16 mx-auto bg-green-100 rounded-full flex items-center justify-center mb-4">
-                    <Heart className="w-8 h-8 text-green-600" />
+                  <div className="w-16 h-16 mx-auto bg-brand-100 rounded-full flex items-center justify-center mb-4">
+                    <Heart className="w-8 h-8 text-brand-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {protein.name}
                   </h3>
-                  <p className="text-green-600 font-medium mb-3">
+                  <p className="text-brand-600 font-medium mb-3">
                     Protein Content: {protein.protein}
                   </p>
                   <p className="text-gray-600 text-sm">
@@ -250,17 +250,17 @@ export default function FoodNutritionPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Looking for Custom Food Ingredients?
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             We provide tailored solutions for food and nutrition applications.
             R&D institutions eligible for ≤100g free samples.
           </p>
-          <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+          <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">
               Contact Our Team <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

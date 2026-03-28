@@ -43,18 +43,18 @@ export default function Footer() {
             </p>
             <div className="space-y-2 text-sm text-gray-400">
               <div className="flex items-start gap-2">
-                <MapPin className="h-4 w-4 text-green-500 mt-0.5" />
+                <MapPin className="h-4 w-4 text-brand-500 mt-0.5" />
                 <span>Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China</span>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="h-4 w-4 text-green-500" />
-                <a href="mailto:info@envikobio.com" className="hover:text-green-400 transition-colors">
+                <Mail className="h-4 w-4 text-brand-500" />
+                <a href="mailto:info@envikobio.com" className="hover:text-brand-400 transition-colors">
                   info@envikobio.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
-                <Phone className="h-4 w-4 text-green-500" />
-                <a href="tel:+8613918629532" className="hover:text-green-400 transition-colors">
+                <Phone className="h-4 w-4 text-brand-500" />
+                <a href="tel:+8613918629532" className="hover:text-brand-400 transition-colors">
                   +86 13918629532 (WhatsApp)
                 </a>
               </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-green-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -90,7 +90,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-green-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -109,7 +109,7 @@ export default function Footer() {
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-sm text-gray-400 hover:text-green-400 transition-colors"
+                    className="text-sm text-gray-400 hover:text-brand-400 transition-colors"
                   >
                     {item.name}
                   </Link>
@@ -125,10 +125,10 @@ export default function Footer() {
               © {new Date().getFullYear()} Shanghai Enviko Biotechnology Co., Ltd. All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-gray-400">
-              <Link href="/privacy" className="hover:text-green-400 transition-colors">
+              <Link href="/privacy" className="hover:text-brand-400 transition-colors">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="hover:text-green-400 transition-colors">
+              <Link href="/terms" className="hover:text-brand-400 transition-colors">
                 Terms of Service
               </Link>
             </div>

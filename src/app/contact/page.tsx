@@ -45,7 +45,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20">
+      <section className="bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
@@ -79,7 +79,7 @@ export default function ContactPage() {
                       id="name"
                       name="name"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                       placeholder="John Doe"
                     />
                   </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
                       id="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -106,7 +106,7 @@ export default function ContactPage() {
                       type="text"
                       id="company"
                       name="company"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                       placeholder="Your Company"
                     />
                   </div>
@@ -118,7 +118,7 @@ export default function ContactPage() {
                       type="tel"
                       id="phone"
                       name="phone"
-                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                      className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                       placeholder="+1 234 567 890"
                     />
                   </div>
@@ -131,7 +131,7 @@ export default function ContactPage() {
                     id="subject"
                     name="subject"
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500"
                   >
                     <option value="">Select a subject</option>
                     <option value="products">Product Inquiry</option>
@@ -150,11 +150,11 @@ export default function ContactPage() {
                     name="message"
                     rows={5}
                     required
-                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 resize-none"
+                    className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-500 resize-none"
                     placeholder="How can we help you?"
                   />
                 </div>
-                <Button type="submit" size="lg" className="w-full bg-green-600 hover:bg-green-700">
+                <Button type="submit" size="lg" className="w-full bg-brand-600 hover:bg-brand-700">
                   Send Message <Send className="ml-2 h-4 w-4" />
                 </Button>
               </form>
@@ -170,8 +170,8 @@ export default function ContactPage() {
                   <Card key={index} className="border-0 shadow-md">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <info.icon className="w-6 h-6 text-green-600" />
+                        <div className="w-12 h-12 bg-brand-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <info.icon className="w-6 h-6 text-brand-600" />
                         </div>
                         <div>
                           <h3 className="font-semibold text-gray-900 mb-1">
@@ -180,7 +180,7 @@ export default function ContactPage() {
                           {info.href ? (
                             <a
                               href={info.href}
-                              className="text-green-600 hover:text-green-700 transition-colors"
+                              className="text-brand-600 hover:text-brand-700 transition-colors"
                             >
                               {info.content}
                             </a>
@@ -201,7 +201,7 @@ export default function ContactPage() {
               <div className="mt-8">
                 <div className="aspect-video bg-gradient-to-br from-green-100 to-emerald-100 rounded-xl flex items-center justify-center">
                   <div className="text-center">
-                    <MapPin className="w-12 h-12 text-green-600 mx-auto mb-3" />
+                    <MapPin className="w-12 h-12 text-brand-600 mx-auto mb-3" />
                     <p className="text-gray-600">Shanghai, China</p>
                     <p className="text-sm text-gray-500 mt-1">Map Location</p>
                   </div>
@@ -222,7 +222,7 @@ export default function ContactPage() {
             Check out our frequently asked questions or reach out to our team directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+            <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
               <a href="/faq">View FAQ</a>
             </Button>
             <Button asChild variant="outline" size="lg">

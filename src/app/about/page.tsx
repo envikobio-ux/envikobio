@@ -84,7 +84,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/hero-lab.jpeg"
@@ -136,9 +136,9 @@ export default function AboutPage() {
                 Shanghai Enviko Biotechnology Co., Ltd.'s history of innovation and our unwavering commitment 
                 to sustainability define our identity as a leader in biosynthesis technology.
               </p>
-              <div className="bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl p-6 text-white">
+              <div className="bg-gradient-to-br from-brand-600 to-brand-500 rounded-2xl p-6 text-white">
                 <h3 className="text-xl font-bold mb-3">Our Vision</h3>
-                <p className="text-green-50">
+                <p className="text-brand-50">
                   To be the global leader in sustainable biosynthesis, transforming industries through 
                   innovative bio-based solutions that contribute to a healthier planet.
                 </p>
@@ -160,18 +160,18 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="relative">
-            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-green-200"></div>
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-brand-200"></div>
             <div className="space-y-12">
               {timeline.map((item, index) => (
                 <div key={index} className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                   <div className={`flex-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
                     <div className="bg-white rounded-xl shadow-lg p-6 inline-block">
-                      <div className="text-green-600 font-bold text-lg mb-2">{item.year}</div>
+                      <div className="text-brand-600 font-bold text-lg mb-2">{item.year}</div>
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">{item.title}</h3>
                       <p className="text-gray-600">{item.description}</p>
                     </div>
                   </div>
-                  <div className="w-4 h-4 bg-green-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="w-4 h-4 bg-brand-600 rounded-full border-4 border-white shadow-lg z-10"></div>
                   <div className="flex-1"></div>
                 </div>
               ))}
@@ -196,8 +196,8 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-6 text-center">
-                  <div className="w-14 h-14 mx-auto bg-green-100 rounded-xl flex items-center justify-center mb-4">
-                    <value.icon className="w-7 h-7 text-green-600" />
+                  <div className="w-14 h-14 mx-auto bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                    <value.icon className="w-7 h-7 text-brand-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {value.title}
@@ -233,14 +233,14 @@ export default function AboutPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 w-14 h-14 bg-white rounded-full flex items-center justify-center">
-                    <member.icon className="w-7 h-7 text-green-600" />
+                    <member.icon className="w-7 h-7 text-brand-600" />
                   </div>
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h3>
-                  <p className="text-green-600 text-sm mb-3">{member.role}</p>
+                  <p className="text-brand-600 text-sm mb-3">{member.role}</p>
                   <p className="text-gray-600 text-sm">
                     {member.description}
                   </p>

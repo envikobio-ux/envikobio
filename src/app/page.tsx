@@ -75,14 +75,14 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 overflow-hidden">
         <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
                 for a{' '}
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-500">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-500">
                   Sustainable Future
                 </span>{' '}
                 with Enviko
@@ -93,7 +93,7 @@ export default function Home() {
                 delivering sustainable and innovative solutions tailored to meet your specific needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
                   <Link href="/about">
                     Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -114,7 +114,7 @@ export default function Home() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-green-900/60 to-transparent flex items-end justify-center pb-8">
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-900/60 to-transparent flex items-end justify-center pb-8">
                   <p className="text-white text-lg font-medium text-center px-4">
                     Pioneering Sustainable<br />Biosynthesis Solutions
                   </p>
@@ -131,7 +131,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl sm:text-5xl font-bold text-green-600 mb-2">
+                <div className="text-4xl sm:text-5xl font-bold text-brand-600 mb-2">
                   {stat.value}
                 </div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
@@ -165,8 +165,8 @@ export default function Home() {
                   />
                 </div>
                 <CardContent className="p-8">
-                  <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-white">
-                    <area.icon className="w-7 h-7 text-green-600" />
+                  <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-white">
+                    <area.icon className="w-7 h-7 text-brand-600" />
                   </div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">
                     {area.title}
@@ -174,7 +174,7 @@ export default function Home() {
                   <p className="text-gray-600 mb-6">
                     {area.description}
                   </p>
-                  <Button asChild variant="link" className="text-green-600 p-0">
+                  <Button asChild variant="link" className="text-brand-600 p-0">
                     <Link href={area.href}>
                       Learn More <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
@@ -208,9 +208,9 @@ export default function Home() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <tech.icon className="w-6 h-6 text-green-600" />
+                    <tech.icon className="w-6 h-6 text-brand-600" />
                   </div>
                 </div>
                 <div className="bg-gray-50 p-6 rounded-b-xl">
@@ -236,7 +236,7 @@ export default function Home() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-green-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -244,15 +244,15 @@ export default function Home() {
               <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
                 Making a Tangible Difference Through Biosynthesis
               </h2>
-              <p className="text-lg text-green-100 mb-8">
+              <p className="text-lg text-brand-100 mb-8">
                 At Enviko, we are committed to creating a positive impact on global health and sustainability. 
                 Our biosynthesis solutions are designed to address critical challenges.
               </p>
               <ul className="space-y-4">
                 {features.map((feature, index) => (
                   <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-300 flex-shrink-0 mt-0.5" />
-                    <span className="text-green-50">{feature}</span>
+                    <CheckCircle className="w-6 h-6 text-brand-300 flex-shrink-0 mt-0.5" />
+                    <span className="text-brand-50">{feature}</span>
                   </li>
                 ))}
               </ul>
@@ -265,7 +265,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Joint Research Programs</h3>
-                    <p className="text-sm text-green-100">Partnering with universities to explore novel pathways</p>
+                    <p className="text-sm text-brand-100">Partnering with universities to explore novel pathways</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -274,7 +274,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Technology Licensing</h3>
-                    <p className="text-sm text-green-100">Accessing advanced technologies for production efficiency</p>
+                    <p className="text-sm text-brand-100">Accessing advanced technologies for production efficiency</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-4">
@@ -283,7 +283,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-white">Market Expansion</h3>
-                    <p className="text-sm text-green-100">Collaborating with distributors worldwide</p>
+                    <p className="text-sm text-brand-100">Collaborating with distributors worldwide</p>
                   </div>
                 </div>
               </div>
@@ -302,7 +302,7 @@ export default function Home() {
             Join us as we continue to pioneer sustainable biotech solutions that transform industries 
             and contribute to a healthier planet.
           </p>
-          <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+          <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
             <Link href="/contact">
               Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

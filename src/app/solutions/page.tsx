@@ -90,7 +90,7 @@ export default function SolutionsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/fermentation-tech.jpeg"
@@ -130,7 +130,7 @@ export default function SolutionsPage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
                       <div className="absolute bottom-6 left-6 w-16 h-16 bg-white rounded-full flex items-center justify-center">
-                        <solution.icon className="w-8 h-8 text-green-600" />
+                        <solution.icon className="w-8 h-8 text-brand-600" />
                       </div>
                     </div>
                   </div>
@@ -149,14 +149,14 @@ export default function SolutionsPage() {
                         <div className="grid sm:grid-cols-2 gap-3">
                           {solution.features.map((feature, idx) => (
                             <div key={idx} className="flex items-start gap-2">
-                              <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                              <CheckCircle className="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5" />
                               <span className="text-gray-700 text-sm">{feature}</span>
                             </div>
                           ))}
                         </div>
                       </CardContent>
                     </Card>
-                    <Button asChild className="bg-green-600 hover:bg-green-700">
+                    <Button asChild className="bg-brand-600 hover:bg-brand-700">
                       <Link href="/contact">
                         Get Started <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
@@ -190,9 +190,9 @@ export default function SolutionsPage() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-green-900/70 to-transparent"></div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
                   <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <tech.icon className="w-6 h-6 text-green-600" />
+                    <tech.icon className="w-6 h-6 text-brand-600" />
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -218,16 +218,16 @@ export default function SolutionsPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Ready to Transform Your Industry?
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             Partner with Enviko to develop sustainable biosynthesis solutions tailored to your specific needs.
           </p>
-          <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+          <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">
               Contact Us Today <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

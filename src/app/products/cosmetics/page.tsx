@@ -71,7 +71,7 @@ export default function CosmeticsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/cosmetic-ingredients.jpeg"
@@ -83,7 +83,7 @@ export default function CosmeticsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Leaf className="w-4 h-4" />
                 Cosmetic Ingredients
               </div>
@@ -95,7 +95,7 @@ export default function CosmeticsPage() {
                 ingredients and &gt;95% purity. Clean beauty solutions for modern skincare needs.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
                   <Link href="/contact">
                     Request Sample <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -133,7 +133,7 @@ export default function CosmeticsPage() {
           </div>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-green-600 text-white">
+              <thead className="bg-brand-600 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-semibold">Product Name</th>
                   <th className="px-6 py-4 text-left font-semibold">Purity</th>
@@ -145,7 +145,7 @@ export default function CosmeticsPage() {
                 {cosmeticIngredients.map((ingredient, index) => (
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-gray-900">{ingredient.name}</td>
-                    <td className="px-6 py-4 text-green-600 font-medium">{ingredient.purity}</td>
+                    <td className="px-6 py-4 text-brand-600 font-medium">{ingredient.purity}</td>
                     <td className="px-6 py-4 text-gray-600">{ingredient.efficacy}</td>
                     <td className="px-6 py-4">
                       <div className="flex flex-wrap gap-1">
@@ -186,7 +186,7 @@ export default function CosmeticsPage() {
               <div className="grid sm:grid-cols-2 gap-4">
                 {features.map((feature, index) => (
                   <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
-                    <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
+                    <CheckCircle className="w-5 h-5 text-brand-600 flex-shrink-0" />
                     <span className="text-gray-700 text-sm">{feature}</span>
                   </div>
                 ))}
@@ -205,17 +205,17 @@ export default function CosmeticsPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Looking for Custom Cosmetic Ingredients?
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             We develop tailored biosynthesis solutions for unique cosmetic formulations.
             R&D institutions eligible for ≤100g free samples.
           </p>
-          <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+          <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">
               Contact Our Team <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

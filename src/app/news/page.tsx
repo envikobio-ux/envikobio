@@ -75,7 +75,7 @@ export default function NewsPage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <Image
             src="/hero-lab.jpeg"
@@ -104,7 +104,7 @@ export default function NewsPage() {
               <Button
                 key={index}
                 variant={index === 0 ? 'default' : 'outline'}
-                className={index === 0 ? 'bg-green-600 hover:bg-green-700' : 'border-gray-300'}
+                className={index === 0 ? 'bg-brand-600 hover:bg-brand-700' : 'border-gray-300'}
               >
                 {category}
               </Button>
@@ -130,18 +130,18 @@ export default function NewsPage() {
                 </div>
                 <CardContent className="p-6">
                   <div className="flex items-center gap-3 mb-3">
-                    <span className="text-xs font-medium text-green-600 bg-green-50 px-2 py-1 rounded">
+                    <span className="text-xs font-medium text-brand-600 bg-green-50 px-2 py-1 rounded">
                       {article.category}
                     </span>
                     <span className="text-xs text-gray-500">{article.date}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-green-600 transition-colors">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2 group-hover:text-brand-600 transition-colors">
                     {article.title}
                   </h3>
                   <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                     {article.excerpt}
                   </p>
-                  <Button asChild variant="link" className="text-green-600 p-0">
+                  <Button asChild variant="link" className="text-brand-600 p-0">
                     <Link href={`/news/${article.id}`}>
                       Read More <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
@@ -162,13 +162,13 @@ export default function NewsPage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl font-bold text-white mb-6">
             Stay Updated
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             Subscribe to our newsletter to receive the latest news and updates from Enviko.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
@@ -177,7 +177,7 @@ export default function NewsPage() {
               placeholder="Enter your email"
               className="flex-1 px-4 py-3 rounded-lg border-0 focus:outline-none focus:ring-2 focus:ring-green-400"
             />
-            <Button className="bg-white text-green-600 hover:bg-green-50 px-8">
+            <Button className="bg-white text-brand-600 hover:bg-brand-50 px-8">
               Subscribe
             </Button>
           </div>

@@ -72,7 +72,7 @@ export default function AgriculturePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-green-50 via-white to-emerald-50 py-20 overflow-hidden">
+      <section className="relative bg-gradient-to-br from-brand-50 via-white to-brand-50 py-20 overflow-hidden">
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/agriculture-sustainable.jpeg"
@@ -84,7 +84,7 @@ export default function AgriculturePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
+              <div className="inline-flex items-center gap-2 bg-brand-100 text-brand-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Factory className="w-4 h-4" />
                 Agriculture & Environmental Products
               </div>
@@ -95,7 +95,7 @@ export default function AgriculturePage() {
                 Environmentally friendly bio-based products for sustainable agriculture and clean energy production.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+                <Button asChild size="lg" className="bg-brand-600 hover:bg-brand-700">
                   <Link href="/contact">
                     Get Quote <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -136,15 +136,15 @@ export default function AgriculturePage() {
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <product.icon className="w-7 h-7 text-green-600" />
+                    <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <product.icon className="w-7 h-7 text-brand-600" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">
                         {product.name}
                       </h3>
                       <p className="text-gray-600 mb-2">{product.description}</p>
-                      <p className="text-green-600 text-sm">
+                      <p className="text-brand-600 text-sm">
                         Target: {product.targetCrops || product.applications}
                       </p>
                     </div>
@@ -169,7 +169,7 @@ export default function AgriculturePage() {
           </div>
           <div className="overflow-x-auto">
             <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
-              <thead className="bg-green-600 text-white">
+              <thead className="bg-brand-600 text-white">
                 <tr>
                   <th className="px-6 py-4 text-left font-semibold">Product Name</th>
                   <th className="px-6 py-4 text-left font-semibold">Production Scale</th>
@@ -180,7 +180,7 @@ export default function AgriculturePage() {
                 {bioBasedChemicals.map((product, index) => (
                   <tr key={index} className="hover:bg-gray-50 transition-colors">
                     <td className="px-6 py-4 font-medium text-gray-900">{product.name}</td>
-                    <td className="px-6 py-4 text-green-600 font-medium">{product.scale}</td>
+                    <td className="px-6 py-4 text-brand-600 font-medium">{product.scale}</td>
                     <td className="px-6 py-4 text-gray-600">{product.uses}</td>
                   </tr>
                 ))}
@@ -206,8 +206,8 @@ export default function AgriculturePage() {
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
-                    <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <product.icon className="w-7 h-7 text-green-600" />
+                    <div className="w-14 h-14 bg-brand-100 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <product.icon className="w-7 h-7 text-brand-600" />
                     </div>
                     <div className="flex-1">
                       <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -215,7 +215,7 @@ export default function AgriculturePage() {
                       </h3>
                       <div className="space-y-2 text-sm">
                         <p><span className="text-gray-500">Feedstock:</span> <span className="text-gray-700">{product.feedstock}</span></p>
-                        <p><span className="text-gray-500">Applications:</span> <span className="text-green-600">{product.applications}</span></p>
+                        <p><span className="text-gray-500">Applications:</span> <span className="text-brand-600">{product.applications}</span></p>
                       </div>
                     </div>
                   </div>
@@ -235,16 +235,16 @@ export default function AgriculturePage() {
             fill
             className="object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-green-900/95 to-emerald-800/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
             Transform Your Agricultural Practices
           </h2>
-          <p className="text-lg text-green-100 mb-8">
+          <p className="text-lg text-brand-100 mb-8">
             Partner with us for sustainable agricultural and environmental solutions.
           </p>
-          <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
+          <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">
               Contact Our Team <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
