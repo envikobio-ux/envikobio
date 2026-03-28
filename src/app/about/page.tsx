@@ -222,6 +222,76 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Brand VI Showcase */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              品牌形象
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              简约几何 · 专业亲和 · 视觉统一
+            </p>
+          </div>
+          
+          {/* Main Brand Images */}
+          <div className="grid md:grid-cols-3 gap-6 mb-8">
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center">
+              <Image
+                src="/AI设计师-品牌手册 - logo.png"
+                alt="Enviko Logo"
+                fill
+                className="object-contain p-8"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center">
+              <Image
+                src="/AI设计师-品牌手册 - 使命.png"
+                alt="品牌使命"
+                fill
+                className="object-contain p-8"
+              />
+            </div>
+            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg bg-white p-8 flex items-center justify-center">
+              <Image
+                src="/AI设计师-品牌手册 - 广告牌应用.png"
+                alt="广告牌应用"
+                fill
+                className="object-contain p-8"
+              />
+            </div>
+          </div>
+          
+          {/* Application Scenarios */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/store-window.png"
+                alt="店铺橱窗"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/store-sign.png"
+                alt="店铺招牌"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div className="relative aspect-[3/4] rounded-2xl overflow-hidden shadow-lg">
+              <Image
+                src="/bottle.png"
+                alt="产品包装"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Brand Introduction */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
