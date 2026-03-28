@@ -25,13 +25,14 @@ export default function Header() {
           {/* Logo */}
           <div className="flex items-center">
             <Link href="/" className="flex items-center gap-3">
-              <Image
-                src="/logo.jpg"
-                alt="Enviko Bio"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
+              <div className="w-10 h-10 relative flex-shrink-0">
+                <Image
+                  src="/logo.jpg"
+                  alt="Enviko Bio"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <span className="text-xl font-bold text-gray-900">Enviko Bio</span>
             </Link>
           </div>

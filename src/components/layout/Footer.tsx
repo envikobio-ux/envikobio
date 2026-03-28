@@ -28,13 +28,14 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-3 mb-4">
-              <Image
-                src="/logo.jpg"
-                alt="Enviko Bio"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
+              <div className="w-10 h-10 relative flex-shrink-0 bg-white rounded-lg p-1">
+                <Image
+                  src="/logo.jpg"
+                  alt="Enviko Bio"
+                  fill
+                  className="object-contain"
+                />
+              </div>
               <span className="text-xl font-bold">Enviko Bio</span>
             </Link>
             <p className="text-gray-400 text-sm mb-4">
