@@ -80,7 +80,7 @@ export default function Home() {
           <div className="grid lg:grid-cols-2 gap-8 items-center">
             <div className="animate-fade-in-left">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal mb-4">
-                <span style={{ color: '#D9D9D9' }}>
+                <span style={{ color: '#333333' }}>
                   Sustainable Future
                 </span>{' '}
                 <span style={{ color: '#A1BA80' }}>
