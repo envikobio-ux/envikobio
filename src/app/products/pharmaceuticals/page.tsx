@@ -10,55 +10,83 @@ import {
   FlaskConical,
   Pill,
   TestTube,
-  Microscope
+  Microscope,
+  Download
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Pharmaceutical Products',
-  description: 'High-quality bio-based pharmaceutical compounds produced through advanced biosynthesis techniques.',
+  description: 'High-quality bio-based pharmaceutical compounds and bio-active ingredients produced through advanced biosynthesis techniques.',
 };
 
-const products = [
-  {
-    icon: Pill,
-    name: 'Active Pharmaceutical Ingredients (APIs)',
-    description: 'High-purity active ingredients for drug formulation, produced through sustainable biosynthesis processes.',
-    applications: ['Drug manufacturing', 'Generic medicines', 'Novel therapeutics'],
-  },
+const pharmaceuticalProducts = [
   {
     icon: FlaskConical,
-    name: 'Bioactive Compounds',
-    description: 'Complex bioactive molecules with therapeutic properties, synthesized using advanced metabolic engineering.',
-    applications: ['Research & development', 'Clinical trials', 'Specialty drugs'],
+    name: 'Long-Chain Dicarboxylic Acids (DC10-DC18)',
+    specification: 'Industrial/Pharmaceutical Grade',
+    applications: ['High-performance nylon', 'Hot melt adhesives', 'Fragrances'],
+  },
+  {
+    icon: Pill,
+    name: '7-ACA',
+    specification: 'Pharmaceutical Grade',
+    applications: ['Cephalosporin antibiotic intermediate'],
   },
   {
     icon: TestTube,
-    name: 'Intermediate Chemicals',
-    description: 'Key intermediate compounds for pharmaceutical synthesis, ensuring consistent quality and supply.',
-    applications: ['API synthesis', 'Chemical processing', 'Custom formulations'],
+    name: 'L-Alanine / L-Valine',
+    specification: 'Food/Pharmaceutical Grade',
+    applications: ['Amino acid infusions', 'Food additives', 'Nutritional supplements'],
   },
   {
-    icon: Microscope,
-    name: 'Custom Biosynthesis Products',
-    description: 'Tailored biosynthesis solutions for unique pharmaceutical compounds based on client requirements.',
-    applications: ['Custom drug development', 'Research projects', 'Specialty applications'],
+    icon: TestTube,
+    name: 'Glutamine',
+    specification: 'Pharmaceutical Grade',
+    applications: ['Intestinal nutritional support'],
   },
 ];
 
-const advantages = [
-  'Cost-effective production processes',
-  'Reduced environmental footprint',
-  'High purity and efficacy',
-  'Scalable manufacturing',
-  'Quality-controlled production',
-  'Regulatory compliance support',
-];
-
-const specifications = [
-  { label: 'Purity', value: '≥99%' },
-  { label: 'Quality Standard', value: 'GMP/USP/EP' },
-  { label: 'Production Scale', value: 'Lab to Industrial' },
-  { label: 'Lead Time', value: '4-8 weeks' },
+const bioActiveIngredients = [
+  {
+    name: 'Alpha-Bisabolol',
+    purity: '≥95%',
+    efficacy: 'Anti-inflammatory, soothing, skin repair',
+  },
+  {
+    name: 'Ergothioneine',
+    purity: '≥98%',
+    efficacy: 'Antioxidant, anti-photoaging',
+  },
+  {
+    name: 'Ectoine',
+    purity: '≥99%',
+    efficacy: 'Cell repair, moisturization',
+  },
+  {
+    name: 'Squalene/Squalane',
+    purity: '≥99%',
+    efficacy: 'Moisturizing, skin barrier repair',
+  },
+  {
+    name: 'Hyaluronic Acid',
+    purity: 'Cosmetic/Food/Medical Grade',
+    efficacy: 'Moisturization, joint lubrication',
+  },
+  {
+    name: 'Recombinant Humanized Collagen',
+    purity: 'Type III/Type I',
+    efficacy: 'Skin repair, medical implant materials',
+  },
+  {
+    name: '5-HTP (5-Hydroxytryptophan)',
+    purity: '≥98%',
+    efficacy: 'Mood regulation, sleep aid',
+  },
+  {
+    name: 'Inositol',
+    purity: '≥98%',
+    efficacy: 'Vitamin B complex, liver protection',
+  },
 ];
 
 export default function PharmaceuticalsPage() {
@@ -79,14 +107,14 @@ export default function PharmaceuticalsPage() {
             <div>
               <div className="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Beaker className="w-4 h-4" />
-                Pharmaceutical Products
+                Pharmaceuticals & Bio-Active Ingredients
               </div>
               <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-                Bio-Based Pharmaceutical Solutions
+                Pharmaceutical Products
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                High-quality pharmaceutical compounds produced through advanced biosynthesis techniques, 
-                reducing costs and environmental impact while enhancing drug efficacy and availability.
+                High-quality pharmaceutical compounds and bio-active ingredients produced through advanced biosynthesis techniques, 
+                with &gt;95% purity and 100% traceable ingredients.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
@@ -95,9 +123,10 @@ export default function PharmaceuticalsPage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <Link href="/products">
-                    View All Products
-                  </Link>
+                  <a href="/Envikobio-Product-Catalogue-2026.pdf" download>
+                    <Download className="mr-2 h-4 w-4" />
+                    Download Catalogue
+                  </a>
                 </Button>
               </div>
             </div>
@@ -113,19 +142,19 @@ export default function PharmaceuticalsPage() {
         </div>
       </section>
 
-      {/* Products Grid */}
+      {/* Pharmaceutical Intermediates */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
-              Our Pharmaceutical Products
+              Pharmaceutical Intermediates & Raw Materials
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Comprehensive range of bio-based pharmaceutical products developed through innovative biosynthesis processes
+              High-purity pharmaceutical intermediates and raw materials for drug manufacturing
             </p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            {products.map((product, index) => (
+            {pharmaceuticalProducts.map((product, index) => (
               <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardContent className="p-8">
                   <div className="flex items-start gap-4">
@@ -133,21 +162,18 @@ export default function PharmaceuticalsPage() {
                       <product.icon className="w-7 h-7 text-green-600" />
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
                         {product.name}
                       </h3>
-                      <p className="text-gray-600 mb-4">
-                        {product.description}
+                      <p className="text-green-600 text-sm font-medium mb-3">
+                        {product.specification}
                       </p>
-                      <div className="space-y-2">
-                        <p className="text-sm font-medium text-gray-700">Applications:</p>
-                        <div className="flex flex-wrap gap-2">
-                          {product.applications.map((app, idx) => (
-                            <span key={idx} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
-                              {app}
-                            </span>
-                          ))}
-                        </div>
+                      <div className="flex flex-wrap gap-2">
+                        {product.applications.map((app, idx) => (
+                          <span key={idx} className="text-xs bg-gray-100 text-gray-700 px-3 py-1 rounded-full">
+                            {app}
+                          </span>
+                        ))}
                       </div>
                     </div>
                   </div>
@@ -158,41 +184,84 @@ export default function PharmaceuticalsPage() {
         </div>
       </section>
 
-      {/* Specifications & Advantages */}
+      {/* Bio-Active Ingredients */}
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12">
-            {/* Specifications */}
-            <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                Product Specifications
-              </h2>
-              <Card className="border-0 shadow-lg">
-                <CardContent className="p-0">
-                  <div className="divide-y divide-gray-100">
-                    {specifications.map((spec, index) => (
-                      <div key={index} className="flex justify-between items-center p-6">
-                        <span className="text-gray-600">{spec.label}</span>
-                        <span className="font-semibold text-gray-900">{spec.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Bio-Active Ingredients
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Premium bio-active compounds for pharmaceuticals, nutraceuticals, and cosmetics
+            </p>
+          </div>
+          <div className="overflow-x-auto">
+            <table className="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+              <thead className="bg-green-600 text-white">
+                <tr>
+                  <th className="px-6 py-4 text-left font-semibold">Product Name</th>
+                  <th className="px-6 py-4 text-left font-semibold">Purity</th>
+                  <th className="px-6 py-4 text-left font-semibold">Core Efficacy</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-gray-100">
+                {bioActiveIngredients.map((ingredient, index) => (
+                  <tr key={index} className="hover:bg-gray-50 transition-colors">
+                    <td className="px-6 py-4 font-medium text-gray-900">{ingredient.name}</td>
+                    <td className="px-6 py-4 text-green-600 font-medium">{ingredient.purity}</td>
+                    <td className="px-6 py-4 text-gray-600">{ingredient.efficacy}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
 
-            {/* Advantages */}
+      {/* Quality Standards */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-8">
-                Why Choose Our Products?
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                Quality Commitment
               </h2>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {advantages.map((advantage, index) => (
-                  <div key={index} className="flex items-center gap-3 bg-white p-4 rounded-lg shadow-sm">
+              <p className="text-lg text-gray-600 mb-8">
+                All products come with complete COA (Certificate of Analysis) and comply with ISO9001, ISO22000, GMP quality standards.
+              </p>
+              <div className="space-y-4">
+                {[
+                  'Content/Purity: ≥95.0% - 99.9% (HPLC/GC)',
+                  'Total Plate Count: ≤1000 CFU/g',
+                  'Heavy Metals: Complies with industry standards',
+                  'Solvent Residue: ≤5000 ppm',
+                ].map((item, index) => (
+                  <div key={index} className="flex items-center gap-3">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
-                    <span className="text-gray-700 text-sm">{advantage}</span>
+                    <span className="text-gray-700">{item}</span>
                   </div>
                 ))}
+              </div>
+            </div>
+            <div className="bg-gradient-to-br from-green-600 to-emerald-500 rounded-2xl p-8 text-white">
+              <h3 className="text-2xl font-bold mb-4">Technical Services</h3>
+              <div className="space-y-4">
+                <div className="flex justify-between items-center border-b border-white/20 pb-2">
+                  <span>Custom Strain Development</span>
+                  <span className="text-green-100 text-sm">3-6 months</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/20 pb-2">
+                  <span>Process Package Transfer</span>
+                  <span className="text-green-100 text-sm">6-12 months</span>
+                </div>
+                <div className="flex justify-between items-center border-b border-white/20 pb-2">
+                  <span>CDMO Production</span>
+                  <span className="text-green-100 text-sm">Customized</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span>Pilot Scale-up Services</span>
+                  <span className="text-green-100 text-sm">2-4 months</span>
+                </div>
               </div>
             </div>
           </div>
@@ -215,7 +284,8 @@ export default function PharmaceuticalsPage() {
             Need a Custom Pharmaceutical Solution?
           </h2>
           <p className="text-lg text-green-100 mb-8">
-            Our expert team can develop tailored biosynthesis solutions for your specific pharmaceutical requirements.
+            Our expert team can develop tailored biosynthesis solutions for your specific requirements.
+            R&D institutions eligible for ≤100g free samples.
           </p>
           <Button asChild size="lg" className="bg-white text-green-600 hover:bg-green-50">
             <Link href="/contact">

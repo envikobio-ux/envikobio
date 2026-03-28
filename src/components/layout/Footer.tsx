@@ -36,9 +36,9 @@ export default function Footer() {
               Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
             </p>
             <div className="space-y-2 text-sm text-gray-400">
-              <div className="flex items-center gap-2">
-                <MapPin className="h-4 w-4 text-green-500" />
-                <span>Shanghai, China</span>
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-green-500 mt-0.5" />
+                <span>Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-green-500" />
@@ -48,8 +48,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-green-500" />
-                <a href="tel:+86-21-12345678" className="hover:text-green-400 transition-colors">
-                  +86-21-12345678
+                <a href="tel:+8613918629532" className="hover:text-green-400 transition-colors">
+                  +86 13918629532 (WhatsApp)
                 </a>
               </div>
             </div>

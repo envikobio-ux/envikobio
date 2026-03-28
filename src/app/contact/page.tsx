@@ -18,8 +18,8 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Address',
-    content: 'Shanghai, China',
-    subContent: 'Shanghai Enviko Biotechnology Co., Ltd.',
+    content: 'Room 207-2, No. 20 Jiafeng Road',
+    subContent: 'Shanghai Free Trade Zone, Pudong District, Shanghai, China',
   },
   {
     icon: Mail,
@@ -29,9 +29,9 @@ const contactInfo = [
   },
   {
     icon: Phone,
-    title: 'Phone',
-    content: '+86-21-12345678',
-    href: 'tel:+86-21-12345678',
+    title: 'Phone / WhatsApp',
+    content: '+86 13918629532',
+    href: 'tel:+8613918629532',
   },
   {
     icon: Clock,
