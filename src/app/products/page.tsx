@@ -20,95 +20,14 @@ import {
   Users,
   Activity,
   Target,
-  Dumbbell
+  Dumbbell,
+  ChevronDown
 } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'Products',
   description: 'Explore Enviko\'s comprehensive range of UltiWell® health supplements and bio-based products.',
 };
-
-// UltiWell Product Lines
-const ultiWellCategories = [
-  {
-    icon: Target,
-    title: 'Core Nutrition',
-    description: 'Essential nutritional foundation for daily wellness',
-    products: ['Core', 'Vitality', 'Balance', 'Pure', 'Elevate', 'NutriBoost'],
-  },
-  {
-    icon: Brain,
-    title: 'Brain & Cognitive',
-    description: 'Mental clarity, focus and cognitive performance',
-    products: ['Clarity', 'Focus', 'BrainBoost'],
-  },
-  {
-    icon: Dumbbell,
-    title: 'Energy & Sports',
-    description: 'Performance, strength and recovery solutions',
-    products: ['Strength', 'Active', 'Energy', 'SportPerformance', 'Recovery Series'],
-  },
-  {
-    icon: Sparkles,
-    title: 'Anti-Aging & Beauty',
-    description: 'Youthful vitality and skin health',
-    products: ['Renew', 'Ageless', 'YouthVibe', 'Glow', 'SkinNutritious', 'Body Care Series'],
-  },
-  {
-    icon: Heart,
-    title: 'Heart & Circulation',
-    description: 'Cardiovascular health and blood circulation',
-    products: ['Pulse', 'CardioFit'],
-  },
-  {
-    icon: Shield,
-    title: 'Immune Support',
-    description: 'Immune system defense and protection',
-    products: ['Shield', 'ImmunoShield'],
-  },
-  {
-    icon: Bone,
-    title: 'Joint & Mobility',
-    description: 'Joint health, flexibility and mobility',
-    products: ['Flex', 'Mobility'],
-  },
-  {
-    icon: Moon,
-    title: 'Sleep & Relaxation',
-    description: 'Restful sleep and stress management',
-    products: ['Harmony', 'Calm', 'Zenith', 'Restful', 'Sleep Series', 'Relaxation Series', 'Mind Soothing Series'],
-  },
-  {
-    icon: Leaf,
-    title: 'Digestive Health',
-    description: 'Digestion, detox and liver support',
-    products: ['Digest', 'Cleanse', 'LiverSupport', 'KetoBalance'],
-  },
-  {
-    icon: Users,
-    title: 'Specialized Care',
-    description: 'Targeted solutions for specific needs',
-    products: ['MenopauseEase', 'EyeVive', 'Elderly Care Series'],
-  },
-  {
-    icon: Activity,
-    title: 'Lifestyle Solutions',
-    description: 'Daily wellness and lifestyle support',
-    products: ['VeganPure', 'Travel Series', 'Healthy Diet Series', 'Daily Care Series', 'Environment Optimization Series'],
-  },
-  {
-    icon: Leaf,
-    title: 'Plant Extracts',
-    description: 'High-potency plant-derived active ingredients',
-    products: ['Curcumin ≥95%', 'Resveratrol ≥98%', 'Quercetin ≥95%', 'EGCG ≥50%', 'Berberine ≥97%', 'Silymarin ≥80%'],
-  },
-  {
-    icon: Sparkles,
-    title: 'Bio-Natural Colors',
-    description: 'Natural food-grade colors from biosynthesis',
-    products: ['Beta-Carotene', 'Astaxanthin', 'Lutein', 'Lycopene', 'Anthocyanin', 'Chlorophyll'],
-  },
-];
 
 // Bio-based Ingredients
 const ingredientCategories = [
@@ -144,6 +63,40 @@ const ingredientCategories = [
     href: '/products/agriculture',
     image: '/agriculture-sustainable.jpeg',
   },
+];
+
+// UltiWell Product Lines
+const ultiWellCategories = [
+  { icon: Target, title: 'Core Nutrition', titleCn: '核心营养', count: 6 },
+  { icon: Brain, title: 'Brain & Cognitive', titleCn: '大脑认知', count: 3 },
+  { icon: Dumbbell, title: 'Energy & Sports', titleCn: '能量运动', count: 5 },
+  { icon: Sparkles, title: 'Anti-Aging & Beauty', titleCn: '抗衰美容', count: 6 },
+  { icon: Heart, title: 'Heart & Circulation', titleCn: '心血管', count: 2 },
+  { icon: Shield, title: 'Immune Support', titleCn: '免疫支持', count: 2 },
+  { icon: Bone, title: 'Joint & Mobility', titleCn: '关节灵活', count: 2 },
+  { icon: Moon, title: 'Sleep & Relaxation', titleCn: '睡眠放松', count: 7 },
+  { icon: Leaf, title: 'Digestive Health', titleCn: '消化健康', count: 4 },
+  { icon: Users, title: 'Specialized Care', titleCn: '特殊护理', count: 3 },
+  { icon: Activity, title: 'Lifestyle Solutions', titleCn: '生活方式', count: 5 },
+  { icon: Leaf, title: 'Plant Extracts', titleCn: '植物提取物', count: 6 },
+  { icon: Sparkles, title: 'Bio-Natural Colors', titleCn: '生物天然色素', count: 6 },
+];
+
+// UltiGlow Product Lines
+const ultiGlowCategories = [
+  { icon: Heart, title: 'Bio-Synth Collagen', titleCn: '生物合成胶原蛋白', count: 5 },
+  { icon: Shield, title: 'Bio-Ectoine', titleCn: '生物合成依克多因', count: 4 },
+  { icon: Sparkles, title: 'Bio-Hyaluronic Acid', titleCn: '生物合成透明质酸', count: 4 },
+  { icon: Sparkles, title: 'Bio-Vitamin Complex', titleCn: '生物合成复合维生素', count: 4 },
+  { icon: Sparkles, title: 'Bio-Peptide', titleCn: '生物合成多肽', count: 5 },
+  { icon: Leaf, title: 'Bio-Antioxidant', titleCn: '生物合成抗氧化', count: 3 },
+  { icon: Shield, title: 'Bio-Sensitive Repair', titleCn: '生物合成敏感修护', count: 4 },
+  { icon: Sparkles, title: 'Bio-Acne Clear', titleCn: '生物合成祛痘净肤', count: 3 },
+  { icon: Sparkles, title: 'Bio-Skin Renew', titleCn: '生物合成肌肤焕新', count: 4 },
+  { icon: Sparkles, title: 'Bio-Sun Shield', titleCn: '生物合成防晒防护', count: 3 },
+  { icon: Sparkles, title: 'Bio-Glucosamine', titleCn: '生物合成氨基葡萄糖', count: 4 },
+  { icon: Leaf, title: 'Bio-Plant Extract', titleCn: '生物合成植物提取', count: 5 },
+  { icon: Sparkles, title: 'Bio-Color', titleCn: '生物合成色彩', count: 6 },
 ];
 
 const features = [
@@ -288,10 +241,10 @@ export default function ProductsPage() {
               <Target className="w-4 h-4" />
               Consumer Brands
             </div>
-            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
               UltiWell® Product Series
             </h2>
-            <p className="text-xl mb-2" style={{ color: '#A1BA80' }}>「Ultimate Wellness」</p>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Wellness」</p>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Premium health supplements for every wellness need
             </p>
@@ -300,29 +253,17 @@ export default function ProductsPage() {
             </div>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+          {/* UltiWell Series Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {ultiWellCategories.map((category, index) => (
               <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-6">
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
-                    <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
+                <CardContent className="p-5">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                    <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
                   </div>
-                  <h3 className="font-normal text-gray-900 mb-2 group-hover:text-brand-600 transition-colors">
-                    {category.title}
-                  </h3>
-                  <p className="text-gray-600 text-sm mb-4">{category.description}</p>
-                  <div className="flex flex-wrap gap-1">
-                    {category.products.slice(0, 4).map((product, idx) => (
-                      <span key={idx} className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
-                        {product}
-                      </span>
-                    ))}
-                    {category.products.length > 4 && (
-                      <span className="text-xs px-2 py-1 bg-gray-100 text-gray-600 rounded">
-                        +{category.products.length - 4} more
-                      </span>
-                    )}
-                  </div>
+                  <h3 className="font-normal text-gray-900 mb-1">{category.title}</h3>
+                  <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
+                  <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
                 </CardContent>
               </Card>
             ))}
@@ -359,140 +300,22 @@ export default function ProductsPage() {
           </div>
           
           {/* UltiGlow Series Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12">
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Heart className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Synth Collagen</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成胶原蛋白系列</p>
-                <p className="text-xs text-gray-500 mt-2">5 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Shield className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Ectoine</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成依克多因系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Hyaluronic Acid</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成透明质酸系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Vitamin Complex</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成复合维生素系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Peptide</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成多肽系列</p>
-                <p className="text-xs text-gray-500 mt-2">5 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Leaf className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Antioxidant</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成抗氧化系列</p>
-                <p className="text-xs text-gray-500 mt-2">3 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Shield className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Sensitive Repair</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成敏感修护系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Acne Clear</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成祛痘净肤系列</p>
-                <p className="text-xs text-gray-500 mt-2">3 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Skin Renew</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成肌肤焕新系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Sun Shield</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成防晒防护系列</p>
-                <p className="text-xs text-gray-500 mt-2">3 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Glucosamine</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成氨基葡萄糖系列</p>
-                <p className="text-xs text-gray-500 mt-2">4 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Leaf className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Plant Extract</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成植物提取系列</p>
-                <p className="text-xs text-gray-500 mt-2">5 Products</p>
-              </CardContent>
-            </Card>
-            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-              <CardContent className="p-5">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                </div>
-                <h3 className="font-normal text-gray-900 mb-1">Bio-Color</h3>
-                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成色彩系列</p>
-                <p className="text-xs text-gray-500 mt-2">6 Products</p>
-              </CardContent>
-            </Card>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+            {ultiGlowCategories.map((category, index) => (
+              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+                <CardContent className="p-5">
+                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                    <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <h3 className="font-normal text-gray-900 mb-1">{category.title}</h3>
+                  <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
+                  <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
+                </CardContent>
+              </Card>
+            ))}
           </div>
           
-          <div className="text-center">
+          <div className="text-center mt-12">
             <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
               <Link href="/products/ultiglow">
                 Explore UltiGlow® <ArrowRight className="ml-2 h-4 w-4" />
