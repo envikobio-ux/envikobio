@@ -149,6 +149,32 @@ const productCategories = [
       { name: 'UltiWell® Environment Optimization Series', description: 'Living and working environment enhancement' },
     ],
   },
+  {
+    category: 'Plant Extracts',
+    icon: Leaf,
+    description: 'High-potency plant-derived active ingredients',
+    products: [
+      { name: 'UltiWell® Curcumin Extract', description: 'Turmeric extract (Curcumin ≥95%), anti-inflammatory and antioxidant support' },
+      { name: 'UltiWell® Resveratrol Extract', description: 'Red grape extract (Resveratrol ≥98%), anti-aging and cardiovascular protection' },
+      { name: 'UltiWell® Quercetin Extract', description: 'Sophora japonica extract (Quercetin ≥95%), immune support and anti-allergy' },
+      { name: 'UltiWell® EGCG Extract', description: 'Green tea extract (EGCG ≥50%), metabolism boost and antioxidant' },
+      { name: 'UltiWell® Berberine Extract', description: 'Coptis chinensis extract (Berberine ≥97%), blood sugar regulation' },
+      { name: 'UltiWell® Silymarin Extract', description: 'Milk thistle extract (Silymarin ≥80%), liver protection and detox' },
+    ],
+  },
+  {
+    category: 'Bio-Natural Colors',
+    icon: Sparkles,
+    description: 'Natural food-grade colors from biosynthesis',
+    products: [
+      { name: 'UltiWell® Beta-Carotene', description: 'Natural orange color (≥96%), provitamin A, antioxidant' },
+      { name: 'UltiWell® Astaxanthin', description: 'Natural red color (≥2%), super antioxidant, skin health' },
+      { name: 'UltiWell® Lutein', description: 'Natural yellow color (≥5%), eye health, blue light protection' },
+      { name: 'UltiWell® Lycopene', description: 'Natural red color (≥5%), prostate health, cardiovascular support' },
+      { name: 'UltiWell® Anthocyanin', description: 'Natural purple color (≥25%), vision protection, antioxidant' },
+      { name: 'UltiWell® Chlorophyll', description: 'Natural green color, detox support, internal deodorant' },
+    ],
+  },
 ];
 
 export default function CataloguePage() {

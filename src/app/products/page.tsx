@@ -97,6 +97,18 @@ const ultiWellCategories = [
     description: 'Daily wellness and lifestyle support',
     products: ['VeganPure', 'Travel Series', 'Healthy Diet Series', 'Daily Care Series', 'Environment Optimization Series'],
   },
+  {
+    icon: Leaf,
+    title: 'Plant Extracts',
+    description: 'High-potency plant-derived active ingredients',
+    products: ['Curcumin ≥95%', 'Resveratrol ≥98%', 'Quercetin ≥95%', 'EGCG ≥50%', 'Berberine ≥97%', 'Silymarin ≥80%'],
+  },
+  {
+    icon: Sparkles,
+    title: 'Bio-Natural Colors',
+    description: 'Natural food-grade colors from biosynthesis',
+    products: ['Beta-Carotene', 'Astaxanthin', 'Lutein', 'Lycopene', 'Anthocyanin', 'Chlorophyll'],
+  },
 ];
 
 // Bio-based Ingredients
@@ -194,7 +206,7 @@ export default function ProductsPage() {
               「Ultimate Wellness」- Premium health supplements for every wellness need
             </p>
             <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              48 Products across 11 Categories
+              60 Products across 13 Categories
             </div>
           </div>
           
