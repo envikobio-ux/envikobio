@@ -1,35 +1,9 @@
-import { Metadata } from 'next';
-import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { 
-  Heart, 
-  Brain, 
-  Zap, 
-  Shield, 
-  Sparkles, 
-  Bone, 
-  Moon, 
-  Leaf,
-  Eye,
-  Users,
-  Activity,
-  Target,
-  Droplets,
-  Dumbbell,
-  Sunrise,
-  Pilcrow,
-  Download
-} from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Product Catalogue | UltiWell®',
-  description: 'Explore UltiWell® product series - premium health supplements for every wellness need.',
-};
+import { NextResponse } from 'next/server';
+import { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, HeadingLevel, AlignmentType, BorderStyle, WidthType } from 'docx';
 
 const productCategories = [
   {
     category: 'Core Nutrition',
-    icon: Target,
     description: 'Essential nutritional foundation for daily wellness',
     products: [
       { name: 'UltiWell® Core', nameZh: '极舒优活核心', description: 'Foundation and core nutritional supplements' },
@@ -42,7 +16,6 @@ const productCategories = [
   },
   {
     category: 'Brain & Cognitive',
-    icon: Brain,
     description: 'Mental clarity, focus and cognitive performance',
     products: [
       { name: 'UltiWell® Clarity', nameZh: '极舒优活明晰', description: 'Brain health and mental clarity' },
@@ -52,7 +25,6 @@ const productCategories = [
   },
   {
     category: 'Energy & Sports',
-    icon: Dumbbell,
     description: 'Performance, strength and recovery solutions',
     products: [
       { name: 'UltiWell® Strength', nameZh: '极舒优活力量', description: 'Muscle and physical strength enhancement' },
@@ -64,7 +36,6 @@ const productCategories = [
   },
   {
     category: 'Anti-Aging & Beauty',
-    icon: Sparkles,
     description: 'Youthful vitality and skin health',
     products: [
       { name: 'UltiWell® Renew', nameZh: '极舒优活焕新', description: 'Anti-aging and vitality restoration' },
@@ -77,7 +48,6 @@ const productCategories = [
   },
   {
     category: 'Heart & Circulation',
-    icon: Heart,
     description: 'Cardiovascular health and blood circulation',
     products: [
       { name: 'UltiWell® Pulse', nameZh: '极舒优活脉动', description: 'Heart health and blood circulation' },
@@ -86,7 +56,6 @@ const productCategories = [
   },
   {
     category: 'Immune Support',
-    icon: Shield,
     description: 'Immune system defense and protection',
     products: [
       { name: 'UltiWell® Shield', nameZh: '极舒优活护盾', description: 'Immune system support and protection' },
@@ -95,7 +64,6 @@ const productCategories = [
   },
   {
     category: 'Joint & Mobility',
-    icon: Bone,
     description: 'Joint health, flexibility and mobility',
     products: [
       { name: 'UltiWell® Flex', nameZh: '极舒优活灵活', description: 'Joint health and flexibility' },
@@ -104,7 +72,6 @@ const productCategories = [
   },
   {
     category: 'Sleep & Relaxation',
-    icon: Moon,
     description: 'Restful sleep and stress management',
     products: [
       { name: 'UltiWell® Harmony', nameZh: '极舒优活和谐', description: 'Mind-body harmony and relaxation' },
@@ -118,7 +85,6 @@ const productCategories = [
   },
   {
     category: 'Digestive Health',
-    icon: Leaf,
     description: 'Digestion, detox and liver support',
     products: [
       { name: 'UltiWell® Digest', nameZh: '极舒优活消化', description: 'Digestive system health support' },
@@ -129,7 +95,6 @@ const productCategories = [
   },
   {
     category: 'Specialized Care',
-    icon: Users,
     description: 'Targeted solutions for specific needs',
     products: [
       { name: 'UltiWell® MenopauseEase', nameZh: '极舒优活更年舒', description: 'Menopause symptom relief' },
@@ -139,7 +104,6 @@ const productCategories = [
   },
   {
     category: 'Lifestyle Solutions',
-    icon: Activity,
     description: 'Daily wellness and lifestyle support',
     products: [
       { name: 'UltiWell® VeganPure', nameZh: '极舒优活纯素', description: 'Vegan and pure supplements' },
@@ -151,103 +115,274 @@ const productCategories = [
   },
 ];
 
-export default function CataloguePage() {
-  return (
-    <>
-      {/* Hero Section */}
-      <section className="relative bg-white py-16">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-              UltiWell® Product Catalogue
-            </h1>
-            <p className="text-lg text-gray-600">
-              Premium biosynthesis-based health supplements for every wellness need.
-              Discover our comprehensive product lines designed for optimal health and vitality.
-            </p>
-            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: '#A1BA80' }}>
-                <span className="text-white font-normal">「Ultimate Wellness」追求极致美好和健康</span>
-              </div>
-              <a 
-                href="/api/catalogue-download" 
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 transition-all duration-300 hover:scale-105"
-                style={{ borderColor: '#A1BA80', color: '#A1BA80' }}
-              >
-                <Download className="w-5 h-5" />
-                Download Word Version
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+export async function GET() {
+  const children: (Paragraph | Table)[] = [];
 
-      {/* Product Categories */}
-      <section className="py-16 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {productCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="mb-16 last:mb-0">
-              {/* Category Header */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
-                  <category.icon className="w-7 h-7" style={{ color: '#A1BA80' }} />
-                </div>
-                <div>
-                  <h2 className="text-2xl font-normal text-gray-900">{category.category}</h2>
-                  <p className="text-gray-600 text-sm">{category.description}</p>
-                </div>
-              </div>
-
-              {/* Products Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {category.products.map((product, productIndex) => (
-                  <Card key={productIndex} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-                    <CardContent className="p-6">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="font-normal text-gray-900 group-hover:text-brand-600 transition-colors">
-                          {product.name}
-                        </h3>
-                        <span className="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
-                          {product.nameZh}
-                        </span>
-                      </div>
-                      <p className="text-gray-600 text-sm">{product.description}</p>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Contact CTA */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-normal text-gray-900 mb-4">
-            Interested in Our Products?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            We offer OEM/ODM services and bulk ingredient supply for B2B partners worldwide.
-            Contact us for detailed specifications, pricing, and partnership opportunities.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="/contact" 
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
-              style={{ backgroundColor: '#A1BA80' }}
-            >
-              Request Quote
-            </a>
-            <a 
-              href="mailto:info@envikobio.com" 
-              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
-            >
-              info@envikobio.com
-            </a>
-          </div>
-        </div>
-      </section>
-    </>
+  // Title
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'UltiWell® Product Catalogue 2026',
+          bold: true,
+          size: 48,
+          color: 'A1BA80',
+        }),
+      ],
+      heading: HeadingLevel.TITLE,
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 200 },
+    })
   );
+
+  // Subtitle
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: '「Ultimate Wellness」追求极致美好和健康',
+          size: 24,
+          color: '666666',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 400 },
+    })
+  );
+
+  // Company Info
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'Shanghai Enviko Biotechnology Co., Ltd.',
+          size: 22,
+          color: '333333',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 100 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'www.envikobio.com | info@envikobio.com',
+          size: 20,
+          color: '666666',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 600 },
+    })
+  );
+
+  // Product Categories
+  productCategories.forEach((cat) => {
+    // Category Header
+    children.push(
+      new Paragraph({
+        children: [
+          new TextRun({
+            text: cat.category,
+            bold: true,
+            size: 28,
+            color: 'A1BA80',
+          }),
+        ],
+        heading: HeadingLevel.HEADING_1,
+        spacing: { before: 400, after: 100 },
+      })
+    );
+
+    children.push(
+      new Paragraph({
+        children: [
+          new TextRun({
+            text: cat.description,
+            italics: true,
+            size: 20,
+            color: '666666',
+          }),
+        ],
+        spacing: { after: 200 },
+      })
+    );
+
+    // Products Table
+    const tableRows = [
+      new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: 'Product Name', bold: true, size: 20 })],
+              }),
+            ],
+            width: { size: 35, type: WidthType.PERCENTAGE },
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: '中文名称', bold: true, size: 20 })],
+              }),
+            ],
+            width: { size: 25, type: WidthType.PERCENTAGE },
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: 'Description', bold: true, size: 20 })],
+              }),
+            ],
+            width: { size: 40, type: WidthType.PERCENTAGE },
+          }),
+        ],
+      }),
+    ];
+
+    cat.products.forEach((product) => {
+      tableRows.push(
+        new TableRow({
+          children: [
+            new TableCell({
+              children: [
+                new Paragraph({
+                  children: [new TextRun({ text: product.name, size: 20 })],
+                }),
+              ],
+            }),
+            new TableCell({
+              children: [
+                new Paragraph({
+                  children: [new TextRun({ text: product.nameZh, size: 20 })],
+                }),
+              ],
+            }),
+            new TableCell({
+              children: [
+                new Paragraph({
+                  children: [new TextRun({ text: product.description, size: 18 })],
+                }),
+              ],
+            }),
+          ],
+        })
+      );
+    });
+
+    children.push(
+      new Table({
+        rows: tableRows,
+        width: { size: 100, type: WidthType.PERCENTAGE },
+      })
+    );
+
+    children.push(new Paragraph({ spacing: { after: 200 } }));
+  });
+
+  // Contact Section
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'Contact Us',
+          bold: true,
+          size: 28,
+          color: 'A1BA80',
+        }),
+      ],
+      heading: HeadingLevel.HEADING_1,
+      spacing: { before: 400, after: 200 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'For OEM/ODM services, bulk ingredient supply, and partnership inquiries:',
+          size: 20,
+        }),
+      ],
+      spacing: { after: 100 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Email: ', size: 20 }),
+        new TextRun({ text: 'info@envikobio.com', size: 20, color: 'A1BA80' }),
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Phone/WhatsApp: ', size: 20 }),
+        new TextRun({ text: '+86 13918629532', size: 20 }),
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Website: ', size: 20 }),
+        new TextRun({ text: 'www.envikobio.com', size: 20, color: 'A1BA80' }),
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Address: ', size: 20 }),
+        new TextRun({
+          text: 'Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China',
+          size: 18,
+        }),
+      ],
+      spacing: { after: 300 },
+    })
+  );
+
+  // Copyright
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: '© 2026 Enviko Biotechnology. All rights reserved.',
+          size: 18,
+          color: '999999',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+    })
+  );
+
+  const doc = new Document({
+    sections: [
+      {
+        properties: {},
+        children: children,
+      },
+    ],
+  });
+
+  const buffer = await Packer.toBuffer(doc);
+
+  return new NextResponse(buffer, {
+    headers: {
+      'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'Content-Disposition': 'attachment; filename="UltiWell-Product-Catalogue-2026.docx"',
+    },
+  });
 }
