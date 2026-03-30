@@ -32,12 +32,12 @@ const productCategories = [
     icon: Target,
     description: 'Essential nutritional foundation for daily wellness',
     products: [
-      { name: 'UltiWell® Core', nameZh: '极舒优活核心', description: 'Foundation and core nutritional supplements' },
-      { name: 'UltiWell® Vitality', nameZh: '极舒优活活力', description: 'Energy enhancement and vitality boost' },
-      { name: 'UltiWell® Balance', nameZh: '极舒优活平衡', description: 'Body balance and coordination support' },
-      { name: 'UltiWell® Pure', nameZh: '极舒优活纯净', description: 'Pure, contaminant-free supplements' },
-      { name: 'UltiWell® Elevate', nameZh: '极舒优活提升', description: 'Overall health and quality of life enhancement' },
-      { name: 'UltiWell® NutriBoost', nameZh: '极舒优活营养增效', description: 'Comprehensive nutritional support' },
+      { name: 'UltiWell® Core', description: 'Foundation and core nutritional supplements' },
+      { name: 'UltiWell® Vitality', description: 'Energy enhancement and vitality boost' },
+      { name: 'UltiWell® Balance', description: 'Body balance and coordination support' },
+      { name: 'UltiWell® Pure', description: 'Pure, contaminant-free supplements' },
+      { name: 'UltiWell® Elevate', description: 'Overall health and quality of life enhancement' },
+      { name: 'UltiWell® NutriBoost', description: 'Comprehensive nutritional support' },
     ],
   },
   {
@@ -45,9 +45,9 @@ const productCategories = [
     icon: Brain,
     description: 'Mental clarity, focus and cognitive performance',
     products: [
-      { name: 'UltiWell® Clarity', nameZh: '极舒优活明晰', description: 'Brain health and mental clarity' },
-      { name: 'UltiWell® Focus', nameZh: '极舒优活专注', description: 'Attention and cognitive function enhancement' },
-      { name: 'UltiWell® BrainBoost', nameZh: '极舒优活益智', description: 'Memory and cognitive performance support' },
+      { name: 'UltiWell® Clarity', description: 'Brain health and mental clarity' },
+      { name: 'UltiWell® Focus', description: 'Attention and cognitive function enhancement' },
+      { name: 'UltiWell® BrainBoost', description: 'Memory and cognitive performance support' },
     ],
   },
   {
@@ -55,11 +55,11 @@ const productCategories = [
     icon: Dumbbell,
     description: 'Performance, strength and recovery solutions',
     products: [
-      { name: 'UltiWell® Strength', nameZh: '极舒优活力量', description: 'Muscle and physical strength enhancement' },
-      { name: 'UltiWell® Active', nameZh: '极舒优活动力', description: 'Active lifestyle and sports nutrition' },
-      { name: 'UltiWell® Energy', nameZh: '极舒优活能量', description: 'Energy boost and endurance support' },
-      { name: 'UltiWell® SportPerformance', nameZh: '极舒优活运动表现', description: 'High-performance nutrition for athletes' },
-      { name: 'UltiWell® Recovery Series', nameZh: '极舒优活运动恢复', description: 'Post-exercise recovery and muscle relief' },
+      { name: 'UltiWell® Strength', description: 'Muscle and physical strength enhancement' },
+      { name: 'UltiWell® Active', description: 'Active lifestyle and sports nutrition' },
+      { name: 'UltiWell® Energy', description: 'Energy boost and endurance support' },
+      { name: 'UltiWell® SportPerformance', description: 'High-performance nutrition for athletes' },
+      { name: 'UltiWell® Recovery Series', description: 'Post-exercise recovery and muscle relief' },
     ],
   },
   {
@@ -67,12 +67,12 @@ const productCategories = [
     icon: Sparkles,
     description: 'Youthful vitality and skin health',
     products: [
-      { name: 'UltiWell® Renew', nameZh: '极舒优活焕新', description: 'Anti-aging and vitality restoration' },
-      { name: 'UltiWell® Ageless', nameZh: '极舒优活无龄', description: 'Anti-aging and skin care' },
-      { name: 'UltiWell® YouthVibe', nameZh: '极舒优活青春', description: 'Health and vitality for the young generation' },
-      { name: 'UltiWell® Glow', nameZh: '极舒优活光彩', description: 'Skin health and beauty' },
-      { name: 'UltiWell® SkinNutritious', nameZh: '极舒优活肌肤滋养', description: 'Skin health and beauty nutrition' },
-      { name: 'UltiWell® Body Care Series', nameZh: '极舒优活身体护理', description: 'Skin health and body care products' },
+      { name: 'UltiWell® Renew', description: 'Anti-aging and vitality restoration' },
+      { name: 'UltiWell® Ageless', description: 'Anti-aging and skin care' },
+      { name: 'UltiWell® YouthVibe', description: 'Health and vitality for the young generation' },
+      { name: 'UltiWell® Glow', description: 'Skin health and beauty' },
+      { name: 'UltiWell® SkinNutritious', description: 'Skin health and beauty nutrition' },
+      { name: 'UltiWell® Body Care Series', description: 'Skin health and body care products' },
     ],
   },
   {
@@ -80,8 +80,8 @@ const productCategories = [
     icon: Heart,
     description: 'Cardiovascular health and blood circulation',
     products: [
-      { name: 'UltiWell® Pulse', nameZh: '极舒优活脉动', description: 'Heart health and blood circulation' },
-      { name: 'UltiWell® CardioFit', nameZh: '极舒优活心动力', description: 'Cardiovascular health promotion' },
+      { name: 'UltiWell® Pulse', description: 'Heart health and blood circulation' },
+      { name: 'UltiWell® CardioFit', description: 'Cardiovascular health promotion' },
     ],
   },
   {
@@ -89,8 +89,8 @@ const productCategories = [
     icon: Shield,
     description: 'Immune system defense and protection',
     products: [
-      { name: 'UltiWell® Shield', nameZh: '极舒优活护盾', description: 'Immune system support and protection' },
-      { name: 'UltiWell® ImmunoShield', nameZh: '极舒优活免疫护盾', description: 'Immune system enhancement' },
+      { name: 'UltiWell® Shield', description: 'Immune system support and protection' },
+      { name: 'UltiWell® ImmunoShield', description: 'Immune system enhancement' },
     ],
   },
   {
@@ -98,8 +98,8 @@ const productCategories = [
     icon: Bone,
     description: 'Joint health, flexibility and mobility',
     products: [
-      { name: 'UltiWell® Flex', nameZh: '极舒优活灵活', description: 'Joint health and flexibility' },
-      { name: 'UltiWell® Mobility', nameZh: '极舒优活灵动', description: 'Joint flexibility and pain relief' },
+      { name: 'UltiWell® Flex', description: 'Joint health and flexibility' },
+      { name: 'UltiWell® Mobility', description: 'Joint flexibility and pain relief' },
     ],
   },
   {
@@ -107,13 +107,13 @@ const productCategories = [
     icon: Moon,
     description: 'Restful sleep and stress management',
     products: [
-      { name: 'UltiWell® Harmony', nameZh: '极舒优活和谐', description: 'Mind-body harmony and relaxation' },
-      { name: 'UltiWell® Calm', nameZh: '极舒优活宁静', description: 'Stress management and relaxation' },
-      { name: 'UltiWell® Zenith', nameZh: '极舒优活巅峰', description: 'Premium flagship product line' },
-      { name: 'UltiWell® Restful', nameZh: '极舒优活安睡', description: 'Sleep quality improvement' },
-      { name: 'UltiWell® Sleep Series', nameZh: '极舒优活睡眠系列', description: 'Sleep quality and pattern improvement' },
-      { name: 'UltiWell® Relaxation Series', nameZh: '极舒优活放松系列', description: 'Stress management and relaxation' },
-      { name: 'UltiWell® Mind Soothing Series', nameZh: '极舒优活心灵舒缓', description: 'Mental health support and relaxation' },
+      { name: 'UltiWell® Harmony', description: 'Mind-body harmony and relaxation' },
+      { name: 'UltiWell® Calm', description: 'Stress management and relaxation' },
+      { name: 'UltiWell® Zenith', description: 'Premium flagship product line' },
+      { name: 'UltiWell® Restful', description: 'Sleep quality improvement' },
+      { name: 'UltiWell® Sleep Series', description: 'Sleep quality and pattern improvement' },
+      { name: 'UltiWell® Relaxation Series', description: 'Stress management and relaxation' },
+      { name: 'UltiWell® Mind Soothing Series', description: 'Mental health support and relaxation' },
     ],
   },
   {
@@ -121,10 +121,10 @@ const productCategories = [
     icon: Leaf,
     description: 'Digestion, detox and liver support',
     products: [
-      { name: 'UltiWell® Digest', nameZh: '极舒优活消化', description: 'Digestive system health support' },
-      { name: 'UltiWell® Cleanse', nameZh: '极舒优活净化', description: 'Body detoxification and cleansing' },
-      { name: 'UltiWell® LiverSupport', nameZh: '极舒优活肝护', description: 'Liver health and detoxification' },
-      { name: 'UltiWell® KetoBalance', nameZh: '极舒优活生酮平衡', description: 'Keto diet and weight management' },
+      { name: 'UltiWell® Digest', description: 'Digestive system health support' },
+      { name: 'UltiWell® Cleanse', description: 'Body detoxification and cleansing' },
+      { name: 'UltiWell® LiverSupport', description: 'Liver health and detoxification' },
+      { name: 'UltiWell® KetoBalance', description: 'Keto diet and weight management' },
     ],
   },
   {
@@ -132,9 +132,9 @@ const productCategories = [
     icon: Users,
     description: 'Targeted solutions for specific needs',
     products: [
-      { name: 'UltiWell® MenopauseEase', nameZh: '极舒优活更年舒', description: 'Menopause symptom relief' },
-      { name: 'UltiWell® EyeVive', nameZh: '极舒优活明目', description: 'Eye health and vision protection' },
-      { name: 'UltiWell® Elderly Care Series', nameZh: '极舒优活老年护理', description: 'Quality of life products for seniors' },
+      { name: 'UltiWell® MenopauseEase', description: 'Menopause symptom relief' },
+      { name: 'UltiWell® EyeVive', description: 'Eye health and vision protection' },
+      { name: 'UltiWell® Elderly Care Series', description: 'Quality of life products for seniors' },
     ],
   },
   {
@@ -142,11 +142,11 @@ const productCategories = [
     icon: Activity,
     description: 'Daily wellness and lifestyle support',
     products: [
-      { name: 'UltiWell® VeganPure', nameZh: '极舒优活纯素', description: 'Vegan and pure supplements' },
-      { name: 'UltiWell® Travel Series', nameZh: '极舒优活旅行系列', description: 'Portable products for travelers' },
-      { name: 'UltiWell® Healthy Diet Series', nameZh: '极舒优活健康饮食', description: 'Nutritious food and beverages' },
-      { name: 'UltiWell® Daily Care Series', nameZh: '极舒优活日常养护', description: 'Daily comfort and wellness tools' },
-      { name: 'UltiWell® Environment Optimization Series', nameZh: '极舒优活环境优化', description: 'Living and working environment enhancement' },
+      { name: 'UltiWell® VeganPure', description: 'Vegan and pure supplements' },
+      { name: 'UltiWell® Travel Series', description: 'Portable products for travelers' },
+      { name: 'UltiWell® Healthy Diet Series', description: 'Nutritious food and beverages' },
+      { name: 'UltiWell® Daily Care Series', description: 'Daily comfort and wellness tools' },
+      { name: 'UltiWell® Environment Optimization Series', description: 'Living and working environment enhancement' },
     ],
   },
 ];
@@ -167,7 +167,7 @@ export default function CataloguePage() {
             </p>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
               <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: '#A1BA80' }}>
-                <span className="text-white font-normal">「Ultimate Wellness」追求极致美好和健康</span>
+                <span className="text-white font-normal">「Ultimate Wellness」</span>
               </div>
               <a 
                 href="/api/catalogue-download" 
@@ -175,7 +175,7 @@ export default function CataloguePage() {
                 style={{ borderColor: '#A1BA80', color: '#A1BA80' }}
               >
                 <Download className="w-5 h-5" />
-                Download Word Version
+                Download Catalogue
               </a>
             </div>
           </div>
@@ -203,14 +203,9 @@ export default function CataloguePage() {
                 {category.products.map((product, productIndex) => (
                   <Card key={productIndex} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
                     <CardContent className="p-6">
-                      <div className="flex items-start justify-between mb-3">
-                        <h3 className="font-normal text-gray-900 group-hover:text-brand-600 transition-colors">
-                          {product.name}
-                        </h3>
-                        <span className="text-xs px-2 py-1 rounded bg-gray-100 text-gray-600">
-                          {product.nameZh}
-                        </span>
-                      </div>
+                      <h3 className="font-normal text-gray-900 mb-3 group-hover:text-brand-600 transition-colors">
+                        {product.name}
+                      </h3>
                       <p className="text-gray-600 text-sm">{product.description}</p>
                     </CardContent>
                   </Card>
