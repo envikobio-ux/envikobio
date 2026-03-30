@@ -146,6 +146,16 @@ const ultiGlowSeries = [
     benefitEn: 'Soothe and repair skin, provide antioxidant protection, brighten skin tone, reduce inflammation',
     benefitCn: '舒缓修护肌肤，提供抗氧化保护，提亮肤色，减少肌肤炎症',
   },
+  {
+    icon: Sparkles,
+    title: 'UltiGlow™ Bio-Color Series',
+    titleCn: '生物合成色彩系列',
+    count: 6,
+    ingredients: 'Bio-Synthetic Pigments, Natural Colorants, Plant-Derived Dyes',
+    ingredientDetail: 'Bio-Synthetic Pigments（生物合成色素，安全着色，无重金属风险）、Natural Colorants（天然着色剂，温和不刺激）、Plant-Derived Dyes（植物来源染料，持久显色，亲肤性好）',
+    benefitEn: 'Safe and natural coloring, long-lasting makeup effect, skin-friendly formula, no heavy metal residues',
+    benefitCn: '安全天然着色，持久妆容效果，亲肤温和配方，无重金属残留风险',
+  },
 ];
 
 const keyIngredients = [

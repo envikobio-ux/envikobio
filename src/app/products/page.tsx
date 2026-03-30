@@ -253,15 +253,15 @@ export default function ProductsPage() {
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Premium skincare powered by biosynthesis technology. 
-                12 Bio-Synth series with 48 targeted solutions for radiant, healthy skin.
+                13 Bio-Synth series with 54 targeted solutions for radiant, healthy skin.
               </p>
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>12</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>13</p>
                   <p className="text-sm text-gray-600">Series</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>48</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>54</p>
                   <p className="text-sm text-gray-600">Products</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
@@ -282,6 +282,7 @@ export default function ProductsPage() {
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sun Shield</span>
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Glucosamine</span>
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Plant Extract</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Color</span>
               </div>
               <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
                 <Link href="/products/ultiglow">
