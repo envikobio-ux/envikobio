@@ -253,31 +253,33 @@ export default function ProductsPage() {
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Premium skincare powered by biosynthesis technology. 
-                8 product series with 30 targeted solutions for radiant, healthy skin.
+                10 Bio-Synth series with 39 targeted solutions for radiant, healthy skin.
               </p>
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>8</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>10</p>
                   <p className="text-sm text-gray-600">Series</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>30</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>39</p>
                   <p className="text-sm text-gray-600">Products</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>6</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>6+</p>
                   <p className="text-sm text-gray-600">Ingredients</p>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 mb-8">
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow AgeDefy</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow HydraPlus</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow SensiCare</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow SunShield</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow BrightGlow</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow CollagenPro</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow PoreRefine</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>UltiGlow AcneClear</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Synth Collagen</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Ectoine</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Hyaluronic Acid</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Vitamin Complex</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Peptide</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Antioxidant</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sensitive Repair</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Acne Clear</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Skin Renew</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sun Shield</span>
               </div>
               <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
                 <Link href="/products/ultiglow">
