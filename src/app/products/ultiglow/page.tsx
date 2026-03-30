@@ -29,7 +29,7 @@ export const metadata: Metadata = {
 const ultiGlowSeries = [
   {
     icon: Clock,
-    title: 'AgeDefy Series',
+    title: 'UltiGlow AgeDefy',
     tagline: 'Timeless Beauty',
     description: 'Advanced anti-aging solutions',
     products: [
@@ -41,7 +41,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Droplets,
-    title: 'HydraPlus Series',
+    title: 'UltiGlow HydraPlus',
     tagline: 'Deep Hydration',
     description: 'Intense moisture solutions',
     products: [
@@ -53,7 +53,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Shield,
-    title: 'SensiCare Series',
+    title: 'UltiGlow SensiCare',
     tagline: 'Gentle Relief',
     description: 'Calming solutions for sensitive skin',
     products: [
@@ -65,7 +65,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Sun,
-    title: 'SunShield Series',
+    title: 'UltiGlow SunShield',
     tagline: 'UV Protection',
     description: 'Advanced sun defense',
     products: [
@@ -77,7 +77,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Sparkles,
-    title: 'BrightGlow Series',
+    title: 'UltiGlow BrightGlow',
     tagline: 'Radiant Complexion',
     description: 'Brightening & even tone',
     products: [
@@ -89,7 +89,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Heart,
-    title: 'CollagenPro Series',
+    title: 'UltiGlow CollagenPro',
     tagline: 'Firm & Plump',
     description: 'Collagen enhancement solutions',
     products: [
@@ -101,7 +101,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Wind,
-    title: 'PoreRefine Series',
+    title: 'UltiGlow PoreRefine',
     tagline: 'Smooth Texture',
     description: 'Pore minimizing solutions',
     products: [
@@ -112,7 +112,7 @@ const ultiGlowSeries = [
   },
   {
     icon: Zap,
-    title: 'AcneClear Series',
+    title: 'UltiGlow AcneClear',
     tagline: 'Clear Skin',
     description: 'Acne & blemish control',
     products: [
