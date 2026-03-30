@@ -341,69 +341,163 @@ export default function ProductsPage() {
       {/* UltiGlow Skincare Brand */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-                <Sparkles className="w-4 h-4" />
-                UltiGlow® Skincare
-              </div>
-              <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
-                Ultimate Glow
-              </h2>
-              <p className="text-xl mb-6" style={{ color: '#A1BA80' }}>
-                「极致光彩」
-              </p>
-              <p className="text-lg text-gray-600 mb-6">
-                Premium skincare powered by biosynthesis technology. 
-                13 Bio-Synth series with 54 targeted solutions for radiant, healthy skin.
-              </p>
-              <div className="grid grid-cols-3 gap-4 mb-8">
-                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>13</p>
-                  <p className="text-sm text-gray-600">Series</p>
-                </div>
-                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>54</p>
-                  <p className="text-sm text-gray-600">Products</p>
-                </div>
-                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>8+</p>
-                  <p className="text-sm text-gray-600">Ingredients</p>
-                </div>
-              </div>
-              <div className="flex flex-wrap gap-2 mb-8">
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Synth Collagen</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Ectoine</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Hyaluronic Acid</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Vitamin Complex</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Peptide</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Antioxidant</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sensitive Repair</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Acne Clear</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Skin Renew</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sun Shield</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Glucosamine</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Plant Extract</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Color</span>
-              </div>
-              <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-                <Link href="/products/ultiglow">
-                  Explore UltiGlow® <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
+          <div className="text-center mb-16">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Sparkles className="w-4 h-4" />
+              UltiGlow® Skincare
             </div>
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/cosmetic-ingredients.jpeg"
-                alt="UltiGlow Skincare"
-                fill
-                className="object-cover"
-              />
-              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <p className="text-white text-sm font-medium">Key Ingredients</p>
-                <p className="text-white/80 text-xs mt-1">Ergothioneine • Ectoine • Bisabolol • HA • Collagen</p>
-              </div>
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+              Ultimate Glow
+            </h2>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「极致光彩」</p>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Premium skincare powered by biosynthesis technology
+            </p>
+            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              54 Products across 13 Bio-Synth Series
             </div>
+          </div>
+          
+          {/* UltiGlow Series Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-12">
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Heart className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Synth Collagen</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成胶原蛋白系列</p>
+                <p className="text-xs text-gray-500 mt-2">5 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Shield className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Ectoine</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成依克多因系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Hyaluronic Acid</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成透明质酸系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Vitamin Complex</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成复合维生素系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Peptide</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成多肽系列</p>
+                <p className="text-xs text-gray-500 mt-2">5 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Leaf className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Antioxidant</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成抗氧化系列</p>
+                <p className="text-xs text-gray-500 mt-2">3 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Shield className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Sensitive Repair</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成敏感修护系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Acne Clear</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成祛痘净肤系列</p>
+                <p className="text-xs text-gray-500 mt-2">3 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Skin Renew</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成肌肤焕新系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Sun Shield</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成防晒防护系列</p>
+                <p className="text-xs text-gray-500 mt-2">3 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Glucosamine</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成氨基葡萄糖系列</p>
+                <p className="text-xs text-gray-500 mt-2">4 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Leaf className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Plant Extract</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成植物提取系列</p>
+                <p className="text-xs text-gray-500 mt-2">5 Products</p>
+              </CardContent>
+            </Card>
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
+              <CardContent className="p-5">
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-1">Bio-Color</h3>
+                <p className="text-xs" style={{ color: '#A1BA80' }}>生物合成色彩系列</p>
+                <p className="text-xs text-gray-500 mt-2">6 Products</p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center">
+            <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
+              <Link href="/products/ultiglow">
+                Explore UltiGlow® <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
