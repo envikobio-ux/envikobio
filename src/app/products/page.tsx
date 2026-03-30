@@ -21,7 +21,14 @@ import {
   Activity,
   Target,
   Dumbbell,
-  ChevronDown
+  Droplets,
+  Sun,
+  Zap,
+  RefreshCw,
+  Eye,
+  Smile,
+  Wind,
+  Palette
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -82,21 +89,20 @@ const ultiWellCategories = [
   { icon: Sparkles, title: 'Bio-Natural Colors', titleCn: '生物天然色素', count: 6 },
 ];
 
-// UltiGlow Product Lines
+// UltiGlow Product Lines - By Function
 const ultiGlowCategories = [
-  { icon: Heart, title: 'Bio-Synth Collagen', titleCn: '生物合成胶原蛋白', count: 5 },
-  { icon: Shield, title: 'Bio-Ectoine', titleCn: '生物合成依克多因', count: 4 },
-  { icon: Sparkles, title: 'Bio-Hyaluronic Acid', titleCn: '生物合成透明质酸', count: 4 },
-  { icon: Sparkles, title: 'Bio-Vitamin Complex', titleCn: '生物合成复合维生素', count: 4 },
-  { icon: Sparkles, title: 'Bio-Peptide', titleCn: '生物合成多肽', count: 5 },
-  { icon: Leaf, title: 'Bio-Antioxidant', titleCn: '生物合成抗氧化', count: 3 },
-  { icon: Shield, title: 'Bio-Sensitive Repair', titleCn: '生物合成敏感修护', count: 4 },
-  { icon: Sparkles, title: 'Bio-Acne Clear', titleCn: '生物合成祛痘净肤', count: 3 },
-  { icon: Sparkles, title: 'Bio-Skin Renew', titleCn: '生物合成肌肤焕新', count: 4 },
-  { icon: Sparkles, title: 'Bio-Sun Shield', titleCn: '生物合成防晒防护', count: 3 },
-  { icon: Sparkles, title: 'Bio-Glucosamine', titleCn: '生物合成氨基葡萄糖', count: 4 },
-  { icon: Leaf, title: 'Bio-Plant Extract', titleCn: '生物合成植物提取', count: 5 },
-  { icon: Sparkles, title: 'Bio-Color', titleCn: '生物合成色彩', count: 6 },
+  { icon: Droplets, title: 'Deep Hydration', titleCn: '深层补水', count: 6 },
+  { icon: Heart, title: 'Anti-Aging', titleCn: '抗衰老', count: 7 },
+  { icon: Sparkles, title: 'Brightening', titleCn: '美白提亮', count: 5 },
+  { icon: Shield, title: 'Sensitive Repair', titleCn: '敏感修护', count: 6 },
+  { icon: Zap, title: 'Acne Control', titleCn: '祛痘净肤', count: 5 },
+  { icon: RefreshCw, title: 'Skin Renewal', titleCn: '肌肤焕新', count: 5 },
+  { icon: Sun, title: 'Sun Protection', titleCn: '防晒防护', count: 4 },
+  { icon: Leaf, title: 'Antioxidant', titleCn: '抗氧化', count: 4 },
+  { icon: Eye, title: 'Eye Care', titleCn: '眼部护理', count: 3 },
+  { icon: Smile, title: 'Lip Care', titleCn: '唇部护理', count: 3 },
+  { icon: Wind, title: 'Pore Care', titleCn: '毛孔护理', count: 3 },
+  { icon: Palette, title: 'Natural Color', titleCn: '天然彩妆', count: 6 },
 ];
 
 const features = [
@@ -295,23 +301,25 @@ export default function ProductsPage() {
               Premium skincare powered by biosynthesis technology
             </p>
             <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              54 Products across 13 Bio-Synth Series
+              57 Products across 12 Function Categories
             </div>
           </div>
           
           {/* UltiGlow Series Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
             {ultiGlowCategories.map((category, index) => (
-              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-5">
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                    <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                  </div>
-                  <h3 className="font-normal text-gray-900 mb-1">{category.title}</h3>
-                  <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
-                  <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
-                </CardContent>
-              </Card>
+              <Link key={index} href={`/products/ultiglow#${category.title.toLowerCase().replace(/\s+/g, '-')}`}>
+                <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group h-full cursor-pointer">
+                  <CardContent className="p-5">
+                    <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
+                      <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                    </div>
+                    <h3 className="font-normal text-gray-900 mb-1 group-hover:text-green-700 transition-colors">{category.title}</h3>
+                    <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
+                    <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
           
