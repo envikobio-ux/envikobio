@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { 
@@ -16,17 +17,20 @@ import {
   Target,
   Droplets,
   Dumbbell,
-  Sunrise,
-  Pilcrow,
-  Download
+  Download,
+  ArrowRight,
+  Flower2,
+  Sun,
+  Palette
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Product Catalogue | UltiWell®',
-  description: 'Explore UltiWell® product series - premium health supplements for every wellness need.',
+  title: 'Product Catalogue | Enviko Bio',
+  description: 'Explore UltiWell® and UltiGlow® product series - premium biosynthesis-based health supplements and skincare products.',
 };
 
-const productCategories = [
+// UltiWell Product Categories
+const ultiWellCategories = [
   {
     category: 'Core Nutrition',
     icon: Target,
@@ -177,6 +181,155 @@ const productCategories = [
   },
 ];
 
+// UltiGlow Product Categories
+const ultiGlowCategories = [
+  {
+    category: 'Bio-Synth Collagen',
+    icon: Droplets,
+    description: 'Biosynthesis collagen for skin elasticity and firmness',
+    products: [
+      { name: 'UltiGlow® Collagen Serum', description: 'High-purity collagen serum, deep hydration and elasticity' },
+      { name: 'UltiGlow® Collagen Cream', description: 'Collagen day cream, firming and anti-wrinkle' },
+      { name: 'UltiGlow® Collagen Mask', description: 'Collagen sheet mask, intensive repair' },
+      { name: 'UltiGlow® Collagen Eye Cream', description: 'Collagen eye cream, reduce fine lines' },
+      { name: 'UltiGlow® Collagen Toner', description: 'Collagen toner, prep skin for absorption' },
+    ],
+  },
+  {
+    category: 'Bio-Ectoine',
+    icon: Shield,
+    description: 'Ectoine-based protection and repair formulations',
+    products: [
+      { name: 'UltiGlow® Ectoine Serum', description: 'Ectoine protective serum, barrier repair' },
+      { name: 'UltiGlow® Ectoine Cream', description: 'Ectoine moisturizer, sensitive skin care' },
+      { name: 'UltiGlow® Ectoine Sunscreen', description: 'Ectoine sunscreen, UV protection + repair' },
+      { name: 'UltiGlow® Ectoine Mask', description: 'Ectoine repair mask, soothing and calming' },
+    ],
+  },
+  {
+    category: 'Bio-Hyaluronic Acid',
+    icon: Droplets,
+    description: 'Multi-molecular weight HA for deep hydration',
+    products: [
+      { name: 'UltiGlow® HA Serum', description: 'Multi-weight HA serum, 72-hour hydration' },
+      { name: 'UltiGlow® HA Cream', description: 'Hyaluronic acid cream, plumping effect' },
+      { name: 'UltiGlow® HA Mask', description: 'HA intensive mask, deep moisture' },
+      { name: 'UltiGlow® HA Toner', description: 'HA toner, hydrating prep' },
+    ],
+  },
+  {
+    category: 'Bio-Vitamin Complex',
+    icon: Sun,
+    description: 'Biosynthesis vitamin complexes for skin nutrition',
+    products: [
+      { name: 'UltiGlow® Vitamin C Serum', description: 'Stable vitamin C (≥20%), brightening and antioxidant' },
+      { name: 'UltiGlow® Vitamin E Cream', description: 'Vitamin E moisturizer, repair and protection' },
+      { name: 'UltiGlow® B-Complex Serum', description: 'Vitamin B complex, barrier repair' },
+      { name: 'UltiGlow® Multi-Vitamin Mask', description: 'Multi-vitamin mask, skin nutrition boost' },
+    ],
+  },
+  {
+    category: 'Bio-Peptide',
+    icon: Sparkles,
+    description: 'Advanced peptide formulations for anti-aging',
+    products: [
+      { name: 'UltiGlow® Peptide Serum', description: 'Multi-peptide serum, wrinkle reduction' },
+      { name: 'UltiGlow® Peptide Cream', description: 'Peptide anti-aging cream, firming' },
+      { name: 'UltiGlow® Peptide Eye Serum', description: 'Peptide eye serum, dark circle reduction' },
+      { name: 'UltiGlow® Peptide Mask', description: 'Peptide lifting mask, instant firming' },
+      { name: 'UltiGlow® Copper Peptide Serum', description: 'Copper peptide serum, skin renewal' },
+    ],
+  },
+  {
+    category: 'Bio-Antioxidant',
+    icon: Leaf,
+    description: 'Natural antioxidant complexes for skin defense',
+    products: [
+      { name: 'UltiGlow® Antioxidant Serum', description: 'Multi-antioxidant serum, environmental protection' },
+      { name: 'UltiGlow® Resveratrol Cream', description: 'Resveratrol night cream, anti-aging' },
+      { name: 'UltiGlow® Green Tea Essence', description: 'EGCG essence, soothing and antioxidant' },
+    ],
+  },
+  {
+    category: 'Bio-Sensitive Repair',
+    icon: Heart,
+    description: 'Gentle formulations for sensitive and compromised skin',
+    products: [
+      { name: 'UltiGlow® Sensitive Serum', description: 'Gentle serum for sensitive skin' },
+      { name: 'UltiGlow® Sensitive Cream', description: 'Calming cream, redness reduction' },
+      { name: 'UltiGlow® Repair Mask', description: 'Intensive repair mask, barrier restoration' },
+      { name: 'UltiGlow® Soothing Toner', description: 'Alcohol-free soothing toner' },
+    ],
+  },
+  {
+    category: 'Bio-Acne Clear',
+    icon: Shield,
+    description: 'Acne-fighting formulations with biosynthesis actives',
+    products: [
+      { name: 'UltiGlow® Acne Serum', description: 'Salicylic acid + niacinamide serum' },
+      { name: 'UltiGlow® Acne Patch', description: 'Hydrocolloid acne patch, overnight treatment' },
+      { name: 'UltiGlow® Oil Control Toner', description: 'Oil-balancing toner, pore refinement' },
+    ],
+  },
+  {
+    category: 'Bio-Skin Renew',
+    icon: Sparkles,
+    description: 'Exfoliation and renewal formulations',
+    products: [
+      { name: 'UltiGlow® AHA Serum', description: 'Alpha hydroxy acid serum, gentle exfoliation' },
+      { name: 'UltiGlow® BHA Toner', description: 'Beta hydroxy acid toner, pore clearing' },
+      { name: 'UltiGlow® Renew Mask', description: 'Enzyme renewal mask, brightening' },
+      { name: 'UltiGlow® Retinol Serum', description: 'Encapsulated retinol, anti-aging renewal' },
+    ],
+  },
+  {
+    category: 'Bio-Sun Shield',
+    icon: Sun,
+    description: 'UV protection with skin-loving ingredients',
+    products: [
+      { name: 'UltiGlow® Sunscreen SPF50', description: 'Lightweight SPF50 sunscreen, broad spectrum' },
+      { name: 'UltiGlow® Sun Serum', description: 'Sun protection serum, glow finish' },
+      { name: 'UltiGlow® After Sun Gel', description: 'Soothing after-sun care gel' },
+    ],
+  },
+  {
+    category: 'Bio-Glucosamine',
+    icon: Flower2,
+    description: 'Glucosamine derivatives for skin barrier support',
+    products: [
+      { name: 'UltiGlow® Glucosamine Serum', description: 'Glucosamine serum, barrier repair' },
+      { name: 'UltiGlow® Glucosamine Cream', description: 'Glucosamine moisturizer, hydration lock' },
+      { name: 'UltiGlow® NAG Toner', description: 'N-acetyl glucosamine toner, brightening' },
+      { name: 'UltiGlow® Glucosamine Mask', description: 'Glucosamine intensive mask' },
+    ],
+  },
+  {
+    category: 'Bio-Plant Extract',
+    icon: Leaf,
+    description: 'Concentrated plant extracts for targeted benefits',
+    products: [
+      { name: 'UltiGlow® Centella Essence', description: 'Centella asiatica essence, calming and repair' },
+      { name: 'UltiGlow® Licorice Serum', description: 'Licorice root serum, brightening' },
+      { name: 'UltiGlow® Chamomile Toner', description: 'Chamomile toner, soothing' },
+      { name: 'UltiGlow® Rosehip Oil', description: 'Rosehip seed oil, regeneration' },
+      { name: 'UltiGlow® Green Tea Mist', description: 'Green tea facial mist, refreshing' },
+    ],
+  },
+  {
+    category: 'Bio-Color',
+    icon: Palette,
+    description: 'Natural color cosmetics with bio-derived pigments',
+    products: [
+      { name: 'UltiGlow® Natural Lip Tint', description: 'Plant-based lip tint, natural color' },
+      { name: 'UltiGlow® BB Cream', description: 'Natural BB cream, light coverage' },
+      { name: 'UltiGlow® Blush', description: 'Mineral blush, healthy glow' },
+      { name: 'UltiGlow® Bronzer', description: 'Natural bronzer, sun-kissed look' },
+      { name: 'UltiGlow® Highlighter', description: 'Bio-highlighter, natural radiance' },
+      { name: 'UltiGlow® Eyebrow Gel', description: 'Natural eyebrow gel, defining' },
+    ],
+  },
+];
+
 export default function CataloguePage() {
   return (
     <>
@@ -185,41 +338,78 @@ export default function CataloguePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-              UltiWell® Product Catalogue
+              Product Catalogue
             </h1>
             <p className="text-lg text-gray-600">
-              Premium biosynthesis-based health supplements for every wellness need.
-              Discover our comprehensive product lines designed for optimal health and vitality.
+              Explore our complete range of biosynthesis-based products across two premium brands
             </p>
             <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
-              <div className="inline-block px-6 py-3 rounded-full" style={{ backgroundColor: '#A1BA80' }}>
-                <span className="text-white font-normal">「Ultimate Wellness」</span>
-              </div>
               <a 
                 href="/api/catalogue-download" 
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 transition-all duration-300 hover:scale-105"
-                style={{ borderColor: '#A1BA80', color: '#A1BA80' }}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: '#A1BA80' }}
               >
                 <Download className="w-5 h-5" />
-                Download Catalogue
+                Download Full Catalogue
               </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Product Categories */}
-      <section className="py-16 bg-gray-50">
+      {/* Brand Navigation */}
+      <section className="py-8 bg-gray-50 border-y border-gray-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {productCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="mb-16 last:mb-0">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a 
+              href="#ultiwell" 
+              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#d7e1c7' }}
+            >
+              <Target className="w-5 h-5" style={{ color: '#A1BA80' }} />
+              <span className="font-medium" style={{ color: '#6e8956' }}>UltiWell® (60 Products)</span>
+            </a>
+            <a 
+              href="#ultiglow" 
+              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#d7e1c7' }}
+            >
+              <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+              <span className="font-medium" style={{ color: '#6e8956' }}>UltiGlow® (54 Products)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* UltiWell Section */}
+      <section id="ultiwell" className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Target className="w-4 h-4" />
+              Health Supplements
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+              UltiWell® Product Catalogue
+            </h2>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Wellness」</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Premium biosynthesis-based health supplements for every wellness need
+            </p>
+            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              60 Products across 13 Categories
+            </div>
+          </div>
+
+          {ultiWellCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-12 last:mb-0">
               {/* Category Header */}
-              <div className="flex items-center gap-4 mb-8">
-                <div className="w-14 h-14 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
-                  <category.icon className="w-7 h-7" style={{ color: '#A1BA80' }} />
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                  <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
                 </div>
                 <div>
-                  <h2 className="text-2xl font-normal text-gray-900">{category.category}</h2>
+                  <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
                   <p className="text-gray-600 text-sm">{category.description}</p>
                 </div>
               </div>
@@ -228,10 +418,61 @@ export default function CataloguePage() {
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {category.products.map((product, productIndex) => (
                   <Card key={productIndex} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-                    <CardContent className="p-6">
-                      <h3 className="font-normal text-gray-900 mb-3 group-hover:text-brand-600 transition-colors">
+                    <CardContent className="p-5">
+                      <h4 className="font-normal text-gray-900 mb-2 group-hover:text-green-700 transition-colors">
                         {product.name}
-                      </h3>
+                      </h4>
+                      <p className="text-gray-600 text-sm">{product.description}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* UltiGlow Section */}
+      <section id="ultiglow" className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Sparkles className="w-4 h-4" />
+              Skincare Products
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+              UltiGlow® Product Catalogue
+            </h2>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Glow」</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Premium skincare powered by biosynthesis technology
+            </p>
+            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              54 Products across 13 Bio-Synth Series
+            </div>
+          </div>
+
+          {ultiGlowCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-12 last:mb-0">
+              {/* Category Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                  <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
+                  <p className="text-gray-600 text-sm">{category.description}</p>
+                </div>
+              </div>
+
+              {/* Products Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {category.products.map((product, productIndex) => (
+                  <Card key={productIndex} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group bg-white">
+                    <CardContent className="p-5">
+                      <h4 className="font-normal text-gray-900 mb-2 group-hover:text-green-700 transition-colors">
+                        {product.name}
+                      </h4>
                       <p className="text-gray-600 text-sm">{product.description}</p>
                     </CardContent>
                   </Card>
@@ -259,6 +500,7 @@ export default function CataloguePage() {
               style={{ backgroundColor: '#A1BA80' }}
             >
               Request Quote
+              <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             <a 
               href="mailto:info@envikobio.com" 
