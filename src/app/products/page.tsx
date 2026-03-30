@@ -236,55 +236,64 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* BioDerma Skincare Brand */}
+      {/* Ultiderma Skincare Brand */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
                 <Sparkles className="w-4 h-4" />
-                BioDerma® Skincare
+                Ultiderma® Skincare
               </div>
-              <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-6">
-                Where Biosynthesis Meets Beauty
+              <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+                Ultimate Derma
               </h2>
-              <p className="text-lg text-gray-600 mb-6">
-                Premium skincare products powered by nature and advanced biosynthesis technology. 
-                Featuring 6 product lines with 28 targeted solutions.
+              <p className="text-xl mb-6" style={{ color: '#A1BA80' }}>
+                「极致肌肤」
               </p>
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                <div className="p-4 rounded-lg" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>6</p>
-                  <p className="text-sm text-gray-600">Product Series</p>
+              <p className="text-lg text-gray-600 mb-6">
+                Premium skincare powered by biosynthesis technology. 
+                8 product series with 30 targeted solutions for every skin concern.
+              </p>
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>8</p>
+                  <p className="text-sm text-gray-600">Series</p>
                 </div>
-                <div className="p-4 rounded-lg" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>28</p>
-                  <p className="text-sm text-gray-600">Skincare Products</p>
+                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>30</p>
+                  <p className="text-sm text-gray-600">Products</p>
+                </div>
+                <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>6</p>
+                  <p className="text-sm text-gray-600">Ingredients</p>
                 </div>
               </div>
               <div className="flex flex-wrap gap-2 mb-8">
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Age-Defying</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Hydra Boost</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Sensitive Care</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Sun Defense</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Brightening</span>
-                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Collagen Boost</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>AgeDefy</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>HydraPlus</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>SensiCare</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>SunShield</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>BrightGlow</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>CollagenPro</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>PoreRefine</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>AcneClear</span>
               </div>
               <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-                <Link href="/products/bioderma">
-                  Explore BioDerma® <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/products/ultiderma">
+                  Explore Ultiderma® <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/cosmetic-ingredients.jpeg"
-                alt="BioDerma Skincare"
+                alt="Ultiderma Skincare"
                 fill
                 className="object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <p className="text-white text-sm">Key Ingredients</p>
+                <p className="text-white text-sm font-medium">Key Ingredients</p>
                 <p className="text-white/80 text-xs mt-1">Ergothioneine • Ectoine • Bisabolol • HA • Collagen</p>
               </div>
             </div>
