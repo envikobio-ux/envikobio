@@ -21,12 +21,12 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Ultiderma® Skincare',
-  description: 'Ultiderma® - Ultimate Derma. Premium biosynthesis-based skincare products powered by nature and science.',
+  title: 'UltiGlow® Skincare',
+  description: 'UltiGlow® - Ultimate Glow. Premium biosynthesis-based skincare products for radiant, healthy skin.',
 };
 
-// Ultiderma Product Lines - Consistent with UltiWell naming style
-const ultidermaSeries = [
+// UltiGlow Product Lines - Consistent with UltiWell naming style
+const ultiGlowSeries = [
   {
     icon: Clock,
     title: 'AgeDefy Series',
@@ -141,7 +141,7 @@ const certifications = [
   'Sustainable sourcing',
 ];
 
-export default function UltidermaPage() {
+export default function UltiGlowPage() {
   return (
     <>
       {/* Hero Section */}
@@ -149,7 +149,7 @@ export default function UltidermaPage() {
         <div className="absolute inset-0 opacity-5">
           <Image
             src="/cosmetic-ingredients.jpeg"
-            alt="Ultiderma Skincare"
+            alt="UltiGlow Skincare"
             fill
             className="object-cover"
           />
@@ -159,17 +159,17 @@ export default function UltidermaPage() {
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
                 <Sparkles className="w-4 h-4" />
-                Ultiderma® Skincare
+                UltiGlow® Skincare
               </div>
               <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-                Ultimate Derma
+                Ultimate Glow
               </h1>
               <p className="text-xl mb-2" style={{ color: '#A1BA80' }}>
-                「极致肌肤」
+                「极致光彩」
               </p>
               <p className="text-lg text-gray-600 mb-8">
                 Premium skincare powered by biosynthesis technology. 
-                Science-backed ingredients for visible results.
+                Science-backed ingredients for radiant, healthy skin.
               </p>
               <div className="flex flex-wrap gap-6 mb-8">
                 <div>
@@ -202,7 +202,7 @@ export default function UltidermaPage() {
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/cosmetic-ingredients.jpeg"
-                alt="Ultiderma Products"
+                alt="UltiGlow Products"
                 fill
                 className="object-cover"
               />
@@ -220,7 +220,7 @@ export default function UltidermaPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              Ultiderma® Product Series
+              UltiGlow® Product Series
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Targeted skincare solutions for every skin concern
@@ -228,7 +228,7 @@ export default function UltidermaPage() {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-            {ultidermaSeries.map((series, index) => (
+            {ultiGlowSeries.map((series, index) => (
               <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
                 <CardContent className="p-6">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
@@ -266,7 +266,7 @@ export default function UltidermaPage() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-8">
-            {ultidermaSeries.map((series, index) => (
+            {ultiGlowSeries.map((series, index) => (
               <Card key={index} className="border border-gray-200 overflow-hidden">
                 <div className="p-6" style={{ backgroundColor: '#f8faf5' }}>
                   <div className="flex items-center gap-4">
@@ -361,7 +361,7 @@ export default function UltidermaPage() {
                 Clean Beauty Standards
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Every Ultiderma® product meets the highest standards for safety, efficacy, and sustainability.
+                Every UltiGlow® product meets the highest standards for safety, efficacy, and sustainability.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => (
@@ -424,7 +424,7 @@ export default function UltidermaPage() {
         <div className="absolute inset-0">
           <Image
             src="/cosmetic-ingredients.jpeg"
-            alt="Ultiderma"
+            alt="UltiGlow"
             fill
             className="object-cover"
           />

@@ -236,24 +236,24 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* Ultiderma Skincare Brand */}
+      {/* UltiGlow Skincare Brand */}
       <section className="py-20 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
                 <Sparkles className="w-4 h-4" />
-                Ultiderma® Skincare
+                UltiGlow® Skincare
               </div>
               <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
-                Ultimate Derma
+                Ultimate Glow
               </h2>
               <p className="text-xl mb-6" style={{ color: '#A1BA80' }}>
-                「极致肌肤」
+                「极致光彩」
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Premium skincare powered by biosynthesis technology. 
-                8 product series with 30 targeted solutions for every skin concern.
+                8 product series with 30 targeted solutions for radiant, healthy skin.
               </p>
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
@@ -280,15 +280,15 @@ export default function ProductsPage() {
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>AcneClear</span>
               </div>
               <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-                <Link href="/products/ultiderma">
-                  Explore Ultiderma® <ArrowRight className="ml-2 h-4 w-4" />
+                <Link href="/products/ultiglow">
+                  Explore UltiGlow® <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
               <Image
                 src="/cosmetic-ingredients.jpeg"
-                alt="Ultiderma Skincare"
+                alt="UltiGlow Skincare"
                 fill
                 className="object-cover"
               />
