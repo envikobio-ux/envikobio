@@ -126,6 +126,26 @@ const ultiGlowSeries = [
     benefitEn: 'Block UVA/UVB rays, prevent photoaging, isolate dust and pollutants, soothe sun-damaged skin',
     benefitCn: '阻隔UVA/UVB紫外线，预防光老化，隔离粉尘污染物，舒缓日晒受损肌肤',
   },
+  {
+    icon: Droplets,
+    title: 'UltiGlow™ Bio-Glucosamine Series',
+    titleCn: '生物合成氨基葡萄糖系列',
+    count: 4,
+    ingredients: 'N-Acetyl Glucosamine, Acetyl Glucosamine',
+    ingredientDetail: 'N-Acetyl Glucosamine（促进透明质酸合成，深层保湿）、Acetyl Glucosamine（修护肌肤屏障，增强锁水能力，改善粗糙肤质）',
+    benefitEn: 'Enhance skin hydration, strengthen skin barrier, improve skin texture, promote HA synthesis',
+    benefitCn: '增强肌肤水润度，强韧肌肤屏障，改善肌肤粗糙质地，促进透明质酸合成',
+  },
+  {
+    icon: Leaf,
+    title: 'UltiGlow™ Bio-Plant Extract Series',
+    titleCn: '生物合成植物提取系列',
+    count: 5,
+    ingredients: 'Centella Asiatica Extract, Green Tea Extract, Licorice Root Extract',
+    ingredientDetail: 'Centella Asiatica Extract（积雪草，舒缓修护，促进胶原合成）、Green Tea Extract（绿茶，抗氧化，清除自由基）、Licorice Root Extract（甘草，美白淡斑，抗炎舒缓）',
+    benefitEn: 'Soothe and repair skin, provide antioxidant protection, brighten skin tone, reduce inflammation',
+    benefitCn: '舒缓修护肌肤，提供抗氧化保护，提亮肤色，减少肌肤炎症',
+  },
 ];
 
 const keyIngredients = [
@@ -135,6 +155,8 @@ const keyIngredients = [
   { name: 'Ergothioneine', purity: '≥98%', benefit: 'Antioxidant', source: 'Biosynthesis' },
   { name: 'Alpha-Bisabolol', purity: '≥95%', benefit: 'Soothing', source: 'Natural extraction' },
   { name: 'Copper Peptide', purity: '≥98%', benefit: 'Skin repair', source: 'Biosynthesis' },
+  { name: 'N-Acetyl Glucosamine', purity: '≥98%', benefit: 'Barrier repair', source: 'Biosynthesis' },
+  { name: 'Centella Asiatica Extract', purity: '≥90%', benefit: 'Soothing, repair', source: 'Plant extraction' },
 ];
 
 const certifications = [

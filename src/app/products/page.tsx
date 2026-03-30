@@ -253,19 +253,19 @@ export default function ProductsPage() {
               </p>
               <p className="text-lg text-gray-600 mb-6">
                 Premium skincare powered by biosynthesis technology. 
-                10 Bio-Synth series with 39 targeted solutions for radiant, healthy skin.
+                12 Bio-Synth series with 48 targeted solutions for radiant, healthy skin.
               </p>
               <div className="grid grid-cols-3 gap-4 mb-8">
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>10</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>12</p>
                   <p className="text-sm text-gray-600">Series</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>39</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>48</p>
                   <p className="text-sm text-gray-600">Products</p>
                 </div>
                 <div className="p-4 rounded-lg text-center" style={{ backgroundColor: '#f8faf5' }}>
-                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>6+</p>
+                  <p className="text-2xl font-normal" style={{ color: '#A1BA80' }}>8+</p>
                   <p className="text-sm text-gray-600">Ingredients</p>
                 </div>
               </div>
@@ -280,6 +280,8 @@ export default function ProductsPage() {
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Acne Clear</span>
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Skin Renew</span>
                 <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Sun Shield</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Glucosamine</span>
+                <span className="text-xs px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>Bio-Plant Extract</span>
               </div>
               <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
                 <Link href="/products/ultiglow">
