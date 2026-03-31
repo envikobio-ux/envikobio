@@ -37,12 +37,12 @@ const ultiWellCategories = [
     icon: Target,
     description: 'Essential nutritional foundation for daily wellness',
     products: [
-      { id: 'core', name: 'UltiWell® Core', description: 'Foundation and core nutritional supplements' },
-      { id: 'vitality', name: 'UltiWell® Vitality', description: 'Energy enhancement and vitality boost' },
-      { id: 'balance', name: 'UltiWell® Balance', description: 'Body balance and coordination support' },
-      { id: 'pure', name: 'UltiWell® Pure', description: 'Pure, contaminant-free supplements' },
-      { id: 'elevate', name: 'UltiWell® Elevate', description: 'Overall health and quality of life enhancement' },
-      { id: 'nutriboost', name: 'UltiWell® NutriBoost', description: 'Comprehensive nutritional support' },
+      { id: 'core', name: 'UltiWell® Core', ingredients: ['Biosynthesis Vitamins B Complex', 'Chelated Minerals', 'Bio-available Vitamin D3', 'Natural Vitamin E'] },
+      { id: 'vitality', name: 'UltiWell® Vitality', ingredients: ['CoQ10 (Biosynthesis)', 'B-Complex Vitamins', 'Adaptogenic Herbs', 'L-Carnitine'] },
+      { id: 'balance', name: 'UltiWell® Balance', ingredients: ['Magnesium Bisglycinate', 'Vitamin B6', 'Zinc Chelate', 'L-Theanine'] },
+      { id: 'pure', name: 'UltiWell® Pure', ingredients: ['Purified Vitamins', 'Pharmaceutical-grade Minerals', 'Natural Fillers'] },
+      { id: 'elevate', name: 'UltiWell® Elevate', ingredients: ['Premium Multivitamin Complex', 'Antioxidants', 'Adaptogens', 'Essential Minerals'] },
+      { id: 'nutriboost', name: 'UltiWell® NutriBoost', ingredients: ['Full Spectrum Vitamins', 'Chelated Minerals', 'Probiotics', 'Enzymes'] },
     ],
   },
   {
@@ -50,9 +50,9 @@ const ultiWellCategories = [
     icon: Brain,
     description: 'Mental clarity, focus and cognitive performance',
     products: [
-      { id: 'clarity', name: 'UltiWell® Clarity', description: 'Brain health and mental clarity' },
-      { id: 'focus', name: 'UltiWell® Focus', description: 'Attention and cognitive function enhancement' },
-      { id: 'brainboost', name: 'UltiWell® BrainBoost', description: 'Memory and cognitive performance support' },
+      { id: 'clarity', name: 'UltiWell® Clarity', ingredients: ['Phosphatidylserine', 'DHA (Algae-derived)', 'Ginkgo Biloba', 'Lion\'s Mane Extract'] },
+      { id: 'focus', name: 'UltiWell® Focus', ingredients: ['L-Tyrosine', 'Alpha-GPC', 'Huperzine A', 'Vitamin B12'] },
+      { id: 'brainboost', name: 'UltiWell® BrainBoost', ingredients: ['Bacopa Monnieri', 'Acetyl-L-Carnitine', 'Lion\'s Mane', 'Alpha-GPC'] },
     ],
   },
   {
@@ -60,11 +60,11 @@ const ultiWellCategories = [
     icon: Dumbbell,
     description: 'Performance, strength and recovery solutions',
     products: [
-      { id: 'strength', name: 'UltiWell® Strength', description: 'Muscle and physical strength enhancement' },
-      { id: 'active', name: 'UltiWell® Active', description: 'Active lifestyle and sports nutrition' },
-      { id: 'energy', name: 'UltiWell® Energy', description: 'Energy boost and endurance support' },
-      { id: 'sportperformance', name: 'UltiWell® SportPerformance', description: 'High-performance nutrition for athletes' },
-      { id: 'recovery', name: 'UltiWell® Recovery Series', description: 'Post-exercise recovery and muscle relief' },
+      { id: 'strength', name: 'UltiWell® Strength', ingredients: ['Creatine Monohydrate', 'BCAA 2:1:1', 'HMB', 'Vitamin D3'] },
+      { id: 'active', name: 'UltiWell® Active', ingredients: ['Electrolytes', 'B-Complex', 'CoQ10', 'L-Carnitine'] },
+      { id: 'energy', name: 'UltiWell® Energy', ingredients: ['Green Tea Extract', 'Guarana', 'B-Vitamins', 'L-Taurine'] },
+      { id: 'sportperformance', name: 'UltiWell® SportPerformance', ingredients: ['Advanced Protein Matrix', 'Performance Complex', 'Electrolytes', 'Recovery Agents'] },
+      { id: 'recovery', name: 'UltiWell® Recovery Series', ingredients: ['Tart Cherry Extract', 'Turmeric (Curcumin)', 'MSM', 'Collagen Peptides'] },
     ],
   },
   {
@@ -72,12 +72,12 @@ const ultiWellCategories = [
     icon: Sparkles,
     description: 'Youthful vitality and skin health',
     products: [
-      { id: 'renew', name: 'UltiWell® Renew', description: 'Anti-aging and vitality restoration' },
-      { id: 'ageless', name: 'UltiWell® Ageless', description: 'Anti-aging and skin care' },
-      { id: 'youthvibe', name: 'UltiWell® YouthVibe', description: 'Health and vitality for the young generation' },
-      { id: 'glow', name: 'UltiWell® Glow', description: 'Skin health and beauty' },
-      { id: 'skinnutritious', name: 'UltiWell® SkinNutritious', description: 'Skin health and beauty nutrition' },
-      { id: 'bodycare', name: 'UltiWell® Body Care Series', description: 'Skin health and body care products' },
+      { id: 'renew', name: 'UltiWell® Renew', ingredients: ['Resveratrol', 'NMN', 'CoQ10', 'Alpha-Lipoic Acid'] },
+      { id: 'ageless', name: 'UltiWell® Ageless', ingredients: ['Collagen Peptides', 'Hyaluronic Acid', 'Vitamin C', 'Vitamin E'] },
+      { id: 'youthvibe', name: 'UltiWell® YouthVibe', ingredients: ['Superfoods Blend', 'Adaptogens', 'Antioxidants', 'Essential Nutrients'] },
+      { id: 'glow', name: 'UltiWell® Glow', ingredients: ['Hyaluronic Acid', 'Collagen', 'Biotin', 'Vitamin C'] },
+      { id: 'skinnutritious', name: 'UltiWell® SkinNutritious', ingredients: ['Omega-3', 'Vitamin A', 'Zinc', 'Selenium'] },
+      { id: 'bodycare', name: 'UltiWell® Body Care Series', ingredients: ['Natural Oils', 'Vitamins', 'Minerals', 'Herbal Extracts'] },
     ],
   },
   {
@@ -85,8 +85,8 @@ const ultiWellCategories = [
     icon: Heart,
     description: 'Cardiovascular health and blood circulation',
     products: [
-      { id: 'pulse', name: 'UltiWell® Pulse', description: 'Heart health and blood circulation' },
-      { id: 'cardiofit', name: 'UltiWell® CardioFit', description: 'Cardiovascular health promotion' },
+      { id: 'pulse', name: 'UltiWell® Pulse', ingredients: ['Omega-3 Fish Oil', 'CoQ10', 'Garlic Extract', 'Vitamin K2'] },
+      { id: 'cardiofit', name: 'UltiWell® CardioFit', ingredients: ['Plant Sterols', 'Fiber', 'Niacin', 'Magnesium'] },
     ],
   },
   {
@@ -94,8 +94,8 @@ const ultiWellCategories = [
     icon: Shield,
     description: 'Immune system defense and protection',
     products: [
-      { id: 'shield', name: 'UltiWell® Shield', description: 'Immune system support and protection' },
-      { id: 'immunoshield', name: 'UltiWell® ImmunoShield', description: 'Immune system enhancement' },
+      { id: 'shield', name: 'UltiWell® Shield', ingredients: ['Vitamin C', 'Vitamin D3', 'Zinc', 'Elderberry Extract'] },
+      { id: 'immunoshield', name: 'UltiWell® ImmunoShield', ingredients: ['Beta-Glucan', 'Colostrum', 'AHCC', 'Medicinal Mushrooms'] },
     ],
   },
   {
@@ -103,8 +103,8 @@ const ultiWellCategories = [
     icon: Bone,
     description: 'Joint health, flexibility and mobility',
     products: [
-      { id: 'flex', name: 'UltiWell® Flex', description: 'Joint health and flexibility' },
-      { id: 'mobility', name: 'UltiWell® Mobility', description: 'Joint flexibility and pain relief' },
+      { id: 'flex', name: 'UltiWell® Flex', ingredients: ['Glucosamine', 'Chondroitin', 'MSM', 'Hyaluronic Acid'] },
+      { id: 'mobility', name: 'UltiWell® Mobility', ingredients: ['Turmeric (Curcumin)', 'Boswellia', 'Ginger', 'White Willow Bark'] },
     ],
   },
   {
@@ -112,13 +112,13 @@ const ultiWellCategories = [
     icon: Moon,
     description: 'Restful sleep and stress management',
     products: [
-      { id: 'harmony', name: 'UltiWell® Harmony', description: 'Mind-body harmony and relaxation' },
-      { id: 'calm', name: 'UltiWell® Calm', description: 'Stress management and relaxation' },
-      { id: 'zenith', name: 'UltiWell® Zenith', description: 'Premium flagship product line' },
-      { id: 'restful', name: 'UltiWell® Restful', description: 'Sleep quality improvement' },
-      { id: 'sleep', name: 'UltiWell® Sleep Series', description: 'Sleep quality and pattern improvement' },
-      { id: 'relaxation', name: 'UltiWell® Relaxation Series', description: 'Stress management and relaxation' },
-      { id: 'mindsoothing', name: 'UltiWell® Mind Soothing Series', description: 'Mental health support and relaxation' },
+      { id: 'harmony', name: 'UltiWell® Harmony', ingredients: ['Ashwagandha', 'L-Theanine', 'Magnesium', 'Passionflower'] },
+      { id: 'calm', name: 'UltiWell® Calm', ingredients: ['L-Theanine', 'GABA', 'Lemon Balm', 'Chamomile'] },
+      { id: 'zenith', name: 'UltiWell® Zenith', ingredients: ['Premium Adaptogens', 'Advanced Nootropics', 'Superfoods', 'Premium Vitamins'] },
+      { id: 'restful', name: 'UltiWell® Restful', ingredients: ['Melatonin', 'Valerian Root', 'Magnesium Glycinate', 'L-Tryptophan'] },
+      { id: 'sleep', name: 'UltiWell® Sleep Series', ingredients: ['Chamomile', 'Passionflower', 'L-Theanine', 'Magnesium'] },
+      { id: 'relaxation', name: 'UltiWell® Relaxation Series', ingredients: ['Relaxation Herbs Blend', 'Magnesium', 'B-Vitamins', 'Adaptogens'] },
+      { id: 'mindsoothing', name: 'UltiWell® Mind Soothing Series', ingredients: ['Soothing Herbs', 'Omega-3', 'B-Complex', 'L-Theanine'] },
     ],
   },
   {
@@ -126,10 +126,10 @@ const ultiWellCategories = [
     icon: Leaf,
     description: 'Digestion, detox and liver support',
     products: [
-      { id: 'digest', name: 'UltiWell® Digest', description: 'Digestive system health support' },
-      { id: 'cleanse', name: 'UltiWell® Cleanse', description: 'Body detoxification and cleansing' },
-      { id: 'liversupport', name: 'UltiWell® LiverSupport', description: 'Liver health and detoxification' },
-      { id: 'ketobalance', name: 'UltiWell® KetoBalance', description: 'Keto diet and weight management' },
+      { id: 'digest', name: 'UltiWell® Digest', ingredients: ['Digestive Enzymes', 'Probiotics 10B CFU', 'Prebiotics', 'Ginger'] },
+      { id: 'cleanse', name: 'UltiWell® Cleanse', ingredients: ['Milk Thistle', 'Dandelion Root', 'Turmeric', 'Artichoke'] },
+      { id: 'liversupport', name: 'UltiWell® LiverSupport', ingredients: ['Silymarin', 'NAC', 'Dandelion', 'Artichoke Extract'] },
+      { id: 'ketobalance', name: 'UltiWell® KetoBalance', ingredients: ['MCT Oil', 'Exogenous Ketones', 'Electrolytes', 'Fiber'] },
     ],
   },
   {
@@ -137,9 +137,9 @@ const ultiWellCategories = [
     icon: Users,
     description: 'Targeted solutions for specific needs',
     products: [
-      { id: 'menopauseease', name: 'UltiWell® MenopauseEase', description: 'Menopause symptom relief' },
-      { id: 'eyevive', name: 'UltiWell® EyeVive', description: 'Eye health and vision protection' },
-      { id: 'elderlycare', name: 'UltiWell® Elderly Care Series', description: 'Quality of life products for seniors' },
+      { id: 'menopauseease', name: 'UltiWell® MenopauseEase', ingredients: ['Black Cohosh', 'Dong Quai', 'Evening Primrose', 'Vitamin E'] },
+      { id: 'eyevive', name: 'UltiWell® EyeVive', ingredients: ['Lutein', 'Zeaxanthin', 'Bilberry', 'Vitamin A'] },
+      { id: 'elderlycare', name: 'UltiWell® Elderly Care Series', ingredients: ['Senior Vitamins', 'Bone Support', 'Memory Complex', 'Joint Support'] },
     ],
   },
   {
@@ -147,11 +147,11 @@ const ultiWellCategories = [
     icon: Activity,
     description: 'Daily wellness and lifestyle support',
     products: [
-      { id: 'veganpure', name: 'UltiWell® VeganPure', description: 'Vegan and pure supplements' },
-      { id: 'travel', name: 'UltiWell® Travel Series', description: 'Portable products for travelers' },
-      { id: 'healthydiet', name: 'UltiWell® Healthy Diet Series', description: 'Nutritious food and beverages' },
-      { id: 'dailycare', name: 'UltiWell® Daily Care Series', description: 'Daily comfort and wellness tools' },
-      { id: 'environment', name: 'UltiWell® Environment Optimization Series', description: 'Living and working environment enhancement' },
+      { id: 'veganpure', name: 'UltiWell® VeganPure', ingredients: ['Plant Vitamins', 'Algae DHA', 'Vegan B12', 'Plant Minerals'] },
+      { id: 'travel', name: 'UltiWell® Travel Series', ingredients: ['Travel Essentials', 'Immune Support', 'Digestive Aid', 'Sleep Support'] },
+      { id: 'healthydiet', name: 'UltiWell® Healthy Diet Series', ingredients: ['Superfoods', 'Protein', 'Fiber', 'Nutrients'] },
+      { id: 'dailycare', name: 'UltiWell® Daily Care Series', ingredients: ['Daily Essentials', 'Comfort Herbs', 'Wellness Support'] },
+      { id: 'environment', name: 'UltiWell® Environment Optimization Series', ingredients: ['Environmental Support', 'Air Purifiers', 'Wellness Enhancers'] },
     ],
   },
   {
@@ -159,12 +159,12 @@ const ultiWellCategories = [
     icon: Leaf,
     description: 'High-potency plant-derived active ingredients',
     products: [
-      { id: 'curcumin', name: 'UltiWell® Curcumin Extract', description: 'Turmeric extract (Curcumin ≥95%)' },
-      { id: 'resveratrol', name: 'UltiWell® Resveratrol Extract', description: 'Red grape extract (Resveratrol ≥98%)' },
-      { id: 'quercetin', name: 'UltiWell® Quercetin Extract', description: 'Sophora japonica extract (Quercetin ≥95%)' },
-      { id: 'egcg', name: 'UltiWell® EGCG Extract', description: 'Green tea extract (EGCG ≥50%)' },
-      { id: 'berberine', name: 'UltiWell® Berberine Extract', description: 'Coptis chinensis extract (Berberine ≥97%)' },
-      { id: 'silymarin', name: 'UltiWell® Silymarin Extract', description: 'Milk thistle extract (Silymarin ≥80%)' },
+      { id: 'curcumin', name: 'UltiWell® Curcumin Extract', ingredients: ['Curcumin C3 Complex®', 'Piperine', 'Turmeric Oil'] },
+      { id: 'resveratrol', name: 'UltiWell® Resveratrol Extract', ingredients: ['Trans-Resveratrol', 'Red Wine Extract', 'Grape Seed'] },
+      { id: 'quercetin', name: 'UltiWell® Quercetin Extract', ingredients: ['Quercetin Dihydrate', 'Bromelain', 'Vitamin C'] },
+      { id: 'egcg', name: 'UltiWell® EGCG Extract', ingredients: ['Green Tea Extract', 'EGCG', 'Natural Caffeine'] },
+      { id: 'berberine', name: 'UltiWell® Berberine Extract', ingredients: ['Berberine HCl', 'Coptis Chinensis Extract'] },
+      { id: 'silymarin', name: 'UltiWell® Silymarin Extract', ingredients: ['Milk Thistle Extract', 'Silymarin', 'Phosphatidylcholine'] },
     ],
   },
   {
@@ -172,12 +172,12 @@ const ultiWellCategories = [
     icon: Sparkles,
     description: 'Natural food-grade colors from biosynthesis',
     products: [
-      { id: 'betacarotene', name: 'UltiWell® Beta-Carotene', description: 'Natural orange color (≥96%)' },
-      { id: 'astaxanthin', name: 'UltiWell® Astaxanthin', description: 'Natural red color (≥2%)' },
-      { id: 'lutein', name: 'UltiWell® Lutein', description: 'Natural yellow color (≥5%)' },
-      { id: 'lycopene', name: 'UltiWell® Lycopene', description: 'Natural red color (≥5%)' },
-      { id: 'anthocyanin', name: 'UltiWell® Anthocyanin', description: 'Natural purple color (≥25%)' },
-      { id: 'chlorophyll', name: 'UltiWell® Chlorophyll', description: 'Natural green color' },
+      { id: 'betacarotene', name: 'UltiWell® Beta-Carotene', ingredients: ['Biosynthesis Beta-Carotene'] },
+      { id: 'astaxanthin', name: 'UltiWell® Astaxanthin', ingredients: ['Haematococcus Pluvialis Extract'] },
+      { id: 'lutein', name: 'UltiWell® Lutein', ingredients: ['Marigold Extract'] },
+      { id: 'lycopene', name: 'UltiWell® Lycopene', ingredients: ['Tomato Extract'] },
+      { id: 'anthocyanin', name: 'UltiWell® Anthocyanin', ingredients: ['Berry Extract Blend'] },
+      { id: 'chlorophyll', name: 'UltiWell® Chlorophyll', ingredients: ['Alfalfa Extract', 'Chlorophyllin'] },
     ],
   },
 ];
@@ -189,12 +189,12 @@ const ultiGlowCategories = [
     icon: Droplets,
     description: 'Multi-layer hydration with biosynthesis hyaluronic acid and glucosamine',
     products: [
-      { id: 'bio-ha-serum', name: 'UltiGlow™ Bio-HA Serum', description: 'Multi-weight HA for 72-hour deep hydration' },
-      { id: 'bio-ha-cream', name: 'UltiGlow™ Bio-HA Cream', description: 'Intensive moisturizing cream with plumping effect' },
-      { id: 'bio-ha-mask', name: 'UltiGlow™ Bio-HA Mask', description: 'Intensive hydration mask for dry skin' },
-      { id: 'bio-ha-toner', name: 'UltiGlow™ Bio-HA Toner', description: 'Hydrating prep toner for better absorption' },
-      { id: 'bio-glucosamine-serum', name: 'UltiGlow™ Bio-Glucosamine Serum', description: 'Enhances natural HA production' },
-      { id: 'bio-glucosamine-cream', name: 'UltiGlow™ Bio-Glucosamine Cream', description: 'Barrier repair and moisture lock' },
+      { id: 'bio-ha-serum', name: 'UltiGlow™ Bio-HA Serum', ingredients: ['Bio-HA (Multi-weight) 2%', 'Sodium Hyaluronate', 'Hydrolyzed HA'] },
+      { id: 'bio-ha-cream', name: 'UltiGlow™ Bio-HA Cream', ingredients: ['Bio-HA 1%', 'Ceramides', 'Squalane'] },
+      { id: 'bio-ha-mask', name: 'UltiGlow™ Bio-HA Mask', ingredients: ['Bio-HA 3%', 'Aloe Vera', 'Vitamin B5'] },
+      { id: 'bio-ha-toner', name: 'UltiGlow™ Bio-HA Toner', ingredients: ['Bio-HA 0.5%', 'Glycerin', 'Rose Water'] },
+      { id: 'bio-glucosamine-serum', name: 'UltiGlow™ Bio-Glucosamine Serum', ingredients: ['N-Acetyl Glucosamine 5%', 'Niacinamide', 'Vitamin E'] },
+      { id: 'bio-glucosamine-cream', name: 'UltiGlow™ Bio-Glucosamine Cream', ingredients: ['N-Acetyl Glucosamine 3%', 'Ceramides', 'Cholesterol'] },
     ],
   },
   {
@@ -202,13 +202,13 @@ const ultiGlowCategories = [
     icon: Heart,
     description: 'Collagen and peptide formulations for youthful skin',
     products: [
-      { id: 'bio-collagen-serum', name: 'UltiGlow™ Bio-Collagen Serum', description: 'Recombinant human collagen, firming and elastic' },
-      { id: 'bio-collagen-cream', name: 'UltiGlow™ Bio-Collagen Cream', description: 'Day cream for firming and anti-wrinkle' },
-      { id: 'bio-collagen-mask', name: 'UltiGlow™ Bio-Collagen Mask', description: 'Intensive repair mask' },
-      { id: 'bio-collagen-eye-cream', name: 'UltiGlow™ Bio-Collagen Eye Cream', description: 'Reduces fine lines around eyes' },
-      { id: 'bio-peptide-serum', name: 'UltiGlow™ Bio-Peptide Serum', description: 'Multi-peptide complex, wrinkle reduction' },
-      { id: 'bio-peptide-cream', name: 'UltiGlow™ Bio-Peptide Cream', description: 'Anti-aging firming cream' },
-      { id: 'bio-copper-peptide-serum', name: 'UltiGlow™ Bio-Copper Peptide Serum', description: 'Copper peptide for skin renewal' },
+      { id: 'bio-collagen-serum', name: 'UltiGlow™ Bio-Collagen Serum', ingredients: ['Recombinant Collagen Type III 1%', 'Peptides', 'Vitamin C'] },
+      { id: 'bio-collagen-cream', name: 'UltiGlow™ Bio-Collagen Cream', ingredients: ['Bio-Collagen 2%', 'Peptides', 'SPF 15'] },
+      { id: 'bio-collagen-mask', name: 'UltiGlow™ Bio-Collagen Mask', ingredients: ['Bio-Collagen 3%', 'Peptides', 'Adenosine'] },
+      { id: 'bio-collagen-eye-cream', name: 'UltiGlow™ Bio-Collagen Eye Cream', ingredients: ['Bio-Collagen 1%', 'Peptides', 'Caffeine'] },
+      { id: 'bio-peptide-serum', name: 'UltiGlow™ Bio-Peptide Serum', ingredients: ['Argireline 10%', 'Matrixyl 3000 3%', 'Copper Peptide'] },
+      { id: 'bio-peptide-cream', name: 'UltiGlow™ Bio-Peptide Cream', ingredients: ['Peptide Complex 5%', 'Ceramides', 'Vitamin E'] },
+      { id: 'bio-copper-peptide-serum', name: 'UltiGlow™ Bio-Copper Peptide Serum', ingredients: ['Copper Peptide GHK-Cu 1%', 'Hyaluronic Acid', 'Allantoin'] },
     ],
   },
   {
@@ -216,11 +216,11 @@ const ultiGlowCategories = [
     icon: Sparkles,
     description: 'Vitamin C and brightening complexes for radiant skin',
     products: [
-      { id: 'bio-vitamin-c-serum', name: 'UltiGlow™ Bio-Vitamin C Serum', description: 'Stable vitamin C (≥20%), brightening and antioxidant' },
-      { id: 'bio-niacinamide-serum', name: 'UltiGlow™ Bio-Niacinamide Serum', description: 'Niacinamide (≥10%), evens skin tone' },
-      { id: 'bio-arbutin-serum', name: 'UltiGlow™ Bio-Arbutin Serum', description: 'Alpha-arbutin, fades dark spots' },
-      { id: 'bio-brightening-cream', name: 'UltiGlow™ Bio-Brightening Cream', description: 'Daily brightening moisturizer' },
-      { id: 'bio-brightening-mask', name: 'UltiGlow™ Bio-Brightening Mask', description: 'Intensive brightening treatment' },
+      { id: 'bio-vitamin-c-serum', name: 'UltiGlow™ Bio-Vitamin C Serum', ingredients: ['L-Ascorbic Acid 20%', 'Vitamin E', 'Ferulic Acid'] },
+      { id: 'bio-niacinamide-serum', name: 'UltiGlow™ Bio-Niacinamide Serum', ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Hyaluronic Acid'] },
+      { id: 'bio-arbutin-serum', name: 'UltiGlow™ Bio-Arbutin Serum', ingredients: ['Alpha-Arbutin 2%', 'Niacinamide', 'Hyaluronic Acid'] },
+      { id: 'bio-brightening-cream', name: 'UltiGlow™ Bio-Brightening Cream', ingredients: ['Vitamin C Derivative 5%', 'Niacinamide', 'Licorice Extract'] },
+      { id: 'bio-brightening-mask', name: 'UltiGlow™ Bio-Brightening Mask', ingredients: ['Vitamin C 10%', 'Arbutin', 'Licorice Extract'] },
     ],
   },
   {
@@ -228,12 +228,12 @@ const ultiGlowCategories = [
     icon: Shield,
     description: 'Gentle formulations for sensitive and compromised skin',
     products: [
-      { id: 'bio-ectoine-serum', name: 'UltiGlow™ Bio-Ectoine Serum', description: 'Protects and repairs skin barrier' },
-      { id: 'bio-ectoine-cream', name: 'UltiGlow™ Bio-Ectoine Cream', description: 'Calming moisturizer for sensitive skin' },
-      { id: 'bio-bisabolol-serum', name: 'UltiGlow™ Bio-Bisabolol Serum', description: 'Quick relief for redness and irritation' },
-      { id: 'bio-centella-cream', name: 'UltiGlow™ Bio-Centella Cream', description: 'Centella asiatica for repair' },
-      { id: 'bio-sensitive-mask', name: 'UltiGlow™ Bio-Sensitive Mask', description: 'Intensive calming treatment' },
-      { id: 'bio-ceramide-cream', name: 'UltiGlow™ Bio-Ceramide Cream', description: 'Rebuilds skin barrier' },
+      { id: 'bio-ectoine-serum', name: 'UltiGlow™ Bio-Ectoine Serum', ingredients: ['Ectoine 2%', 'Ceramides', 'Panthenol'] },
+      { id: 'bio-ectoine-cream', name: 'UltiGlow™ Bio-Ectoine Cream', ingredients: ['Ectoine 1%', 'Centella Asiatica', 'Allantoin'] },
+      { id: 'bio-bisabolol-serum', name: 'UltiGlow™ Bio-Bisabolol Serum', ingredients: ['Alpha-Bisabolol 1%', 'Panthenol', 'Allantoin'] },
+      { id: 'bio-centella-cream', name: 'UltiGlow™ Bio-Centella Cream', ingredients: ['Centella Asiatica Extract 5%', 'Asiaticoside', 'Madecassoside'] },
+      { id: 'bio-sensitive-mask', name: 'UltiGlow™ Bio-Sensitive Mask', ingredients: ['Ectoine 2%', 'Centella', 'Bisabolol'] },
+      { id: 'bio-ceramide-cream', name: 'UltiGlow™ Bio-Ceramide Cream', ingredients: ['Ceramide NP 3%', 'Ceramide AP', 'Ceramide EOP'] },
     ],
   },
   {
@@ -241,11 +241,11 @@ const ultiGlowCategories = [
     icon: Zap,
     description: 'Acne-fighting formulations with biosynthesis actives',
     products: [
-      { id: 'bio-salicylic-serum', name: 'UltiGlow™ Bio-Salicylic Serum', description: 'Oil-soluble BHA, deep pore cleansing' },
-      { id: 'bio-acne-serum', name: 'UltiGlow™ Bio-Acne Serum', description: 'Salicylic acid + niacinamide complex' },
-      { id: 'bio-acne-patch', name: 'UltiGlow™ Bio-Acne Patch', description: 'Hydrocolloid patch, overnight treatment' },
-      { id: 'bio-oil-control-toner', name: 'UltiGlow™ Bio-Oil Control Toner', description: 'Oil-balancing, pore refinement' },
-      { id: 'bio-tea-tree-serum', name: 'UltiGlow™ Bio-Tea Tree Serum', description: 'Natural antibacterial, spot treatment' },
+      { id: 'bio-salicylic-serum', name: 'UltiGlow™ Bio-Salicylic Serum', ingredients: ['Salicylic Acid 2%', 'Niacinamide', 'Tea Tree Oil'] },
+      { id: 'bio-acne-serum', name: 'UltiGlow™ Bio-Acne Serum', ingredients: ['Salicylic Acid 1%', 'Niacinamide 5%', 'Zinc PCA'] },
+      { id: 'bio-acne-patch', name: 'UltiGlow™ Bio-Acne Patch', ingredients: ['Hydrocolloid', 'Salicylic Acid', 'Niacinamide'] },
+      { id: 'bio-oil-control-toner', name: 'UltiGlow™ Bio-Oil Control Toner', ingredients: ['Niacinamide 5%', 'Zinc PCA', 'Witch Hazel'] },
+      { id: 'bio-tea-tree-serum', name: 'UltiGlow™ Bio-Tea Tree Serum', ingredients: ['Tea Tree Oil 5%', 'Niacinamide', 'Salicylic Acid'] },
     ],
   },
   {
@@ -253,11 +253,11 @@ const ultiGlowCategories = [
     icon: RefreshCw,
     description: 'Exfoliation and renewal formulations',
     products: [
-      { id: 'bio-aha-serum', name: 'UltiGlow™ Bio-AHA Serum', description: 'Gentle exfoliation, smooth skin texture' },
-      { id: 'bio-bha-toner', name: 'UltiGlow™ Bio-BHA Toner', description: 'Pore clearing, blackhead reduction' },
-      { id: 'bio-renew-mask', name: 'UltiGlow™ Bio-Renew Mask', description: 'Enzyme renewal, brightening effect' },
-      { id: 'bio-retinol-serum', name: 'UltiGlow™ Bio-Retinol Serum', description: 'Encapsulated retinol, anti-aging renewal' },
-      { id: 'bio-lactic-serum', name: 'UltiGlow™ Bio-Lactic Serum', description: 'Gentle exfoliation for sensitive skin' },
+      { id: 'bio-aha-serum', name: 'UltiGlow™ Bio-AHA Serum', ingredients: ['Glycolic Acid 8%', 'Lactic Acid', 'Hyaluronic Acid'] },
+      { id: 'bio-bha-toner', name: 'UltiGlow™ Bio-BHA Toner', ingredients: ['Salicylic Acid 1%', 'Willow Bark Extract', 'Niacinamide'] },
+      { id: 'bio-renew-mask', name: 'UltiGlow™ Bio-Renew Mask', ingredients: ['Papain Enzyme 2%', 'Bromelain', 'Vitamin C'] },
+      { id: 'bio-retinol-serum', name: 'UltiGlow™ Bio-Retinol Serum', ingredients: ['Encapsulated Retinol 0.5%', 'Bakuchiol', 'Vitamin E'] },
+      { id: 'bio-lactic-serum', name: 'UltiGlow™ Bio-Lactic Serum', ingredients: ['Lactic Acid 5%', 'Hyaluronic Acid', 'Aloe Vera'] },
     ],
   },
   {
@@ -265,10 +265,10 @@ const ultiGlowCategories = [
     icon: Sun,
     description: 'UV protection with skin-loving ingredients',
     products: [
-      { id: 'bio-sunscreen-spf50', name: 'UltiGlow™ Bio-Sunscreen SPF50', description: 'Lightweight broad spectrum protection' },
-      { id: 'bio-sun-serum', name: 'UltiGlow™ Bio-Sun Serum', description: 'Sun protection serum, glow finish' },
-      { id: 'bio-after-sun-gel', name: 'UltiGlow™ Bio-After Sun Gel', description: 'Soothing after-sun care' },
-      { id: 'bio-uv-shield-cream', name: 'UltiGlow™ Bio-UV Shield Cream', description: 'Daily UV protection moisturizer' },
+      { id: 'bio-sunscreen-spf50', name: 'UltiGlow™ Bio-Sunscreen SPF50', ingredients: ['Zinc Oxide', 'Titanium Dioxide', 'Vitamin E'] },
+      { id: 'bio-sun-serum', name: 'UltiGlow™ Bio-Sun Serum', ingredients: ['Chemical UV Filters', 'Niacinamide', 'Hyaluronic Acid'] },
+      { id: 'bio-after-sun-gel', name: 'UltiGlow™ Bio-After Sun Gel', ingredients: ['Aloe Vera 90%', 'Cucumber Extract', 'Allantoin'] },
+      { id: 'bio-uv-shield-cream', name: 'UltiGlow™ Bio-UV Shield Cream', ingredients: ['UV Filters', 'Ceramides', 'Vitamin E'] },
     ],
   },
   {
@@ -276,10 +276,10 @@ const ultiGlowCategories = [
     icon: Leaf,
     description: 'Natural antioxidant complexes for skin defense',
     products: [
-      { id: 'bio-ergothioneine-serum', name: 'UltiGlow™ Bio-Ergothioneine Serum', description: 'Deep antioxidant protection (≥98%)' },
-      { id: 'bio-resveratrol-cream', name: 'UltiGlow™ Bio-Resveratrol Cream', description: 'Anti-aging night cream' },
-      { id: 'bio-green-tea-essence', name: 'UltiGlow™ Bio-Green Tea Essence', description: 'EGCG essence, soothing antioxidant' },
-      { id: 'bio-ferulic-serum', name: 'UltiGlow™ Bio-Ferulic Serum', description: 'Enhances other antioxidant activities' },
+      { id: 'bio-ergothioneine-serum', name: 'UltiGlow™ Bio-Ergothioneine Serum', ingredients: ['Ergothioneine 0.5%', 'Vitamin C', 'Vitamin E'] },
+      { id: 'bio-resveratrol-cream', name: 'UltiGlow™ Bio-Resveratrol Cream', ingredients: ['Resveratrol 1%', 'Peptides', 'Ceramides'] },
+      { id: 'bio-green-tea-essence', name: 'UltiGlow™ Bio-Green Tea Essence', ingredients: ['EGCG 5%', 'Green Tea Extract', 'Aloe Vera'] },
+      { id: 'bio-ferulic-serum', name: 'UltiGlow™ Bio-Ferulic Acid Serum', ingredients: ['Ferulic Acid 0.5%', 'Vitamin C', 'Vitamin E'] },
     ],
   },
   {
@@ -287,9 +287,9 @@ const ultiGlowCategories = [
     icon: Eye,
     description: 'Targeted solutions for delicate eye area',
     products: [
-      { id: 'bio-eye-cream', name: 'UltiGlow™ Bio-Eye Cream', description: 'Reduces dark circles and fine lines' },
-      { id: 'bio-peptide-eye-serum', name: 'UltiGlow™ Bio-Peptide Eye Serum', description: 'Peptide complex for eye contour' },
-      { id: 'bio-eye-mask', name: 'UltiGlow™ Bio-Eye Mask', description: 'Intensive treatment for tired eyes' },
+      { id: 'bio-eye-cream', name: 'UltiGlow™ Bio-Eye Cream', ingredients: ['Caffeine 2%', 'Peptides', 'Vitamin K'] },
+      { id: 'bio-peptide-eye-serum', name: 'UltiGlow™ Bio-Peptide Eye Serum', ingredients: ['Peptide Complex 5%', 'Caffeine', 'Hyaluronic Acid'] },
+      { id: 'bio-eye-mask', name: 'UltiGlow™ Bio-Eye Mask', ingredients: ['Caffeine', 'Peptides', 'Cucumber Extract'] },
     ],
   },
   {
@@ -297,9 +297,9 @@ const ultiGlowCategories = [
     icon: Smile,
     description: 'Nourishing and protecting lip products',
     products: [
-      { id: 'bio-lip-balm', name: 'UltiGlow™ Bio-Lip Balm', description: 'Moisturizing lip balm with natural ingredients' },
-      { id: 'bio-lip-mask', name: 'UltiGlow™ Bio-Lip Mask', description: 'Overnight intensive lip treatment' },
-      { id: 'bio-lip-serum', name: 'UltiGlow™ Bio-Lip Serum', description: 'Plumping and hydrating lip serum' },
+      { id: 'bio-lip-balm', name: 'UltiGlow™ Bio-Lip Balm', ingredients: ['Shea Butter', 'Beeswax', 'Vitamin E'] },
+      { id: 'bio-lip-mask', name: 'UltiGlow™ Bio-Lip Mask', ingredients: ['Hyaluronic Acid', 'Ceramides', 'Shea Butter'] },
+      { id: 'bio-lip-serum', name: 'UltiGlow™ Bio-Lip Serum', ingredients: ['Hyaluronic Acid', 'Peptides', 'Mint Oil'] },
     ],
   },
   {
@@ -307,9 +307,9 @@ const ultiGlowCategories = [
     icon: Wind,
     description: 'Pore refining and oil control solutions',
     products: [
-      { id: 'bio-pore-serum', name: 'UltiGlow™ Bio-Pore Serum', description: 'Refines pores, controls oil' },
-      { id: 'bio-pore-mask', name: 'UltiGlow™ Bio-Pore Mask', description: 'Deep cleansing clay mask' },
-      { id: 'bio-pore-toner', name: 'UltiGlow™ Bio-Pore Toner', description: 'Tightens pores, smooths texture' },
+      { id: 'bio-pore-serum', name: 'UltiGlow™ Bio-Pore Serum', ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Salicylic Acid'] },
+      { id: 'bio-pore-mask', name: 'UltiGlow™ Bio-Pore Mask', ingredients: ['Kaolin Clay', 'Bentonite Clay', 'Tea Tree Oil'] },
+      { id: 'bio-pore-toner', name: 'UltiGlow™ Bio-Pore Toner', ingredients: ['Witch Hazel', 'Niacinamide', 'Tea Tree Oil'] },
     ],
   },
   {
@@ -317,12 +317,12 @@ const ultiGlowCategories = [
     icon: Palette,
     description: 'Natural color cosmetics with bio-derived pigments',
     products: [
-      { id: 'bio-lip-tint', name: 'UltiGlow™ Bio-Lip Tint', description: 'Plant-based natural color' },
-      { id: 'bio-bb-cream', name: 'UltiGlow™ Bio-BB Cream', description: 'Natural coverage, light finish' },
-      { id: 'bio-blush', name: 'UltiGlow™ Bio-Blush', description: 'Mineral blush, healthy glow' },
-      { id: 'bio-highlighter', name: 'UltiGlow™ Bio-Highlighter', description: 'Natural radiance, subtle shimmer' },
-      { id: 'bio-bronzer', name: 'UltiGlow™ Bio-Bronzer', description: 'Sun-kissed natural look' },
-      { id: 'bio-eyebrow-gel', name: 'UltiGlow™ Bio-Eyebrow Gel', description: 'Natural definition, long-lasting' },
+      { id: 'bio-lip-tint', name: 'UltiGlow™ Bio-Lip Tint', ingredients: ['Plant Pigments', 'Jojoba Oil', 'Vitamin E'] },
+      { id: 'bio-bb-cream', name: 'UltiGlow™ Bio-BB Cream', ingredients: ['Mineral Pigments', 'Hyaluronic Acid', 'Niacinamide'] },
+      { id: 'bio-blush', name: 'UltiGlow™ Bio-Blush', ingredients: ['Mineral Pigments', 'Mica', 'Jojoba Oil'] },
+      { id: 'bio-highlighter', name: 'UltiGlow™ Bio-Highlighter', ingredients: ['Mica', 'Mineral Pigments', 'Argan Oil'] },
+      { id: 'bio-bronzer', name: 'UltiGlow™ Bio-Bronzer', ingredients: ['Mineral Bronzers', 'Mica', 'Vitamin E'] },
+      { id: 'bio-eyebrow-gel', name: 'UltiGlow™ Bio-Eyebrow Gel', ingredients: ['Natural Pigments', 'Beeswax', 'Vitamin E'] },
     ],
   },
 ];
@@ -429,13 +429,22 @@ export default function CataloguePage() {
                   >
                     <Card className="border border-gray-200 hover:shadow-lg hover:border-green-200 transition-all duration-300 group h-full">
                       <CardContent className="p-5">
-                        <div className="flex items-start justify-between mb-2">
+                        <div className="flex items-start justify-between mb-3">
                           <h4 className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
                             {product.name}
                           </h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
                         </div>
-                        <p className="text-sm text-gray-600">{product.description}</p>
+                        <div className="bg-gray-50 rounded-lg p-3">
+                          <ul className="space-y-1">
+                            {product.ingredients.map((ingredient, idx) => (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#A1BA80' }} />
+                                {ingredient}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </CardContent>
                     </Card>
                   </Link>
@@ -494,13 +503,22 @@ export default function CataloguePage() {
                   >
                     <Card className="border border-gray-200 hover:shadow-lg hover:border-green-200 transition-all duration-300 group h-full bg-white">
                       <CardContent className="p-5">
-                        <div className="flex items-start justify-between mb-2">
+                        <div className="flex items-start justify-between mb-3">
                           <h4 className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
                             {product.name}
                           </h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
                         </div>
-                        <p className="text-sm text-gray-600">{product.description}</p>
+                        <div className="bg-gray-50 rounded-lg p-3">
+                          <ul className="space-y-1">
+                            {product.ingredients.map((ingredient, idx) => (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#A1BA80' }} />
+                                {ingredient}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
                       </CardContent>
                     </Card>
                   </Link>
