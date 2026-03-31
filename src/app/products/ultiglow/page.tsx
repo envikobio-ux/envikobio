@@ -15,11 +15,10 @@ import {
   Download,
   Zap,
   RefreshCw,
-  Diamond,
   Eye,
   Smile,
-  Palette,
-  Wind
+  Wind,
+  Palette
 } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -36,12 +35,12 @@ const ultiGlowCategories = [
     description: 'Multi-layer hydration with biosynthesis hyaluronic acid and glucosamine',
     descriptionCn: '多层次补水，生物合成透明质酸与氨基葡萄糖',
     products: [
-      { id: 'bio-ha-serum', name: 'UltiGlow™ Bio-HA Serum', nameCn: '生物透明质酸精华', description: 'Multi-weight HA for 72-hour deep hydration', descriptionCn: '多分子量透明质酸，72小时深层补水' },
-      { id: 'bio-ha-cream', name: 'UltiGlow™ Bio-HA Cream', nameCn: '生物透明质酸面霜', description: 'Intensive moisturizing cream with plumping effect', descriptionCn: '强效保湿面霜，充盈肌肤' },
-      { id: 'bio-ha-mask', name: 'UltiGlow™ Bio-HA Mask', nameCn: '生物透明质酸面膜', description: 'Intensive hydration mask for dry skin', descriptionCn: '干性肌肤强效补水面膜' },
-      { id: 'bio-ha-toner', name: 'UltiGlow™ Bio-HA Toner', nameCn: '生物透明质酸爽肤水', description: 'Hydrating prep toner for better absorption', descriptionCn: '补水预处理爽肤水，促进吸收' },
-      { id: 'bio-glucosamine-serum', name: 'UltiGlow™ Bio-Glucosamine Serum', nameCn: '生物氨基葡萄糖精华', description: 'Enhances natural HA production', descriptionCn: '促进肌肤自身透明质酸合成' },
-      { id: 'bio-glucosamine-cream', name: 'UltiGlow™ Bio-Glucosamine Cream', nameCn: '生物氨基葡萄糖面霜', description: 'Barrier repair and moisture lock', descriptionCn: '屏障修护，锁水保湿' },
+      { id: 'bio-ha-serum', name: '生物合成透明质酸精华', nameEn: 'Bio-HA Serum', description: '多分子量透明质酸，72小时深层补水' },
+      { id: 'bio-ha-cream', name: '生物合成透明质酸面霜', nameEn: 'Bio-HA Cream', description: '强效保湿面霜，充盈肌肤' },
+      { id: 'bio-ha-mask', name: '生物合成透明质酸面膜', nameEn: 'Bio-HA Mask', description: '干性肌肤强效补水面膜' },
+      { id: 'bio-ha-toner', name: '生物合成透明质酸爽肤水', nameEn: 'Bio-HA Toner', description: '补水预处理爽肤水，促进吸收' },
+      { id: 'bio-glucosamine-serum', name: '生物合成氨基葡萄糖精华', nameEn: 'Bio-Glucosamine Serum', description: '促进肌肤自身透明质酸合成' },
+      { id: 'bio-glucosamine-cream', name: '生物合成氨基葡萄糖面霜', nameEn: 'Bio-Glucosamine Cream', description: '屏障修护，锁水保湿' },
     ],
   },
   {
@@ -51,13 +50,13 @@ const ultiGlowCategories = [
     description: 'Collagen and peptide formulations for youthful skin',
     descriptionCn: '胶原蛋白与多肽配方，焕发年轻肌肤',
     products: [
-      { id: 'bio-collagen-serum', name: 'UltiGlow™ Bio-Collagen Serum', nameCn: '生物胶原蛋白精华', description: 'Recombinant human collagen, firming and elastic', descriptionCn: '重组人源胶原蛋白，紧致弹润' },
-      { id: 'bio-collagen-cream', name: 'UltiGlow™ Bio-Collagen Cream', nameCn: '生物胶原蛋白面霜', description: 'Day cream for firming and anti-wrinkle', descriptionCn: '日霜，紧致抗皱' },
-      { id: 'bio-collagen-mask', name: 'UltiGlow™ Bio-Collagen Mask', nameCn: '生物胶原蛋白面膜', description: 'Intensive repair mask', descriptionCn: '强效修护面膜' },
-      { id: 'bio-collagen-eye-cream', name: 'UltiGlow™ Bio-Collagen Eye Cream', nameCn: '生物胶原蛋白眼霜', description: 'Reduces fine lines around eyes', descriptionCn: '减少眼部细纹' },
-      { id: 'bio-peptide-serum', name: 'UltiGlow™ Bio-Peptide Serum', nameCn: '生物多肽精华', description: 'Multi-peptide complex, wrinkle reduction', descriptionCn: '多肽复合物，减少皱纹' },
-      { id: 'bio-peptide-cream', name: 'UltiGlow™ Bio-Peptide Cream', nameCn: '生物多肽面霜', description: 'Anti-aging firming cream', descriptionCn: '抗衰老紧致面霜' },
-      { id: 'bio-copper-peptide-serum', name: 'UltiGlow™ Bio-Copper Peptide Serum', nameCn: '生物铜肽精华', description: 'Copper peptide for skin renewal', descriptionCn: '铜肽促进肌肤焕新' },
+      { id: 'bio-collagen-serum', name: '生物合成胶原蛋白精华', nameEn: 'Bio-Collagen Serum', description: '重组人源胶原蛋白，紧致弹润' },
+      { id: 'bio-collagen-cream', name: '生物合成胶原蛋白面霜', nameEn: 'Bio-Collagen Cream', description: '日霜，紧致抗皱' },
+      { id: 'bio-collagen-mask', name: '生物合成胶原蛋白面膜', nameEn: 'Bio-Collagen Mask', description: '强效修护面膜' },
+      { id: 'bio-collagen-eye-cream', name: '生物合成胶原蛋白眼霜', nameEn: 'Bio-Collagen Eye Cream', description: '减少眼部细纹' },
+      { id: 'bio-peptide-serum', name: '生物合成多肽精华', nameEn: 'Bio-Peptide Serum', description: '多肽复合物，减少皱纹' },
+      { id: 'bio-peptide-cream', name: '生物合成多肽面霜', nameEn: 'Bio-Peptide Cream', description: '抗衰老紧致面霜' },
+      { id: 'bio-copper-peptide-serum', name: '生物合成铜肽精华', nameEn: 'Bio-Copper Peptide Serum', description: '铜肽促进肌肤焕新' },
     ],
   },
   {
@@ -67,11 +66,11 @@ const ultiGlowCategories = [
     description: 'Vitamin C and brightening complexes for radiant skin',
     descriptionCn: '维生素C与提亮复合物，焕发肌肤光彩',
     products: [
-      { id: 'bio-vitamin-c-serum', name: 'UltiGlow™ Bio-Vitamin C Serum', nameCn: '生物维生素C精华', description: 'Stable vitamin C (≥20%), brightening and antioxidant', descriptionCn: '稳定维生素C(≥20%)，提亮抗氧化' },
-      { id: 'bio-niacinamide-serum', name: 'UltiGlow™ Bio-Niacinamide Serum', nameCn: '生物烟酰胺精华', description: 'Niacinamide (≥10%), evens skin tone', descriptionCn: '烟酰胺(≥10%)，均匀肤色' },
-      { id: 'bio-arbutin-serum', name: 'UltiGlow™ Bio-Arbutin Serum', nameCn: '生物熊果苷精华', description: 'Alpha-arbutin, fades dark spots', descriptionCn: 'α-熊果苷，淡化色斑' },
-      { id: 'bio-brightening-cream', name: 'UltiGlow™ Bio-Brightening Cream', nameCn: '生物提亮面霜', description: 'Daily brightening moisturizer', descriptionCn: '日常提亮保湿面霜' },
-      { id: 'bio-brightening-mask', name: 'UltiGlow™ Bio-Brightening Mask', nameCn: '生物提亮面膜', description: 'Intensive brightening treatment', descriptionCn: '强效提亮护理' },
+      { id: 'bio-vitamin-c-serum', name: '生物合成维生素C精华', nameEn: 'Bio-Vitamin C Serum', description: '稳定维生素C(≥20%)，提亮抗氧化' },
+      { id: 'bio-niacinamide-serum', name: '生物合成烟酰胺精华', nameEn: 'Bio-Niacinamide Serum', description: '烟酰胺(≥10%)，均匀肤色' },
+      { id: 'bio-arbutin-serum', name: '生物合成熊果苷精华', nameEn: 'Bio-Arbutin Serum', description: 'α-熊果苷，淡化色斑' },
+      { id: 'bio-brightening-cream', name: '生物合成提亮面霜', nameEn: 'Bio-Brightening Cream', description: '日常提亮保湿面霜' },
+      { id: 'bio-brightening-mask', name: '生物合成提亮面膜', nameEn: 'Bio-Brightening Mask', description: '强效提亮护理' },
     ],
   },
   {
@@ -81,12 +80,12 @@ const ultiGlowCategories = [
     description: 'Gentle formulations for sensitive and compromised skin',
     descriptionCn: '温和配方，专为敏感脆弱肌肤设计',
     products: [
-      { id: 'bio-ectoine-serum', name: 'UltiGlow™ Bio-Ectoine Serum', nameCn: '生物依克多因精华', description: 'Protects and repairs skin barrier', descriptionCn: '保护修护肌肤屏障' },
-      { id: 'bio-ectoine-cream', name: 'UltiGlow™ Bio-Ectoine Cream', nameCn: '生物依克多因面霜', description: 'Calming moisturizer for sensitive skin', descriptionCn: '敏感肌舒缓保湿面霜' },
-      { id: 'bio-bisabolol-serum', name: 'UltiGlow™ Bio-Bisabolol Serum', nameCn: '生物红没药醇精华', description: 'Quick relief for redness and irritation', descriptionCn: '快速缓解泛红刺激' },
-      { id: 'bio-centella-cream', name: 'UltiGlow™ Bio-Centella Cream', nameCn: '生物积雪草面霜', description: 'Centella asiatica for repair', descriptionCn: '积雪草修护面霜' },
-      { id: 'bio-sensitive-mask', name: 'UltiGlow™ Bio-Sensitive Mask', nameCn: '生物敏感修护面膜', description: 'Intensive calming treatment', descriptionCn: '强效舒缓护理' },
-      { id: 'bio-ceramide-cream', name: 'UltiGlow™ Bio-Ceramide Cream', nameCn: '生物神经酰胺面霜', description: 'Rebuilds skin barrier', descriptionCn: '重建肌肤屏障' },
+      { id: 'bio-ectoine-serum', name: '生物合成依克多因精华', nameEn: 'Bio-Ectoine Serum', description: '保护修护肌肤屏障' },
+      { id: 'bio-ectoine-cream', name: '生物合成依克多因面霜', nameEn: 'Bio-Ectoine Cream', description: '敏感肌舒缓保湿面霜' },
+      { id: 'bio-bisabolol-serum', name: '生物合成红没药醇精华', nameEn: 'Bio-Bisabolol Serum', description: '快速缓解泛红刺激' },
+      { id: 'bio-centella-cream', name: '生物合成积雪草面霜', nameEn: 'Bio-Centella Cream', description: '积雪草修护面霜' },
+      { id: 'bio-sensitive-mask', name: '生物合成敏感修护面膜', nameEn: 'Bio-Sensitive Mask', description: '强效舒缓护理' },
+      { id: 'bio-ceramide-cream', name: '生物合成神经酰胺面霜', nameEn: 'Bio-Ceramide Cream', description: '重建肌肤屏障' },
     ],
   },
   {
@@ -96,11 +95,11 @@ const ultiGlowCategories = [
     description: 'Acne-fighting formulations with biosynthesis actives',
     descriptionCn: '生物合成活性成分，祛痘净肤',
     products: [
-      { id: 'bio-salicylic-serum', name: 'UltiGlow™ Bio-Salicylic Serum', nameCn: '生物水杨酸精华', description: 'Oil-soluble BHA, deep pore cleansing', descriptionCn: '脂溶性BHA，深层清洁毛孔' },
-      { id: 'bio-acne-serum', name: 'UltiGlow™ Bio-Acne Serum', nameCn: '生物祛痘精华', description: 'Salicylic acid + niacinamide complex', descriptionCn: '水杨酸+烟酰胺复合配方' },
-      { id: 'bio-acne-patch', name: 'UltiGlow™ Bio-Acne Patch', nameCn: '生物祛痘贴', description: 'Hydrocolloid patch, overnight treatment', descriptionCn: '水胶体贴片，夜间治疗' },
-      { id: 'bio-oil-control-toner', name: 'UltiGlow™ Bio-Oil Control Toner', nameCn: '生物控油爽肤水', description: 'Oil-balancing, pore refinement', descriptionCn: '平衡油脂，收缩毛孔' },
-      { id: 'bio-tea-tree-serum', name: 'UltiGlow™ Bio-Tea Tree Serum', nameCn: '生物茶树精华', description: 'Natural antibacterial, spot treatment', descriptionCn: '天然抗菌，局部护理' },
+      { id: 'bio-salicylic-serum', name: '生物合成水杨酸精华', nameEn: 'Bio-Salicylic Serum', description: '脂溶性BHA，深层清洁毛孔' },
+      { id: 'bio-acne-serum', name: '生物合成祛痘精华', nameEn: 'Bio-Acne Serum', description: '水杨酸+烟酰胺复合配方' },
+      { id: 'bio-acne-patch', name: '生物合成祛痘贴', nameEn: 'Bio-Acne Patch', description: '水胶体贴片，夜间治疗' },
+      { id: 'bio-oil-control-toner', name: '生物合成控油爽肤水', nameEn: 'Bio-Oil Control Toner', description: '平衡油脂，收缩毛孔' },
+      { id: 'bio-tea-tree-serum', name: '生物合成茶树精华', nameEn: 'Bio-Tea Tree Serum', description: '天然抗菌，局部护理' },
     ],
   },
   {
@@ -110,11 +109,11 @@ const ultiGlowCategories = [
     description: 'Exfoliation and renewal formulations',
     descriptionCn: '角质代谢与肌肤焕新',
     products: [
-      { id: 'bio-aha-serum', name: 'UltiGlow™ Bio-AHA Serum', nameCn: '生物果酸精华', description: 'Gentle exfoliation, smooth skin texture', descriptionCn: '温和去角质，平滑肤质' },
-      { id: 'bio-bha-toner', name: 'UltiGlow™ Bio-BHA Toner', nameCn: '生物水杨酸爽肤水', description: 'Pore clearing, blackhead reduction', descriptionCn: '清洁毛孔，减少黑头' },
-      { id: 'bio-renew-mask', name: 'UltiGlow™ Bio-Renew Mask', nameCn: '生物焕新面膜', description: 'Enzyme renewal, brightening effect', descriptionCn: '酶解焕新，提亮肤色' },
-      { id: 'bio-retinol-serum', name: 'UltiGlow™ Bio-Retinol Serum', nameCn: '生物视黄醇精华', description: 'Encapsulated retinol, anti-aging renewal', descriptionCn: '包裹视黄醇，抗衰焕新' },
-      { id: 'bio-lactic-serum', name: 'UltiGlow™ Bio-Lactic Serum', nameCn: '生物乳酸精华', description: 'Gentle exfoliation for sensitive skin', descriptionCn: '敏感肌温和去角质' },
+      { id: 'bio-aha-serum', name: '生物合成果酸精华', nameEn: 'Bio-AHA Serum', description: '温和去角质，平滑肤质' },
+      { id: 'bio-bha-toner', name: '生物合成水杨酸爽肤水', nameEn: 'Bio-BHA Toner', description: '清洁毛孔，减少黑头' },
+      { id: 'bio-renew-mask', name: '生物合成焕新面膜', nameEn: 'Bio-Renew Mask', description: '酶解焕新，提亮肤色' },
+      { id: 'bio-retinol-serum', name: '生物合成视黄醇精华', nameEn: 'Bio-Retinol Serum', description: '包裹视黄醇，抗衰焕新' },
+      { id: 'bio-lactic-serum', name: '生物合成乳酸精华', nameEn: 'Bio-Lactic Serum', description: '敏感肌温和去角质' },
     ],
   },
   {
@@ -124,10 +123,10 @@ const ultiGlowCategories = [
     description: 'UV protection with skin-loving ingredients',
     descriptionCn: '紫外线防护，呵护肌肤',
     products: [
-      { id: 'bio-sunscreen-spf50', name: 'UltiGlow™ Bio-Sunscreen SPF50', nameCn: '生物防晒霜SPF50', description: 'Lightweight broad spectrum protection', descriptionCn: '轻薄广谱防晒' },
-      { id: 'bio-sun-serum', name: 'UltiGlow™ Bio-Sun Serum', nameCn: '生物防晒精华', description: 'Sun protection serum, glow finish', descriptionCn: '防晒精华，光泽妆效' },
-      { id: 'bio-after-sun-gel', name: 'UltiGlow™ Bio-After Sun Gel', nameCn: '生物晒后修护凝胶', description: 'Soothing after-sun care', descriptionCn: '舒缓晒后护理' },
-      { id: 'bio-uv-shield-cream', name: 'UltiGlow™ Bio-UV Shield Cream', nameCn: '生物紫外线防护霜', description: 'Daily UV protection moisturizer', descriptionCn: '日常紫外线防护保湿霜' },
+      { id: 'bio-sunscreen-spf50', name: '生物合成防晒霜SPF50', nameEn: 'Bio-Sunscreen SPF50', description: '轻薄广谱防晒' },
+      { id: 'bio-sun-serum', name: '生物合成防晒精华', nameEn: 'Bio-Sun Serum', description: '防晒精华，光泽妆效' },
+      { id: 'bio-after-sun-gel', name: '生物合成晒后修护凝胶', nameEn: 'Bio-After Sun Gel', description: '舒缓晒后护理' },
+      { id: 'bio-uv-shield-cream', name: '生物合成紫外线防护霜', nameEn: 'Bio-UV Shield Cream', description: '日常紫外线防护保湿霜' },
     ],
   },
   {
@@ -137,10 +136,10 @@ const ultiGlowCategories = [
     description: 'Natural antioxidant complexes for skin defense',
     descriptionCn: '天然抗氧化复合物，肌肤防护',
     products: [
-      { id: 'bio-ergothioneine-serum', name: 'UltiGlow™ Bio-Ergothioneine Serum', nameCn: '生物麦角硫因精华', description: 'Deep antioxidant protection (≥98%)', descriptionCn: '深层抗氧化保护(≥98%)' },
-      { id: 'bio-resveratrol-cream', name: 'UltiGlow™ Bio-Resveratrol Cream', nameCn: '生物白藜芦醇面霜', description: 'Night cream for anti-aging', descriptionCn: '抗衰老晚霜' },
-      { id: 'bio-green-tea-essence', name: 'UltiGlow™ Bio-Green Tea Essence', nameCn: '生物绿茶精华', description: 'EGCG essence, soothing antioxidant', descriptionCn: 'EGCG精华，舒缓抗氧化' },
-      { id: 'bio-ferulic-serum', name: 'UltiGlow™ Bio-Ferulic Serum', nameCn: '生物阿魏酸精华', description: 'Enhances other antioxidant activities', descriptionCn: '增强其他抗氧化成分活性' },
+      { id: 'bio-ergothioneine-serum', name: '生物合成麦角硫因精华', nameEn: 'Bio-Ergothioneine Serum', description: '深层抗氧化保护(≥98%)' },
+      { id: 'bio-resveratrol-cream', name: '生物合成白藜芦醇面霜', nameEn: 'Bio-Resveratrol Cream', description: '抗衰老晚霜' },
+      { id: 'bio-green-tea-essence', name: '生物合成绿茶精华', nameEn: 'Bio-Green Tea Essence', description: 'EGCG精华，舒缓抗氧化' },
+      { id: 'bio-ferulic-serum', name: '生物合成阿魏酸精华', nameEn: 'Bio-Ferulic Serum', description: '增强其他抗氧化成分活性' },
     ],
   },
   {
@@ -150,9 +149,9 @@ const ultiGlowCategories = [
     description: 'Targeted solutions for delicate eye area',
     descriptionCn: '娇嫩眼部区域针对性护理',
     products: [
-      { id: 'bio-eye-cream', name: 'UltiGlow™ Bio-Eye Cream', nameCn: '生物眼霜', description: 'Reduces dark circles and fine lines', descriptionCn: '减少黑眼圈和细纹' },
-      { id: 'bio-peptide-eye-serum', name: 'UltiGlow™ Bio-Peptide Eye Serum', nameCn: '生物多肽眼部精华', description: 'Peptide complex for eye contour', descriptionCn: '多肽复合物眼部护理' },
-      { id: 'bio-eye-mask', name: 'UltiGlow™ Bio-Eye Mask', nameCn: '生物眼膜', description: 'Intensive treatment for tired eyes', descriptionCn: '疲惫眼部强效护理' },
+      { id: 'bio-eye-cream', name: '生物合成眼霜', nameEn: 'Bio-Eye Cream', description: '减少黑眼圈和细纹' },
+      { id: 'bio-peptide-eye-serum', name: '生物合成多肽眼部精华', nameEn: 'Bio-Peptide Eye Serum', description: '多肽复合物眼部护理' },
+      { id: 'bio-eye-mask', name: '生物合成眼膜', nameEn: 'Bio-Eye Mask', description: '疲惫眼部强效护理' },
     ],
   },
   {
@@ -162,9 +161,9 @@ const ultiGlowCategories = [
     description: 'Nourishing and protecting lip products',
     descriptionCn: '滋润保护唇部产品',
     products: [
-      { id: 'bio-lip-balm', name: 'UltiGlow™ Bio-Lip Balm', nameCn: '生物润唇膏', description: 'Moisturizing lip balm with natural ingredients', descriptionCn: '天然成分保湿润唇膏' },
-      { id: 'bio-lip-mask', name: 'UltiGlow™ Bio-Lip Mask', nameCn: '生物唇膜', description: 'Overnight intensive lip treatment', descriptionCn: '夜间唇部强效护理' },
-      { id: 'bio-lip-serum', name: 'UltiGlow™ Bio-Lip Serum', nameCn: '生物唇部精华', description: 'Plumping and hydrating lip serum', descriptionCn: '丰盈保湿唇部精华' },
+      { id: 'bio-lip-balm', name: '生物合成润唇膏', nameEn: 'Bio-Lip Balm', description: '天然成分保湿润唇膏' },
+      { id: 'bio-lip-mask', name: '生物合成唇膜', nameEn: 'Bio-Lip Mask', description: '夜间唇部强效护理' },
+      { id: 'bio-lip-serum', name: '生物合成唇部精华', nameEn: 'Bio-Lip Serum', description: '丰盈保湿唇部精华' },
     ],
   },
   {
@@ -174,9 +173,9 @@ const ultiGlowCategories = [
     description: 'Pore refining and oil control solutions',
     descriptionCn: '毛孔细化与控油解决方案',
     products: [
-      { id: 'bio-pore-serum', name: 'UltiGlow™ Bio-Pore Serum', nameCn: '生物毛孔精华', description: 'Refines pores, controls oil', descriptionCn: '细化毛孔，控制油脂' },
-      { id: 'bio-pore-mask', name: 'UltiGlow™ Bio-Pore Mask', nameCn: '生物毛孔面膜', description: 'Deep cleansing clay mask', descriptionCn: '深层清洁泥膜' },
-      { id: 'bio-pore-toner', name: 'UltiGlow™ Bio-Pore Toner', nameCn: '生物毛孔爽肤水', description: 'Tightens pores, smooths texture', descriptionCn: '收缩毛孔，平滑肤质' },
+      { id: 'bio-pore-serum', name: '生物合成毛孔精华', nameEn: 'Bio-Pore Serum', description: '细化毛孔，控制油脂' },
+      { id: 'bio-pore-mask', name: '生物合成毛孔面膜', nameEn: 'Bio-Pore Mask', description: '深层清洁泥膜' },
+      { id: 'bio-pore-toner', name: '生物合成毛孔爽肤水', nameEn: 'Bio-Pore Toner', description: '收缩毛孔，平滑肤质' },
     ],
   },
   {
@@ -186,34 +185,34 @@ const ultiGlowCategories = [
     description: 'Natural color cosmetics with bio-derived pigments',
     descriptionCn: '生物来源天然色素彩妆',
     products: [
-      { id: 'bio-lip-tint', name: 'UltiGlow™ Bio-Lip Tint', nameCn: '生物唇釉', description: 'Plant-based natural color', descriptionCn: '植物基天然色彩' },
-      { id: 'bio-bb-cream', name: 'UltiGlow™ Bio-BB Cream', nameCn: '生物BB霜', description: 'Natural coverage, light finish', descriptionCn: '自然遮盖，轻薄妆效' },
-      { id: 'bio-blush', name: 'UltiGlow™ Bio-Blush', nameCn: '生物腮红', description: 'Mineral blush, healthy glow', descriptionCn: '矿物腮红，健康气色' },
-      { id: 'bio-highlighter', name: 'UltiGlow™ Bio-Highlighter', nameCn: '生物高光', description: 'Natural radiance, subtle shimmer', descriptionCn: '自然光泽，微妙闪亮' },
-      { id: 'bio-bronzer', name: 'UltiGlow™ Bio-Bronzer', nameCn: '生物古铜粉', description: 'Sun-kissed natural look', descriptionCn: '阳光健康妆效' },
-      { id: 'bio-eyebrow-gel', name: 'UltiGlow™ Bio-Eyebrow Gel', nameCn: '生物眉胶', description: 'Natural definition, long-lasting', descriptionCn: '自然定型，持久不脱' },
+      { id: 'bio-lip-tint', name: '生物合成唇釉', nameEn: 'Bio-Lip Tint', description: '植物基天然色彩' },
+      { id: 'bio-bb-cream', name: '生物合成BB霜', nameEn: 'Bio-BB Cream', description: '自然遮盖，轻薄妆效' },
+      { id: 'bio-blush', name: '生物合成腮红', nameEn: 'Bio-Blush', description: '矿物腮红，健康气色' },
+      { id: 'bio-highlighter', name: '生物合成高光', nameEn: 'Bio-Highlighter', description: '自然光泽，微妙闪亮' },
+      { id: 'bio-bronzer', name: '生物合成古铜粉', nameEn: 'Bio-Bronzer', description: '阳光健康妆效' },
+      { id: 'bio-eyebrow-gel', name: '生物合成眉胶', nameEn: 'Bio-Eyebrow Gel', description: '自然定型，持久不脱' },
     ],
   },
 ];
 
 const keyIngredients = [
-  { name: 'Bio-Hyaluronic Acid', purity: '≥95%', benefit: 'Deep hydration', source: 'Fermentation' },
-  { name: 'Bio-Collagen', purity: '≥95%', benefit: 'Skin regeneration', source: 'Biosynthesis' },
-  { name: 'Bio-Ectoine', purity: '≥99%', benefit: 'Cell repair', source: 'Halophilic bacteria' },
-  { name: 'Bio-Ergothioneine', purity: '≥98%', benefit: 'Antioxidant', source: 'Biosynthesis' },
-  { name: 'Bio-Bisabolol', purity: '≥95%', benefit: 'Soothing', source: 'Natural extraction' },
-  { name: 'Bio-Copper Peptide', purity: '≥98%', benefit: 'Skin repair', source: 'Biosynthesis' },
-  { name: 'Bio-Glucosamine', purity: '≥98%', benefit: 'Barrier repair', source: 'Biosynthesis' },
-  { name: 'Bio-Vitamin C', purity: '≥20%', benefit: 'Brightening', source: 'Biosynthesis' },
+  { name: '生物合成透明质酸', purity: '≥95%', benefit: '深层补水', source: '发酵' },
+  { name: '生物合成胶原蛋白', purity: '≥95%', benefit: '肌肤再生', source: '生物合成' },
+  { name: '生物合成依克多因', purity: '≥99%', benefit: '细胞修护', source: '嗜盐菌' },
+  { name: '生物合成麦角硫因', purity: '≥98%', benefit: '抗氧化', source: '生物合成' },
+  { name: '生物合成红没药醇', purity: '≥95%', benefit: '舒缓', source: '天然提取' },
+  { name: '生物合成铜肽', purity: '≥98%', benefit: '肌肤修护', source: '生物合成' },
+  { name: '生物合成氨基葡萄糖', purity: '≥98%', benefit: '屏障修护', source: '生物合成' },
+  { name: '生物合成维生素C', purity: '≥20%', benefit: '提亮', source: '生物合成' },
 ];
 
 const certifications = [
-  'COSMOS/Ecocert certified',
-  'Cruelty-free',
-  'Clean beauty standard',
-  'Hypoallergenic tested',
-  'Dermatologist approved',
-  'Sustainable sourcing',
+  'COSMOS/Ecocert 认证',
+  '无动物实验',
+  '纯净美妆标准',
+  '低敏测试',
+  '皮肤科医生推荐',
+  '可持续原料',
 ];
 
 export default function UltiGlowPage() {
@@ -245,33 +244,32 @@ export default function UltiGlowPage() {
                 「极致光彩」
               </p>
               <p className="text-lg text-gray-600 mb-8">
-                Premium biosynthesis-based skincare powered by science. 
-                {ultiGlowCategories.length} functional categories with {totalProducts} targeted solutions.
+                生物合成科技护肤，{ultiGlowCategories.length}大功能系列，{totalProducts}款产品，为肌肤注入科学力量
               </p>
               <div className="flex flex-wrap gap-6 mb-8">
                 <div>
                   <p className="text-3xl font-normal" style={{ color: '#A1BA80' }}>{ultiGlowCategories.length}</p>
-                  <p className="text-sm text-gray-600">Function Categories</p>
+                  <p className="text-sm text-gray-600">功能系列</p>
                 </div>
                 <div>
                   <p className="text-3xl font-normal" style={{ color: '#A1BA80' }}>{totalProducts}</p>
-                  <p className="text-sm text-gray-600">Skincare Products</p>
+                  <p className="text-sm text-gray-600">护肤产品</p>
                 </div>
                 <div>
                   <p className="text-3xl font-normal" style={{ color: '#A1BA80' }}>8+</p>
-                  <p className="text-sm text-gray-600">Key Ingredients</p>
+                  <p className="text-sm text-gray-600">核心成分</p>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
                   <Link href="/contact">
-                    Request Samples <ArrowRight className="ml-2 h-4 w-4" />
+                    申请样品 <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
                   <a href="/api/catalogue-download">
                     <Download className="mr-2 h-4 w-4" />
-                    Download Catalogue
+                    下载目录
                   </a>
                 </Button>
               </div>
@@ -284,71 +282,75 @@ export default function UltiGlowPage() {
                 className="object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
-                <p className="text-white font-medium">Powered by Biosynthesis Technology</p>
-                <p className="text-white/70 text-sm mt-1">Collagen • Ectoine • HA • Ergothioneine • Peptides</p>
+                <p className="text-white font-medium">生物合成科技</p>
+                <p className="text-white/70 text-sm mt-1">胶原蛋白 • 依克多因 • 透明质酸 • 麦角硫因 • 多肽</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Product Categories */}
+      {/* Product Categories - 每个分类卡片内列出产品 */}
       <section className="py-20 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              UltiGlow™ Product Categories
+              UltiGlow™ 产品系列
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Browse by skin concern - click any product for detailed information
+              按肌肤功能分类，点击产品查看详情
             </p>
           </div>
 
-          {ultiGlowCategories.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="mb-12 last:mb-0">
-              {/* Category Header */}
-              <div className="flex items-center gap-4 mb-6">
-                <div className="w-14 h-14 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
-                  <category.icon className="w-7 h-7" style={{ color: '#A1BA80' }} />
-                </div>
-                <div>
-                  <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
-                  <p className="text-sm" style={{ color: '#A1BA80' }}>{category.categoryCn}</p>
-                  <p className="text-gray-600 text-sm mt-1">{category.descriptionCn}</p>
-                </div>
-                <div className="ml-auto">
-                  <span className="text-sm px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>
-                    {category.products.length} Products
-                  </span>
-                </div>
-              </div>
-
-              {/* Products Grid */}
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {category.products.map((product, productIndex) => (
-                  <Link 
-                    key={productIndex} 
-                    href={`/products/ultiglow/${product.id}`}
-                    className="block"
-                  >
-                    <Card className="border border-gray-200 hover:shadow-lg hover:border-green-200 transition-all duration-300 group h-full">
-                      <CardContent className="p-5">
-                        <div className="flex items-start justify-between mb-3">
-                          <h4 className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
-                            {product.name}
-                          </h4>
-                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
-                        </div>
-                        <p className="text-xs mb-2" style={{ color: '#A1BA80' }}>{product.nameCn}</p>
-                        <p className="text-sm text-gray-600 mb-2">{product.description}</p>
-                        <p className="text-xs text-gray-500">{product.descriptionCn}</p>
-                      </CardContent>
-                    </Card>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          ))}
+          <div className="grid md:grid-cols-2 gap-8">
+            {ultiGlowCategories.map((category, categoryIndex) => (
+              <Card key={categoryIndex} className="border border-gray-200 hover:shadow-xl transition-all duration-300 overflow-hidden">
+                <CardContent className="p-0">
+                  {/* Category Header */}
+                  <div className="p-6" style={{ backgroundColor: '#f8faf5' }}>
+                    <div className="flex items-center gap-4">
+                      <div className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style={{ backgroundColor: '#d7e1c7' }}>
+                        <category.icon className="w-7 h-7" style={{ color: '#A1BA80' }} />
+                      </div>
+                      <div className="flex-1">
+                        <h3 className="text-xl font-normal text-gray-900">{category.categoryCn}</h3>
+                        <p className="text-sm" style={{ color: '#A1BA80' }}>{category.category}</p>
+                        <p className="text-gray-600 text-sm mt-1">{category.descriptionCn}</p>
+                      </div>
+                      <div className="text-right">
+                        <span className="text-2xl font-normal" style={{ color: '#A1BA80' }}>{category.products.length}</span>
+                        <p className="text-xs text-gray-500">款产品</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Products List */}
+                  <div className="p-6">
+                    <div className="space-y-3">
+                      {category.products.map((product, productIndex) => (
+                        <Link 
+                          key={productIndex} 
+                          href={`/products/ultiglow/${product.id}`}
+                          className="flex items-center justify-between p-3 rounded-lg border border-gray-100 hover:border-green-200 hover:bg-gray-50 transition-all group"
+                        >
+                          <div className="flex-1">
+                            <div className="flex items-center gap-2">
+                              <span className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
+                                {product.name}
+                              </span>
+                              <span className="text-xs text-gray-400">({product.nameEn})</span>
+                            </div>
+                            <p className="text-xs text-gray-500 mt-1">{product.description}</p>
+                          </div>
+                          <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-green-600 transition-colors flex-shrink-0 ml-4" />
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -357,10 +359,10 @@ export default function UltiGlowPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              Key Biosynthesis Ingredients
+              核心生物合成成分
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Core active ingredients with verified purity and efficacy
+              高纯度、高功效的生物合成活性成分
             </p>
           </div>
           
@@ -375,7 +377,7 @@ export default function UltiGlowPage() {
                     </span>
                   </div>
                   <p className="text-sm text-gray-600 mb-2">{ingredient.benefit}</p>
-                  <p className="text-xs text-gray-500">Source: {ingredient.source}</p>
+                  <p className="text-xs text-gray-500">来源: {ingredient.source}</p>
                 </CardContent>
               </Card>
             ))}
@@ -397,10 +399,10 @@ export default function UltiGlowPage() {
             </div>
             <div>
               <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-6">
-                Clean Beauty Standards
+                纯净美妆标准
               </h2>
               <p className="text-lg text-gray-600 mb-8">
-                Every UltiGlow™ product meets the highest standards for safety, efficacy, and sustainability.
+                每一款UltiGlow™产品都符合安全、功效和可持续性的最高标准
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 {certifications.map((cert, index) => (
@@ -420,37 +422,37 @@ export default function UltiGlowPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              Partnership Opportunities
+              合作机会
             </h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">OEM/ODM Services</h3>
+                <h3 className="text-xl font-normal text-gray-900 mb-4">OEM/ODM服务</h3>
                 <p className="text-gray-600 text-sm">
-                  Custom formulation development<br />
-                  Private label solutions<br />
-                  Flexible MOQ from 500 units
+                  定制配方开发<br />
+                  私人标签方案<br />
+                  灵活起订量500件起
                 </p>
               </CardContent>
             </Card>
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Distribution</h3>
+                <h3 className="text-xl font-normal text-gray-900 mb-4">分销代理</h3>
                 <p className="text-gray-600 text-sm">
-                  Regional distributor partnerships<br />
-                  Exclusive territory rights<br />
-                  Marketing support provided
+                  区域分销合作<br />
+                  独家区域授权<br />
+                  提供营销支持
                 </p>
               </CardContent>
             </Card>
             <Card className="border-0 shadow-lg">
               <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">R&D Collaboration</h3>
+                <h3 className="text-xl font-normal text-gray-900 mb-4">研发合作</h3>
                 <p className="text-gray-600 text-sm">
-                  Joint product development<br />
-                  Ingredient innovation<br />
-                  Clinical testing support
+                  联合产品开发<br />
+                  成分创新研究<br />
+                  临床测试支持
                 </p>
               </CardContent>
             </Card>
@@ -471,21 +473,21 @@ export default function UltiGlowPage() {
         </div>
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-3xl font-normal text-white mb-6">
-            Ready to Create Your Skincare Line?
+            准备好创建您的护肤品牌了吗？
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Partner with Enviko for premium biosynthesis-based skincare solutions.
+            与Enviko合作，打造生物合成科技护肤解决方案
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
               <Link href="/contact">
-                Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                联系我们 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <a href="/api/catalogue-download">
                 <Download className="mr-2 h-4 w-4" />
-                Download Catalogue
+                下载目录
               </a>
             </Button>
           </div>
