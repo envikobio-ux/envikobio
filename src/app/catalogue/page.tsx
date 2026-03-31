@@ -421,7 +421,7 @@ export default function CataloguePage() {
 
               {/* Products Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {category.products.slice(0, 6).map((product, productIndex) => (
+                {category.products.map((product, productIndex) => (
                   <Link 
                     key={productIndex} 
                     href={`/products/ultiwell/${product.id}`}
@@ -441,18 +441,6 @@ export default function CataloguePage() {
                   </Link>
                 ))}
               </div>
-              {category.products.length > 6 && (
-                <div className="mt-4 text-center">
-                  <Link 
-                    href={`/products/ultiwell?category=${category.category.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
-                    style={{ color: '#A1BA80' }}
-                  >
-                    View all {category.products.length} products in {category.category}
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              )}
             </div>
           ))}
         </div>
@@ -498,7 +486,7 @@ export default function CataloguePage() {
 
               {/* Products Grid */}
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {category.products.slice(0, 6).map((product, productIndex) => (
+                {category.products.map((product, productIndex) => (
                   <Link 
                     key={productIndex} 
                     href={`/products/ultiglow/${product.id}`}
@@ -518,18 +506,6 @@ export default function CataloguePage() {
                   </Link>
                 ))}
               </div>
-              {category.products.length > 6 && (
-                <div className="mt-4 text-center">
-                  <Link 
-                    href={`/products/ultiglow?category=${category.category.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="inline-flex items-center gap-2 text-sm font-medium transition-colors hover:opacity-80"
-                    style={{ color: '#A1BA80' }}
-                  >
-                    View all {category.products.length} products in {category.category}
-                    <ArrowRight className="w-4 h-4" />
-                  </Link>
-                </div>
-              )}
             </div>
           ))}
         </div>
