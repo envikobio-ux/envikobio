@@ -1,7 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import { 
   Heart, 
   Brain, 
@@ -187,155 +186,143 @@ const ultiWellCategories = [
 const ultiGlowCategories = [
   {
     category: 'Deep Hydration',
-    categoryCn: '深层补水',
     icon: Droplets,
-    description: 'Multi-layer hydration with biosynthesis hyaluronic acid',
+    description: 'Multi-layer hydration with biosynthesis hyaluronic acid and glucosamine',
     products: [
-      { id: 'bio-ha-serum', name: '生物合成透明质酸精华', nameEn: 'Bio-HA Serum', description: '多分子量透明质酸，72小时深层补水' },
-      { id: 'bio-ha-cream', name: '生物合成透明质酸面霜', nameEn: 'Bio-HA Cream', description: '强效保湿面霜，充盈肌肤' },
-      { id: 'bio-ha-mask', name: '生物合成透明质酸面膜', nameEn: 'Bio-HA Mask', description: '干性肌肤强效补水面膜' },
-      { id: 'bio-ha-toner', name: '生物合成透明质酸爽肤水', nameEn: 'Bio-HA Toner', description: '补水预处理爽肤水' },
-      { id: 'bio-glucosamine-serum', name: '生物合成氨基葡萄糖精华', nameEn: 'Bio-Glucosamine Serum', description: '促进肌肤透明质酸合成' },
-      { id: 'bio-glucosamine-cream', name: '生物合成氨基葡萄糖面霜', nameEn: 'Bio-Glucosamine Cream', description: '屏障修护，锁水保湿' },
+      { id: 'bio-ha-serum', name: 'UltiGlow™ Bio-HA Serum', description: 'Multi-weight HA for 72-hour deep hydration' },
+      { id: 'bio-ha-cream', name: 'UltiGlow™ Bio-HA Cream', description: 'Intensive moisturizing cream with plumping effect' },
+      { id: 'bio-ha-mask', name: 'UltiGlow™ Bio-HA Mask', description: 'Intensive hydration mask for dry skin' },
+      { id: 'bio-ha-toner', name: 'UltiGlow™ Bio-HA Toner', description: 'Hydrating prep toner for better absorption' },
+      { id: 'bio-glucosamine-serum', name: 'UltiGlow™ Bio-Glucosamine Serum', description: 'Enhances natural HA production' },
+      { id: 'bio-glucosamine-cream', name: 'UltiGlow™ Bio-Glucosamine Cream', description: 'Barrier repair and moisture lock' },
     ],
   },
   {
     category: 'Anti-Aging',
-    categoryCn: '抗衰老',
     icon: Heart,
     description: 'Collagen and peptide formulations for youthful skin',
     products: [
-      { id: 'bio-collagen-serum', name: '生物合成胶原蛋白精华', nameEn: 'Bio-Collagen Serum', description: '重组人源胶原蛋白' },
-      { id: 'bio-collagen-cream', name: '生物合成胶原蛋白面霜', nameEn: 'Bio-Collagen Cream', description: '紧致抗皱日霜' },
-      { id: 'bio-collagen-mask', name: '生物合成胶原蛋白面膜', nameEn: 'Bio-Collagen Mask', description: '强效修护面膜' },
-      { id: 'bio-collagen-eye-cream', name: '生物合成胶原蛋白眼霜', nameEn: 'Bio-Collagen Eye Cream', description: '减少眼部细纹' },
-      { id: 'bio-peptide-serum', name: '生物合成多肽精华', nameEn: 'Bio-Peptide Serum', description: '多肽复合物，减少皱纹' },
-      { id: 'bio-peptide-cream', name: '生物合成多肽面霜', nameEn: 'Bio-Peptide Cream', description: '抗衰老紧致面霜' },
-      { id: 'bio-copper-peptide-serum', name: '生物合成铜肽精华', nameEn: 'Bio-Copper Peptide Serum', description: '铜肽促进肌肤焕新' },
+      { id: 'bio-collagen-serum', name: 'UltiGlow™ Bio-Collagen Serum', description: 'Recombinant human collagen, firming and elastic' },
+      { id: 'bio-collagen-cream', name: 'UltiGlow™ Bio-Collagen Cream', description: 'Day cream for firming and anti-wrinkle' },
+      { id: 'bio-collagen-mask', name: 'UltiGlow™ Bio-Collagen Mask', description: 'Intensive repair mask' },
+      { id: 'bio-collagen-eye-cream', name: 'UltiGlow™ Bio-Collagen Eye Cream', description: 'Reduces fine lines around eyes' },
+      { id: 'bio-peptide-serum', name: 'UltiGlow™ Bio-Peptide Serum', description: 'Multi-peptide complex, wrinkle reduction' },
+      { id: 'bio-peptide-cream', name: 'UltiGlow™ Bio-Peptide Cream', description: 'Anti-aging firming cream' },
+      { id: 'bio-copper-peptide-serum', name: 'UltiGlow™ Bio-Copper Peptide Serum', description: 'Copper peptide for skin renewal' },
     ],
   },
   {
     category: 'Brightening',
-    categoryCn: '美白提亮',
     icon: Sparkles,
-    description: 'Vitamin C and brightening complexes',
+    description: 'Vitamin C and brightening complexes for radiant skin',
     products: [
-      { id: 'bio-vitamin-c-serum', name: '生物合成维生素C精华', nameEn: 'Bio-Vitamin C Serum', description: '稳定维生素C(≥20%)' },
-      { id: 'bio-niacinamide-serum', name: '生物合成烟酰胺精华', nameEn: 'Bio-Niacinamide Serum', description: '烟酰胺(≥10%)' },
-      { id: 'bio-arbutin-serum', name: '生物合成熊果苷精华', nameEn: 'Bio-Arbutin Serum', description: 'α-熊果苷，淡化色斑' },
-      { id: 'bio-brightening-cream', name: '生物合成提亮面霜', nameEn: 'Bio-Brightening Cream', description: '日常提亮保湿' },
-      { id: 'bio-brightening-mask', name: '生物合成提亮面膜', nameEn: 'Bio-Brightening Mask', description: '强效提亮护理' },
+      { id: 'bio-vitamin-c-serum', name: 'UltiGlow™ Bio-Vitamin C Serum', description: 'Stable vitamin C (≥20%), brightening and antioxidant' },
+      { id: 'bio-niacinamide-serum', name: 'UltiGlow™ Bio-Niacinamide Serum', description: 'Niacinamide (≥10%), evens skin tone' },
+      { id: 'bio-arbutin-serum', name: 'UltiGlow™ Bio-Arbutin Serum', description: 'Alpha-arbutin, fades dark spots' },
+      { id: 'bio-brightening-cream', name: 'UltiGlow™ Bio-Brightening Cream', description: 'Daily brightening moisturizer' },
+      { id: 'bio-brightening-mask', name: 'UltiGlow™ Bio-Brightening Mask', description: 'Intensive brightening treatment' },
     ],
   },
   {
     category: 'Sensitive Repair',
-    categoryCn: '敏感修护',
     icon: Shield,
-    description: 'Gentle formulations for sensitive skin',
+    description: 'Gentle formulations for sensitive and compromised skin',
     products: [
-      { id: 'bio-ectoine-serum', name: '生物合成依克多因精华', nameEn: 'Bio-Ectoine Serum', description: '保护修护肌肤屏障' },
-      { id: 'bio-ectoine-cream', name: '生物合成依克多因面霜', nameEn: 'Bio-Ectoine Cream', description: '敏感肌舒缓保湿' },
-      { id: 'bio-bisabolol-serum', name: '生物合成红没药醇精华', nameEn: 'Bio-Bisabolol Serum', description: '快速缓解泛红' },
-      { id: 'bio-centella-cream', name: '生物合成积雪草面霜', nameEn: 'Bio-Centella Cream', description: '积雪草修护' },
-      { id: 'bio-sensitive-mask', name: '生物合成敏感修护面膜', nameEn: 'Bio-Sensitive Mask', description: '强效舒缓护理' },
-      { id: 'bio-ceramide-cream', name: '生物合成神经酰胺面霜', nameEn: 'Bio-Ceramide Cream', description: '重建肌肤屏障' },
+      { id: 'bio-ectoine-serum', name: 'UltiGlow™ Bio-Ectoine Serum', description: 'Protects and repairs skin barrier' },
+      { id: 'bio-ectoine-cream', name: 'UltiGlow™ Bio-Ectoine Cream', description: 'Calming moisturizer for sensitive skin' },
+      { id: 'bio-bisabolol-serum', name: 'UltiGlow™ Bio-Bisabolol Serum', description: 'Quick relief for redness and irritation' },
+      { id: 'bio-centella-cream', name: 'UltiGlow™ Bio-Centella Cream', description: 'Centella asiatica for repair' },
+      { id: 'bio-sensitive-mask', name: 'UltiGlow™ Bio-Sensitive Mask', description: 'Intensive calming treatment' },
+      { id: 'bio-ceramide-cream', name: 'UltiGlow™ Bio-Ceramide Cream', description: 'Rebuilds skin barrier' },
     ],
   },
   {
     category: 'Acne Control',
-    categoryCn: '祛痘净肤',
     icon: Zap,
-    description: 'Acne-fighting formulations',
+    description: 'Acne-fighting formulations with biosynthesis actives',
     products: [
-      { id: 'bio-salicylic-serum', name: '生物合成水杨酸精华', nameEn: 'Bio-Salicylic Serum', description: '深层清洁毛孔' },
-      { id: 'bio-acne-serum', name: '生物合成祛痘精华', nameEn: 'Bio-Acne Serum', description: '水杨酸+烟酰胺复合' },
-      { id: 'bio-acne-patch', name: '生物合成祛痘贴', nameEn: 'Bio-Acne Patch', description: '夜间治疗贴片' },
-      { id: 'bio-oil-control-toner', name: '生物合成控油爽肤水', nameEn: 'Bio-Oil Control Toner', description: '平衡油脂，收缩毛孔' },
-      { id: 'bio-tea-tree-serum', name: '生物合成茶树精华', nameEn: 'Bio-Tea Tree Serum', description: '天然抗菌' },
+      { id: 'bio-salicylic-serum', name: 'UltiGlow™ Bio-Salicylic Serum', description: 'Oil-soluble BHA, deep pore cleansing' },
+      { id: 'bio-acne-serum', name: 'UltiGlow™ Bio-Acne Serum', description: 'Salicylic acid + niacinamide complex' },
+      { id: 'bio-acne-patch', name: 'UltiGlow™ Bio-Acne Patch', description: 'Hydrocolloid patch, overnight treatment' },
+      { id: 'bio-oil-control-toner', name: 'UltiGlow™ Bio-Oil Control Toner', description: 'Oil-balancing, pore refinement' },
+      { id: 'bio-tea-tree-serum', name: 'UltiGlow™ Bio-Tea Tree Serum', description: 'Natural antibacterial, spot treatment' },
     ],
   },
   {
     category: 'Skin Renewal',
-    categoryCn: '肌肤焕新',
     icon: RefreshCw,
     description: 'Exfoliation and renewal formulations',
     products: [
-      { id: 'bio-aha-serum', name: '生物合成果酸精华', nameEn: 'Bio-AHA Serum', description: '温和去角质' },
-      { id: 'bio-bha-toner', name: '生物合成水杨酸爽肤水', nameEn: 'Bio-BHA Toner', description: '清洁毛孔，减少黑头' },
-      { id: 'bio-renew-mask', name: '生物合成焕新面膜', nameEn: 'Bio-Renew Mask', description: '酶解焕新' },
-      { id: 'bio-retinol-serum', name: '生物合成视黄醇精华', nameEn: 'Bio-Retinol Serum', description: '抗衰焕新' },
-      { id: 'bio-lactic-serum', name: '生物合成乳酸精华', nameEn: 'Bio-Lactic Serum', description: '敏感肌温和去角质' },
+      { id: 'bio-aha-serum', name: 'UltiGlow™ Bio-AHA Serum', description: 'Gentle exfoliation, smooth skin texture' },
+      { id: 'bio-bha-toner', name: 'UltiGlow™ Bio-BHA Toner', description: 'Pore clearing, blackhead reduction' },
+      { id: 'bio-renew-mask', name: 'UltiGlow™ Bio-Renew Mask', description: 'Enzyme renewal, brightening effect' },
+      { id: 'bio-retinol-serum', name: 'UltiGlow™ Bio-Retinol Serum', description: 'Encapsulated retinol, anti-aging renewal' },
+      { id: 'bio-lactic-serum', name: 'UltiGlow™ Bio-Lactic Serum', description: 'Gentle exfoliation for sensitive skin' },
     ],
   },
   {
     category: 'Sun Protection',
-    categoryCn: '防晒防护',
     icon: Sun,
-    description: 'UV protection solutions',
+    description: 'UV protection with skin-loving ingredients',
     products: [
-      { id: 'bio-sunscreen-spf50', name: '生物合成防晒霜SPF50', nameEn: 'Bio-Sunscreen SPF50', description: '轻薄广谱防晒' },
-      { id: 'bio-sun-serum', name: '生物合成防晒精华', nameEn: 'Bio-Sun Serum', description: '防晒精华' },
-      { id: 'bio-after-sun-gel', name: '生物合成晒后修护凝胶', nameEn: 'Bio-After Sun Gel', description: '舒缓晒后护理' },
-      { id: 'bio-uv-shield-cream', name: '生物合成紫外线防护霜', nameEn: 'Bio-UV Shield Cream', description: '日常UV防护' },
+      { id: 'bio-sunscreen-spf50', name: 'UltiGlow™ Bio-Sunscreen SPF50', description: 'Lightweight broad spectrum protection' },
+      { id: 'bio-sun-serum', name: 'UltiGlow™ Bio-Sun Serum', description: 'Sun protection serum, glow finish' },
+      { id: 'bio-after-sun-gel', name: 'UltiGlow™ Bio-After Sun Gel', description: 'Soothing after-sun care' },
+      { id: 'bio-uv-shield-cream', name: 'UltiGlow™ Bio-UV Shield Cream', description: 'Daily UV protection moisturizer' },
     ],
   },
   {
     category: 'Antioxidant',
-    categoryCn: '抗氧化',
     icon: Leaf,
-    description: 'Natural antioxidant complexes',
+    description: 'Natural antioxidant complexes for skin defense',
     products: [
-      { id: 'bio-ergothioneine-serum', name: '生物合成麦角硫因精华', nameEn: 'Bio-Ergothioneine Serum', description: '深层抗氧化(≥98%)' },
-      { id: 'bio-resveratrol-cream', name: '生物合成白藜芦醇面霜', nameEn: 'Bio-Resveratrol Cream', description: '抗衰老晚霜' },
-      { id: 'bio-green-tea-essence', name: '生物合成绿茶精华', nameEn: 'Bio-Green Tea Essence', description: 'EGCG抗氧化' },
-      { id: 'bio-ferulic-serum', name: '生物合成阿魏酸精华', nameEn: 'Bio-Ferulic Serum', description: '增强抗氧化活性' },
+      { id: 'bio-ergothioneine-serum', name: 'UltiGlow™ Bio-Ergothioneine Serum', description: 'Deep antioxidant protection (≥98%)' },
+      { id: 'bio-resveratrol-cream', name: 'UltiGlow™ Bio-Resveratrol Cream', description: 'Anti-aging night cream' },
+      { id: 'bio-green-tea-essence', name: 'UltiGlow™ Bio-Green Tea Essence', description: 'EGCG essence, soothing antioxidant' },
+      { id: 'bio-ferulic-serum', name: 'UltiGlow™ Bio-Ferulic Serum', description: 'Enhances other antioxidant activities' },
     ],
   },
   {
     category: 'Eye Care',
-    categoryCn: '眼部护理',
     icon: Eye,
-    description: 'Targeted eye area solutions',
+    description: 'Targeted solutions for delicate eye area',
     products: [
-      { id: 'bio-eye-cream', name: '生物合成眼霜', nameEn: 'Bio-Eye Cream', description: '减少黑眼圈和细纹' },
-      { id: 'bio-peptide-eye-serum', name: '生物合成多肽眼部精华', nameEn: 'Bio-Peptide Eye Serum', description: '多肽眼部护理' },
-      { id: 'bio-eye-mask', name: '生物合成眼膜', nameEn: 'Bio-Eye Mask', description: '疲惫眼部强效护理' },
+      { id: 'bio-eye-cream', name: 'UltiGlow™ Bio-Eye Cream', description: 'Reduces dark circles and fine lines' },
+      { id: 'bio-peptide-eye-serum', name: 'UltiGlow™ Bio-Peptide Eye Serum', description: 'Peptide complex for eye contour' },
+      { id: 'bio-eye-mask', name: 'UltiGlow™ Bio-Eye Mask', description: 'Intensive treatment for tired eyes' },
     ],
   },
   {
     category: 'Lip Care',
-    categoryCn: '唇部护理',
     icon: Smile,
-    description: 'Nourishing lip products',
+    description: 'Nourishing and protecting lip products',
     products: [
-      { id: 'bio-lip-balm', name: '生物合成润唇膏', nameEn: 'Bio-Lip Balm', description: '天然保湿润唇膏' },
-      { id: 'bio-lip-mask', name: '生物合成唇膜', nameEn: 'Bio-Lip Mask', description: '夜间唇部护理' },
-      { id: 'bio-lip-serum', name: '生物合成唇部精华', nameEn: 'Bio-Lip Serum', description: '丰盈保湿唇部精华' },
+      { id: 'bio-lip-balm', name: 'UltiGlow™ Bio-Lip Balm', description: 'Moisturizing lip balm with natural ingredients' },
+      { id: 'bio-lip-mask', name: 'UltiGlow™ Bio-Lip Mask', description: 'Overnight intensive lip treatment' },
+      { id: 'bio-lip-serum', name: 'UltiGlow™ Bio-Lip Serum', description: 'Plumping and hydrating lip serum' },
     ],
   },
   {
     category: 'Pore Care',
-    categoryCn: '毛孔护理',
     icon: Wind,
-    description: 'Pore refining and oil control',
+    description: 'Pore refining and oil control solutions',
     products: [
-      { id: 'bio-pore-serum', name: '生物合成毛孔精华', nameEn: 'Bio-Pore Serum', description: '细化毛孔，控制油脂' },
-      { id: 'bio-pore-mask', name: '生物合成毛孔面膜', nameEn: 'Bio-Pore Mask', description: '深层清洁泥膜' },
-      { id: 'bio-pore-toner', name: '生物合成毛孔爽肤水', nameEn: 'Bio-Pore Toner', description: '收缩毛孔，平滑肤质' },
+      { id: 'bio-pore-serum', name: 'UltiGlow™ Bio-Pore Serum', description: 'Refines pores, controls oil' },
+      { id: 'bio-pore-mask', name: 'UltiGlow™ Bio-Pore Mask', description: 'Deep cleansing clay mask' },
+      { id: 'bio-pore-toner', name: 'UltiGlow™ Bio-Pore Toner', description: 'Tightens pores, smooths texture' },
     ],
   },
   {
     category: 'Natural Color',
-    categoryCn: '天然彩妆',
     icon: Palette,
-    description: 'Natural color cosmetics',
+    description: 'Natural color cosmetics with bio-derived pigments',
     products: [
-      { id: 'bio-lip-tint', name: '生物合成唇釉', nameEn: 'Bio-Lip Tint', description: '植物基天然色彩' },
-      { id: 'bio-bb-cream', name: '生物合成BB霜', nameEn: 'Bio-BB Cream', description: '自然遮盖，轻薄妆效' },
-      { id: 'bio-blush', name: '生物合成腮红', nameEn: 'Bio-Blush', description: '矿物腮红' },
-      { id: 'bio-highlighter', name: '生物合成高光', nameEn: 'Bio-Highlighter', description: '自然光泽' },
-      { id: 'bio-bronzer', name: '生物合成古铜粉', nameEn: 'Bio-Bronzer', description: '阳光健康妆效' },
-      { id: 'bio-eyebrow-gel', name: '生物合成眉胶', nameEn: 'Bio-Eyebrow Gel', description: '自然定型' },
+      { id: 'bio-lip-tint', name: 'UltiGlow™ Bio-Lip Tint', description: 'Plant-based natural color' },
+      { id: 'bio-bb-cream', name: 'UltiGlow™ Bio-BB Cream', description: 'Natural coverage, light finish' },
+      { id: 'bio-blush', name: 'UltiGlow™ Bio-Blush', description: 'Mineral blush, healthy glow' },
+      { id: 'bio-highlighter', name: 'UltiGlow™ Bio-Highlighter', description: 'Natural radiance, subtle shimmer' },
+      { id: 'bio-bronzer', name: 'UltiGlow™ Bio-Bronzer', description: 'Sun-kissed natural look' },
+      { id: 'bio-eyebrow-gel', name: 'UltiGlow™ Bio-Eyebrow Gel', description: 'Natural definition, long-lasting' },
     ],
   },
 ];
@@ -488,7 +475,6 @@ export default function CataloguePage() {
                 </div>
                 <div>
                   <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
-                  <p className="text-sm" style={{ color: '#A1BA80' }}>{category.categoryCn}</p>
                   <p className="text-gray-600 text-sm">{category.description}</p>
                 </div>
                 <div className="ml-auto">
@@ -514,7 +500,6 @@ export default function CataloguePage() {
                           </h4>
                           <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
                         </div>
-                        <p className="text-xs mb-2" style={{ color: '#A1BA80' }}>{product.nameEn}</p>
                         <p className="text-sm text-gray-600">{product.description}</p>
                       </CardContent>
                     </Card>
