@@ -291,7 +291,7 @@ export default function ProductsPage() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
               <Sparkles className="w-4 h-4" />
-              UltiGlow® Skincare
+              UltiGlow™ Skincare
             </div>
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
               Ultimate Glow
@@ -326,7 +326,7 @@ export default function ProductsPage() {
           <div className="text-center mt-12">
             <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
               <Link href="/products/ultiglow">
-                Explore UltiGlow® <ArrowRight className="ml-2 h-4 w-4" />
+                Explore UltiGlow™ <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
           </div>
