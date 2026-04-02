@@ -31,4 +31,4 @@ echo "Clearing port ${PORT} before start."
 kill_port_if_listening
 echo "Starting HTTP service on port ${PORT} for dev..."
 
-PORT=$PORT pnpm tsx watch src/server.ts
+PORT=$PORT node_modules/.bin/next dev --port ${PORT} --hostname 0.0.0.0 --webpack
