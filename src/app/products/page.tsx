@@ -268,7 +268,6 @@ export default function ProductsPage() {
                     <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
                   </div>
                   <h3 className="font-normal text-gray-900 mb-1">{category.title}</h3>
-                  <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
                   <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
                 </CardContent>
               </Card>
@@ -315,7 +314,6 @@ export default function ProductsPage() {
                       <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
                     </div>
                     <h3 className="font-normal text-gray-900 mb-1 group-hover:text-green-700 transition-colors">{category.title}</h3>
-                    <p className="text-xs" style={{ color: '#A1BA80' }}>{category.titleCn}</p>
                     <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
                   </CardContent>
                 </Card>
