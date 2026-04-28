@@ -15,7 +15,7 @@ export async function POST(request: NextRequest) {
 
     const response = await client.fetch(url);
 
-    // 提取文本内容
+    // Extract text content
     const textContent = response.content
       .filter(item => item.type === 'text')
       .map(item => item.text)

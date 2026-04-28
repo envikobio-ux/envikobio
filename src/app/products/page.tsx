@@ -74,35 +74,35 @@ const ingredientCategories = [
 
 // UltiWell Product Lines
 const ultiWellCategories = [
-  { icon: Target, title: 'Core Nutrition', titleCn: '核心营养', count: 6 },
-  { icon: Brain, title: 'Brain & Cognitive', titleCn: '大脑认知', count: 3 },
-  { icon: Dumbbell, title: 'Energy & Sports', titleCn: '能量运动', count: 5 },
-  { icon: Sparkles, title: 'Anti-Aging & Beauty', titleCn: '抗衰美容', count: 6 },
-  { icon: Heart, title: 'Heart & Circulation', titleCn: '心血管', count: 2 },
-  { icon: Shield, title: 'Immune Support', titleCn: '免疫支持', count: 2 },
-  { icon: Bone, title: 'Joint & Mobility', titleCn: '关节灵活', count: 2 },
-  { icon: Moon, title: 'Sleep & Relaxation', titleCn: '睡眠放松', count: 7 },
-  { icon: Leaf, title: 'Digestive Health', titleCn: '消化健康', count: 4 },
-  { icon: Users, title: 'Specialized Care', titleCn: '特殊护理', count: 3 },
-  { icon: Activity, title: 'Lifestyle Solutions', titleCn: '生活方式', count: 5 },
-  { icon: Leaf, title: 'Plant Extracts', titleCn: '植物提取物', count: 6 },
-  { icon: Sparkles, title: 'Bio-Natural Colors', titleCn: '生物天然色素', count: 6 },
+  { icon: Target, title: 'Core Nutrition', count: 6 },
+  { icon: Brain, title: 'Brain & Cognitive', count: 3 },
+  { icon: Dumbbell, title: 'Energy & Sports', count: 5 },
+  { icon: Sparkles, title: 'Anti-Aging & Beauty', count: 6 },
+  { icon: Heart, title: 'Heart & Circulation', count: 2 },
+  { icon: Shield, title: 'Immune Support', count: 2 },
+  { icon: Bone, title: 'Joint & Mobility', count: 2 },
+  { icon: Moon, title: 'Sleep & Relaxation', count: 7 },
+  { icon: Leaf, title: 'Digestive Health', count: 4 },
+  { icon: Users, title: 'Specialized Care', count: 3 },
+  { icon: Activity, title: 'Lifestyle Solutions', count: 5 },
+  { icon: Leaf, title: 'Plant Extracts', count: 6 },
+  { icon: Sparkles, title: 'Bio-Natural Colors', count: 6 },
 ];
 
 // UltiGlow Product Lines - By Function
 const ultiGlowCategories = [
-  { icon: Droplets, title: 'Deep Hydration', titleCn: '深层补水', count: 6 },
-  { icon: Heart, title: 'Anti-Aging', titleCn: '抗衰老', count: 7 },
-  { icon: Sparkles, title: 'Brightening', titleCn: '美白提亮', count: 5 },
-  { icon: Shield, title: 'Sensitive Repair', titleCn: '敏感修护', count: 6 },
-  { icon: Zap, title: 'Acne Control', titleCn: '祛痘净肤', count: 5 },
-  { icon: RefreshCw, title: 'Skin Renewal', titleCn: '肌肤焕新', count: 5 },
-  { icon: Sun, title: 'Sun Protection', titleCn: '防晒防护', count: 4 },
-  { icon: Leaf, title: 'Antioxidant', titleCn: '抗氧化', count: 4 },
-  { icon: Eye, title: 'Eye Care', titleCn: '眼部护理', count: 3 },
-  { icon: Smile, title: 'Lip Care', titleCn: '唇部护理', count: 3 },
-  { icon: Wind, title: 'Pore Care', titleCn: '毛孔护理', count: 3 },
-  { icon: Palette, title: 'Natural Color', titleCn: '天然彩妆', count: 6 },
+  { icon: Droplets, title: 'Deep Hydration', count: 6 },
+  { icon: Heart, title: 'Anti-Aging', count: 7 },
+  { icon: Sparkles, title: 'Brightening', count: 5 },
+  { icon: Shield, title: 'Sensitive Repair', count: 6 },
+  { icon: Zap, title: 'Acne Control', count: 5 },
+  { icon: RefreshCw, title: 'Skin Renewal', count: 5 },
+  { icon: Sun, title: 'Sun Protection', count: 4 },
+  { icon: Leaf, title: 'Antioxidant', count: 4 },
+  { icon: Eye, title: 'Eye Care', count: 3 },
+  { icon: Smile, title: 'Lip Care', count: 3 },
+  { icon: Wind, title: 'Pore Care', count: 3 },
+  { icon: Palette, title: 'Natural Color', count: 6 },
 ];
 
 const features = [
@@ -296,7 +296,7 @@ export default function ProductsPage() {
             <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
               Ultimate Glow
             </h2>
-            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「极致光彩」</p>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>UltiGlow™</p>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Premium skincare powered by biosynthesis technology
             </p>

@@ -1,85 +1,85 @@
 import { NextResponse } from 'next/server';
 import { SearchClient, Config, HeaderUtils } from 'coze-coding-dev-sdk';
 
-// 真实的生物合成行业新闻数据（基于实际搜索结果）
+// Real biosynthesis industry news data (based on actual search results)
 const realNewsData = [
   {
     id: 1,
-    title: '全球合成生物学市场规模预计2028年将达到560亿美元',
+    title: 'Global Synthetic Biology Market to Reach $56 Billion by 2028',
     category: 'Industry',
-    excerpt: '根据Grand View Research报告，全球合成生物学市场规模预计从2023年的约150亿美元增长至2028年的560亿美元，年复合增长率达24.8%。驱动因素包括生物制药、农业生物技术和可持续化学品需求增长。',
+    excerpt: 'According to Grand View Research, the global synthetic biology market is expected to grow from approximately $15 billion in 2023 to $56 billion by 2028, with a CAGR of 24.8%. Growth drivers include biopharmaceuticals, agricultural biotechnology, and sustainable chemical demand.',
     date: '2024-03-15',
     source: 'Grand View Research',
     sourceUrl: 'https://www.grandviewresearch.com',
   },
   {
     id: 2,
-    title: 'Ginkgo Bioworks获得2.9亿美元新融资加速生物制造平台发展',
+    title: 'Ginkgo Bioworks Secures $290M New Funding to Accelerate Biomanufacturing Platform',
     category: 'Financing',
-    excerpt: '合成生物学领军企业Ginkgo Bioworks宣布获得2.9亿美元融资，将用于扩展其细胞编程和生物铸造平台能力，支持更多企业客户开发可持续生物产品。',
+    excerpt: 'Synthetic biology leader Ginkgo Bioworks announced $290 million in funding to expand its cell programming and biofoundry platform capabilities, supporting more enterprise customers in developing sustainable bio-based products.',
     date: '2024-02-28',
     source: 'Ginkgo Bioworks',
     sourceUrl: 'https://www.ginkgobioworks.com',
   },
   {
     id: 3,
-    title: 'Nature论文：CRISPR基因编辑技术突破实现高效微生物合成',
+    title: 'Nature Paper: CRISPR Gene Editing Breakthrough Enables Efficient Microbial Synthesis',
     category: 'Research',
-    excerpt: 'MIT和哈佛大学研究人员在Nature发表论文，展示了一种新型CRISPR基因编辑方法，可显著提高微生物合成目标化合物的效率，产量提升最高达10倍。',
+    excerpt: 'Researchers from MIT and Harvard published a paper in Nature showcasing a novel CRISPR gene editing method that significantly improves the efficiency of microbial synthesis of target compounds, with yield improvements of up to 10x.',
     date: '2024-02-20',
     source: 'Nature',
     sourceUrl: 'https://www.nature.com',
   },
   {
     id: 4,
-    title: '欧盟通过新法规支持生物基产品发展',
+    title: 'EU Passes New Regulations to Support Bio-Based Product Development',
     category: 'Policy',
-    excerpt: '欧盟委员会通过新法规，为生物基产品提供更多政策支持和资金补贴，目标是到2030年将欧盟生物基产品市场份额提高至25%，减少对化石燃料依赖。',
+    excerpt: 'The European Commission passed new regulations providing more policy support and funding subsidies for bio-based products, aiming to increase EU bio-based product market share to 25% by 2030 and reduce dependence on fossil fuels.',
     date: '2024-02-15',
     source: 'European Commission',
     sourceUrl: 'https://ec.europa.eu',
   },
   {
     id: 5,
-    title: 'Amyris成功开发新一代角鲨烯生物合成工艺',
+    title: 'Amyris Successfully Develops Next-Generation Squalene Biosynthesis Process',
     category: 'Technology',
-    excerpt: 'Amyris公司宣布成功开发新一代角鲨烯生物合成工艺，使用甘蔗糖作为原料，生产效率提高40%，成本降低30%，产品已获得多家化妆品巨头订单。',
+    excerpt: 'Amyris announced the successful development of a next-generation squalene biosynthesis process using sugarcane sugar as raw material, improving production efficiency by 40% and reducing costs by 30%. Products have received orders from multiple cosmetics giants.',
     date: '2024-02-10',
     source: 'Amyris',
     sourceUrl: 'https://www.amyris.com',
   },
   {
     id: 6,
-    title: '中国合成生物学产业联盟在京成立',
+    title: 'China Synthetic Biology Industry Alliance Established in Beijing',
     category: 'Industry',
-    excerpt: '中国合成生物学产业联盟在北京正式成立，由中科院、清华大学等科研机构联合多家生物科技企业发起，旨在推动中国合成生物学产业发展和国际合作。',
+    excerpt: 'The China Synthetic Biology Industry Alliance was officially established in Beijing, initiated by research institutions including the Chinese Academy of Sciences and Tsinghua University along with multiple biotech companies, aiming to promote China\'s synthetic biology industry development and international cooperation.',
     date: '2024-01-25',
-    source: '中国科学院',
+    source: 'Chinese Academy of Sciences',
     sourceUrl: 'https://www.cas.cn',
   },
   {
     id: 7,
-    title: 'Zymergen推出新型生物基农药产品线',
+    title: 'Zymergen Launches New Bio-Based Pesticide Product Line',
     category: 'Agriculture',
-    excerpt: 'Zymergen推出基于合成生物学的新型生物农药产品线，利用微生物发酵生产，对环境友好且具有靶向性，已在美国获得EPA登记认证。',
+    excerpt: 'Zymergen launched a new synthetic biology-based bio-pesticide product line produced through microbial fermentation, environmentally friendly and targeted, already EPA-registered in the United States.',
     date: '2024-01-20',
     source: 'Zymergen',
     sourceUrl: 'https://www.zymergen.com',
   },
   {
     id: 8,
-    title: 'Science：人工智能加速酶工程改造取得重大突破',
+    title: 'Science: AI Accelerates Enzyme Engineering Breakthrough',
     category: 'Research',
-    excerpt: 'DeepMind与多家研究机构合作在Science发表研究成果，利用AlphaFold和机器学习技术，成功预测并设计出多种高效工业酶，大幅缩短传统酶工程周期。',
+    excerpt: 'DeepMind collaborated with multiple research institutions to publish research findings in Science, using AlphaFold and machine learning technologies to successfully predict and design multiple high-efficiency industrial enzymes, significantly shortening traditional enzyme engineering cycles.',
     date: '2024-01-15',
     source: 'Science',
     sourceUrl: 'https://www.science.org',
   },
   {
     id: 9,
-    title: 'BASF投资1.5亿欧元建设生物发酵工厂',
+    title: 'BASF Invests 150 Million Euros in Bio-Fermentation Plant',
     category: 'Investment',
-    excerpt: '巴斯夫(BASF)宣布投资1.5亿欧元在比利时建设大型生物发酵工厂，主要生产用于化妆品、食品和医药的生物基表面活性剂和维生素。',
+    excerpt: 'BASF announced a 150 million euro investment to build a large bio-fermentation plant in Belgium, primarily producing bio-based surfactants and vitamins for cosmetics, food, and pharmaceuticals.',
     date: '2024-01-10',
     source: 'BASF',
     sourceUrl: 'https://www.basf.com',
@@ -105,14 +105,14 @@ export async function GET(request: Request) {
   });
 }
 
-// 搜索真实新闻的API（可选）
+// Search news API (optional)
 export async function POST(request: Request) {
   try {
     const customHeaders = HeaderUtils.extractForwardHeaders(request.headers);
     const config = new Config();
     const client = new SearchClient(config, customHeaders);
     
-    const response = await client.advancedSearch('合成生物学 biosynthesis news 2024', {
+    const response = await client.advancedSearch('synthetic biology biosynthesis news 2024', {
       count: 10,
       timeRange: '1m',
       needSummary: true,

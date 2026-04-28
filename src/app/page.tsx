@@ -16,7 +16,7 @@ import {
 const stats = [
   { value: 'UltiWell®', label: 'Brand' },
   { value: '2023', label: 'Founded' },
-  { value: '全球', label: 'Global Markets' },
+  { value: 'Global', label: 'Global Markets' },
   { value: '100%', label: 'Quality Commitment' },
 ];
 

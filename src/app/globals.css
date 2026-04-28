@@ -35,7 +35,7 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  /* 品牌绿色 - #A1BA80 */
+  /* Brand Green - #A1BA80 */
   --color-brand-50: #f5f8f1;
   --color-brand-100: #ebf0e3;
   --color-brand-200: #d7e1c7;
@@ -55,14 +55,14 @@
   --radius-3xl: calc(var(--radius) + 12px);
   --radius-4xl: calc(var(--radius) + 16px);
   --font-sans:
-    'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', ui-sans-serif,
+    ui-sans-serif,
     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
   --font-mono:
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
     'Courier New', monospace;
   --font-serif:
-    'Noto Serif SC', 'Songti SC', 'SimSun', ui-serif, Georgia, Cambria,
+    ui-serif, Georgia, Cambria,
     'Times New Roman', Times, serif;
 }
 
@@ -148,7 +148,7 @@ body {
   @apply font-sans;
 }
 
-/* 颜色规范 */
+/* Color Standards */
 .text-gray-900 {
   color: #8C8C8C !important;
 }
@@ -161,7 +161,7 @@ body {
   color: #D9D9D9 !important;
 }
 
-/* 字体规范 - 统一细体风格 */
+/* Font Standards - Unified Light Style */
 h1, h2, h3, h4, h5, h6 {
   @apply font-normal;
 }
@@ -170,7 +170,7 @@ p, span, li, a, label {
   @apply font-normal;
 }
 
-/* 强调文字使用 medium 而非 bold */
+/* Use medium for emphasis instead of bold */
 .font-bold {
   font-weight: 500 !important;
 }
@@ -183,7 +183,7 @@ p, span, li, a, label {
   font-weight: 400 !important;
 }
 
-/* 自定义动画 */
+/* Custom Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -256,7 +256,7 @@ p, span, li, a, label {
   animation: shimmer 2s infinite;
 }
 
-/* 动画延迟类 */
+/* Animation Delay Classes */
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
