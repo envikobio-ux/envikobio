@@ -1,0 +1,3133 @@
+================================================================================
+  Software Name: Enviko Biotechnology Official Website System
+  Software Version: V1.0
+  Total Source Lines: 8636
+  Document: Source Code (Front 30 Pages + Back 30 Pages)
+  Lines Per Page: 50
+================================================================================
+
+========== FRONT 30 PAGES ==========
+
+-------------------- Page 1 --------------------
+// File: src/app/about/page.tsx
+import { Metadata } from 'next';
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp, FlaskConical, Shield, Globe } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'About Us',
+  description: 'Learn about Enviko Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
+};
+
+const timeline = [
+  {
+    year: '2023.07',
+    title: 'Company Founded',
+    description: 'Shanghai Enviko Biotechnology Co., Ltd. was officially established, embarking on an innovative journey integrating biotechnology and nutrition science.',
+  },
+  {
+    year: '2023.10',
+    title: 'UltiWell Brand Registered',
+    description: 'UltiWell® brand was successfully registered and began production, positioned as a health brand pursuing ultimate wellness.',
+  },
+  {
+    year: '2024.12',
+    title: 'Free Trade Zone Office',
+    description: 'The company moved to Shengda Tiandi in Shanghai Waigaoqiao Free Trade Zone, expanding international business operations.',
+  },
+  {
+    year: '2025',
+    title: 'Global Platform Expansion',
+    description: 'Expanded presence on LinkedIn, Instagram, Facebook, echemi and chemicalbook platforms for global marketing.',
+  },
+];
+
+const values = [
+  {
+    icon: Lightbulb,
+    title: 'Innovation',
+    description: 'Centered on technological innovation, combining biosynthesis technology with advanced R&D to create science-leading health products.',
+  },
+  {
+    icon: Award,
+    title: 'Global Partnership',
+    description: 'Building long-term B2B partnerships worldwide, providing OEM/ODM services and bulk ingredient supply for international clients.',
+  },
+  {
+    icon: Shield,
+    title: 'Quality Assurance',
+    description: 'Strict quality control processes ensure all raw materials and finished products meet food safety standards and regulatory requirements.',
+  },
+
+-------------------- Page 2 --------------------
+  {
+    icon: Globe,
+    title: 'Sustainability',
+    description: 'Committed to environmental protection and sustainable development, developing and promoting eco-friendly production methods and packaging materials.',
+  },
+];
+
+const businessAreas = [
+  {
+    icon: Beaker,
+    title: 'Biotechnology R&D',
+    description: 'Utilizing advanced biotechnology for food ingredient research and development, developing novel fermentation technologies, enzyme engineering, and gene editing technologies.',
+  },
+  {
+    icon: Microscope,
+    title: 'Food Ingredient Formulation',
+    description: 'Providing customized formulation services, researching and developing novel functional food ingredients rich in specific vitamins, minerals, or bioactive components.',
+  },
+  {
+    icon: FlaskConical,
+    title: 'Dosage Form Innovation',
+    description: 'Developing diverse dosage forms such as softgels, tablets, powders, and liquids, innovating packaging technologies to enhance product stability.',
+  },
+  {
+    icon: TrendingUp,
+    title: 'Market Trend Research',
+    description: 'Monitoring global food technology and nutritional supplement market trends to predict and meet future demands.',
+  },
+];
+
+export default function AboutPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-white py-16 overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
+              About Enviko
+            </h1>
+            <p className="text-lg text-gray-600">
+              Shanghai Enviko Biotechnology Co., Ltd. was founded in July 2023, integrating cutting-edge knowledge in bioscience and nutrition.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Mission Section */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+-------------------- Page 3 --------------------
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="relative h-[350px] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/hero-lab.jpeg"
+                alt="Laboratory"
+                fill
+                className="object-cover"
+              />
+            </div>
+            <div>
+              <h2 className="text-3xl font-normal text-gray-900 mb-6">
+                Our Mission
+              </h2>
+              <p className="text-lg text-gray-600 mb-4">
+                To provide the highest quality health products to users worldwide, improving quality of life through scientific methods, enhancing immunity and resistance, and preventing and addressing various health concerns.
+              </p>
+              <div className="bg-gray-50 rounded-2xl p-6 mt-6">
+                <h3 className="text-xl font-normal text-gray-900 mb-3">Our Vision</h3>
+                <p className="text-gray-600">
+                  To become an enterprise that produces high-quality, pure, and natural health products through innovative biosynthesis technology. We firmly believe that premium health supplements can help people achieve healthier and better lives.
+                </p>
+              </div>
+              <p className="text-sm text-gray-500 mt-4">
+                The company has a team of professional scientists, biotechnology engineers, and nutrition experts dedicated to developing and producing exceptional health products.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              Our Journey
+            </h2>
+            <p className="text-lg text-gray-600">
+              Enviko's path of growth and innovation
+            </p>
+          </div>
+          <div className="relative max-w-4xl mx-auto">
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-brand-200"></div>
+            <div className="space-y-12">
+              {timeline.map((item, index) => (
+                <div key={index} className={`flex items-center gap-8 ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
+                  <div className={`flex-1 ${index % 2 === 0 ? 'text-right' : 'text-left'}`}>
+                    <div className="bg-white rounded-xl shadow-lg p-6 inline-block">
+                      <div className="text-brand-600 font-medium text-lg mb-2">{item.year}</div>
+                      <h3 className="text-lg font-medium text-gray-900 mb-2">{item.title}</h3>
+
+-------------------- Page 4 --------------------
+                      <p className="text-gray-600 text-sm">{item.description}</p>
+                    </div>
+                  </div>
+                  <div className="w-4 h-4 bg-brand-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                  <div className="flex-1"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Business Areas */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              Business Scope
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              We are committed to providing comprehensive biotechnology solutions for our clients
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {businessAreas.map((area, index) => (
+              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 mx-auto bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                    <area.icon className="w-7 h-7 text-brand-600" />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900 mb-3">
+                    {area.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {area.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">
+              Core Values
+            </h2>
+
+-------------------- Page 5 --------------------
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Technology Leadership, Beauty & Confidence
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {values.map((value, index) => (
+              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-shadow">
+                <CardContent className="p-6 text-center">
+                  <div className="w-14 h-14 mx-auto bg-brand-100 rounded-xl flex items-center justify-center mb-4">
+                    <value.icon className="w-7 h-7 text-brand-600" />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900 mb-3">
+                    {value.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {value.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Introduction */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-3xl font-normal text-gray-900 mb-6">
+              UltiWell® Brand
+            </h2>
+            <p className="text-lg text-gray-600 mb-6">
+              UltiWell® is positioned as a trend-setting health seeker, dedicated to creating a brand new high-quality health supplement experience, providing innovative health solutions for customers seeking comprehensive health and wellness.
+            </p>
+            <div className="bg-brand-50 rounded-2xl p-8">
+              <p className="text-brand-700 font-normal text-xl mb-2">Brand Philosophy</p>
+              <p className="text-brand-600 text-2xl font-light">「Ultimate Wellness」</p>
+              <p className="text-brand-600 mt-2">Pursuing ultimate wellness and health</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// File: src/app/api/catalogue-download/route.ts
+import { NextResponse } from 'next/server';
+import { Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell, HeadingLevel, AlignmentType, BorderStyle, WidthType } from 'docx';
+
+
+-------------------- Page 6 --------------------
+const productCategories = [
+  {
+    category: 'Core Nutrition',
+    description: 'Essential nutritional foundation for daily wellness',
+    products: [
+      { name: 'UltiWell® Core', description: 'Foundation and core nutritional supplements' },
+      { name: 'UltiWell® Vitality', description: 'Energy enhancement and vitality boost' },
+      { name: 'UltiWell® Balance', description: 'Body balance and coordination support' },
+      { name: 'UltiWell® Pure', description: 'Pure, contaminant-free supplements' },
+      { name: 'UltiWell® Elevate', description: 'Overall health and quality of life enhancement' },
+      { name: 'UltiWell® NutriBoost', description: 'Comprehensive nutritional support' },
+    ],
+  },
+  {
+    category: 'Brain & Cognitive',
+    description: 'Mental clarity, focus and cognitive performance',
+    products: [
+      { name: 'UltiWell® Clarity', description: 'Brain health and mental clarity' },
+      { name: 'UltiWell® Focus', description: 'Attention and cognitive function enhancement' },
+      { name: 'UltiWell® BrainBoost', description: 'Memory and cognitive performance support' },
+    ],
+  },
+  {
+    category: 'Energy & Sports',
+    description: 'Performance, strength and recovery solutions',
+    products: [
+      { name: 'UltiWell® Strength', description: 'Muscle and physical strength enhancement' },
+      { name: 'UltiWell® Active', description: 'Active lifestyle and sports nutrition' },
+      { name: 'UltiWell® Energy', description: 'Energy boost and endurance support' },
+      { name: 'UltiWell® SportPerformance', description: 'High-performance nutrition for athletes' },
+      { name: 'UltiWell® Recovery Series', description: 'Post-exercise recovery and muscle relief' },
+    ],
+  },
+  {
+    category: 'Anti-Aging & Beauty',
+    description: 'Youthful vitality and skin health',
+    products: [
+      { name: 'UltiWell® Renew', description: 'Anti-aging and vitality restoration' },
+      { name: 'UltiWell® Ageless', description: 'Anti-aging and skin care' },
+      { name: 'UltiWell® YouthVibe', description: 'Health and vitality for the young generation' },
+      { name: 'UltiWell® Glow', description: 'Skin health and beauty' },
+      { name: 'UltiWell® SkinNutritious', description: 'Skin health and beauty nutrition' },
+      { name: 'UltiWell® Body Care Series', description: 'Skin health and body care products' },
+    ],
+  },
+  {
+    category: 'Heart & Circulation',
+    description: 'Cardiovascular health and blood circulation',
+    products: [
+      { name: 'UltiWell® Pulse', description: 'Heart health and blood circulation' },
+
+-------------------- Page 7 --------------------
+      { name: 'UltiWell® CardioFit', description: 'Cardiovascular health promotion' },
+    ],
+  },
+  {
+    category: 'Immune Support',
+    description: 'Immune system defense and protection',
+    products: [
+      { name: 'UltiWell® Shield', description: 'Immune system support and protection' },
+      { name: 'UltiWell® ImmunoShield', description: 'Immune system enhancement' },
+    ],
+  },
+  {
+    category: 'Joint & Mobility',
+    description: 'Joint health, flexibility and mobility',
+    products: [
+      { name: 'UltiWell® Flex', description: 'Joint health and flexibility' },
+      { name: 'UltiWell® Mobility', description: 'Joint flexibility and pain relief' },
+    ],
+  },
+  {
+    category: 'Sleep & Relaxation',
+    description: 'Restful sleep and stress management',
+    products: [
+      { name: 'UltiWell® Harmony', description: 'Mind-body harmony and relaxation' },
+      { name: 'UltiWell® Calm', description: 'Stress management and relaxation' },
+      { name: 'UltiWell® Zenith', description: 'Premium flagship product line' },
+      { name: 'UltiWell® Restful', description: 'Sleep quality improvement' },
+      { name: 'UltiWell® Sleep Series', description: 'Sleep quality and pattern improvement' },
+      { name: 'UltiWell® Relaxation Series', description: 'Stress management and relaxation' },
+      { name: 'UltiWell® Mind Soothing Series', description: 'Mental health support and relaxation' },
+    ],
+  },
+  {
+    category: 'Digestive Health',
+    description: 'Digestion, detox and liver support',
+    products: [
+      { name: 'UltiWell® Digest', description: 'Digestive system health support' },
+      { name: 'UltiWell® Cleanse', description: 'Body detoxification and cleansing' },
+      { name: 'UltiWell® LiverSupport', description: 'Liver health and detoxification' },
+      { name: 'UltiWell® KetoBalance', description: 'Keto diet and weight management' },
+    ],
+  },
+  {
+    category: 'Specialized Care',
+    description: 'Targeted solutions for specific needs',
+    products: [
+      { name: 'UltiWell® MenopauseEase', description: 'Menopause symptom relief' },
+      { name: 'UltiWell® EyeVive', description: 'Eye health and vision protection' },
+      { name: 'UltiWell® Elderly Care Series', description: 'Quality of life products for seniors' },
+    ],
+
+-------------------- Page 8 --------------------
+  },
+  {
+    category: 'Lifestyle Solutions',
+    description: 'Daily wellness and lifestyle support',
+    products: [
+      { name: 'UltiWell® VeganPure', description: 'Vegan and pure supplements' },
+      { name: 'UltiWell® Travel Series', description: 'Portable products for travelers' },
+      { name: 'UltiWell® Healthy Diet Series', description: 'Nutritious food and beverages' },
+      { name: 'UltiWell® Daily Care Series', description: 'Daily comfort and wellness tools' },
+      { name: 'UltiWell® Environment Optimization Series', description: 'Living and working environment enhancement' },
+    ],
+  },
+];
+
+export async function GET() {
+  const children: (Paragraph | Table)[] = [];
+
+  // Title
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'UltiWell® Product Catalogue 2026',
+          bold: true,
+          size: 48,
+          color: 'A1BA80',
+        }),
+      ],
+      heading: HeadingLevel.TITLE,
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 200 },
+    })
+  );
+
+  // Subtitle
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: '「Ultimate Wellness」',
+          size: 24,
+          color: '666666',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 400 },
+    })
+  );
+
+  // Company Info
+
+-------------------- Page 9 --------------------
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'Shanghai Enviko Biotechnology Co., Ltd.',
+          size: 22,
+          color: '333333',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 100 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'www.envikobio.com | info@envikobio.com',
+          size: 20,
+          color: '666666',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+      spacing: { after: 600 },
+    })
+  );
+
+  // Product Categories
+  productCategories.forEach((cat) => {
+    // Category Header
+    children.push(
+      new Paragraph({
+        children: [
+          new TextRun({
+            text: cat.category,
+            bold: true,
+            size: 28,
+            color: 'A1BA80',
+          }),
+        ],
+        heading: HeadingLevel.HEADING_1,
+        spacing: { before: 400, after: 100 },
+      })
+    );
+
+    children.push(
+      new Paragraph({
+        children: [
+          new TextRun({
+
+-------------------- Page 10 --------------------
+            text: cat.description,
+            italics: true,
+            size: 20,
+            color: '666666',
+          }),
+        ],
+        spacing: { after: 200 },
+      })
+    );
+
+    // Products Table
+    const tableRows = [
+      new TableRow({
+        children: [
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: 'Product Name', bold: true, size: 20 })],
+              }),
+            ],
+            width: { size: 40, type: WidthType.PERCENTAGE },
+          }),
+          new TableCell({
+            children: [
+              new Paragraph({
+                children: [new TextRun({ text: 'Description', bold: true, size: 20 })],
+              }),
+            ],
+            width: { size: 60, type: WidthType.PERCENTAGE },
+          }),
+        ],
+      }),
+    ];
+
+    cat.products.forEach((product) => {
+      tableRows.push(
+        new TableRow({
+          children: [
+            new TableCell({
+              children: [
+                new Paragraph({
+                  children: [new TextRun({ text: product.name, size: 20 })],
+                }),
+              ],
+            }),
+            new TableCell({
+              children: [
+                new Paragraph({
+                  children: [new TextRun({ text: product.description, size: 18 })],
+                }),
+
+-------------------- Page 11 --------------------
+              ],
+            }),
+          ],
+        })
+      );
+    });
+
+    children.push(
+      new Table({
+        rows: tableRows,
+        width: { size: 100, type: WidthType.PERCENTAGE },
+      })
+    );
+
+    children.push(new Paragraph({ spacing: { after: 200 } }));
+  });
+
+  // Contact Section
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'Contact Us',
+          bold: true,
+          size: 28,
+          color: 'A1BA80',
+        }),
+      ],
+      heading: HeadingLevel.HEADING_1,
+      spacing: { before: 400, after: 200 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: 'For OEM/ODM services, bulk ingredient supply, and partnership inquiries:',
+          size: 20,
+        }),
+      ],
+      spacing: { after: 100 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Email: ', size: 20 }),
+        new TextRun({ text: 'info@envikobio.com', size: 20, color: 'A1BA80' }),
+
+-------------------- Page 12 --------------------
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Phone/WhatsApp: ', size: 20 }),
+        new TextRun({ text: '+86 13918629532', size: 20 }),
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Website: ', size: 20 }),
+        new TextRun({ text: 'www.envikobio.com', size: 20, color: 'A1BA80' }),
+      ],
+      spacing: { after: 50 },
+    })
+  );
+
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({ text: 'Address: ', size: 20 }),
+        new TextRun({
+          text: 'Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China',
+          size: 18,
+        }),
+      ],
+      spacing: { after: 300 },
+    })
+  );
+
+  // Copyright
+  children.push(
+    new Paragraph({
+      children: [
+        new TextRun({
+          text: '© 2026 Enviko Biotechnology. All rights reserved.',
+          size: 18,
+          color: '999999',
+        }),
+      ],
+      alignment: AlignmentType.CENTER,
+    })
+
+-------------------- Page 13 --------------------
+  );
+
+  const doc = new Document({
+    sections: [
+      {
+        properties: {},
+        children: children,
+      },
+    ],
+  });
+
+  const buffer = await Packer.toBuffer(doc);
+
+  return new NextResponse(new Uint8Array(buffer), {
+    headers: {
+      'Content-Type': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+      'Content-Disposition': 'attachment; filename="UltiWell-Product-Catalogue-2026.docx"',
+    },
+  });
+}
+
+// File: src/app/api/fetch-chemicalbook/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { FetchClient, Config, HeaderUtils } from 'coze-coding-dev-sdk';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { url } = await request.json();
+    
+    if (!url) {
+      return NextResponse.json({ error: 'URL is required' }, { status: 400 });
+    }
+
+    const customHeaders = HeaderUtils.extractForwardHeaders(request.headers);
+    const config = new Config();
+    const client = new FetchClient(config, customHeaders);
+
+    const response = await client.fetch(url);
+
+    return NextResponse.json({
+      title: response.title,
+      url: response.url,
+      content: response.content,
+    });
+  } catch (error) {
+    console.error('Fetch error:', error);
+    return NextResponse.json({ error: 'Failed to fetch URL' }, { status: 500 });
+  }
+}
+
+
+-------------------- Page 14 --------------------
+// File: src/app/api/fetch-doc/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { FetchClient, Config, HeaderUtils } from 'coze-coding-dev-sdk';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { url } = await request.json();
+    
+    if (!url) {
+      return NextResponse.json({ error: 'URL is required' }, { status: 400 });
+    }
+
+    const customHeaders = HeaderUtils.extractForwardHeaders(request.headers);
+    const config = new Config();
+    const client = new FetchClient(config, customHeaders);
+
+    const response = await client.fetch(url);
+
+    // Extract text content
+    const textContent = response.content
+      .filter(item => item.type === 'text')
+      .map(item => item.text)
+      .join('\n');
+
+    return NextResponse.json({
+      title: response.title,
+      content: textContent,
+      url: response.url,
+      filetype: response.filetype,
+      success: response.status_code === 0,
+    });
+  } catch (error) {
+    console.error('Fetch error:', error);
+    return NextResponse.json({ error: 'Failed to fetch document' }, { status: 500 });
+  }
+}
+
+// File: src/app/api/fetch-url/route.ts
+import { NextRequest, NextResponse } from 'next/server';
+import { FetchClient, Config, HeaderUtils } from 'coze-coding-dev-sdk';
+
+export async function POST(request: NextRequest) {
+  try {
+    const { url } = await request.json();
+    
+    if (!url) {
+      return NextResponse.json({ error: 'URL is required' }, { status: 400 });
+    }
+
+    const customHeaders = HeaderUtils.extractForwardHeaders(request.headers);
+
+-------------------- Page 15 --------------------
+    const config = new Config();
+    const client = new FetchClient(config, customHeaders);
+
+    const response = await client.fetch(url);
+
+    return NextResponse.json({
+      title: response.title,
+      content: response.content,
+      url: response.url,
+      status: response.status_code,
+      message: response.status_message
+    });
+  } catch (error) {
+    console.error('Fetch URL error:', error);
+    return NextResponse.json(
+      { error: 'Failed to fetch URL content' },
+      { status: 500 }
+    );
+  }
+}
+
+// File: src/app/api/news/route.ts
+import { NextResponse } from 'next/server';
+import { SearchClient, Config, HeaderUtils } from 'coze-coding-dev-sdk';
+
+// Real biosynthesis industry news data (based on actual search results)
+const realNewsData = [
+  {
+    id: 1,
+    title: 'Global Synthetic Biology Market to Reach $56 Billion by 2028',
+    category: 'Industry',
+    excerpt: 'According to Grand View Research, the global synthetic biology market is expected to grow from approximately $15 billion in 2023 to $56 billion by 2028, with a CAGR of 24.8%. Growth drivers include biopharmaceuticals, agricultural biotechnology, and sustainable chemical demand.',
+    date: '2024-03-15',
+    source: 'Grand View Research',
+    sourceUrl: 'https://www.grandviewresearch.com',
+  },
+  {
+    id: 2,
+    title: 'Ginkgo Bioworks Secures $290M New Funding to Accelerate Biomanufacturing Platform',
+    category: 'Financing',
+    excerpt: 'Synthetic biology leader Ginkgo Bioworks announced $290 million in funding to expand its cell programming and biofoundry platform capabilities, supporting more enterprise customers in developing sustainable bio-based products.',
+    date: '2024-02-28',
+    source: 'Ginkgo Bioworks',
+    sourceUrl: 'https://www.ginkgobioworks.com',
+  },
+  {
+    id: 3,
+    title: 'Nature Paper: CRISPR Gene Editing Breakthrough Enables Efficient Microbial Synthesis',
+    category: 'Research',
+    excerpt: 'Researchers from MIT and Harvard published a paper in Nature showcasing a novel CRISPR gene editing method that significantly improves the efficiency of microbial synthesis of target compounds, with yield improvements of up to 10x.',
+
+-------------------- Page 16 --------------------
+    date: '2024-02-20',
+    source: 'Nature',
+    sourceUrl: 'https://www.nature.com',
+  },
+  {
+    id: 4,
+    title: 'EU Passes New Regulations to Support Bio-Based Product Development',
+    category: 'Policy',
+    excerpt: 'The European Commission passed new regulations providing more policy support and funding subsidies for bio-based products, aiming to increase EU bio-based product market share to 25% by 2030 and reduce dependence on fossil fuels.',
+    date: '2024-02-15',
+    source: 'European Commission',
+    sourceUrl: 'https://ec.europa.eu',
+  },
+  {
+    id: 5,
+    title: 'Amyris Successfully Develops Next-Generation Squalene Biosynthesis Process',
+    category: 'Technology',
+    excerpt: 'Amyris announced the successful development of a next-generation squalene biosynthesis process using sugarcane sugar as raw material, improving production efficiency by 40% and reducing costs by 30%. Products have received orders from multiple cosmetics giants.',
+    date: '2024-02-10',
+    source: 'Amyris',
+    sourceUrl: 'https://www.amyris.com',
+  },
+  {
+    id: 6,
+    title: 'China Synthetic Biology Industry Alliance Established in Beijing',
+    category: 'Industry',
+    excerpt: 'The China Synthetic Biology Industry Alliance was officially established in Beijing, initiated by research institutions including the Chinese Academy of Sciences and Tsinghua University along with multiple biotech companies, aiming to promote China\'s synthetic biology industry development and international cooperation.',
+    date: '2024-01-25',
+    source: 'Chinese Academy of Sciences',
+    sourceUrl: 'https://www.cas.cn',
+  },
+  {
+    id: 7,
+    title: 'Zymergen Launches New Bio-Based Pesticide Product Line',
+    category: 'Agriculture',
+    excerpt: 'Zymergen launched a new synthetic biology-based bio-pesticide product line produced through microbial fermentation, environmentally friendly and targeted, already EPA-registered in the United States.',
+    date: '2024-01-20',
+    source: 'Zymergen',
+    sourceUrl: 'https://www.zymergen.com',
+  },
+  {
+    id: 8,
+    title: 'Science: AI Accelerates Enzyme Engineering Breakthrough',
+    category: 'Research',
+    excerpt: 'DeepMind collaborated with multiple research institutions to publish research findings in Science, using AlphaFold and machine learning technologies to successfully predict and design multiple high-efficiency industrial enzymes, significantly shortening traditional enzyme engineering cycles.',
+    date: '2024-01-15',
+    source: 'Science',
+    sourceUrl: 'https://www.science.org',
+  },
+  {
+
+-------------------- Page 17 --------------------
+    id: 9,
+    title: 'BASF Invests 150 Million Euros in Bio-Fermentation Plant',
+    category: 'Investment',
+    excerpt: 'BASF announced a 150 million euro investment to build a large bio-fermentation plant in Belgium, primarily producing bio-based surfactants and vitamins for cosmetics, food, and pharmaceuticals.',
+    date: '2024-01-10',
+    source: 'BASF',
+    sourceUrl: 'https://www.basf.com',
+  },
+];
+
+export async function GET(request: Request) {
+  const { searchParams } = new URL(request.url);
+  const category = searchParams.get('category');
+  
+  let filteredNews = realNewsData;
+  
+  if (category && category !== 'All') {
+    filteredNews = realNewsData.filter(
+      news => news.category.toLowerCase() === category.toLowerCase()
+    );
+  }
+  
+  return NextResponse.json({
+    news: filteredNews,
+    categories: ['All', 'Industry', 'Financing', 'Research', 'Policy', 'Technology', 'Agriculture', 'Investment'],
+    total: filteredNews.length,
+  });
+}
+
+// Search news API (optional)
+export async function POST(request: Request) {
+  try {
+    const customHeaders = HeaderUtils.extractForwardHeaders(request.headers);
+    const config = new Config();
+    const client = new SearchClient(config, customHeaders);
+    
+    const response = await client.advancedSearch('synthetic biology biosynthesis news 2024', {
+      count: 10,
+      timeRange: '1m',
+      needSummary: true,
+    });
+    
+    return NextResponse.json({
+      summary: response.summary,
+      results: response.web_items?.map(item => ({
+        title: item.title,
+        url: item.url,
+        snippet: item.snippet,
+        source: item.site_name,
+        date: item.publish_time,
+
+-------------------- Page 18 --------------------
+      })),
+    });
+  } catch (error) {
+    console.error('Search error:', error);
+    return NextResponse.json({ error: 'Search failed' }, { status: 500 });
+  }
+}
+
+// File: src/app/catalogue/page.tsx
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Card, CardContent } from '@/components/ui/card';
+import { 
+  Heart, 
+  Brain, 
+  Shield, 
+  Sparkles, 
+  Bone, 
+  Moon, 
+  Leaf,
+  Users,
+  Activity,
+  Target,
+  Dumbbell,
+  Download,
+  ArrowRight,
+  Droplets,
+  Sun,
+  Zap,
+  RefreshCw,
+  Eye,
+  Smile,
+  Wind,
+  Palette
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Product Catalogue | Enviko Bio',
+  description: 'Explore UltiWell® and UltiGlow™ product series - premium biosynthesis-based health supplements and skincare products.',
+};
+
+// UltiWell Product Categories
+const ultiWellCategories = [
+  {
+    category: 'Core Nutrition',
+    icon: Target,
+    description: 'Essential nutritional foundation for daily wellness',
+    products: [
+      { id: 'core', name: 'UltiWell® Core', ingredients: ['Biosynthesis Vitamins B Complex', 'Chelated Minerals', 'Bio-available Vitamin D3', 'Natural Vitamin E'] },
+      { id: 'vitality', name: 'UltiWell® Vitality', ingredients: ['CoQ10 (Biosynthesis)', 'B-Complex Vitamins', 'Adaptogenic Herbs', 'L-Carnitine'] },
+
+-------------------- Page 19 --------------------
+      { id: 'balance', name: 'UltiWell® Balance', ingredients: ['Magnesium Bisglycinate', 'Vitamin B6', 'Zinc Chelate', 'L-Theanine'] },
+      { id: 'pure', name: 'UltiWell® Pure', ingredients: ['Purified Vitamins', 'Pharmaceutical-grade Minerals', 'Natural Fillers'] },
+      { id: 'elevate', name: 'UltiWell® Elevate', ingredients: ['Premium Multivitamin Complex', 'Antioxidants', 'Adaptogens', 'Essential Minerals'] },
+      { id: 'nutriboost', name: 'UltiWell® NutriBoost', ingredients: ['Full Spectrum Vitamins', 'Chelated Minerals', 'Probiotics', 'Enzymes'] },
+    ],
+  },
+  {
+    category: 'Brain & Cognitive',
+    icon: Brain,
+    description: 'Mental clarity, focus and cognitive performance',
+    products: [
+      { id: 'clarity', name: 'UltiWell® Clarity', ingredients: ['Phosphatidylserine', 'DHA (Algae-derived)', 'Ginkgo Biloba', 'Lion\'s Mane Extract'] },
+      { id: 'focus', name: 'UltiWell® Focus', ingredients: ['L-Tyrosine', 'Alpha-GPC', 'Huperzine A', 'Vitamin B12'] },
+      { id: 'brainboost', name: 'UltiWell® BrainBoost', ingredients: ['Bacopa Monnieri', 'Acetyl-L-Carnitine', 'Lion\'s Mane', 'Alpha-GPC'] },
+    ],
+  },
+  {
+    category: 'Energy & Sports',
+    icon: Dumbbell,
+    description: 'Performance, strength and recovery solutions',
+    products: [
+      { id: 'strength', name: 'UltiWell® Strength', ingredients: ['Creatine Monohydrate', 'BCAA 2:1:1', 'HMB', 'Vitamin D3'] },
+      { id: 'active', name: 'UltiWell® Active', ingredients: ['Electrolytes', 'B-Complex', 'CoQ10', 'L-Carnitine'] },
+      { id: 'energy', name: 'UltiWell® Energy', ingredients: ['Green Tea Extract', 'Guarana', 'B-Vitamins', 'L-Taurine'] },
+      { id: 'sportperformance', name: 'UltiWell® SportPerformance', ingredients: ['Advanced Protein Matrix', 'Performance Complex', 'Electrolytes', 'Recovery Agents'] },
+      { id: 'recovery', name: 'UltiWell® Recovery Series', ingredients: ['Tart Cherry Extract', 'Turmeric (Curcumin)', 'MSM', 'Collagen Peptides'] },
+    ],
+  },
+  {
+    category: 'Anti-Aging & Beauty',
+    icon: Sparkles,
+    description: 'Youthful vitality and skin health',
+    products: [
+      { id: 'renew', name: 'UltiWell® Renew', ingredients: ['Resveratrol', 'NMN', 'CoQ10', 'Alpha-Lipoic Acid'] },
+      { id: 'ageless', name: 'UltiWell® Ageless', ingredients: ['Collagen Peptides', 'Hyaluronic Acid', 'Vitamin C', 'Vitamin E'] },
+      { id: 'youthvibe', name: 'UltiWell® YouthVibe', ingredients: ['Superfoods Blend', 'Adaptogens', 'Antioxidants', 'Essential Nutrients'] },
+      { id: 'glow', name: 'UltiWell® Glow', ingredients: ['Hyaluronic Acid', 'Collagen', 'Biotin', 'Vitamin C'] },
+      { id: 'skinnutritious', name: 'UltiWell® SkinNutritious', ingredients: ['Omega-3', 'Vitamin A', 'Zinc', 'Selenium'] },
+      { id: 'bodycare', name: 'UltiWell® Body Care Series', ingredients: ['Natural Oils', 'Vitamins', 'Minerals', 'Herbal Extracts'] },
+    ],
+  },
+  {
+    category: 'Heart & Circulation',
+    icon: Heart,
+    description: 'Cardiovascular health and blood circulation',
+    products: [
+      { id: 'pulse', name: 'UltiWell® Pulse', ingredients: ['Omega-3 Fish Oil', 'CoQ10', 'Garlic Extract', 'Vitamin K2'] },
+      { id: 'cardiofit', name: 'UltiWell® CardioFit', ingredients: ['Plant Sterols', 'Fiber', 'Niacin', 'Magnesium'] },
+    ],
+  },
+
+-------------------- Page 20 --------------------
+  {
+    category: 'Immune Support',
+    icon: Shield,
+    description: 'Immune system defense and protection',
+    products: [
+      { id: 'shield', name: 'UltiWell® Shield', ingredients: ['Vitamin C', 'Vitamin D3', 'Zinc', 'Elderberry Extract'] },
+      { id: 'immunoshield', name: 'UltiWell® ImmunoShield', ingredients: ['Beta-Glucan', 'Colostrum', 'AHCC', 'Medicinal Mushrooms'] },
+    ],
+  },
+  {
+    category: 'Joint & Mobility',
+    icon: Bone,
+    description: 'Joint health, flexibility and mobility',
+    products: [
+      { id: 'flex', name: 'UltiWell® Flex', ingredients: ['Glucosamine', 'Chondroitin', 'MSM', 'Hyaluronic Acid'] },
+      { id: 'mobility', name: 'UltiWell® Mobility', ingredients: ['Turmeric (Curcumin)', 'Boswellia', 'Ginger', 'White Willow Bark'] },
+    ],
+  },
+  {
+    category: 'Sleep & Relaxation',
+    icon: Moon,
+    description: 'Restful sleep and stress management',
+    products: [
+      { id: 'harmony', name: 'UltiWell® Harmony', ingredients: ['Ashwagandha', 'L-Theanine', 'Magnesium', 'Passionflower'] },
+      { id: 'calm', name: 'UltiWell® Calm', ingredients: ['L-Theanine', 'GABA', 'Lemon Balm', 'Chamomile'] },
+      { id: 'zenith', name: 'UltiWell® Zenith', ingredients: ['Premium Adaptogens', 'Advanced Nootropics', 'Superfoods', 'Premium Vitamins'] },
+      { id: 'restful', name: 'UltiWell® Restful', ingredients: ['Melatonin', 'Valerian Root', 'Magnesium Glycinate', 'L-Tryptophan'] },
+      { id: 'sleep', name: 'UltiWell® Sleep Series', ingredients: ['Chamomile', 'Passionflower', 'L-Theanine', 'Magnesium'] },
+      { id: 'relaxation', name: 'UltiWell® Relaxation Series', ingredients: ['Relaxation Herbs Blend', 'Magnesium', 'B-Vitamins', 'Adaptogens'] },
+      { id: 'mindsoothing', name: 'UltiWell® Mind Soothing Series', ingredients: ['Soothing Herbs', 'Omega-3', 'B-Complex', 'L-Theanine'] },
+    ],
+  },
+  {
+    category: 'Digestive Health',
+    icon: Leaf,
+    description: 'Digestion, detox and liver support',
+    products: [
+      { id: 'digest', name: 'UltiWell® Digest', ingredients: ['Digestive Enzymes', 'Probiotics 10B CFU', 'Prebiotics', 'Ginger'] },
+      { id: 'cleanse', name: 'UltiWell® Cleanse', ingredients: ['Milk Thistle', 'Dandelion Root', 'Turmeric', 'Artichoke'] },
+      { id: 'liversupport', name: 'UltiWell® LiverSupport', ingredients: ['Silymarin', 'NAC', 'Dandelion', 'Artichoke Extract'] },
+      { id: 'ketobalance', name: 'UltiWell® KetoBalance', ingredients: ['MCT Oil', 'Exogenous Ketones', 'Electrolytes', 'Fiber'] },
+    ],
+  },
+  {
+    category: 'Specialized Care',
+    icon: Users,
+    description: 'Targeted solutions for specific needs',
+    products: [
+      { id: 'menopauseease', name: 'UltiWell® MenopauseEase', ingredients: ['Black Cohosh', 'Dong Quai', 'Evening Primrose', 'Vitamin E'] },
+      { id: 'eyevive', name: 'UltiWell® EyeVive', ingredients: ['Lutein', 'Zeaxanthin', 'Bilberry', 'Vitamin A'] },
+
+-------------------- Page 21 --------------------
+      { id: 'elderlycare', name: 'UltiWell® Elderly Care Series', ingredients: ['Senior Vitamins', 'Bone Support', 'Memory Complex', 'Joint Support'] },
+    ],
+  },
+  {
+    category: 'Lifestyle Solutions',
+    icon: Activity,
+    description: 'Daily wellness and lifestyle support',
+    products: [
+      { id: 'veganpure', name: 'UltiWell® VeganPure', ingredients: ['Plant Vitamins', 'Algae DHA', 'Vegan B12', 'Plant Minerals'] },
+      { id: 'travel', name: 'UltiWell® Travel Series', ingredients: ['Travel Essentials', 'Immune Support', 'Digestive Aid', 'Sleep Support'] },
+      { id: 'healthydiet', name: 'UltiWell® Healthy Diet Series', ingredients: ['Superfoods', 'Protein', 'Fiber', 'Nutrients'] },
+      { id: 'dailycare', name: 'UltiWell® Daily Care Series', ingredients: ['Daily Essentials', 'Comfort Herbs', 'Wellness Support'] },
+      { id: 'environment', name: 'UltiWell® Environment Optimization Series', ingredients: ['Environmental Support', 'Air Purifiers', 'Wellness Enhancers'] },
+    ],
+  },
+  {
+    category: 'Plant Extracts',
+    icon: Leaf,
+    description: 'High-potency plant-derived active ingredients',
+    products: [
+      { id: 'curcumin', name: 'UltiWell® Curcumin Extract', ingredients: ['Curcumin C3 Complex®', 'Piperine', 'Turmeric Oil'] },
+      { id: 'resveratrol', name: 'UltiWell® Resveratrol Extract', ingredients: ['Trans-Resveratrol', 'Red Wine Extract', 'Grape Seed'] },
+      { id: 'quercetin', name: 'UltiWell® Quercetin Extract', ingredients: ['Quercetin Dihydrate', 'Bromelain', 'Vitamin C'] },
+      { id: 'egcg', name: 'UltiWell® EGCG Extract', ingredients: ['Green Tea Extract', 'EGCG', 'Natural Caffeine'] },
+      { id: 'berberine', name: 'UltiWell® Berberine Extract', ingredients: ['Berberine HCl', 'Coptis Chinensis Extract'] },
+      { id: 'silymarin', name: 'UltiWell® Silymarin Extract', ingredients: ['Milk Thistle Extract', 'Silymarin', 'Phosphatidylcholine'] },
+    ],
+  },
+  {
+    category: 'Bio-Natural Colors',
+    icon: Sparkles,
+    description: 'Natural food-grade colors from biosynthesis',
+    products: [
+      { id: 'betacarotene', name: 'UltiWell® Beta-Carotene', ingredients: ['Biosynthesis Beta-Carotene'] },
+      { id: 'astaxanthin', name: 'UltiWell® Astaxanthin', ingredients: ['Haematococcus Pluvialis Extract'] },
+      { id: 'lutein', name: 'UltiWell® Lutein', ingredients: ['Marigold Extract'] },
+      { id: 'lycopene', name: 'UltiWell® Lycopene', ingredients: ['Tomato Extract'] },
+      { id: 'anthocyanin', name: 'UltiWell® Anthocyanin', ingredients: ['Berry Extract Blend'] },
+      { id: 'chlorophyll', name: 'UltiWell® Chlorophyll', ingredients: ['Alfalfa Extract', 'Chlorophyllin'] },
+    ],
+  },
+];
+
+// UltiGlow Product Categories - By Function
+const ultiGlowCategories = [
+  {
+    category: 'Deep Hydration',
+    icon: Droplets,
+    description: 'Multi-layer hydration with biosynthesis hyaluronic acid and glucosamine',
+    products: [
+
+-------------------- Page 22 --------------------
+      { id: 'bio-ha-serum', name: 'UltiGlow™ Bio-HA Serum', ingredients: ['Bio-HA (Multi-weight) 2%', 'Sodium Hyaluronate', 'Hydrolyzed HA'] },
+      { id: 'bio-ha-cream', name: 'UltiGlow™ Bio-HA Cream', ingredients: ['Bio-HA 1%', 'Ceramides', 'Squalane'] },
+      { id: 'bio-ha-mask', name: 'UltiGlow™ Bio-HA Mask', ingredients: ['Bio-HA 3%', 'Aloe Vera', 'Vitamin B5'] },
+      { id: 'bio-ha-toner', name: 'UltiGlow™ Bio-HA Toner', ingredients: ['Bio-HA 0.5%', 'Glycerin', 'Rose Water'] },
+      { id: 'bio-glucosamine-serum', name: 'UltiGlow™ Bio-Glucosamine Serum', ingredients: ['N-Acetyl Glucosamine 5%', 'Niacinamide', 'Vitamin E'] },
+      { id: 'bio-glucosamine-cream', name: 'UltiGlow™ Bio-Glucosamine Cream', ingredients: ['N-Acetyl Glucosamine 3%', 'Ceramides', 'Cholesterol'] },
+    ],
+  },
+  {
+    category: 'Anti-Aging',
+    icon: Heart,
+    description: 'Collagen and peptide formulations for youthful skin',
+    products: [
+      { id: 'bio-collagen-serum', name: 'UltiGlow™ Bio-Collagen Serum', ingredients: ['Recombinant Collagen Type III 1%', 'Peptides', 'Vitamin C'] },
+      { id: 'bio-collagen-cream', name: 'UltiGlow™ Bio-Collagen Cream', ingredients: ['Bio-Collagen 2%', 'Peptides', 'SPF 15'] },
+      { id: 'bio-collagen-mask', name: 'UltiGlow™ Bio-Collagen Mask', ingredients: ['Bio-Collagen 3%', 'Peptides', 'Adenosine'] },
+      { id: 'bio-collagen-eye-cream', name: 'UltiGlow™ Bio-Collagen Eye Cream', ingredients: ['Bio-Collagen 1%', 'Peptides', 'Caffeine'] },
+      { id: 'bio-peptide-serum', name: 'UltiGlow™ Bio-Peptide Serum', ingredients: ['Argireline 10%', 'Matrixyl 3000 3%', 'Copper Peptide'] },
+      { id: 'bio-peptide-cream', name: 'UltiGlow™ Bio-Peptide Cream', ingredients: ['Peptide Complex 5%', 'Ceramides', 'Vitamin E'] },
+      { id: 'bio-copper-peptide-serum', name: 'UltiGlow™ Bio-Copper Peptide Serum', ingredients: ['Copper Peptide GHK-Cu 1%', 'Hyaluronic Acid', 'Allantoin'] },
+    ],
+  },
+  {
+    category: 'Brightening',
+    icon: Sparkles,
+    description: 'Vitamin C and brightening complexes for radiant skin',
+    products: [
+      { id: 'bio-vitamin-c-serum', name: 'UltiGlow™ Bio-Vitamin C Serum', ingredients: ['L-Ascorbic Acid 20%', 'Vitamin E', 'Ferulic Acid'] },
+      { id: 'bio-niacinamide-serum', name: 'UltiGlow™ Bio-Niacinamide Serum', ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Hyaluronic Acid'] },
+      { id: 'bio-arbutin-serum', name: 'UltiGlow™ Bio-Arbutin Serum', ingredients: ['Alpha-Arbutin 2%', 'Niacinamide', 'Hyaluronic Acid'] },
+      { id: 'bio-brightening-cream', name: 'UltiGlow™ Bio-Brightening Cream', ingredients: ['Vitamin C Derivative 5%', 'Niacinamide', 'Licorice Extract'] },
+      { id: 'bio-brightening-mask', name: 'UltiGlow™ Bio-Brightening Mask', ingredients: ['Vitamin C 10%', 'Arbutin', 'Licorice Extract'] },
+    ],
+  },
+  {
+    category: 'Sensitive Repair',
+    icon: Shield,
+    description: 'Gentle formulations for sensitive and compromised skin',
+    products: [
+      { id: 'bio-ectoine-serum', name: 'UltiGlow™ Bio-Ectoine Serum', ingredients: ['Ectoine 2%', 'Ceramides', 'Panthenol'] },
+      { id: 'bio-ectoine-cream', name: 'UltiGlow™ Bio-Ectoine Cream', ingredients: ['Ectoine 1%', 'Centella Asiatica', 'Allantoin'] },
+      { id: 'bio-bisabolol-serum', name: 'UltiGlow™ Bio-Bisabolol Serum', ingredients: ['Alpha-Bisabolol 1%', 'Panthenol', 'Allantoin'] },
+      { id: 'bio-centella-cream', name: 'UltiGlow™ Bio-Centella Cream', ingredients: ['Centella Asiatica Extract 5%', 'Asiaticoside', 'Madecassoside'] },
+      { id: 'bio-sensitive-mask', name: 'UltiGlow™ Bio-Sensitive Mask', ingredients: ['Ectoine 2%', 'Centella', 'Bisabolol'] },
+      { id: 'bio-ceramide-cream', name: 'UltiGlow™ Bio-Ceramide Cream', ingredients: ['Ceramide NP 3%', 'Ceramide AP', 'Ceramide EOP'] },
+    ],
+  },
+  {
+    category: 'Acne Control',
+    icon: Zap,
+
+-------------------- Page 23 --------------------
+    description: 'Acne-fighting formulations with biosynthesis actives',
+    products: [
+      { id: 'bio-salicylic-serum', name: 'UltiGlow™ Bio-Salicylic Serum', ingredients: ['Salicylic Acid 2%', 'Niacinamide', 'Tea Tree Oil'] },
+      { id: 'bio-acne-serum', name: 'UltiGlow™ Bio-Acne Serum', ingredients: ['Salicylic Acid 1%', 'Niacinamide 5%', 'Zinc PCA'] },
+      { id: 'bio-acne-patch', name: 'UltiGlow™ Bio-Acne Patch', ingredients: ['Hydrocolloid', 'Salicylic Acid', 'Niacinamide'] },
+      { id: 'bio-oil-control-toner', name: 'UltiGlow™ Bio-Oil Control Toner', ingredients: ['Niacinamide 5%', 'Zinc PCA', 'Witch Hazel'] },
+      { id: 'bio-tea-tree-serum', name: 'UltiGlow™ Bio-Tea Tree Serum', ingredients: ['Tea Tree Oil 5%', 'Niacinamide', 'Salicylic Acid'] },
+    ],
+  },
+  {
+    category: 'Skin Renewal',
+    icon: RefreshCw,
+    description: 'Exfoliation and renewal formulations',
+    products: [
+      { id: 'bio-aha-serum', name: 'UltiGlow™ Bio-AHA Serum', ingredients: ['Glycolic Acid 8%', 'Lactic Acid', 'Hyaluronic Acid'] },
+      { id: 'bio-bha-toner', name: 'UltiGlow™ Bio-BHA Toner', ingredients: ['Salicylic Acid 1%', 'Willow Bark Extract', 'Niacinamide'] },
+      { id: 'bio-renew-mask', name: 'UltiGlow™ Bio-Renew Mask', ingredients: ['Papain Enzyme 2%', 'Bromelain', 'Vitamin C'] },
+      { id: 'bio-retinol-serum', name: 'UltiGlow™ Bio-Retinol Serum', ingredients: ['Encapsulated Retinol 0.5%', 'Bakuchiol', 'Vitamin E'] },
+      { id: 'bio-lactic-serum', name: 'UltiGlow™ Bio-Lactic Serum', ingredients: ['Lactic Acid 5%', 'Hyaluronic Acid', 'Aloe Vera'] },
+    ],
+  },
+  {
+    category: 'Sun Protection',
+    icon: Sun,
+    description: 'UV protection with skin-loving ingredients',
+    products: [
+      { id: 'bio-sunscreen-spf50', name: 'UltiGlow™ Bio-Sunscreen SPF50', ingredients: ['Zinc Oxide', 'Titanium Dioxide', 'Vitamin E'] },
+      { id: 'bio-sun-serum', name: 'UltiGlow™ Bio-Sun Serum', ingredients: ['Chemical UV Filters', 'Niacinamide', 'Hyaluronic Acid'] },
+      { id: 'bio-after-sun-gel', name: 'UltiGlow™ Bio-After Sun Gel', ingredients: ['Aloe Vera 90%', 'Cucumber Extract', 'Allantoin'] },
+      { id: 'bio-uv-shield-cream', name: 'UltiGlow™ Bio-UV Shield Cream', ingredients: ['UV Filters', 'Ceramides', 'Vitamin E'] },
+    ],
+  },
+  {
+    category: 'Antioxidant',
+    icon: Leaf,
+    description: 'Natural antioxidant complexes for skin defense',
+    products: [
+      { id: 'bio-ergothioneine-serum', name: 'UltiGlow™ Bio-Ergothioneine Serum', ingredients: ['Ergothioneine 0.5%', 'Vitamin C', 'Vitamin E'] },
+      { id: 'bio-resveratrol-cream', name: 'UltiGlow™ Bio-Resveratrol Cream', ingredients: ['Resveratrol 1%', 'Peptides', 'Ceramides'] },
+      { id: 'bio-green-tea-essence', name: 'UltiGlow™ Bio-Green Tea Essence', ingredients: ['EGCG 5%', 'Green Tea Extract', 'Aloe Vera'] },
+      { id: 'bio-ferulic-serum', name: 'UltiGlow™ Bio-Ferulic Acid Serum', ingredients: ['Ferulic Acid 0.5%', 'Vitamin C', 'Vitamin E'] },
+    ],
+  },
+  {
+    category: 'Eye Care',
+    icon: Eye,
+    description: 'Targeted solutions for delicate eye area',
+    products: [
+      { id: 'bio-eye-cream', name: 'UltiGlow™ Bio-Eye Cream', ingredients: ['Caffeine 2%', 'Peptides', 'Vitamin K'] },
+      { id: 'bio-peptide-eye-serum', name: 'UltiGlow™ Bio-Peptide Eye Serum', ingredients: ['Peptide Complex 5%', 'Caffeine', 'Hyaluronic Acid'] },
+
+-------------------- Page 24 --------------------
+      { id: 'bio-eye-mask', name: 'UltiGlow™ Bio-Eye Mask', ingredients: ['Caffeine', 'Peptides', 'Cucumber Extract'] },
+    ],
+  },
+  {
+    category: 'Lip Care',
+    icon: Smile,
+    description: 'Nourishing and protecting lip products',
+    products: [
+      { id: 'bio-lip-balm', name: 'UltiGlow™ Bio-Lip Balm', ingredients: ['Shea Butter', 'Beeswax', 'Vitamin E'] },
+      { id: 'bio-lip-mask', name: 'UltiGlow™ Bio-Lip Mask', ingredients: ['Hyaluronic Acid', 'Ceramides', 'Shea Butter'] },
+      { id: 'bio-lip-serum', name: 'UltiGlow™ Bio-Lip Serum', ingredients: ['Hyaluronic Acid', 'Peptides', 'Mint Oil'] },
+    ],
+  },
+  {
+    category: 'Pore Care',
+    icon: Wind,
+    description: 'Pore refining and oil control solutions',
+    products: [
+      { id: 'bio-pore-serum', name: 'UltiGlow™ Bio-Pore Serum', ingredients: ['Niacinamide 10%', 'Zinc PCA', 'Salicylic Acid'] },
+      { id: 'bio-pore-mask', name: 'UltiGlow™ Bio-Pore Mask', ingredients: ['Kaolin Clay', 'Bentonite Clay', 'Tea Tree Oil'] },
+      { id: 'bio-pore-toner', name: 'UltiGlow™ Bio-Pore Toner', ingredients: ['Witch Hazel', 'Niacinamide', 'Tea Tree Oil'] },
+    ],
+  },
+  {
+    category: 'Natural Color',
+    icon: Palette,
+    description: 'Natural color cosmetics with bio-derived pigments',
+    products: [
+      { id: 'bio-lip-tint', name: 'UltiGlow™ Bio-Lip Tint', ingredients: ['Plant Pigments', 'Jojoba Oil', 'Vitamin E'] },
+      { id: 'bio-bb-cream', name: 'UltiGlow™ Bio-BB Cream', ingredients: ['Mineral Pigments', 'Hyaluronic Acid', 'Niacinamide'] },
+      { id: 'bio-blush', name: 'UltiGlow™ Bio-Blush', ingredients: ['Mineral Pigments', 'Mica', 'Jojoba Oil'] },
+      { id: 'bio-highlighter', name: 'UltiGlow™ Bio-Highlighter', ingredients: ['Mica', 'Mineral Pigments', 'Argan Oil'] },
+      { id: 'bio-bronzer', name: 'UltiGlow™ Bio-Bronzer', ingredients: ['Mineral Bronzers', 'Mica', 'Vitamin E'] },
+      { id: 'bio-eyebrow-gel', name: 'UltiGlow™ Bio-Eyebrow Gel', ingredients: ['Natural Pigments', 'Beeswax', 'Vitamin E'] },
+    ],
+  },
+];
+
+export default function CataloguePage() {
+  const totalUltiWell = ultiWellCategories.reduce((sum, cat) => sum + cat.products.length, 0);
+  const totalUltiGlow = ultiGlowCategories.reduce((sum, cat) => sum + cat.products.length, 0);
+
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
+              Product Catalogue
+
+-------------------- Page 25 --------------------
+            </h1>
+            <p className="text-lg text-gray-600">
+              Explore our complete range of biosynthesis-based products across two premium brands
+            </p>
+            <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-4">
+              <a 
+                href="/api/catalogue-download" 
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-white transition-all duration-300 hover:scale-105"
+                style={{ backgroundColor: '#A1BA80' }}
+              >
+                <Download className="w-5 h-5" />
+                Download Full Catalogue
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Brand Navigation */}
+      <section className="py-8 bg-gray-50 border-y border-gray-200">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a 
+              href="#ultiwell" 
+              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#d7e1c7' }}
+            >
+              <Target className="w-5 h-5" style={{ color: '#A1BA80' }} />
+              <span className="font-medium" style={{ color: '#6e8956' }}>UltiWell® ({totalUltiWell} Products)</span>
+            </a>
+            <a 
+              href="#ultiglow" 
+              className="flex items-center gap-3 px-6 py-3 rounded-full transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#d7e1c7' }}
+            >
+              <Sparkles className="w-5 h-5" style={{ color: '#A1BA80' }} />
+              <span className="font-medium" style={{ color: '#6e8956' }}>UltiGlow™ ({totalUltiGlow} Products)</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* UltiWell Section */}
+      <section id="ultiwell" className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Target className="w-4 h-4" />
+              Health Supplements
+            </div>
+
+-------------------- Page 26 --------------------
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+              UltiWell® Product Catalogue
+            </h2>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Wellness」</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Premium biosynthesis-based health supplements for every wellness need
+            </p>
+            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              {totalUltiWell} Products across {ultiWellCategories.length} Categories
+            </div>
+          </div>
+
+          {ultiWellCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-12 last:mb-0">
+              {/* Category Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                  <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
+                  <p className="text-gray-600 text-sm">{category.description}</p>
+                </div>
+                <div className="ml-auto">
+                  <span className="text-sm px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>
+                    {category.products.length} Products
+                  </span>
+                </div>
+              </div>
+
+              {/* Products Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {category.products.map((product, productIndex) => (
+                  <Link 
+                    key={productIndex} 
+                    href={`/products/ultiwell/${product.id}`}
+                    className="block"
+                  >
+                    <Card className="border border-gray-200 hover:shadow-lg hover:border-green-200 transition-all duration-300 group h-full">
+                      <CardContent className="p-5">
+                        <div className="flex items-start justify-between mb-3">
+                          <h4 className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
+                            {product.name}
+                          </h4>
+                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-3">
+                          <ul className="space-y-1">
+                            {product.ingredients.map((ingredient, idx) => (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+
+-------------------- Page 27 --------------------
+                                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#A1BA80' }} />
+                                {ingredient}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* UltiGlow Section */}
+      <section id="ultiglow" className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Sparkles className="w-4 h-4" />
+              Skincare Products
+            </div>
+            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
+              UltiGlow™ Product Catalogue
+            </h2>
+            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Glow」</p>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Premium skincare powered by biosynthesis technology
+            </p>
+            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              {totalUltiGlow} Products across {ultiGlowCategories.length} Categories
+            </div>
+          </div>
+
+          {ultiGlowCategories.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="mb-12 last:mb-0">
+              {/* Category Header */}
+              <div className="flex items-center gap-4 mb-6">
+                <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                  <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
+                </div>
+                <div>
+                  <h3 className="text-xl font-normal text-gray-900">{category.category}</h3>
+                  <p className="text-gray-600 text-sm">{category.description}</p>
+                </div>
+                <div className="ml-auto">
+                  <span className="text-sm px-3 py-1 rounded-full" style={{ backgroundColor: '#f0f5e8', color: '#6e8956' }}>
+                    {category.products.length} Products
+
+-------------------- Page 28 --------------------
+                  </span>
+                </div>
+              </div>
+
+              {/* Products Grid */}
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {category.products.map((product, productIndex) => (
+                  <Link 
+                    key={productIndex} 
+                    href={`/products/ultiglow/${product.id}`}
+                    className="block"
+                  >
+                    <Card className="border border-gray-200 hover:shadow-lg hover:border-green-200 transition-all duration-300 group h-full bg-white">
+                      <CardContent className="p-5">
+                        <div className="flex items-start justify-between mb-3">
+                          <h4 className="font-normal text-gray-900 group-hover:text-green-700 transition-colors">
+                            {product.name}
+                          </h4>
+                          <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-green-600 transition-colors flex-shrink-0 mt-1" />
+                        </div>
+                        <div className="bg-gray-50 rounded-lg p-3">
+                          <ul className="space-y-1">
+                            {product.ingredients.map((ingredient, idx) => (
+                              <li key={idx} className="flex items-center gap-2 text-sm text-gray-600">
+                                <div className="w-1.5 h-1.5 rounded-full flex-shrink-0" style={{ backgroundColor: '#A1BA80' }} />
+                                {ingredient}
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* Contact CTA */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-normal text-gray-900 mb-4">
+            Interested in Our Products?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            We offer OEM/ODM services and bulk ingredient supply for B2B partners worldwide.
+            Contact us for detailed specifications, pricing, and partnership opportunities.
+          </p>
+
+-------------------- Page 29 --------------------
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#A1BA80' }}
+            >
+              Request Quote
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </a>
+            <a 
+              href="mailto:info@envikobio.com" 
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
+            >
+              info@envikobio.com
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// File: src/app/contact/page.tsx
+import { Metadata } from 'next';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { 
+  Mail, 
+  Phone, 
+  MapPin, 
+  Clock,
+  Send
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Contact Us',
+  description: 'Get in touch with Enviko Biotechnology for inquiries about our products and solutions.',
+};
+
+const contactInfo = [
+  {
+    icon: MapPin,
+    title: 'Address',
+    content: 'Room 207-2, No. 20 Jiafeng Road',
+    subContent: 'Shanghai Free Trade Zone, Pudong District, Shanghai, China',
+  },
+  {
+    icon: Mail,
+    title: 'Email',
+    content: 'info@envikobio.com',
+
+-------------------- Page 30 --------------------
+    href: 'mailto:info@envikobio.com',
+  },
+  {
+    icon: Phone,
+    title: 'Phone / WhatsApp',
+    content: '+86 13918629532',
+    href: 'tel:+8613918629532',
+  },
+  {
+    icon: Clock,
+    title: 'Business Hours',
+    content: 'Mon - Fri: 9:00 AM - 6:00 PM',
+    subContent: 'Saturday: 9:00 AM - 1:00 PM',
+  },
+];
+
+export default function ContactPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-white py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              Get in Touch
+            </h1>
+            <p className="text-lg text-gray-600">
+              Have questions about our products or solutions? We're here to help. 
+              Reach out to us and our team will get back to you promptly.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Contact Form */}
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">
+                Send Us a Message
+              </h2>
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                      Your Name *
+                    </label>
+                    <input
+
+
+========== BACK 30 PAGES ==========
+
+-------------------- Page 31 --------------------
+    },
+    certifications: ['GMP Certified', 'Potency verified'],
+    applications: ['Metabolism', 'Antioxidant', 'Weight management']
+  },
+  'berberine': {
+    name: 'UltiWell® Berberine Extract',
+    category: 'Plant Extracts',
+    description: 'Coptis chinensis extract (Berberine ≥97%)',
+    fullDescription: 'UltiWell® Berberine Extract provides high-purity berberine for metabolic and cardiovascular health.',
+    benefits: [
+      'Blood sugar support',
+      'Heart health',
+      'Metabolic support',
+      'Gut health'
+    ],
+    ingredients: ['Berberine HCl', 'Coptis Chinensis Extract'],
+    specifications: {
+      servingSize: '1-2 capsules daily',
+      capsulesPerBottle: '60 capsules',
+      keyIngredient: 'Berberine ≥97%'
+    },
+    certifications: ['GMP Certified', 'Potency verified'],
+    applications: ['Blood sugar', 'Metabolism', 'Heart health']
+  },
+  'silymarin': {
+    name: 'UltiWell® Silymarin Extract',
+    category: 'Plant Extracts',
+    description: 'Milk thistle extract (Silymarin ≥80%)',
+    fullDescription: 'UltiWell® Silymarin Extract delivers concentrated milk thistle for liver health and detoxification.',
+    benefits: [
+      'Liver protection',
+      'Detoxification',
+      'Regeneration',
+      'Antioxidant'
+    ],
+    ingredients: ['Milk Thistle Extract', 'Silymarin', 'Phosphatidylcholine'],
+    specifications: {
+      servingSize: '1-2 capsules daily',
+      capsulesPerBottle: '60 capsules',
+      keyIngredient: 'Silymarin ≥80%'
+    },
+    certifications: ['GMP Certified', 'Potency verified'],
+    applications: ['Liver health', 'Detox', 'Protection']
+  },
+  // Bio-Natural Colors
+  'betacarotene': {
+    name: 'UltiWell® Beta-Carotene',
+    category: 'Bio-Natural Colors',
+    description: 'Natural orange color (≥96%)',
+    fullDescription: 'UltiWell® Beta-Carotene provides natural orange color from biosynthesis for food and supplement applications.',
+
+-------------------- Page 32 --------------------
+    benefits: [
+      'Natural color',
+      'Vitamin A precursor',
+      'Antioxidant',
+      'Clean label'
+    ],
+    ingredients: ['Biosynthesis Beta-Carotene'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk',
+      keyIngredient: 'Beta-Carotene ≥96%'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Supplements', 'Beverages']
+  },
+  'astaxanthin': {
+    name: 'UltiWell® Astaxanthin',
+    category: 'Bio-Natural Colors',
+    description: 'Natural red color (≥2%)',
+    fullDescription: 'UltiWell® Astaxanthin delivers natural red color from microalgae biosynthesis.',
+    benefits: [
+      'Natural red color',
+      'Powerful antioxidant',
+      'Skin health',
+      'Eye health'
+    ],
+    ingredients: ['Haematococcus Pluvialis Extract'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk',
+      keyIngredient: 'Astaxanthin ≥2%'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Supplements', 'Cosmetics']
+  },
+  'lutein': {
+    name: 'UltiWell® Lutein',
+    category: 'Bio-Natural Colors',
+    description: 'Natural yellow color (≥5%)',
+    fullDescription: 'UltiWell® Lutein provides natural yellow color from marigold biosynthesis.',
+    benefits: [
+      'Natural yellow color',
+      'Eye health',
+      'Antioxidant',
+      'Vision support'
+    ],
+    ingredients: ['Marigold Extract'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk',
+
+-------------------- Page 33 --------------------
+      keyIngredient: 'Lutein ≥5%'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Eye supplements', 'Beverages']
+  },
+  'lycopene': {
+    name: 'UltiWell® Lycopene',
+    category: 'Bio-Natural Colors',
+    description: 'Natural red color (≥5%)',
+    fullDescription: 'UltiWell® Lycopene delivers natural red color from tomato biosynthesis.',
+    benefits: [
+      'Natural red color',
+      'Antioxidant',
+      'Heart health',
+      'Prostate support'
+    ],
+    ingredients: ['Tomato Extract'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk',
+      keyIngredient: 'Lycopene ≥5%'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Supplements', 'Beverages']
+  },
+  'anthocyanin': {
+    name: 'UltiWell® Anthocyanin',
+    category: 'Bio-Natural Colors',
+    description: 'Natural purple color (≥25%)',
+    fullDescription: 'UltiWell® Anthocyanin provides natural purple color from berry biosynthesis.',
+    benefits: [
+      'Natural purple color',
+      'Antioxidant',
+      'Brain health',
+      'Cardiovascular'
+    ],
+    ingredients: ['Berry Extract Blend'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk',
+      keyIngredient: 'Anthocyanin ≥25%'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Beverages', 'Supplements']
+  },
+  'chlorophyll': {
+    name: 'UltiWell® Chlorophyll',
+    category: 'Bio-Natural Colors',
+    description: 'Natural green color',
+    fullDescription: 'UltiWell® Chlorophyll delivers natural green color from plant biosynthesis.',
+
+-------------------- Page 34 --------------------
+    benefits: [
+      'Natural green color',
+      'Detox support',
+      'Internal deodorant',
+      'Antioxidant'
+    ],
+    ingredients: ['Alfalfa Extract', 'Chlorophyllin'],
+    specifications: {
+      servingSize: 'As needed',
+      capsulesPerBottle: 'Bulk'
+    },
+    certifications: ['GMP Certified', 'Food grade', 'Natural origin'],
+    applications: ['Food coloring', 'Beverages', 'Health products']
+  }
+};
+
+interface PageProps {
+  params: Promise<{ id: string }>;
+}
+
+export async function generateStaticParams() {
+  return Object.keys(ultiWellProducts).map((id) => ({
+    id,
+  }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  const product = ultiWellProducts[id];
+  
+  if (!product) {
+    return {
+      title: 'Product Not Found | UltiWell® | Enviko Bio',
+    };
+  }
+
+  return {
+    title: `${product.name} | UltiWell® | Enviko Bio`,
+    description: product.fullDescription,
+  };
+}
+
+export default async function UltiWellProductPage({ params }: PageProps) {
+  const { id } = await params;
+  const product = ultiWellProducts[id];
+
+  if (!product) {
+    notFound();
+  }
+
+
+-------------------- Page 35 --------------------
+  return (
+    <>
+      {/* Breadcrumb */}
+      <section className="bg-gray-50 py-4">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <nav className="flex items-center gap-2 text-sm">
+            <Link href="/" className="text-gray-500 hover:text-gray-700">Home</Link>
+            <span className="text-gray-400">/</span>
+            <Link href="/catalogue" className="text-gray-500 hover:text-gray-700">Catalogue</Link>
+            <span className="text-gray-400">/</span>
+            <Link href="/catalogue#ultiwell" className="text-gray-500 hover:text-gray-700">UltiWell®</Link>
+            <span className="text-gray-400">/</span>
+            <span className="text-gray-900">{product.name}</span>
+          </nav>
+        </div>
+      </section>
+
+      {/* Product Hero */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            {/* Left - Product Info */}
+            <div>
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+                <Target className="w-4 h-4" />
+                {product.category}
+              </div>
+              <h1 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
+                {product.name}
+              </h1>
+              <p className="text-lg text-gray-600 mb-6">
+                {product.fullDescription}
+              </p>
+
+              {/* Benefits */}
+              <div className="mb-8">
+                <h3 className="text-lg font-medium text-gray-900 mb-4">Key Benefits</h3>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {product.benefits.map((benefit, index) => (
+                    <div key={index} className="flex items-center gap-2">
+                      <CheckCircle className="w-5 h-5 flex-shrink-0" style={{ color: '#A1BA80' }} />
+                      <span className="text-gray-700">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Specifications */}
+              <div className="bg-gray-50 rounded-xl p-6">
+                <h3 className="text-lg font-medium text-gray-900 mb-4">Specifications</h3>
+
+-------------------- Page 36 --------------------
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {product.specifications.servingSize && (
+                    <div>
+                      <p className="text-sm text-gray-500">Serving Size</p>
+                      <p className="font-medium text-gray-900">{product.specifications.servingSize}</p>
+                    </div>
+                  )}
+                  {product.specifications.capsulesPerBottle && (
+                    <div>
+                      <p className="text-sm text-gray-500">Package Size</p>
+                      <p className="font-medium text-gray-900">{product.specifications.capsulesPerBottle}</p>
+                    </div>
+                  )}
+                  {product.specifications.keyIngredient && (
+                    <div>
+                      <p className="text-sm text-gray-500">Key Ingredient</p>
+                      <p className="font-medium text-gray-900">{product.specifications.keyIngredient}</p>
+                    </div>
+                  )}
+                  {product.specifications.purity && (
+                    <div>
+                      <p className="text-sm text-gray-500">Purity</p>
+                      <p className="font-medium text-gray-900">{product.specifications.purity}</p>
+                    </div>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Right - Product Image Placeholder */}
+            <div className="relative">
+              <div className="aspect-square rounded-2xl bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                <div className="text-center">
+                  <Package className="w-24 h-24 mx-auto text-gray-300 mb-4" />
+                  <p className="text-gray-400">Product Image</p>
+                  <p className="text-sm text-gray-400">{product.name}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Detailed Information */}
+      <section className="bg-gray-50 py-12">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Ingredients */}
+            <Card className="border border-gray-200">
+              <CardContent className="p-6">
+
+-------------------- Page 37 --------------------
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                    <LeafIcon className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Key Ingredients</h3>
+                </div>
+                <ul className="space-y-2">
+                  {product.ingredients.map((ingredient, index) => (
+                    <li key={index} className="flex items-center gap-2 text-gray-700">
+                      <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                      {ingredient}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Certifications */}
+            <Card className="border border-gray-200">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                    <Award className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Certifications</h3>
+                </div>
+                <ul className="space-y-2">
+                  {product.certifications.map((cert, index) => (
+                    <li key={index} className="flex items-center gap-2 text-gray-700">
+                      <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                      {cert}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+
+            {/* Applications */}
+            <Card className="border border-gray-200">
+              <CardContent className="p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 rounded-lg flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                    <Globe className="w-5 h-5" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <h3 className="text-lg font-medium text-gray-900">Applications</h3>
+                </div>
+                <ul className="space-y-2">
+                  {product.applications.map((app, index) => (
+                    <li key={index} className="flex items-center gap-2 text-gray-700">
+                      <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+
+-------------------- Page 38 --------------------
+                      {app}
+                    </li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-normal text-gray-900 mb-4">
+            Interested in {product.name}?
+          </h2>
+          <p className="text-gray-600 mb-8">
+            Contact us for detailed specifications, pricing, and OEM/ODM partnership opportunities.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#A1BA80' }}
+            >
+              Request Quote
+            </Link>
+            <Link 
+              href="/catalogue#ultiwell"
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Catalogue
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// File: src/app/robots.ts
+import { MetadataRoute } from 'next';
+
+export default function robots(): MetadataRoute.Robots {
+  return {
+    rules: {
+      userAgent: '*',
+      allow: '/',
+      disallow: ['/api/', '/private/'],
+
+-------------------- Page 39 --------------------
+    },
+    sitemap: 'https://www.envikobio.com/sitemap.xml',
+  };
+}
+
+// File: src/app/shop/page.tsx
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Card, CardContent } from '@/components/ui/card';
+import { 
+  Target, 
+  Sparkles, 
+  ExternalLink,
+  ShoppingBag,
+  Package,
+  Globe,
+  Truck
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Shop | Enviko Bio',
+  description: 'Purchase UltiWell® and UltiGlow™ products on ChemicalBook - Your trusted B2B chemical marketplace.',
+};
+
+const chemicalBookUrl = 'https://www.chemicalbook.com/manufacturer/shanghai-enviko-biotechnology-25483/';
+
+export default function ShopPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="bg-white py-16">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-6" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
+              <Globe className="w-4 h-4" />
+              Official B2B Marketplace
+            </div>
+            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
+              Shop on ChemicalBook
+            </h1>
+            <p className="text-lg text-gray-600 mb-8">
+              Purchase our UltiWell® health supplements and UltiGlow™ skincare products directly through ChemicalBook, your trusted B2B chemical and ingredient marketplace.
+            </p>
+            <a 
+              href={chemicalBookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-lg text-white text-lg font-medium transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#A1BA80' }}
+            >
+
+-------------------- Page 40 --------------------
+              <ShoppingBag className="w-5 h-5" />
+              Visit Our ChemicalBook Store
+              <ExternalLink className="w-5 h-5" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Why ChemicalBook */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">Why Shop on ChemicalBook?</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              ChemicalBook is a leading B2B platform connecting suppliers and buyers in the chemical and ingredient industry.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-4 gap-6">
+            <Card className="border border-gray-200 text-center">
+              <CardContent className="p-6">
+                <div className="w-14 h-14 mx-auto rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Package className="w-7 h-7" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-2">Product Verification</h3>
+                <p className="text-sm text-gray-600">All products verified for quality and authenticity</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-gray-200 text-center">
+              <CardContent className="p-6">
+                <div className="w-14 h-14 mx-auto rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Truck className="w-7 h-7" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-2">Global Shipping</h3>
+                <p className="text-sm text-gray-600">Reliable worldwide delivery options available</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-gray-200 text-center">
+              <CardContent className="p-6">
+                <div className="w-14 h-14 mx-auto rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Globe className="w-7 h-7" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-2">B2B Platform</h3>
+                <p className="text-sm text-gray-600">Connect directly with manufacturers</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border border-gray-200 text-center">
+
+-------------------- Page 41 --------------------
+              <CardContent className="p-6">
+                <div className="w-14 h-14 mx-auto rounded-xl flex items-center justify-center mb-4" style={{ backgroundColor: '#d7e1c7' }}>
+                  <Target className="w-7 h-7" style={{ color: '#A1BA80' }} />
+                </div>
+                <h3 className="font-normal text-gray-900 mb-2">Secure Transactions</h3>
+                <p className="text-sm text-gray-600">Safe and secure payment processing</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Product Categories */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-normal text-gray-900 mb-4">Available on ChemicalBook</h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Browse our complete product range on ChemicalBook
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {/* UltiWell */}
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                    <Target className="w-8 h-8" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-normal text-gray-900">UltiWell®</h3>
+                    <p className="text-sm" style={{ color: '#A1BA80' }}>Ultimate Wellness</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Premium biosynthesis-based health supplements including vitamins, minerals, plant extracts, and specialized formulations.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Core Nutrition & Multivitamins
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Brain & Cognitive Support
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Energy & Sports Nutrition
+
+-------------------- Page 42 --------------------
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Plant Extracts & Bio-Colors
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-500">57 Products • 13 Categories</span>
+                  <Link 
+                    href={chemicalBookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium flex items-center gap-1 hover:opacity-80"
+                    style={{ color: '#A1BA80' }}
+                  >
+                    View on ChemicalBook
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* UltiGlow */}
+            <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300">
+              <CardContent className="p-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-xl flex items-center justify-center" style={{ backgroundColor: '#d7e1c7' }}>
+                    <Sparkles className="w-8 h-8" style={{ color: '#A1BA80' }} />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-normal text-gray-900">UltiGlow™</h3>
+                    <p className="text-sm" style={{ color: '#A1BA80' }}>Ultimate Glow</p>
+                  </div>
+                </div>
+                <p className="text-gray-600 mb-4">
+                  Premium skincare powered by biosynthesis technology for radiant, healthy skin with science-backed ingredients.
+                </p>
+                <ul className="space-y-2 mb-6">
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Deep Hydration Serums
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Anti-Aging Formulations
+                  </li>
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Brightening & Repair
+                  </li>
+
+-------------------- Page 43 --------------------
+                  <li className="flex items-center gap-2 text-gray-700">
+                    <div className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: '#A1BA80' }} />
+                    Natural Color Cosmetics
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-gray-500">57 Products • 12 Categories</span>
+                  <Link 
+                    href={chemicalBookUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm font-medium flex items-center gap-1 hover:opacity-80"
+                    style={{ color: '#A1BA80' }}
+                  >
+                    View on ChemicalBook
+                    <ExternalLink className="w-4 h-4" />
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl font-normal text-gray-900 mb-4">
+            Ready to Order?
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Visit our ChemicalBook store to browse all products, request quotes, and place orders.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href={chemicalBookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg text-white transition-all duration-300 hover:scale-105"
+              style={{ backgroundColor: '#A1BA80' }}
+            >
+              <ShoppingBag className="w-5 h-5" />
+              Shop on ChemicalBook
+              <ExternalLink className="w-5 h-5" />
+            </a>
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
+            >
+              Contact Us Directly
+
+-------------------- Page 44 --------------------
+            </Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// File: src/app/sitemap.ts
+import { MetadataRoute } from 'next';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = 'https://www.envikobio.com';
+
+  return [
+    {
+      url: baseUrl,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 1,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/products/pharmaceuticals`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/products/cosmetics`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/products/food-nutrition`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+
+-------------------- Page 45 --------------------
+    },
+    {
+      url: `${baseUrl}/products/agriculture`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/solutions`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/news`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+  ];
+}
+
+// File: src/app/solutions/page.tsx
+import { Metadata } from 'next';
+import Image from 'next/image';
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
+import { 
+  Beaker, 
+  Leaf, 
+  Factory,
+  Microscope,
+  ArrowRight,
+  CheckCircle
+} from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Solutions',
+  description: 'Explore Enviko\'s biosynthesis solutions for pharmaceuticals, cosmetics, and sustainable agriculture.',
+};
+
+const solutions = [
+  {
+
+-------------------- Page 46 --------------------
+    id: 'pharmaceuticals',
+    icon: Beaker,
+    title: 'Pharmaceutical Biosynthesis',
+    description: 'We are developing innovative biosynthesis pathways for producing complex pharmaceutical compounds. This research aims to reduce production costs and environmental impact while enhancing drug efficacy and availability.',
+    features: [
+      'Active Pharmaceutical Ingredients (APIs) production',
+      'Bioactive compound synthesis',
+      'Cost-effective manufacturing processes',
+      'Reduced environmental footprint',
+      'Custom compound development',
+      'Quality-controlled production',
+    ],
+    image: '/pharma-research.jpeg',
+  },
+  {
+    id: 'cosmetics',
+    icon: Leaf,
+    title: 'Cosmetic Biosynthesis',
+    description: 'Our research focuses on creating sustainable and natural cosmetic ingredients through biosynthesis. We aim to replace traditional, environmentally harmful ingredients with bio-based alternatives that are safe and effective.',
+    features: [
+      'Natural preservatives and antioxidants',
+      'Bio-based moisturizers and emollients',
+      'Sustainable sourcing methods',
+      'Hypoallergenic formulations',
+      'Clean beauty solutions',
+      'Custom ingredient development',
+    ],
+    image: '/cosmetic-ingredients.jpeg',
+  },
+  {
+    id: 'agriculture',
+    icon: Factory,
+    title: 'Sustainable Agriculture',
+    description: 'We are researching bio-based pesticides and fertilizers to promote sustainable agriculture practices. Our goal is to reduce the reliance on synthetic chemicals, enhancing crop yields while minimizing environmental damage.',
+    features: [
+      'Bio-pesticides and bio-fertilizers',
+      'Plant growth promoters',
+      'Soil health enhancers',
+      'Organic farming solutions',
+      'Environmental sustainability',
+      'Integrated pest management',
+    ],
+    image: '/agriculture-sustainable.jpeg',
+  },
+];
+
+const technologies = [
+  {
+    icon: Factory,
+    title: 'Advanced Fermentation Technology',
+
+-------------------- Page 47 --------------------
+    description: 'Our fermentation technology allows for precise control over the biosynthesis process, optimizing yield and product quality.',
+    image: '/fermentation-tech.jpeg',
+  },
+  {
+    icon: Microscope,
+    title: 'High-Resolution Analytics',
+    description: 'We employ state-of-the-art analytical techniques to ensure the purity and efficacy of our biosynthesized products.',
+    image: '/analytics-equipment.jpeg',
+  },
+  {
+    icon: Beaker,
+    title: 'Metabolic Engineering',
+    description: 'Our team utilizes metabolic engineering to optimize biosynthetic pathways, creating customized solutions for specific needs.',
+    image: '/hero-lab.jpeg',
+  },
+];
+
+export default function SolutionsPage() {
+  return (
+    <>
+      {/* Hero Section */}
+      <section className="relative bg-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <Image
+            src="/fermentation-tech.jpeg"
+            alt="Solutions Background"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center max-w-3xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              Custom Biosynthesis Solutions
+            </h1>
+            <p className="text-lg text-gray-600">
+              At Enviko, we leverage advanced technologies to deliver innovative biosynthesis solutions. 
+              Our commitment to research and development ensures we remain at the forefront of the industry, 
+              providing the most efficient and sustainable processes available.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Solutions */}
+      <section className="py-20 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="space-y-20">
+            {solutions.map((solution, index) => (
+              <div key={solution.id} id={solution.id} className="scroll-mt-20">
+
+-------------------- Page 48 --------------------
+                <div className={`grid lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? '' : ''}`}>
+                  <div className={index % 2 === 1 ? 'lg:order-2' : ''}>
+                    <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
+                      <Image
+                        src={solution.image}
+                        alt={solution.title}
+                        fill
+                        className="object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+                      <div className="absolute bottom-6 left-6 w-16 h-16 bg-white rounded-full flex items-center justify-center">
+                        <solution.icon className="w-8 h-8 text-brand-600" />
+                      </div>
+                    </div>
+                  </div>
+                  <div className={index % 2 === 1 ? 'lg:order-1' : ''}>
+                    <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                      {solution.title}
+                    </h2>
+                    <p className="text-lg text-gray-600 mb-8">
+                      {solution.description}
+                    </p>
+                    <Card className="border-0 shadow-lg mb-6">
+                      <CardContent className="p-6">
+                        <h3 className="text-lg font-semibold text-gray-900 mb-4">
+                          Key Features
+                        </h3>
+                        <div className="grid sm:grid-cols-2 gap-3">
+                          {solution.features.map((feature, idx) => (
+                            <div key={idx} className="flex items-start gap-2">
+                              <CheckCircle className="w-5 h-5 text-brand-600 flex-shrink-0 mt-0.5" />
+                              <span className="text-gray-700 text-sm">{feature}</span>
+                            </div>
+                          ))}
+                        </div>
+                      </CardContent>
+                    </Card>
+                    <Button asChild className="bg-brand-600 hover:bg-brand-700">
+                      <Link href="/contact">
+                        Get Started <ArrowRight className="ml-2 h-4 w-4" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+
+-------------------- Page 49 --------------------
+      {/* Technologies */}
+      <section className="py-20 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Our Technologies
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Cutting-edge technologies driving innovation in biosynthesis
+            </p>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {technologies.map((tech, index) => (
+              <Card key={index} className="border-0 shadow-lg overflow-hidden group hover:shadow-xl transition-shadow">
+                <div className="relative h-48 overflow-hidden">
+                  <Image
+                    src={tech.image}
+                    alt={tech.title}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-brand-900/70 to-transparent"></div>
+                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
+                    <tech.icon className="w-6 h-6 text-brand-600" />
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                    {tech.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    {tech.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src="/agriculture-sustainable.jpeg"
+            alt="Sustainable Future"
+            fill
+            className="object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-brand-900/95 to-brand-800/90"></div>
+
+-------------------- Page 50 --------------------
+        </div>
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Ready to Transform Your Industry?
+          </h2>
+          <p className="text-lg text-brand-100 mb-8">
+            Partner with Enviko to develop sustainable biosynthesis solutions tailored to your specific needs.
+          </p>
+          <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
+            <Link href="/contact">
+              Contact Us Today <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+    </>
+  );
+}
+
+// File: src/components/layout/Footer.tsx
+'use client';
+
+import Link from 'next/link';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+
+const socialLinks = [
+  { 
+    name: 'Instagram', 
+    href: 'https://instagram.com/envikobio', 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+      </svg>
+    )
+  },
+  { 
+    name: 'Facebook', 
+    href: 'https://facebook.com/envikobio', 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+      </svg>
+    )
+  },
+  { 
+    name: 'LinkedIn', 
+    href: 'https://linkedin.com/company/envikobio', 
+    icon: (
+
+-------------------- Page 51 --------------------
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+      </svg>
+    )
+  },
+  { 
+    name: 'YouTube', 
+    href: 'https://youtube.com/@envikobio', 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+      </svg>
+    )
+  },
+  { 
+    name: 'TikTok', 
+    href: 'https://tiktok.com/@envikobio', 
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
+        <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+      </svg>
+    )
+  },
+];
+
+const footerNavigation = {
+  company: [
+    { name: 'About Us', href: '/about' },
+    { name: 'Products', href: '/products' },
+    { name: 'Solutions', href: '/solutions' },
+    { name: 'News', href: '/news' },
+  ],
+  industries: [
+    { name: 'Pharmaceuticals', href: '/solutions#pharmaceuticals' },
+    { name: 'Cosmetics', href: '/solutions#cosmetics' },
+    { name: 'Food & Agriculture', href: '/solutions#agriculture' },
+  ],
+};
+
+export default function Footer() {
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setIsSubmitting(true);
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+-------------------- Page 52 --------------------
+    setIsSubscribed(true);
+    setIsSubmitting(false);
+    setEmail('');
+  };
+
+  return (
+    <footer className="text-white" style={{ backgroundColor: '#8C8C8C' }}>
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+          {/* Company Info */}
+          <div className="lg:col-span-2">
+            <div className="mb-4">
+              <h3 className="text-xl font-normal text-white tracking-wide">
+                Shanghai Enviko Biotechnology Co., Ltd.
+              </h3>
+            </div>
+            <p className="text-sm mb-4 max-w-sm" style={{ color: '#D9D9D9' }}>
+              Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
+            </p>
+            <div className="space-y-2 text-sm text-white/80">
+              <div className="flex items-start gap-2">
+                <MapPin className="h-4 w-4 text-white/60 mt-0.5 flex-shrink-0" />
+                <span>Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Mail className="h-4 w-4 text-white/60 flex-shrink-0" />
+                <a href="mailto:info@envikobio.com" className="hover:text-white transition-colors">
+                  info@envikobio.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <Phone className="h-4 w-4 text-white/60 flex-shrink-0" />
+                <a href="tel:+8613918629532" className="hover:text-white transition-colors">
+                  +86 13918629532 (WhatsApp)
+                </a>
+              </div>
+            </div>
+            {/* Social Media Links */}
+            <div className="mt-6">
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => (
+                  <a
+                    key={social.name}
+                    href={social.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-9 h-9 bg-white/20 hover:bg-white border border-white/30 hover:border-white rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group"
+                    aria-label={social.name}
+                  >
+                    <div className="text-white group-hover:text-[#A1BA80] transition-colors">
+
+-------------------- Page 53 --------------------
+                      {social.icon}
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Company Links */}
+          <div>
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
+              Company
+            </h3>
+            <ul className="space-y-2">
+              {footerNavigation.company.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-white/80 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Industries */}
+          <div>
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
+              Industries
+            </h3>
+            <ul className="space-y-2">
+              {footerNavigation.industries.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-white/80 hover:text-white transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Newsletter */}
+          <div>
+            <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
+              Newsletter
+
+-------------------- Page 54 --------------------
+            </h3>
+            <p className="text-sm text-white/80 mb-4">
+              Subscribe to get the latest news and updates.
+            </p>
+            {isSubscribed ? (
+              <div className="bg-white/20 border border-white/30 rounded-lg p-3 text-sm text-white">
+                ✓ Thank you for subscribing!
+              </div>
+            ) : (
+              <form onSubmit={handleSubscribe} className="space-y-3">
+                <div className="relative">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    placeholder="Enter your email"
+                    required
+                    className="w-full px-4 py-2.5 border border-white/30 rounded-lg text-sm text-[#8C8C8C] placeholder-[#8C8C8C]/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all"
+                    style={{ backgroundColor: '#D9D9D9' }}
+                  />
+                </div>
+                <Button 
+                  type="submit" 
+                  disabled={isSubmitting}
+                  className="w-full transition-all duration-300 hover:scale-[1.02] text-white"
+                  style={{ backgroundColor: '#A1BA80' }}
+                >
+                  {isSubmitting ? (
+                    'Subscribing...'
+                  ) : (
+                    <>
+                      Subscribe <Send className="ml-2 h-4 w-4" />
+                    </>
+                  )}
+                </Button>
+              </form>
+            )}
+          </div>
+        </div>
+
+        <div className="border-t border-white/20 mt-8 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm text-white">
+              © {new Date().getFullYear()} Enviko Biotechnology. All rights reserved.
+            </p>
+            <div className="flex gap-4 text-sm text-white">
+              <Link href="/privacy" className="hover:opacity-80 transition-opacity">
+                Privacy Policy
+              </Link>
+              <Link href="/terms" className="hover:opacity-80 transition-opacity">
+
+-------------------- Page 55 --------------------
+                Terms of Service
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+// File: src/components/layout/Header.tsx
+'use client';
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { Menu, X } from 'lucide-react';
+
+const navigation = [
+  { name: 'Home', href: '/' },
+  { name: 'About Us', href: '/about' },
+  { name: 'Products', href: '/catalogue' },
+  { name: 'Shop', href: '/shop' },
+  { name: 'Solutions', href: '/solutions' },
+  { name: 'News', href: '/news' },
+  { name: 'Contact', href: '/contact' },
+];
+
+export default function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center">
+            <Link href="/" className="group">
+              <div className="w-14 h-14 relative flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
+                <Image
+                  src="/logo.jpg"
+                  alt="Enviko Biotechnology"
+                  fill
+                  className="object-contain"
+                />
+              </div>
+            </Link>
+          </div>
+
+
+-------------------- Page 56 --------------------
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex md:items-center md:gap-x-8">
+            {navigation.map((item) => (
+              <Link
+                key={item.name}
+                href={item.href}
+                className="text-sm font-normal text-gray-600 hover:text-gray-900 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+              >
+                {item.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* CTA Button */}
+          <div className="hidden md:flex md:items-center md:gap-x-4">
+            <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#A1BA80' }}>
+              <Link href="/contact">Get in Touch</Link>
+            </Button>
+          </div>
+
+          {/* Mobile menu button */}
+          <button
+            type="button"
+            className="md:hidden inline-flex items-center justify-center p-2 text-gray-700"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span className="sr-only">Open menu</span>
+            {mobileMenuOpen ? (
+              <X className="h-6 w-6" aria-hidden="true" />
+            ) : (
+              <Menu className="h-6 w-6" aria-hidden="true" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-gray-200 py-4">
+            <div className="space-y-2">
+              {navigation.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <div className="pt-2">
+
+-------------------- Page 57 --------------------
+                <Button asChild className="w-full" style={{ backgroundColor: '#A1BA80' }}>
+                  <Link href="/contact">Get in Touch</Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  );
+}
+
+// File: src/components/seo/JsonLd.tsx
+'use client';
+
+export function OrganizationJsonLd() {
+  const organizationData = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Enviko Biotechnology',
+    alternateName: 'Shanghai Enviko Biotechnology Co., Ltd.',
+    url: 'https://www.envikobio.com',
+    logo: 'https://www.envikobio.com/logo.jpg',
+    description: 'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone',
+      addressLocality: 'Pudong District',
+      addressRegion: 'Shanghai',
+      addressCountry: 'CN',
+      postalCode: '200131',
+    },
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+86-13918629532',
+      contactType: 'sales',
+      availableLanguage: ['English', 'Chinese'],
+      areaServed: 'Worldwide',
+    },
+    email: 'info@envikobio.com',
+    sameAs: [],
+    foundingDate: '2019',
+    industry: 'Biotechnology',
+    numberOfEmployees: {
+      '@type': 'QuantitativeValue',
+      minValue: 10,
+      maxValue: 50,
+    },
+    areaServed: 'Worldwide',
+  };
+
+-------------------- Page 58 --------------------
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationData) }}
+    />
+  );
+}
+
+export function LocalBusinessJsonLd() {
+  const localBusinessData = {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    '@id': 'https://www.envikobio.com/#local-business',
+    name: 'Enviko Biotechnology',
+    image: 'https://www.envikobio.com/logo.jpg',
+    description: 'Sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: 'Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone',
+      addressLocality: 'Pudong District',
+      addressRegion: 'Shanghai',
+      addressCountry: 'CN',
+      postalCode: '200131',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: 31.2304,
+      longitude: 121.4737,
+    },
+    url: 'https://www.envikobio.com',
+    telephone: '+86-13918629532',
+    email: 'info@envikobio.com',
+    openingHours: 'Mo-Fr 09:00-18:00',
+    priceRange: '$$',
+    areaServed: {
+      '@type': 'GeoCircle',
+      geoMidpoint: {
+        '@type': 'GeoCoordinates',
+        latitude: 31.2304,
+        longitude: 121.4737,
+      },
+      geoRadius: '50000',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessData) }}
+
+-------------------- Page 59 --------------------
+    />
+  );
+}
+
+export function WebsiteJsonLd() {
+  const websiteData = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Enviko Biotechnology',
+    url: 'https://www.envikobio.com',
+    description: 'Sustainable biosynthesis solutions for a healthier planet',
+    publisher: {
+      '@type': 'Organization',
+      name: 'Enviko Biotechnology',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.envikobio.com/logo.jpg',
+      },
+    },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: 'https://www.envikobio.com/search?q={search_term_string}',
+      'query-input': 'required name=search_term_string',
+    },
+  };
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteData) }}
+    />
+  );
+}
+
+// File: src/hooks/use-mobile.ts
+import * as React from "react"
+
+const MOBILE_BREAKPOINT = 768
+
+export function useIsMobile() {
+  const [isMobile, setIsMobile] = React.useState<boolean | undefined>(undefined)
+
+  React.useEffect(() => {
+    const mql = window.matchMedia(`(max-width: ${MOBILE_BREAKPOINT - 1}px)`)
+    const onChange = () => {
+      setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+    }
+    mql.addEventListener("change", onChange)
+    setIsMobile(window.innerWidth < MOBILE_BREAKPOINT)
+    return () => mql.removeEventListener("change", onChange)
+
+-------------------- Page 60 --------------------
+  }, [])
+
+  return !!isMobile
+}
+
+// File: src/lib/utils.ts
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+
+// File: src/server.ts
+import { createServer } from 'http';
+import { parse } from 'url';
+import next from 'next';
+
+const dev = process.env.COZE_PROJECT_ENV !== 'PROD';
+const hostname = process.env.HOSTNAME || 'localhost';
+const port = parseInt(process.env.PORT || '5000', 10);
+
+// Create Next.js app
+const app = next({ dev, hostname, port });
+const handle = app.getRequestHandler();
+
+app.prepare().then(() => {
+  const server = createServer(async (req, res) => {
+    try {
+      const parsedUrl = parse(req.url!, true);
+      await handle(req, res, parsedUrl);
+    } catch (err) {
+      console.error('Error occurred handling', req.url, err);
+      res.statusCode = 500;
+      res.end('Internal server error');
+    }
+  });
+  server.once('error', err => {
+    console.error(err);
+    process.exit(1);
+  });
+  server.listen(port, () => {
+    console.log(
+      `> Server listening at http://${hostname}:${port} as ${
+        dev ? 'development' : process.env.COZE_PROJECT_ENV
+      }`,
+    );
+  });
+});
+
+
