@@ -21,6 +21,8 @@
 
 - **Software Name**: Enviko Biotechnology Official Website System
 - **Software Version**: V1.0
+- **Development Complete Date**: 2026-04-28
+- **First Published Date**: 2026-04-28
 - **Development Environment**: Next.js 16 + React 19 + TypeScript 5
 - **Runtime Environment**: Node.js 24+, modern browsers (Chrome, Firefox, Safari, Edge)
 - **Software Type**: Web Application (B/S Architecture)
