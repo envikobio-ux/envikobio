@@ -1,12 +1,72 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { ExternalLink, Calendar, Building2, FlaskConical, DollarSign, Scale, Cpu, Leaf, TrendingUp } from 'lucide-react';
+import { ExternalLink, Calendar, Building2, FlaskConical, DollarSign, Scale, Cpu, Leaf, TrendingUp, BookOpen, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'News & Events',
-  description: 'Stay updated with the latest news, events, and developments in biosynthesis and synthetic biology industry.',
+  title: 'News & Insights',
+  description: 'Stay updated with the latest news, events, and industry insights on biosynthesis, sustainable ingredients, and biotechnology sourcing.',
 };
+
+// SEO Insight articles with internal links
+const insightArticles: Array<{
+  slug: string;
+  title: string;
+  category: string;
+  excerpt: string;
+  date: string;
+  readTime: string;
+}> = [
+  {
+    slug: 'eco-friendly-cosmetic-supplier',
+    title: 'The Ultimate Buyer\'s Guide to Eco-Friendly Cosmetic Raw Materials Suppliers in 2026',
+    category: 'Insights',
+    excerpt: 'Complete guide to sourcing sustainable cosmetic ingredients. Learn about green bio-catalysis, Ecocert/COSMOS certifications, and how to partner with eco-conscious suppliers.',
+    date: '2026-06-01',
+    readTime: '12 min read',
+  },
+  {
+    slug: 'cosmetic-peptides-supplier',
+    title: 'The Ultimate Buyer Guide to Active Cosmetic Peptides: Sourcing, Quality, and Regulatory Compliance',
+    category: 'Insights',
+    excerpt: 'Complete guide to sourcing cosmetic peptides from China. Learn about FDA DMF certifications, quality standards, and how to choose a reliable peptide supplier.',
+    date: '2026-06-05',
+    readTime: '14 min read',
+  },
+  {
+    slug: 'nag-supplier',
+    title: 'NAG Sourcing Manual: Fermentation vs. Crustacean Extraction',
+    category: 'Insights',
+    excerpt: 'Complete guide to sourcing N-Acetyl Glucosamine (NAG). Compare fermentation vs. crustacean extraction, quality standards, and top suppliers.',
+    date: '2026-06-10',
+    readTime: '11 min read',
+  },
+  {
+    slug: 'biosynthesis-food-additives',
+    title: 'Biosynthesis Food Additives Manufacturer: The Future of Clean-Label Food Production',
+    category: 'Insights',
+    excerpt: 'Complete guide to biosynthetic food additives. Learn about enzymatic conversion, FDA GRAS status, and how to source clean-label ingredients.',
+    date: '2026-06-15',
+    readTime: '10 min read',
+  },
+  {
+    slug: 'natural-supplement-raw-materials-china',
+    title: 'Natural Health Supplement Raw Materials from China: A Complete Sourcing Guide for 2026',
+    category: 'Insights',
+    excerpt: 'Complete guide to sourcing natural supplement ingredients from China. Learn about yeast fermentation, USP certifications, and top suppliers for 5-HTP, Resveratrol, and more.',
+    date: '2026-06-20',
+    readTime: '13 min read',
+  },
+  {
+    slug: 'proxylane-green-synthesis',
+    title: 'Pro-Xylane Supplier China: The Complete Guide to Sourcing High-Purity Anti-Aging Actives',
+    category: 'Insights',
+    excerpt: 'Complete guide to sourcing Pro-Xylane (Hydroxypropyl Tetrahydropyrantriol) from China. Learn about green enzymatic synthesis, quality standards, and top suppliers.',
+    date: '2026-06-25',
+    readTime: '10 min read',
+  },
+];
 
 // Industry news for B2B biotechnology sector
 const newsArticles: Array<{
@@ -103,6 +163,7 @@ const newsArticles: Array<{
 
 const categories = [
   { name: 'All', icon: null },
+  { name: 'Insights', icon: BookOpen },
   { name: 'Industry', icon: Building2 },
   { name: 'Financing', icon: DollarSign },
   { name: 'Research', icon: FlaskConical },
@@ -113,8 +174,9 @@ const categories = [
 ];
 
 const categoryColors: Record<string, string> = {
+  'Insights': 'bg-green-100 text-green-700',
   'Industry': 'bg-blue-100 text-blue-700',
-  'Financing': 'bg-green-100 text-green-700',
+  'Financing': 'bg-emerald-100 text-emerald-700',
   'Research': 'bg-purple-100 text-purple-700',
   'Policy': 'bg-orange-100 text-orange-700',
   'Technology': 'bg-cyan-100 text-cyan-700',
@@ -130,50 +192,28 @@ export default function NewsPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-              Industry News & Events
+              News & Insights
             </h1>
             <p className="text-lg text-gray-600">
-              Stay updated with the latest developments in biosynthesis, synthetic biology, and sustainable biotechnology.
+              Stay updated with industry news, expert insights, and in-depth sourcing guides for biosynthesis and sustainable biotechnology.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Categories */}
-      <section className="py-4 bg-gray-50 border-y sticky top-16 z-20">
+      {/* Insights Section - Featured Articles */}
+      <section className="py-12" style={{ backgroundColor: '#f8faf5' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {categories.map((category, index) => {
-              const Icon = category.icon;
-              return (
-                <Button
-                  key={category.name}
-                  variant={index === 0 ? 'default' : 'outline'}
-                  size="sm"
-                  className={index === 0 ? 'bg-gray-900 hover:bg-gray-800' : 'border-gray-300 text-gray-600'}
-                >
-                  {Icon && <Icon className="w-4 h-4 mr-1" />}
-                  {category.name}
-                </Button>
-              );
-            })}
+          <div className="flex items-center gap-3 mb-8">
+            <BookOpen className="w-6 h-6" style={{ color: '#A1BA80' }} />
+            <h2 className="text-2xl font-normal text-gray-900">Industry Insights & Sourcing Guides</h2>
           </div>
-        </div>
-      </section>
-
-      {/* News Grid */}
-      <section className="py-16 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          {newsArticles.length > 0 ? (
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {newsArticles.map((article, index) => (
-                <Card 
-                  key={article.id} 
-                  className="border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
-                  style={{ animationDelay: `${index * 50}ms` }}
-                >
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {insightArticles.map((article, index) => (
+              <Link key={article.slug} href={`/news/${article.slug}`} className="block">
+                <Card className="h-full border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300 bg-white">
                   <CardContent className="p-6">
-                    {/* Category & Date */}
+                    {/* Category & Meta */}
                     <div className="flex items-center justify-between mb-3">
                       <span className={`text-xs font-normal px-2 py-1 rounded ${categoryColors[article.category] || 'bg-gray-100 text-gray-700'}`}>
                         {article.category}
@@ -183,42 +223,107 @@ export default function NewsPage() {
                         {article.date}
                       </div>
                     </div>
-                    
+
                     {/* Title */}
-                    <h3 className="text-lg font-normal text-gray-900 mb-3 line-clamp-2">
+                    <h3 className="text-base font-normal text-gray-900 mb-3 line-clamp-2 min-h-[3rem]">
                       {article.title}
                     </h3>
-                    
+
                     {/* Excerpt */}
                     <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                       {article.excerpt}
                     </p>
-                    
-                    {/* Source */}
+
+                    {/* Read More */}
                     <div className="flex items-center justify-between pt-3 border-t border-gray-100">
-                      <span className="text-xs text-gray-500">
-                        Source: {article.source}
+                      <span className="text-xs text-gray-500">{article.readTime}</span>
+                      <span className="text-sm font-normal inline-flex items-center transition-colors" style={{ color: '#A1BA80' }}>
+                        Read More <ArrowRight className="w-3 h-3 ml-1" />
                       </span>
-                      <a 
-                        href={article.sourceUrl} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-brand-600 hover:text-brand-700 text-sm font-normal inline-flex items-center transition-colors"
-                        style={{ color: '#A1BA80' }}
-                      >
-                        Read <ExternalLink className="w-3 h-3 ml-1" />
-                      </a>
                     </div>
                   </CardContent>
                 </Card>
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <p className="text-gray-500 text-lg">Coming Soon</p>
-              <p className="text-gray-400 text-sm mt-2">Industry news will be updated soon.</p>
-            </div>
-          )}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry News Section */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center gap-3 mb-8">
+            <Building2 className="w-6 h-6" style={{ color: '#A1BA80' }} />
+            <h2 className="text-2xl font-normal text-gray-900">Industry News</h2>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {newsArticles.map((article, index) => (
+              <Card 
+                key={article.id} 
+                className="border border-gray-200 hover:border-gray-300 hover:shadow-lg transition-all duration-300"
+                style={{ animationDelay: `${index * 50}ms` }}
+              >
+                <CardContent className="p-6">
+                  {/* Category & Date */}
+                  <div className="flex items-center justify-between mb-3">
+                    <span className={`text-xs font-normal px-2 py-1 rounded ${categoryColors[article.category] || 'bg-gray-100 text-gray-700'}`}>
+                      {article.category}
+                    </span>
+                    <div className="flex items-center text-xs text-gray-500">
+                      <Calendar className="w-3 h-3 mr-1" />
+                      {article.date}
+                    </div>
+                  </div>
+                  
+                  {/* Title */}
+                  <h3 className="text-lg font-normal text-gray-900 mb-3 line-clamp-2">
+                    {article.title}
+                  </h3>
+                  
+                  {/* Excerpt */}
+                  <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                    {article.excerpt}
+                  </p>
+                  
+                  {/* Source */}
+                  <div className="flex items-center justify-between pt-3 border-t border-gray-100">
+                    <span className="text-xs text-gray-500">
+                      Source: {article.source}
+                    </span>
+                    <a 
+                      href={article.sourceUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="text-brand-600 hover:text-brand-700 text-sm font-normal inline-flex items-center transition-colors"
+                      style={{ color: '#A1BA80' }}
+                    >
+                      Read <ExternalLink className="w-3 h-3 ml-1" />
+                    </a>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-normal text-gray-900 mb-4">Need Expert Sourcing Advice?</h2>
+          <p className="text-gray-600 mb-6">Our team of experts can help you find the right suppliers and ingredients for your business.</p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <Link href="/contact">
+              <Button className="text-white font-normal px-6" style={{ backgroundColor: '#A1BA80' }}>
+                Contact Our Team
+              </Button>
+            </Link>
+            <a href="mailto:BD@envikobio.com">
+              <Button variant="outline" className="font-normal px-6" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
+                BD@envikobio.com
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
     </>
