@@ -18,11 +18,11 @@ const articles: Record<string, {
 }> = {
   'eco-friendly-cosmetic-supplier': {
     slug: 'eco-friendly-cosmetic-supplier',
-    title: 'The Ultimate Buyer\'s Guide to Eco-Friendly Cosmetic Raw Materials Suppliers in 2026',
+    title: 'The Ultimate Buyer\'s Guide to Eco-Friendly Cosmetic Raw Materials Suppliers',
     metaTitle: 'Eco-Friendly Cosmetic Raw Materials Supplier | Sustainable Bio-Catalysis | EnvikoBio',
     metaDescription: 'Complete guide to sourcing sustainable cosmetic ingredients. Learn about green bio-catalysis, Ecocert/COSMOS certifications, and how to partner with eco-conscious suppliers.',
     category: 'Insights',
-    date: '2026-06-01',
+    date: '2025-12-01',
     readTime: '12 min read',
     keywords: ['eco-friendly cosmetic raw materials supplier', 'sustainable cosmetic ingredients', 'green bio-catalysis', 'Ecocert certified ingredients'],
     content: `
@@ -126,7 +126,7 @@ EnvikoBio specializes in connecting brands with certified sustainable suppliers.
     metaTitle: 'Cosmetic Peptides Supplier China | FDA DMF Certified | 50+ SKU | EnvikoBio',
     metaDescription: 'Complete guide to sourcing cosmetic peptides from China. Learn about FDA DMF certifications, quality standards, and how to choose a reliable peptide supplier.',
     category: 'Insights',
-    date: '2026-06-05',
+    date: '2025-12-03',
     readTime: '14 min read',
     keywords: ['cosmetic peptides supplier China', 'anti-aging peptides wholesale', 'FDA DMF peptides'],
     content: `
@@ -208,7 +208,7 @@ Source cosmetic peptides with confidence by demanding ≥95% purity, verifying F
     metaTitle: 'N-Acetyl Glucosamine Supplier | Shellfish-Free Fermented NAG | EnvikoBio',
     metaDescription: 'Complete guide to sourcing N-Acetyl Glucosamine (NAG). Compare fermentation vs. crustacean extraction, quality standards, and top suppliers.',
     category: 'Insights',
-    date: '2026-06-10',
+    date: '2025-12-05',
     readTime: '11 min read',
     keywords: ['N-acetyl glucosamine supplier', 'shellfish-free NAG', 'fermented NAG', 'cosmetic grade NAG'],
     content: `
@@ -273,7 +273,7 @@ Choose fermentation-derived NAG for 2026 and beyond: superior purity (≥98%), z
     metaTitle: 'Biosynthesis Food Additives Manufacturer | Reb-M 95% | FDA GRAS | EnvikoBio',
     metaDescription: 'Complete guide to biosynthetic food additives. Learn about enzymatic conversion, FDA GRAS status, and how to source clean-label ingredients.',
     category: 'Insights',
-    date: '2026-06-15',
+    date: '2025-12-07',
     readTime: '10 min read',
     keywords: ['biosynthesis food additives manufacturer', 'enzymatic food ingredients', 'clean-label sweeteners'],
     content: `
@@ -335,11 +335,11 @@ The biosynthetic food additives market is poised for explosive growth. Key trend
   },
   'natural-supplement-raw-materials-china': {
     slug: 'natural-supplement-raw-materials-china',
-    title: 'Natural Health Supplement Raw Materials from China: A Complete Sourcing Guide for 2026',
+    title: 'Natural Health Supplement Raw Materials: A Complete Sourcing Guide',
     metaTitle: 'Natural Health Supplement Raw Materials China | USP Certified | Yeast Fermentation | EnvikoBio',
     metaDescription: 'Complete guide to sourcing natural supplement ingredients from China. Learn about yeast fermentation, USP certifications, and top suppliers for 5-HTP, Resveratrol, and more.',
     category: 'Insights',
-    date: '2026-06-20',
+    date: '2025-12-10',
     readTime: '13 min read',
     keywords: ['natural health supplement raw materials China', 'yeast fermentation supplements', 'USP certified ingredients'],
     content: `
@@ -421,7 +421,7 @@ China offers unmatched scale, cost advantage, and advanced fermentation technolo
     metaTitle: 'Pro-Xylane Supplier China | 98% Purity | Green Enzymatic Synthesis | EnvikoBio',
     metaDescription: 'Complete guide to sourcing Pro-Xylane (Hydroxypropyl Tetrahydropyrantriol) from China. Learn about green enzymatic synthesis, quality standards, and top suppliers.',
     category: 'Insights',
-    date: '2026-06-25',
+    date: '2025-12-12',
     readTime: '10 min read',
     keywords: ['Pro-Xylane supplier China', 'Hydroxypropyl Tetrahydropyrantriol', 'anti-aging active ingredients'],
     content: `
@@ -494,11 +494,11 @@ Pro-Xylane has revolutionized anti-aging skincare. Green enzymatic synthesis mak
   },
   'hyaluronic-acid-sourcing': {
     slug: 'hyaluronic-acid-sourcing',
-    title: 'Hyaluronic Acid Sourcing Guide: Fermentation vs. Animal Extraction — Complete Buyer\'s Manual for 2026',
+    title: 'Hyaluronic Acid Sourcing Guide: Fermentation vs. Animal Extraction',
     metaTitle: 'Hyaluronic Acid Supplier | Fermentation-Derived HA | High Purity | EnvikoBio',
     metaDescription: 'Complete guide to sourcing hyaluronic acid. Compare microbial fermentation vs. animal extraction, quality standards, molecular weights, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-01',
+    date: '2025-12-14',
     readTime: '14 min read',
     keywords: ['hyaluronic acid supplier', 'fermentation-derived HA', 'cosmetic grade hyaluronic acid', 'high molecular weight HA'],
     content: `
@@ -661,11 +661,11 @@ Choose fermentation-derived hyaluronic acid for 2026 and beyond: superior purity
   },
   'bakuchiol-natural-retinol': {
     slug: 'bakuchiol-natural-retinol',
-    title: 'Bakuchiol: The Complete Guide to Sourcing the Natural Retinol Alternative for 2026',
+    title: 'Bakuchiol: The Complete Guide to Sourcing the Natural Retinol Alternative',
     metaTitle: 'Bakuchiol Supplier | Natural Retinol Alternative | Anti-Aging Active | EnvikoBio',
     metaDescription: 'Complete guide to sourcing Bakuchiol. Learn about this natural retinol alternative, clinical efficacy, quality standards, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-05',
+    date: '2025-12-16',
     readTime: '12 min read',
     keywords: ['bakuchiol supplier', 'natural retinol alternative', 'bakuchiol anti-aging', 'eco-friendly cosmetic ingredients'],
     content: `
@@ -804,11 +804,11 @@ Bakuchiol offers a compelling natural alternative to retinol with clinical evide
   },
   'collagen-peptides-sourcing': {
     slug: 'collagen-peptides-sourcing',
-    title: 'Collagen Peptides Sourcing Guide: Marine vs. Bovine vs. Porcine — Complete Buyer\'s Manual for 2026',
+    title: 'Collagen Peptides Sourcing Guide: Marine vs. Bovine vs. Porcine',
     metaTitle: 'Collagen Peptides Supplier | Marine Collagen | Bovine Collagen | EnvikoBio',
     metaDescription: 'Complete guide to sourcing collagen peptides. Compare marine vs. bovine vs. porcine sources, quality standards, molecular weight, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-10',
+    date: '2025-12-18',
     readTime: '13 min read',
     keywords: ['collagen peptides supplier', 'marine collagen peptides', 'bovine collagen', 'porcine collagen', 'hydrolyzed collagen'],
     content: `
@@ -998,7 +998,7 @@ Verify protein content (≥90%), molecular weight distribution, and source certi
     metaTitle: 'Ectoin Supplier | Anti-Pollution Active | Extremolyte | EnvikoBio',
     metaDescription: 'Complete guide to sourcing Ectoin. Learn about this extremolyte ingredient, anti-pollution protection, quality standards, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-15',
+    date: '2025-12-19',
     readTime: '11 min read',
     keywords: ['ectoin supplier', 'anti-pollution skincare', 'extremolyte', 'skin barrier protection'],
     content: `
@@ -1154,11 +1154,11 @@ Ectoin offers unique anti-pollution and barrier protection benefits backed by cl
   },
   'glutathione-sourcing': {
     slug: 'glutathione-sourcing',
-    title: 'Glutathione: The Complete Guide to Sourcing the Master Antioxidant for 2026',
+    title: 'Glutathione: The Complete Guide to Sourcing the Master Antioxidant',
     metaTitle: 'Glutathione Supplier | Master Antioxidant | Skin Brightening | EnvikoBio',
     metaDescription: 'Complete guide to sourcing Glutathione. Compare fermentation vs. chemical synthesis, quality standards, bioavailability, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-20',
+    date: '2025-12-20',
     readTime: '13 min read',
     keywords: ['glutathione supplier', 'master antioxidant', 'skin brightening', 'reduced glutathione'],
     content: `
@@ -1338,11 +1338,11 @@ Glutathione is a powerful antioxidant with growing applications in supplements a
   },
   'nmn-sourcing': {
     slug: 'nmn-sourcing',
-    title: 'NMN Sourcing Guide: The Complete Anti-Aging Molecule Manual for 2026',
+    title: 'NMN Sourcing Guide: The Complete Anti-Aging Molecule Manual',
     metaTitle: 'NMN Supplier | Nicotinamide Mononucleotide | Anti-Aging | EnvikoBio',
     metaDescription: 'Complete guide to sourcing NMN. Compare enzymatic vs. chemical synthesis, quality standards, bioavailability, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-25',
+    date: '2025-12-21',
     readTime: '14 min read',
     keywords: ['NMN supplier', 'nicotinamide mononucleotide', 'anti-aging supplement', 'NAD+ booster'],
     content: `
@@ -1526,7 +1526,7 @@ NMN is a promising anti-aging molecule with growing clinical evidence. Key sourc
     metaTitle: 'Erythritol Supplier | Monk Fruit Extract | Natural Sweeteners | EnvikoBio',
     metaDescription: 'Complete guide to sourcing erythritol and monk fruit sweeteners. Compare production methods, quality standards, applications, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-07-30',
+    date: '2025-12-21',
     readTime: '12 min read',
     keywords: ['erythritol supplier', 'monk fruit extract', 'natural sweeteners', 'sugar alternatives', 'stevia blend'],
     content: `
@@ -1715,7 +1715,7 @@ Source from suppliers offering high purity (≥99% erythritol, standardized mogr
     metaTitle: 'Algae Omega-3 Supplier | Vegan DHA & EPA | Sustainable | EnvikoBio',
     metaDescription: 'Complete guide to sourcing algae omega-3. Compare microalgae vs. fish oil, quality standards, sustainability, and how to choose a reliable supplier.',
     category: 'Insights',
-    date: '2026-08-05',
+    date: '2025-12-21',
     readTime: '13 min read',
     keywords: ['algae omega-3 supplier', 'vegan DHA', 'sustainable omega-3', 'microalgae DHA EPA'],
     content: `
