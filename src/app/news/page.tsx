@@ -23,7 +23,7 @@ const insightArticles: Array<{
     title: 'The Ultimate Buyer\'s Guide to Eco-Friendly Cosmetic Raw Materials Suppliers',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing sustainable cosmetic ingredients. Learn about green bio-catalysis, Ecocert/COSMOS certifications, and how to partner with eco-conscious suppliers.',
-    date: '2025-12-01',
+    date: '2026-03-29',
     readTime: '12 min read',
   },
   {
@@ -31,7 +31,7 @@ const insightArticles: Array<{
     title: 'The Ultimate Buyer Guide to Active Cosmetic Peptides: Sourcing, Quality, and Regulatory Compliance',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing cosmetic peptides. Learn about FDA DMF certifications, quality standards, and how to choose a reliable peptide supplier.',
-    date: '2025-12-03',
+    date: '2026-04-02',
     readTime: '14 min read',
   },
   {
@@ -39,7 +39,7 @@ const insightArticles: Array<{
     title: 'NAG Sourcing Manual: Fermentation vs. Crustacean Extraction',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing N-Acetyl Glucosamine (NAG). Compare fermentation vs. crustacean extraction, quality standards, and top suppliers.',
-    date: '2025-12-05',
+    date: '2026-04-05',
     readTime: '11 min read',
   },
   {
@@ -47,7 +47,7 @@ const insightArticles: Array<{
     title: 'Biosynthesis Food Additives Manufacturer: The Future of Clean-Label Food Production',
     category: 'Insights',
     excerpt: 'Complete guide to biosynthetic food additives. Learn about enzymatic conversion, FDA GRAS status, and how to source clean-label ingredients.',
-    date: '2025-12-07',
+    date: '2026-04-08',
     readTime: '10 min read',
   },
   {
@@ -55,7 +55,7 @@ const insightArticles: Array<{
     title: 'Natural Health Supplement Raw Materials: A Complete Sourcing Guide',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing natural supplement ingredients. Learn about yeast fermentation, USP certifications, and top suppliers for 5-HTP, Resveratrol, and more.',
-    date: '2025-12-10',
+    date: '2026-04-12',
     readTime: '13 min read',
   },
   {
@@ -63,7 +63,7 @@ const insightArticles: Array<{
     title: 'Pro-Xylane Supplier: The Complete Guide to Sourcing High-Purity Anti-Aging Actives',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing Pro-Xylane (Hydroxypropyl Tetrahydropyrantriol). Learn about green enzymatic synthesis, quality standards, and top suppliers.',
-    date: '2025-12-12',
+    date: '2026-04-15',
     readTime: '10 min read',
   },
   {
@@ -71,7 +71,7 @@ const insightArticles: Array<{
     title: 'Hyaluronic Acid Sourcing Guide: Fermentation vs. Animal Extraction',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing hyaluronic acid. Compare microbial fermentation vs. animal extraction, quality standards, molecular weights, and supplier selection.',
-    date: '2025-12-14',
+    date: '2026-04-18',
     readTime: '14 min read',
   },
   {
@@ -79,7 +79,7 @@ const insightArticles: Array<{
     title: 'Bakuchiol: The Complete Guide to Sourcing the Natural Retinol Alternative',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing Bakuchiol. Learn about this natural retinol alternative, clinical efficacy, quality standards, and how to choose a reliable supplier.',
-    date: '2025-12-16',
+    date: '2026-04-22',
     readTime: '12 min read',
   },
   {
@@ -87,7 +87,7 @@ const insightArticles: Array<{
     title: 'Collagen Peptides Sourcing Guide: Marine vs. Bovine vs. Porcine',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing collagen peptides. Compare marine vs. bovine vs. porcine sources, quality standards, molecular weight, and supplier selection.',
-    date: '2025-12-18',
+    date: '2026-04-26',
     readTime: '13 min read',
   },
   {
@@ -95,7 +95,7 @@ const insightArticles: Array<{
     title: 'Ectoin Sourcing Guide: The Complete Manual for Anti-Pollution Skin Protection',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing Ectoin. Learn about this extremolyte ingredient, anti-pollution protection, barrier repair, and quality standards.',
-    date: '2025-12-19',
+    date: '2026-05-02',
     readTime: '11 min read',
   },
   {
@@ -103,7 +103,7 @@ const insightArticles: Array<{
     title: 'Glutathione: The Complete Guide to Sourcing the Master Antioxidant',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing Glutathione. Compare fermentation vs. chemical synthesis, quality standards, bioavailability, and supplier selection.',
-    date: '2025-12-20',
+    date: '2026-05-08',
     readTime: '13 min read',
   },
   {
@@ -111,7 +111,7 @@ const insightArticles: Array<{
     title: 'NMN Sourcing Guide: The Complete Anti-Aging Molecule Manual',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing NMN. Compare enzymatic vs. chemical synthesis, quality standards, bioavailability, and regulatory status.',
-    date: '2025-12-21',
+    date: '2026-05-15',
     readTime: '14 min read',
   },
   {
@@ -119,7 +119,7 @@ const insightArticles: Array<{
     title: 'Erythritol & Monk Fruit Sweeteners: Complete Sourcing Guide',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing erythritol and monk fruit sweeteners. Compare production methods, quality standards, and applications for natural sugar alternatives.',
-    date: '2025-12-21',
+    date: '2026-05-20',
     readTime: '12 min read',
   },
   {
@@ -127,7 +127,7 @@ const insightArticles: Array<{
     title: 'Algae Omega-3 Sourcing Guide: Sustainable DHA & EPA',
     category: 'Insights',
     excerpt: 'Complete guide to sourcing algae omega-3. Compare microalgae vs. fish oil, quality standards, sustainability, and vegan-friendly sourcing.',
-    date: '2025-12-21',
+    date: '2026-05-28',
     readTime: '13 min read',
   },
 ];
