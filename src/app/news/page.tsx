@@ -130,6 +130,14 @@ const insightArticles: Array<{
     date: '2026-05-28',
     readTime: '13 min read',
   },
+  {
+    slug: 'high-conversion-b2b-website',
+    title: 'High-Conversion B2B Website Design: 3-5x Inquiry Rate Increase',
+    category: 'Strategy',
+    excerpt: 'Traffic is good, but inquiries are few? Learn complete methodology for buyer journey mapping, 6 high-conversion page templates, and CRO optimization techniques.',
+    date: '2026-06-05',
+    readTime: '12 min read',
+  },
 ];
 
 // Industry news for B2B biotechnology sector
