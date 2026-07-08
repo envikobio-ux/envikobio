@@ -1,0 +1,1785 @@
+{
+  "total": 90,
+  "products": [
+    {
+      "id": 1,
+      "slug": "111024-squalene-omnipure",
+      "cas": "111-02-4",
+      "name": "Squalene (OmniPure™)",
+      "inci_name": "Squalene",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 2,
+      "slug": "111013-squalane-omnipure",
+      "cas": "111-01-3",
+      "name": "Squalane (OmniPure™)",
+      "inci_name": "Squalane",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥97%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 3,
+      "slug": "23089261---α-bisabolol",
+      "cas": "23089-26-1",
+      "name": "(-)-α-Bisabolol",
+      "inci_name": "",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 4,
+      "slug": "96702033-ectoin",
+      "cas": "96702-03-3",
+      "name": "Ectoin",
+      "inci_name": "Ectoin",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 5,
+      "slug": "497303-l-ergothioneine-egt",
+      "cas": "497-30-3",
+      "name": "L-Ergothioneine (EGT)",
+      "inci_name": "L-Ergothioneine",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 6,
+      "slug": "868156461-pro-xylane",
+      "cas": "868156-46-1",
+      "name": "Pro-Xylane",
+      "inci_name": "Pro-Xylane",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥95%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 7,
+      "slug": "4674504-nootkatone",
+      "cas": "4674-50-4",
+      "name": "Nootkatone",
+      "inci_name": "Nootkatone",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥97%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 8,
+      "slug": "9001632-lysozyme",
+      "cas": "9001-63-2",
+      "name": "Lysozyme",
+      "inci_name": "Lysozyme",
+      "group": "Food Enzymes(c2613)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 9,
+      "slug": "4630073-valencene",
+      "cas": "4630-07-3",
+      "name": "Valencene",
+      "inci_name": "Valencene",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥97%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 10,
+      "slug": "56122-gaba-γ-aminobutyric",
+      "cas": "56-12-2",
+      "name": "GABA (γ-Aminobutyric Acid)",
+      "inci_name": "GABA",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 11,
+      "slug": "51446629-phosphatidylserine-p",
+      "cas": "51446-62-9",
+      "name": "Phosphatidylserine (PS)",
+      "inci_name": "Phosphatidylserine",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 12,
+      "slug": "57885-cholesterol",
+      "cas": "57-88-5",
+      "name": "Cholesterol",
+      "inci_name": "Cholesterol",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 13,
+      "slug": "472617-astaxanthin",
+      "cas": "472-61-7",
+      "name": "Astaxanthin",
+      "inci_name": "Astaxanthin",
+      "group": "Natural Pigment(c2411)",
+      "grade": "Food Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 14,
+      "slug": "7235407-β-carotene",
+      "cas": "7235-40-7",
+      "name": "β-Carotene",
+      "inci_name": "β-Carotene",
+      "group": "Natural Pigment(c2411)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 15,
+      "slug": "501360-trans-resveratrol-vd",
+      "cas": "501-36-0",
+      "name": "Trans-Resveratrol (VDK®-Trans RES)",
+      "inci_name": "Trans-Resveratrol",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥98%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 16,
+      "slug": "56699-5-htp-vdk-htp",
+      "cas": "56-69-9",
+      "name": "5-HTP (VDK®-HTP)",
+      "inci_name": "5-HTP",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 17,
+      "slug": "73314-melatonin-vdk-mlt",
+      "cas": "73-31-4",
+      "name": "Melatonin (VDK®-MLT)",
+      "inci_name": "Melatonin",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 18,
+      "slug": "472617-astaxanthin-vdk-asta",
+      "cas": "472-61-7",
+      "name": "Astaxanthin (VDK®-ASTA)",
+      "inci_name": "Astaxanthin",
+      "group": "Natural Pigment(c2411)",
+      "grade": "Food Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 19,
+      "slug": "7235407-β-carotene-vdk-β-car",
+      "cas": "7235-40-7",
+      "name": "β-Carotene (VDK®-β-Carotene)",
+      "inci_name": "β-Carotene",
+      "group": "Natural Pigment(c2411)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 20,
+      "slug": "514783-canthaxanthin",
+      "cas": "514-78-3",
+      "name": "Canthaxanthin",
+      "inci_name": "Canthaxanthin",
+      "group": "Natural Pigment(c2411)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 21,
+      "slug": "515037-sclareol",
+      "cas": "515-03-7",
+      "name": "Sclareol",
+      "inci_name": "Sclareol",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 22,
+      "slug": "564205-sclareolide",
+      "cas": "564-20-5",
+      "name": "Sclareolide",
+      "inci_name": "Sclareolide",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "VDK (维达康)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 23,
+      "slug": "7512176-n-acetyl-glucosamine",
+      "cas": "7512-17-6",
+      "name": "N-Acetyl Glucosamine (NAG)",
+      "inci_name": "N-Acetyl Glucosamine",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER",
+        "FSSC22000"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 24,
+      "slug": "66842-glucosamine-hcl-gah",
+      "cas": "66-84-2",
+      "name": "Glucosamine HCl (GAH)",
+      "inci_name": "Glucosamine HCl",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER",
+        "FSSC22000"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 25,
+      "slug": "131486-n-acetylneuraminic-a",
+      "cas": "131-48-6",
+      "name": "N-Acetylneuraminic Acid (SA)",
+      "inci_name": "N-Acetylneuraminic Acid",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER",
+        "FSSC22000"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 26,
+      "slug": "9082079-sodium-chondroitin-s",
+      "cas": "9082-07-9",
+      "name": "Sodium Chondroitin Sulfate",
+      "inci_name": "Sodium Chondroitin Sulfate",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER",
+        "FSSC22000"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 27,
+      "slug": "9067327-sodium-hyaluronate-h",
+      "cas": "9067-32-7",
+      "name": "Sodium Hyaluronate (HA)",
+      "inci_name": "Sodium Hyaluronate",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 28,
+      "slug": "497303-ergothioneine-egt",
+      "cas": "497-30-3",
+      "name": "Ergothioneine (EGT)",
+      "inci_name": "Ergothioneine",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 29,
+      "slug": "2124574-vitamin-k2-mk-7",
+      "cas": "2124-57-4",
+      "name": "Vitamin K2 (MK-7)",
+      "inci_name": "Vitamin K2",
+      "group": "Vitamin(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Runhan (润涵生物)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 30,
+      "slug": "616204229-acetyl-hexapeptide-8",
+      "cas": "616204-22-9",
+      "name": "Acetyl Hexapeptide-8 (ZPC®Wrinklend008S)",
+      "inci_name": "Acetyl Hexapeptide-8",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 34,
+      "slug": "20449790-mellitin-zpcwrinklen",
+      "cas": "20449-79-0",
+      "name": "Mellitin (ZPC®Wrinklend018S)",
+      "inci_name": "Mellitin",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 35,
+      "slug": "147732567-palmitoyl-tripeptide",
+      "cas": "147732-56-7",
+      "name": "Palmitoyl Tripeptide-1",
+      "inci_name": "Palmitoyl Tripeptide-1",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 36,
+      "slug": "221227050-palmitoyl-tetrapepti",
+      "cas": "221227-05-0",
+      "name": "Palmitoyl Tetrapeptide-7",
+      "inci_name": "Palmitoyl Tetrapeptide-7",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 37,
+      "slug": "49557757-copper-tripeptide-1",
+      "cas": "49557-75-7",
+      "name": "Copper Tripeptide-1 (GHK-Cu)",
+      "inci_name": "Copper Tripeptide-1",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 38,
+      "slug": "616204229-acetyl-hexapeptide-3",
+      "cas": "616204-22-9",
+      "name": "Acetyl Hexapeptide-3 (Argireline)",
+      "inci_name": "Acetyl Hexapeptide-3",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 39,
+      "slug": "158563452-nonapeptide-1-melano",
+      "cas": "158563-45-2",
+      "name": "Nonapeptide-1 (Melanostat)",
+      "inci_name": "Nonapeptide-1",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 42,
+      "slug": "820959179-acetyl-tetrapeptide",
+      "cas": "820959-17-9",
+      "name": "Acetyl Tetrapeptide-5 (Eyeseryl)",
+      "inci_name": "Acetyl Tetrapeptide-5",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 45,
+      "slug": "2023788192-tirzepatide",
+      "cas": "2023788-19-2",
+      "name": "Tirzepatide",
+      "inci_name": "Tirzepatide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "DMF#039655"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 46,
+      "slug": "204656202-liraglutide",
+      "cas": "204656-20-2",
+      "name": "Liraglutide",
+      "inci_name": "Liraglutide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "DMF#035972"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 47,
+      "slug": "910463682-semaglutide",
+      "cas": "910463-68-2",
+      "name": "Semaglutide",
+      "inci_name": "Semaglutide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "DMF"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 48,
+      "slug": "74381536-leuprolide-acetate",
+      "cas": "74381-53-6",
+      "name": "Leuprolide Acetate",
+      "inci_name": "Leuprolide Acetate",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 49,
+      "slug": "851199592-linaclotide",
+      "cas": "851199-59-2",
+      "name": "Linaclotide",
+      "inci_name": "Linaclotide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 50,
+      "slug": "129311553-ganirelix-acetate",
+      "cas": "129311-55-3",
+      "name": "Ganirelix Acetate",
+      "inci_name": "Ganirelix Acetate",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 51,
+      "slug": "83150769-octreotide",
+      "cas": "83150-76-9",
+      "name": "Octreotide",
+      "inci_name": "Octreotide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 52,
+      "slug": "141758749-exenatide",
+      "cas": "141758-74-9",
+      "name": "Exenatide",
+      "inci_name": "Exenatide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 53,
+      "slug": "52232674-teriparatide",
+      "cas": "52232-67-4",
+      "name": "Teriparatide",
+      "inci_name": "Teriparatide",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 54,
+      "slug": "128270600-bivalirudin",
+      "cas": "128270-60-0",
+      "name": "Bivalirudin",
+      "inci_name": "Bivalirudin",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide (湃肽)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 55,
+      "slug": "9067327-sodium-hyaluronate-h",
+      "cas": "9067-32-7",
+      "name": "Sodium Hyaluronate (High MW)",
+      "inci_name": "Sodium Hyaluronate",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 56,
+      "slug": "9067327-sodium-hyaluronate-l",
+      "cas": "9067-32-7",
+      "name": "Sodium Hyaluronate (Low MW)",
+      "inci_name": "Sodium Hyaluronate",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 57,
+      "slug": "9067327-sodium-hyaluronate-f",
+      "cas": "9067-32-7",
+      "name": "Sodium Hyaluronate (Food Grade)",
+      "inci_name": "Sodium Hyaluronate",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 58,
+      "slug": "11138662-xanthan-gum",
+      "cas": "11138-66-2",
+      "name": "Xanthan Gum",
+      "inci_name": "Xanthan Gum",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 59,
+      "slug": "56860-l-glutamic-acid",
+      "cas": "56-86-0",
+      "name": "L-Glutamic Acid",
+      "inci_name": "L-Glutamic Acid",
+      "group": "Amino Acid(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 60,
+      "slug": "72195-l-threonine",
+      "cas": "72-19-5",
+      "name": "L-Threonine",
+      "inci_name": "L-Threonine",
+      "group": "Amino Acid(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰集团)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 61,
+      "slug": "11138662-xanthan-gum-ziboxan",
+      "cas": "11138-66-2",
+      "name": "Xanthan Gum (Ziboxan®)",
+      "inci_name": "Xanthan Gum",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Deosen (中轩生化)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 62,
+      "slug": "4075814-calcium-propionate",
+      "cas": "4075-81-4",
+      "name": "Calcium Propionate",
+      "inci_name": "Calcium Propionate",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Tongtai Weirun (同泰维润)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 63,
+      "slug": "100403198-ceramide-np",
+      "cas": "100403-19-8",
+      "name": "Ceramide NP",
+      "inci_name": "Ceramide NP",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 64,
+      "slug": "212216321-ceramide-ap",
+      "cas": "212216-32-1",
+      "name": "Ceramide AP",
+      "inci_name": "Ceramide AP",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 65,
+      "slug": "100403198-ceramide-eop",
+      "cas": "100403-19-8",
+      "name": "Ceramide EOP",
+      "inci_name": "Ceramide EOP",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 66,
+      "slug": "34354886-ceramide-ng",
+      "cas": "34354-88-6",
+      "name": "Ceramide NG",
+      "inci_name": "Ceramide NG",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 67,
+      "slug": "2304816-ceramide-ns",
+      "cas": "2304-81-6",
+      "name": "Ceramide NS",
+      "inci_name": "Ceramide NS",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 68,
+      "slug": "100403198-ceramide-as",
+      "cas": "100403-19-8",
+      "name": "Ceramide AS",
+      "inci_name": "Ceramide AS",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥90%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 69,
+      "slug": "100403198-ceramide-50-ceramicr",
+      "cas": "100403-19-8",
+      "name": "Ceramide 50 (CeraMicro™ NP)",
+      "inci_name": "Ceramide 50",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥50%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 71,
+      "slug": "98920-niacinamide-nicotina",
+      "cas": "98-92-0",
+      "name": "Niacinamide (Nicotinamide)",
+      "inci_name": "Niacinamide",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥99%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 72,
+      "slug": "10597601-hydroxytyrosol",
+      "cas": "10597-60-1",
+      "name": "Hydroxytyrosol",
+      "inci_name": "Hydroxytyrosol",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 73,
+      "slug": "331395-caffeic-acid",
+      "cas": "331-39-5",
+      "name": "Caffeic Acid",
+      "inci_name": "Caffeic Acid",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 74,
+      "slug": "99503-protocatechuic-acid",
+      "cas": "99-50-3",
+      "name": "Protocatechuic Acid",
+      "inci_name": "Protocatechuic Acid",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 75,
+      "slug": "60184-l-tyrosine",
+      "cas": "60-18-4",
+      "name": "L-Tyrosine",
+      "inci_name": "L-Tyrosine",
+      "group": "Amino Acid(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 76,
+      "slug": "501984-p-coumaric-acid",
+      "cas": "501-98-4",
+      "name": "p-Coumaric Acid",
+      "inci_name": "p-Coumaric Acid",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 77,
+      "slug": "305840-l-carnosine",
+      "cas": "305-84-0",
+      "name": "L-Carnosine",
+      "inci_name": "L-Carnosine",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "1kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 78,
+      "slug": "111013-squalane",
+      "cas": "111-01-3",
+      "name": "Squalane",
+      "inci_name": "Squalane",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥97%",
+      "packages": "20kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Oil",
+      "supplier": "Viablife (唯铂莱)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 79,
+      "slug": "9005383-sodium-alginate",
+      "cas": "9005-38-3",
+      "name": "Sodium Alginate",
+      "inci_name": "Sodium Alginate",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Qingdao Kirin (青岛麒麟)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 88,
+      "slug": "149326-erythritol",
+      "cas": "149-32-6",
+      "name": "Erythritol",
+      "inci_name": "Erythritol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 89,
+      "slug": "551688-allulose-psicose",
+      "cas": "551-68-8",
+      "name": "Allulose (Psicose)",
+      "inci_name": "Allulose",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 90,
+      "slug": "99207-trehalose",
+      "cas": "99-20-7",
+      "name": "Trehalose",
+      "inci_name": "Trehalose",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 91,
+      "slug": "57487-crystalline-fructose",
+      "cas": "57-48-7",
+      "name": "Crystalline Fructose",
+      "inci_name": "Crystalline Fructose",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 92,
+      "slug": "585886-maltitol",
+      "cas": "585-88-6",
+      "name": "Maltitol",
+      "inci_name": "Maltitol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 93,
+      "slug": "50704-sorbitol",
+      "cas": "50-70-4",
+      "name": "Sorbitol",
+      "inci_name": "Sorbitol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 94,
+      "slug": "68424044-resistant-dextrin-po",
+      "cas": "68424-04-4",
+      "name": "Resistant Dextrin (Polydextrose)",
+      "inci_name": "Resistant Dextrin",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 95,
+      "slug": "83269798-polydextrose",
+      "cas": "83269-79-8",
+      "name": "Polydextrose",
+      "inci_name": "Polydextrose",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 96,
+      "slug": "9005258-corn-starch",
+      "cas": "9005-25-8",
+      "name": "Corn Starch",
+      "inci_name": "Corn Starch",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/FSSC22000",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 98,
+      "slug": "9050366-maltodextrin",
+      "cas": "9050-36-6",
+      "name": "Maltodextrin",
+      "inci_name": "Maltodextrin",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 103,
+      "slug": "4618182-lactulose-pharma-gra",
+      "cas": "4618-18-2",
+      "name": "Lactulose (Pharma Grade)",
+      "inci_name": "Lactulose",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Liquid"
+      ],
+      "appearance_type": "COA/MSDS/GMP",
+      "supplier": "Baolingbao (保龄宝)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 104,
+      "slug": "87990-xylitol",
+      "cas": "87-99-0",
+      "name": "Xylitol",
+      "inci_name": "Xylitol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000/GMP",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 105,
+      "slug": "585886-maltitol",
+      "cas": "585-88-6",
+      "name": "Maltitol",
+      "inci_name": "Maltitol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 106,
+      "slug": "149326-erythritol",
+      "cas": "149-32-6",
+      "name": "Erythritol",
+      "inci_name": "Erythritol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 107,
+      "slug": "5328370-l-arabinose",
+      "cas": "5328-37-0",
+      "name": "L-Arabinose",
+      "inci_name": "L-Arabinose",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 108,
+      "slug": "58866-d-xylose",
+      "cas": "58-86-6",
+      "name": "D-Xylose",
+      "inci_name": "D-Xylose",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER/FSSC22000",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 109,
+      "slug": "50704-sorbitol-sorbitol-sy",
+      "cas": "50-70-4",
+      "name": "Sorbitol (Sorbitol Syrup)",
+      "inci_name": "Sorbitol",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Liquid"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 111,
+      "slug": "68424044-resistant-dextrin",
+      "cas": "68424-04-4",
+      "name": "Resistant Dextrin",
+      "inci_name": "Resistant Dextrin",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 112,
+      "slug": "83269798-polydextrose",
+      "cas": "83269-79-8",
+      "name": "Polydextrose",
+      "inci_name": "Polydextrose",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "Powder"
+      ],
+      "appearance_type": "COA/MSDS/HALAL/KOSHER",
+      "supplier": "Shandong Futian (山东福田)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    }
+  ],
+  "metadata": {
+    "source": "Envikobio Internal Product Catalog",
+    "version": "2026-12-31"
+  }
+}

@@ -1,411 +1,261 @@
-import { Metadata } from 'next';
-import Image from 'next/image';
+'use client';
+
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Card, CardContent } from '@/components/ui/card';
+import { Badge } from '@/components/ui/badge';
+import { Input } from '@/components/ui/input';
 import { Button } from '@/components/ui/button';
-import { 
-  Beaker, 
-  Leaf, 
-  Factory,
-  Utensils,
-  ArrowRight,
-  CheckCircle,
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
+import {
+  ArrowLeft,
+  Search,
+  Beaker,
   Download,
-  Heart, 
-  Brain, 
-  Shield, 
-  Sparkles, 
-  Bone, 
-  Moon,
-  Users,
-  Activity,
-  Target,
-  Dumbbell,
-  Droplets,
-  Sun,
-  Zap,
-  RefreshCw,
-  Eye,
-  Smile,
-  Wind,
-  Palette
+  ShieldCheck,
 } from 'lucide-react';
+import envikoProducts from '@/data/enviko-products-91.json';
 
-export const metadata: Metadata = {
-  title: 'Products',
-  description: 'Explore Enviko\'s comprehensive range of UltiWell® health supplements and bio-based products.',
+interface EnvikoProduct {
+  id: number;
+  slug: string;
+  cas: string;
+  name: string;
+  inci_name: string;
+  group: string;
+  grade: string;
+  purity: string;
+  packages: string;
+  certificates: string[];
+  appearance_type: string;
+  supplier: string;
+  app_scenario: string;
+  shelf_life: string;
+}
+
+// Group labels for display
+const groupLabels: Record<string, string> = {
+  'Cosmetic Raw Material': 'Cosmetic Raw Materials',
+  'Food Additive(c2111)': 'Food Additives',
+  'Food Enzymes(c2613)': 'Food Enzymes',
+  'Nutritional Enhancer(c2111)': 'Nutritional Enhancers',
+  'Natural Pigment(c2411)': 'Natural Pigments',
+  'Vitamin(c2111)': 'Vitamins',
+  'Pharmaceutical API': 'Pharmaceutical APIs',
+  'Amino Acid(c2111)': 'Amino Acids',
+  'Sweetener(c2111)': 'Sweeteners',
 };
 
-// Bio-based Ingredients
-const ingredientCategories = [
-  {
-    icon: Beaker,
-    title: 'Pharmaceutical Ingredients',
-    description: 'Pharmaceutical intermediates, amino acids, and bio-active ingredients with ≥95% purity.',
-    products: ['Long-Chain Dicarboxylic Acids', '7-ACA Antibiotic Intermediate', 'L-Alanine, L-Valine, Glutamine', 'Alpha-Bisabolol, Ergothioneine, Ectoine', 'Hyaluronic Acid, Collagen', '5-HTP, Inositol'],
-    href: '/products/pharmaceuticals',
-    image: '/pharma-research.jpeg',
-  },
-  {
-    icon: Leaf,
-    title: 'Cosmetic Ingredients',
-    description: 'Natural and sustainable cosmetic ingredients for clean beauty formulations.',
-    products: ['Alpha-Bisabolol (≥95%)', 'Ergothioneine (≥98%)', 'Ectoine (≥99%)', 'Squalene/Squalane (≥99%)', 'Hyaluronic Acid', 'Recombinant Collagen'],
-    href: '/products/cosmetics',
-    image: '/cosmetic-ingredients.jpeg',
-  },
-  {
-    icon: Utensils,
-    title: 'Food Nutrition & Additives',
-    description: 'Sugar alternatives, nutritional fortifiers, and alternative proteins for food industry.',
-    products: ['Erythritol, Allulose', 'Steviol Glycosides, Mogroside', 'ARA Oil, DHA Oil', 'Beta-Carotene, Astaxanthin', 'Human Milk Oligosaccharides', 'Mycoprotein, Yeast Protein'],
-    href: '/products/food-nutrition',
-    image: '/cosmetic-ingredients.jpeg',
-  },
-  {
-    icon: Factory,
-    title: 'Agricultural Products',
-    description: 'Bio-based agricultural products and clean energy solutions for sustainability.',
-    products: ['Seaweed Biostimulants', 'Amino Acid Fertilizers', '1,3-Propanediol (PDO)', 'Succinic Acid', 'Bio-Based Sebacic Acid', 'Biodiesel, Biogas'],
-    href: '/products/agriculture',
-    image: '/agriculture-sustainable.jpeg',
-  },
-];
+// Category to scenario mapping
+const scenarioLabels: Record<string, string> = {
+  'cosmetic': 'Cosmetic Grade',
+  'food': 'Food Grade',
+  'pharmaceutical': 'Pharmaceutical Grade',
+};
 
-// UltiWell Product Lines
-const ultiWellCategories = [
-  { icon: Target, title: 'Core Nutrition', count: 6 },
-  { icon: Brain, title: 'Brain & Cognitive', count: 3 },
-  { icon: Dumbbell, title: 'Energy & Sports', count: 5 },
-  { icon: Sparkles, title: 'Anti-Aging & Beauty', count: 6 },
-  { icon: Heart, title: 'Heart & Circulation', count: 2 },
-  { icon: Shield, title: 'Immune Support', count: 2 },
-  { icon: Bone, title: 'Joint & Mobility', count: 2 },
-  { icon: Moon, title: 'Sleep & Relaxation', count: 7 },
-  { icon: Leaf, title: 'Digestive Health', count: 4 },
-  { icon: Users, title: 'Specialized Care', count: 3 },
-  { icon: Activity, title: 'Lifestyle Solutions', count: 5 },
-  { icon: Leaf, title: 'Plant Extracts', count: 6 },
-  { icon: Sparkles, title: 'Bio-Natural Colors', count: 6 },
-];
+export default function EnvikoProductsCatalog() {
+  const products = (envikoProducts as { products: EnvikoProduct[] }).products;
+  
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedGroup, setSelectedGroup] = useState<string>('all');
+  const [selectedScenario, setSelectedScenario] = useState<string>('all');
 
-// UltiGlow Product Lines - By Function
-const ultiGlowCategories = [
-  { icon: Droplets, title: 'Deep Hydration', count: 6 },
-  { icon: Heart, title: 'Anti-Aging', count: 7 },
-  { icon: Sparkles, title: 'Brightening', count: 5 },
-  { icon: Shield, title: 'Sensitive Repair', count: 6 },
-  { icon: Zap, title: 'Acne Control', count: 5 },
-  { icon: RefreshCw, title: 'Skin Renewal', count: 5 },
-  { icon: Sun, title: 'Sun Protection', count: 4 },
-  { icon: Leaf, title: 'Antioxidant', count: 4 },
-  { icon: Eye, title: 'Eye Care', count: 3 },
-  { icon: Smile, title: 'Lip Care', count: 3 },
-  { icon: Wind, title: 'Pore Care', count: 3 },
-  { icon: Palette, title: 'Natural Color', count: 6 },
-];
+  // Get unique groups
+  const groups = useMemo(() => {
+    const uniqueGroups = [...new Set(products.map(p => p.group))];
+    return ['all', ...uniqueGroups];
+  }, [products]);
 
-const features = [
-  'High purity (≥95% - 99.9%)',
-  '100% traceable ingredients',
-  'ISO9001, ISO22000, GMP certified',
-  'Complete COA provided',
-  'Customized specifications available',
-  'Global supply capability',
-];
+  // Filter products
+  const filteredProducts = useMemo(() => {
+    return products.filter(product => {
+      const matchesSearch = searchTerm === '' || 
+        product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.cas.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        product.inci_name.toLowerCase().includes(searchTerm.toLowerCase());
+      
+      const matchesGroup = selectedGroup === 'all' || product.group === selectedGroup;
+      
+      const matchesScenario = selectedScenario === 'all' || product.app_scenario === selectedScenario;
+      
+      return matchesSearch && matchesGroup && matchesScenario;
+    });
+  }, [products, searchTerm, selectedGroup, selectedScenario]);
 
-export default function ProductsPage() {
+  // Group products by category
+  const groupedProducts = useMemo(() => {
+    const grouped: Record<string, EnvikoProduct[]> = {};
+    filteredProducts.forEach(product => {
+      if (!grouped[product.group]) {
+        grouped[product.group] = [];
+      }
+      grouped[product.group].push(product);
+    });
+    return grouped;
+  }, [filteredProducts]);
+
   return (
-    <>
-      {/* Hero Section */}
-      <section className="relative bg-white py-20 overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <Image
-            src="/fermentation-tech.jpeg"
-            alt="Products Background"
-            fill
-            className="object-cover"
-          />
-        </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-6">
-              Our Products
-            </h1>
-            <p className="text-lg text-gray-600 mb-8">
-              Premium biosynthesis-based health supplements and bio-based ingredients 
-              serving pharmaceutical, cosmetic, food, and agricultural industries worldwide.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-                <a href="/api/catalogue-download">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download Product Catalogue
-                </a>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/contact">
-                  Request Quote
-                </Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Bio-based Ingredients */}
-      <section className="py-20 bg-gray-50">
+    <div className="min-h-screen bg-gray-50">
+      {/* Header */}
+      <div className="bg-gradient-to-r from-green-600 to-green-700 py-8">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              Bio-Based Ingredients
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Raw materials and ingredients for B2B partners - pharmaceutical, cosmetic, food, and agricultural applications
-            </p>
-          </div>
+          <Link href="/" className="inline-flex items-center text-white hover:text-green-200 mb-4">
+            <ArrowLeft className="w-4 h-4 mr-2" />
+            Back to Home
+          </Link>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            {ingredientCategories.map((category, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={category.image}
-                    alt={category.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <category.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-normal text-gray-900 mb-3">
-                    {category.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 text-sm">
-                    {category.description}
-                  </p>
-                  <div className="grid grid-cols-2 gap-2 mb-6">
-                    {category.products.slice(0, 6).map((product, idx) => (
-                      <div key={idx} className="flex items-center gap-2 text-sm text-gray-700">
-                        <CheckCircle className="w-3 h-3 flex-shrink-0" style={{ color: '#A1BA80' }} />
-                        <span className="text-xs">{product}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Button asChild variant="outline" className="w-full" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
-                    <Link href={category.href}>
-                      View Products <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+          <h1 className="text-3xl font-medium text-white mb-2">
+            Enviko Product Catalog
+          </h1>
+          <p className="text-green-100 mb-4">
+            {products.length} premium raw materials for cosmetic, food, and pharmaceutical applications
+          </p>
 
-      {/* Features */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl">
-              <Image
-                src="/analytics-equipment.jpeg"
-                alt="Quality Assurance"
-                fill
-                className="object-cover"
+          {/* Trust Bar */}
+          <div className="flex flex-wrap gap-2 mb-4">
+            <Badge className="bg-white text-green-700">REACH Certified</Badge>
+            <Badge className="bg-white text-green-700">HALAL Certified</Badge>
+            <Badge className="bg-white text-green-700">India Customs Ready</Badge>
+            <Badge className="bg-white text-green-700">Free Samples</Badge>
+          </div>
+
+          {/* Search and Filters */}
+          <div className="grid sm:grid-cols-3 gap-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
+              <Input
+                placeholder="Search by name or CAS..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="pl-10 bg-white"
               />
             </div>
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-6">
-                Why Choose Enviko Products?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Our commitment to quality, sustainability, and innovation sets us apart in the industry.
-              </p>
-              <div className="grid sm:grid-cols-2 gap-4">
-                {features.map((feature, index) => (
-                  <div key={index} className="flex items-center gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0" style={{ color: '#A1BA80' }} />
-                    <span className="text-gray-700">{feature}</span>
-                  </div>
+            <Select value={selectedGroup} onValueChange={setSelectedGroup}>
+              <SelectTrigger className="bg-white">
+                <SelectValue placeholder="Select Category" />
+              </SelectTrigger>
+              <SelectContent>
+                {groups.map(group => (
+                  <SelectItem key={group} value={group}>
+                    {group === 'all' ? 'All Categories' : (groupLabels[group] || group)}
+                  </SelectItem>
                 ))}
-              </div>
-            </div>
+              </SelectContent>
+            </Select>
+            <Select value={selectedScenario} onValueChange={setSelectedScenario}>
+              <SelectTrigger className="bg-white">
+                <SelectValue placeholder="Select Grade" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Grades</SelectItem>
+                <SelectItem value="cosmetic">Cosmetic Grade</SelectItem>
+                <SelectItem value="food">Food Grade</SelectItem>
+                <SelectItem value="pharmaceutical">Pharmaceutical Grade</SelectItem>
+              </SelectContent>
+            </Select>
           </div>
         </div>
-      </section>
+      </div>
 
-      {/* UltiWell Brand Products */}
-      <section className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              <Target className="w-4 h-4" />
-              Consumer Brands
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
-              UltiWell® Product Series
+      {/* Results Count */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4">
+        <p className="text-gray-600">
+          Showing {filteredProducts.length} of {products.length} products
+        </p>
+      </div>
+
+      {/* Product Groups */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pb-12">
+        {Object.entries(groupedProducts).map(([group, groupProducts]) => (
+          <div key={group} className="mb-8">
+            <h2 className="text-xl font-medium text-gray-900 mb-4 border-b pb-2">
+              {groupLabels[group] || group} ({groupProducts.length})
             </h2>
-            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>「Ultimate Wellness」</p>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Premium health supplements for every wellness need
-            </p>
-            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              60 Products across 13 Categories
+            
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+              {groupProducts.map(product => (
+                <Link key={product.id} href={`/products/${product.slug}`}>
+                  <Card className="border-0 shadow-md hover:shadow-lg transition-all cursor-pointer h-full">
+                    <CardContent className="p-4">
+                      {/* Product Name */}
+                      <h3 className="font-medium text-gray-900 mb-2 line-clamp-2">
+                        {product.name}
+                      </h3>
+                      
+                      {/* CAS and Purity */}
+                      <div className="flex items-center gap-2 mb-2">
+                        <Badge variant="outline" className="text-xs">
+                          CAS: {product.cas}
+                        </Badge>
+                        {product.purity && (
+                          <Badge className="bg-green-100 text-green-700 text-xs">
+                            {product.purity}
+                          </Badge>
+                        )}
+                      </div>
+                      
+                      {/* Grade */}
+                      <p className="text-sm text-gray-600 mb-2">
+                        {scenarioLabels[product.app_scenario] || product.grade}
+                      </p>
+                      
+                      {/* Certificates */}
+                      <div className="flex flex-wrap gap-1 mb-3">
+                        {product.certificates.slice(0, 3).map((cert, i) => (
+                          <span key={i} className="text-xs text-gray-500 flex items-center gap-0.5">
+                            <ShieldCheck className="w-3 h-3 text-green-600" />
+                            {cert}
+                          </span>
+                        ))}
+                      </div>
+                      
+                      {/* CTA */}
+                      <div className="flex gap-2">
+                        <Button size="sm" variant="outline" className="flex-1">
+                          <Download className="w-3 h-3 mr-1" />
+                          COA
+                        </Button>
+                        <Button size="sm" className="flex-1 bg-green-600 hover:bg-green-700">
+                          <Beaker className="w-3 h-3 mr-1" />
+                          Sample
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
             </div>
           </div>
-          
-          {/* UltiWell Series Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {ultiWellCategories.map((category, index) => (
-              <Card key={index} className="border border-gray-200 hover:shadow-lg transition-all duration-300 group">
-                <CardContent className="p-5">
-                  <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                    <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                  </div>
-                  <h3 className="font-normal text-gray-900 mb-1">{category.title}</h3>
-                  <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button asChild variant="outline" size="lg" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
-              <Link href="/catalogue">
-                View Full Catalogue <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
+        ))}
+      </div>
 
-      {/* UltiGlow Skincare Brand */}
-      <section className="py-20 bg-white">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium mb-4" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              <Sparkles className="w-4 h-4" />
-              UltiGlow™ Skincare
-            </div>
-            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-2">
-              Ultimate Glow
-            </h2>
-            <p className="text-xl mb-4" style={{ color: '#A1BA80' }}>UltiGlow™</p>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Premium skincare powered by biosynthesis technology
-            </p>
-            <div className="mt-4 inline-block px-4 py-2 rounded-full text-sm" style={{ backgroundColor: '#d7e1c7', color: '#6e8956' }}>
-              57 Products across 12 Function Categories
-            </div>
-          </div>
-          
-          {/* UltiGlow Series Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            {ultiGlowCategories.map((category, index) => (
-              <Link key={index} href={`/products/ultiglow#${category.title.toLowerCase().replace(/\s+/g, '-')}`}>
-                <Card className="border border-gray-200 hover:shadow-lg transition-all duration-300 group h-full cursor-pointer">
-                  <CardContent className="p-5">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center mb-3" style={{ backgroundColor: '#d7e1c7' }}>
-                      <category.icon className="w-5 h-5" style={{ color: '#A1BA80' }} />
-                    </div>
-                    <h3 className="font-normal text-gray-900 mb-1 group-hover:text-green-700 transition-colors">{category.title}</h3>
-                    <p className="text-xs text-gray-500 mt-2">{category.count} Products</p>
-                  </CardContent>
-                </Card>
-              </Link>
-            ))}
-          </div>
-          
-          <div className="text-center mt-12">
-            <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-              <Link href="/products/ultiglow">
-                Explore UltiGlow™ <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
-      </section>
-
-      {/* Ordering Info */}
-      <section className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-normal text-gray-900 mb-4">
-              Ordering Information
-            </h2>
-          </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Sample Requests</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  R&D institutions eligible for ≤100g free samples<br />
-                  Corporate clients: large-size samples available
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Bulk Orders</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  MOQ: 500kg for standard products<br />
-                  Lead Time: 7-15 working days<br />
-                  Custom Products: 30-90 working days
-                </p>
-              </CardContent>
-            </Card>
-            <Card className="border-0 shadow-lg">
-              <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-normal text-gray-900 mb-4">Global Supply</h3>
-                <p className="text-gray-600 text-sm mb-4">
-                  Export documentation support<br />
-                  Compliance with destination country regulations<br />
-                  Delivery to major global ports
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/hero-lab.jpeg"
-            alt="Laboratory"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/95 to-black/90"></div>
-        </div>
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <h2 className="text-3xl font-normal text-white mb-6">
-            Ready to Get Started?
+      {/* Bottom CTA */}
+      <div className="bg-green-50 py-8">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-xl font-medium text-gray-900 mb-4">
+            Need Help Finding the Right Product?
           </h2>
-          <p className="text-lg text-white/80 mb-8">
-            Contact us to discuss how our products can meet your specific needs.
+          <p className="text-gray-600 mb-6">
+            Our team can help you select the best raw materials for your formulation needs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-              <Link href="/contact">
-                Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+          <div className="flex flex-col sm:flex-row justify-center gap-4">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700">
+              <Beaker className="mr-2 h-5 w-5" />
+              Request Free Sample
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <a href="/api/catalogue-download">
-                <Download className="mr-2 h-4 w-4" />
-                Download Catalogue
-              </a>
+            <Button variant="outline" size="lg">
+              <Download className="mr-2 h-5 w-5" />
+              Download Full Catalog
             </Button>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
