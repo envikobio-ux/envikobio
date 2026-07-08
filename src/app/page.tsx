@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
@@ -10,100 +12,178 @@ import {
   TrendingUp, 
   Award,
   ArrowRight,
-  CheckCircle
+  CheckCircle,
+  FileText,
+  Globe,
+  ShieldCheck,
+  Truck,
+  Sparkles,
+  Heart,
+  Droplets,
+  TestTube,
+  MessageCircle,
+  Download
 } from 'lucide-react';
 
-const stats = [
-  { value: 'UltiWell®', label: 'Brand' },
-  { value: '2023', label: 'Founded' },
-  { value: 'Global', label: 'Global Markets' },
-  { value: '100%', label: 'Quality Commitment' },
-];
-
-const researchAreas = [
+// Product categories by buyer industry (按买家行业分类)
+const productCategories = [
   {
-    icon: Beaker,
-    title: 'Pharmaceutical Biosynthesis',
-    description: 'Developing innovative biosynthesis pathways for producing complex pharmaceutical compounds, reducing costs and environmental impact.',
-    href: '/solutions#pharmaceuticals',
-    image: '/pharma-research.jpeg',
+    icon: Sparkles,
+    title: 'Whitening Raw Materials',
+    subtitle: 'Skin Brightening & Melanin Inhibition',
+    products: ['Alpha Arbutin 99%', 'Tranexamic Acid 99%', 'Kojic Acid 99%', 'Niacinamide 99%', 'Phenylethyl Resorcinol', 'Glutathione'],
+    color: '#F0E6D2',
+    href: '/products?category=whitening',
+  },
+  {
+    icon: Heart,
+    title: 'Anti-aging & Antioxidant',
+    subtitle: 'Wrinkle Reduction & Skin Renewal',
+    products: ['L-Ergothioneine 99.9%', 'Resveratrol 98%', 'Bakuchiol 98%', 'Coenzyme Q10', 'Retinol', 'Equol'],
+    color: '#E8D5C4',
+    href: '/products?category=anti-aging',
+  },
+  {
+    icon: Droplets,
+    title: 'Moisturizing & Repairing',
+    subtitle: 'Barrier Repair & Hydration',
+    products: ['Plant Squalane', 'Alpha Bisabolol 98%', 'Ectoin', 'Hyaluronic Acid', 'Ceramides'],
+    color: '#D7E1C7',
+    href: '/products?category=moisturizing',
   },
   {
     icon: Leaf,
-    title: 'Cosmetic Biosynthesis',
-    description: 'Creating sustainable and natural cosmetic ingredients through biosynthesis, replacing environmentally harmful alternatives.',
-    href: '/solutions#cosmetics',
-    image: '/cosmetic-ingredients.jpeg',
-  },
-  {
-    icon: TrendingUp,
-    title: 'Sustainable Agriculture',
-    description: 'Researching bio-based pesticides and fertilizers to promote sustainable agriculture and minimize environmental damage.',
-    href: '/solutions#agriculture',
-    image: '/agriculture-sustainable.jpeg',
+    title: 'Plant Extracts',
+    subtitle: 'Natural Botanical Actives',
+    products: ['Pomegranate Extract', 'Green Tea Extract', 'Centella Asiatica', 'Aloe Vera', 'Chamomile'],
+    color: '#C5D5B4',
+    href: '/products?category=plant-extracts',
   },
 ];
 
-const technologies = [
+// Featured products (询盘爆款单品)
+const featuredProducts = [
   {
-    icon: Factory,
-    title: 'Advanced Fermentation Technology',
-    description: 'Precise control over biosynthesis processes, optimizing yield and product quality for a wide range of bio-based products.',
+    name: 'L-Ergothioneine 99.9%',
+    cas: '497-33-6',
+    grade: 'Cosmetic Grade',
+    purity: '≥99.9%',
+    description: 'Fermented bioactive antioxidant, high bioavailability for anti-aging formulations',
+    certifications: ['REACH', 'SGS'],
+    href: '/products/ergothioneine',
+    image: '/hero-lab.jpeg',
+  },
+  {
+    name: 'Plant Squalane',
+    cas: '111-01-3',
+    grade: 'Cosmetic Grade',
+    purity: '≥99%',
+    description: '100% plant-derived, excellent skin affinity for deep moisturizing',
+    certifications: ['FDA', 'ECOCERT'],
+    href: '/products/squalane',
     image: '/fermentation-tech.jpeg',
   },
   {
-    icon: Microscope,
-    title: 'High-Resolution Analytics',
-    description: 'State-of-the-art analytical techniques ensuring the purity and efficacy of our biosynthesized products.',
-    image: '/analytics-equipment.jpeg',
-  },
-  {
-    icon: Award,
-    title: 'Metabolic Engineering Expertise',
-    description: 'Optimizing biosynthetic pathways through metabolic engineering to create customized solutions for specific needs.',
-    image: '/hero-lab.jpeg',
+    name: 'Alpha Arbutin 99%',
+    cas: '84380-01-8',
+    grade: 'Cosmetic Grade',
+    purity: '≥99%',
+    description: 'High-purity whitening active, water-soluble with stable performance',
+    certifications: ['REACH', 'SGS'],
+    href: '/products/arbutin',
+    image: '/cosmetic-ingredients.jpeg',
   },
 ];
 
-const features = [
-  'Sustainable Practices: Reducing environmental impact through bio-based solutions',
-  'Improved Health: Developing safer and more effective pharmaceutical products',
-  'Enhanced Agriculture: Creating sustainable and efficient agricultural solutions',
+// Factory capabilities (工厂实力)
+const factoryCapabilities = [
+  { value: '10,000+', label: 'Monthly Capacity (kg)', icon: Factory },
+  { value: 'ISO 9001', label: 'Quality System', icon: Award },
+  { value: 'India & SEA', label: 'Primary Markets', icon: Globe },
+  { value: '48h', label: 'Sample Delivery', icon: Truck },
+];
+
+// Certifications (资质认证)
+const certifications = [
+  { name: 'REACH', desc: 'EU Compliance' },
+  { name: 'SGS', desc: 'Quality Verified' },
+  { name: 'ISO 9001', desc: 'Quality Management' },
+  { name: 'FDA', desc: 'US Standard' },
+];
+
+// Client cases (客户案例)
+const clientCases = [
+  { region: 'India', type: 'Cosmetic Factory', product: 'L-Ergothioneine', feedback: 'Stable batch quality, full customs documents' },
+  { region: 'Vietnam', type: 'Skincare Brand', product: 'Plant Squalane', feedback: 'Fast delivery, competitive pricing' },
+  { region: 'Thailand', type: 'Personal Care', product: 'Alpha Arbutin', feedback: 'Excellent whitening effect in formulations' },
 ];
 
 export default function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 lg:py-20">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
+      {/* Hero Section - 买家利益型首屏 */}
+      <section className="relative bg-gradient-to-b from-gray-50 to-white overflow-hidden">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
+          {/* Trust Bar - 资质认证 */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in-up opacity-0" style={{animationFillMode: 'forwards'}}>
+            {certifications.map((cert, index) => (
+              <div key={index} className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100">
+                <ShieldCheck className="w-4 h-4 text-green-600" />
+                <span className="text-sm font-medium text-gray-700">{cert.name}</span>
+                <span className="text-xs text-gray-500">{cert.desc}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Main Hero Content */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-normal mb-4">
-                <span style={{ color: '#8C8C8C' }}>
-                  Sustainable Future
-                </span>{' '}
-                <span style={{ color: '#A1BA80' }}>
-                  Enviko
-                </span>
+              {/* Value Proposition Title - 买家利益型标题 */}
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium mb-4 leading-tight">
+                <span className="text-gray-800">Cosmetic Grade Bioactive Raw Material</span>
+                <br />
+                <span className="text-gray-600">Full India Customs Documents, Free Sample, SGS/REACH Certified</span>
               </h1>
-              <p className="text-lg text-gray-600 mb-6 max-w-xl animate-fade-in-up delay-200 opacity-0" style={{animationFillMode: 'forwards'}}>
-                Enviko is dedicated to revolutionizing product development through advanced biosynthesis techniques. 
-                We serve pharmaceuticals, cosmetics, food, and agriculture sectors with innovative solutions.
+              
+              {/* Core Advantages - 核心优势 */}
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium">
+                  <CheckCircle className="w-4 h-4" /> High Purity ≥99%
+                </span>
+                <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-lg text-sm font-medium">
+                  <Truck className="w-4 h-4" /> 100kg+ Stock Ready
+                </span>
+                <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-orange-50 text-orange-700 rounded-lg text-sm font-medium">
+                  <Globe className="w-4 h-4" /> India/SEA Customs Support
+                </span>
+                <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-purple-50 text-purple-700 rounded-lg text-sm font-medium">
+                  <Beaker className="w-4 h-4" /> 10-50g Free Sample
+                </span>
+              </div>
+
+              <p className="text-lg text-gray-600 mb-8 max-w-xl">
+                Shanghai Enviko Biotechnology specializes in fermented bioactive ingredients for cosmetic and pharmaceutical applications. 
+                We support India, Southeast Asia, and European markets with complete compliance documents.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 opacity-0" style={{animationFillMode: 'forwards'}}>
-                <Button asChild size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#A1BA80' }}>
-                  <Link href="/about">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+
+              {/* Dual CTA Buttons - 双CTA */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg bg-green-600 hover:bg-green-700">
+                  <Link href="/contact?type=sample">
+                    <Beaker className="mr-2 h-5 w-5" />
+                    Request Free Sample
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg">
-                  <Link href="/solutions">
-                    Our Solutions
+                <Button asChild variant="outline" size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg border-2">
+                  <Link href="/resources">
+                    <Download className="mr-2 h-5 w-5" />
+                    Download COA Package
                   </Link>
                 </Button>
               </div>
             </div>
+
+            {/* Hero Image */}
             <div className="relative animate-fade-in-up delay-400 opacity-0" style={{animationFillMode: 'forwards'}}>
               <div className="aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl animate-float">
                 <Image
@@ -113,69 +193,67 @@ export default function Home() {
                   className="object-cover"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end justify-center pb-6">
-                  <p className="text-white text-lg font-medium text-center px-4">
-                    Pioneering Sustainable Biosynthesis Solutions
-                  </p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end justify-center pb-6">
+                  <div className="text-center px-4">
+                    <p className="text-white text-lg font-medium mb-2">
+                      Fermented Bioactive Raw Materials
+                    </p>
+                    <p className="text-white/80 text-sm">
+                      ISO 9001 Certified Production Facility
+                    </p>
+                  </div>
                 </div>
               </div>
+              
+              {/* Floating WhatsApp Button */}
+              <a 
+                href="https://wa.me/8612345678900" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="absolute bottom-4 right-4 flex items-center gap-2 px-4 py-3 bg-green-500 text-white rounded-full shadow-lg hover:bg-green-600 transition-all hover:scale-105"
+              >
+                <MessageCircle className="w-5 h-5" />
+                <span className="text-sm font-medium">WhatsApp</span>
+              </a>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Product Categories by Industry - 按买家行业分类 */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center animate-fade-in-up opacity-0" style={{animationDelay: `${index * 100 + 500}ms`, animationFillMode: 'forwards'}}>
-                <div className="text-4xl sm:text-5xl font-normal mb-2 transition-all duration-300 hover:scale-110 cursor-default" style={{ color: '#A1BA80' }}>
-                  {stat.value}
-                </div>
-                <div className="text-sm text-gray-600">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Research Areas */}
-      <section className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
-              Our Research Areas
+              Product Categories by Application
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Enviko is dedicated to pioneering research across various domains of biosynthesis, 
-              developing sustainable and efficient solutions for diverse industries.
+              Browse our bioactive raw materials by your formulation needs. Each category links to dedicated product pages.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
-            {researchAreas.map((area, index) => (
-              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
-                <div className="relative h-48 overflow-hidden">
-                  <Image
-                    src={area.image}
-                    alt={area.title}
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                </div>
-                <CardContent className="p-8">
-                  <div className="w-14 h-14 rounded-xl flex items-center justify-center mb-6 -mt-14 relative z-10 border-4 border-white" style={{ backgroundColor: '#d7e1c7' }}>
-                    <area.icon className="w-7 h-7" style={{ color: '#A1BA80' }} />
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {productCategories.map((category, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group cursor-pointer" style={{ backgroundColor: category.color }}>
+                <CardContent className="p-6">
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4 bg-white/80">
+                    <category.icon className="w-6 h-6 text-green-700" />
                   </div>
-                  <h3 className="text-xl font-medium text-gray-900 mb-4">
-                    {area.title}
+                  <h3 className="text-xl font-medium text-gray-900 mb-2">
+                    {category.title}
                   </h3>
-                  <p className="text-gray-600 mb-6">
-                    {area.description}
-                  </p>
-                  <Button asChild variant="link" className="p-0" style={{ color: '#A1BA80' }}>
-                    <Link href={area.href}>
-                      Learn More <ArrowRight className="ml-1 h-4 w-4" />
+                  <p className="text-sm text-gray-600 mb-4">{category.subtitle}</p>
+                  <div className="space-y-1 mb-4">
+                    {category.products.slice(0, 3).map((product, idx) => (
+                      <div key={idx} className="text-sm text-gray-700 flex items-center gap-2">
+                        <CheckCircle className="w-3 h-3 text-green-600" />
+                        {product}
+                      </div>
+                    ))}
+                  </div>
+                  <Button asChild variant="link" className="p-0 text-green-700 font-medium">
+                    <Link href={category.href}>
+                      View All Products <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
                 </CardContent>
@@ -185,127 +263,229 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Technologies */}
-      <section className="py-20 bg-white">
+      {/* Featured Products - 询盘爆款单品 */}
+      <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
+          <div className="text-center mb-12">
             <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
-              Cutting-Edge Technologies
+              Featured High-Demand Products
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We leverage advanced technologies to deliver innovative biosynthesis solutions, 
-              remaining at the forefront of the industry.
+              Top-selling bioactive ingredients for cosmetic formulations. Free samples available.
             </p>
           </div>
+
           <div className="grid md:grid-cols-3 gap-8">
-            {technologies.map((tech, index) => (
-              <div key={index} className="group">
-                <div className="relative h-48 rounded-t-xl overflow-hidden">
+            {featuredProducts.map((product, index) => (
+              <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow overflow-hidden group">
+                <div className="relative h-48 overflow-hidden">
                   <Image
-                    src={tech.image}
-                    alt={tech.title}
+                    src={product.image}
+                    alt={product.name}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
-                  <div className="absolute bottom-4 left-4 w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                    <tech.icon className="w-6 h-6" style={{ color: '#A1BA80' }} />
+                  <div className="absolute top-4 right-4 flex gap-2">
+                    {product.certifications.map((cert, idx) => (
+                      <span key={idx} className="px-2 py-1 bg-white/90 rounded text-xs font-medium text-gray-700">
+                        {cert}
+                      </span>
+                    ))}
                   </div>
                 </div>
-                <div className="bg-gray-50 p-6 rounded-b-xl">
-                  <h3 className="text-xl font-medium text-gray-900 mb-3">
-                    {tech.title}
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-medium text-gray-900 mb-1">
+                    {product.name}
                   </h3>
-                  <p className="text-gray-600 text-sm">
-                    {tech.description}
+                  <p className="text-sm text-gray-500 mb-3">
+                    CAS: {product.cas} | {product.grade}
                   </p>
-                </div>
+                  <div className="flex items-center gap-2 mb-3">
+                    <span className="px-2 py-1 bg-green-50 text-green-700 rounded text-xs font-medium">
+                      Purity: {product.purity}
+                    </span>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4">{product.description}</p>
+                  <div className="flex gap-3">
+                    <Button asChild size="sm" className="bg-green-600 hover:bg-green-700">
+                      <Link href={`${product.href}?action=sample`}>
+                        Free Sample
+                      </Link>
+                    </Button>
+                    <Button asChild variant="outline" size="sm">
+                      <Link href={product.href}>
+                        Details
+                      </Link>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild size="lg" variant="outline" className="border-2">
+              <Link href="/catalog">
+                View All 564 Products <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Factory Strength Module - 工厂实力信任模块 */}
+      <section className="py-16 bg-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
+              Factory Strength & Production Capabilities
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Fermentation-based production with strict quality control. Full export compliance for India, Southeast Asia, and Europe.
+            </p>
+          </div>
+
+          {/* Capabilities Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            {factoryCapabilities.map((cap, index) => (
+              <div key={index} className="text-center p-6 bg-gray-50 rounded-xl">
+                <cap.icon className="w-8 h-8 mx-auto mb-4 text-green-600" />
+                <div className="text-2xl font-medium text-gray-900 mb-2">{cap.value}</div>
+                <div className="text-sm text-gray-600">{cap.label}</div>
               </div>
+            ))}
+          </div>
+
+          {/* Factory Images */}
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="relative aspect-video rounded-xl overflow-hidden">
+              <Image src="/fermentation-tech.jpeg" alt="Fermentation Production Line" fill className="object-cover" />
+              <div className="absolute bottom-4 left-4 px-3 py-2 bg-white/90 rounded-lg">
+                <p className="text-sm font-medium text-gray-800">Fermentation Production Line</p>
+              </div>
+            </div>
+            <div className="relative aspect-video rounded-xl overflow-hidden">
+              <Image src="/analytics-equipment.jpeg" alt="Quality Control Laboratory" fill className="object-cover" />
+              <div className="absolute bottom-4 left-4 px-3 py-2 bg-white/90 rounded-lg">
+                <p className="text-sm font-medium text-gray-800">QC Laboratory</p>
+              </div>
+            </div>
+            <div className="relative aspect-video rounded-xl overflow-hidden">
+              <Image src="/hero-lab.jpeg" alt="Warehouse & Logistics" fill className="object-cover" />
+              <div className="absolute bottom-4 left-4 px-3 py-2 bg-white/90 rounded-lg">
+                <p className="text-sm font-medium text-gray-800">Warehouse & Shipping</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <Button asChild size="lg" className="bg-green-600 hover:bg-green-700">
+              <Link href="/factory">
+                View Factory Details <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Cases - 客户案例 */}
+      <section className="py-16 bg-gray-50">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-4">
+              Client Success Stories
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Trusted by cosmetic factories and skincare brands across India and Southeast Asia.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-6">
+            {clientCases.map((case_, index) => (
+              <Card key={index} className="border-0 shadow-lg">
+                <CardContent className="p-6">
+                  <div className="flex items-center gap-3 mb-4">
+                    <Globe className="w-6 h-6 text-green-600" />
+                    <div>
+                      <p className="font-medium text-gray-900">{case_.region}</p>
+                      <p className="text-sm text-gray-500">{case_.type}</p>
+                    </div>
+                  </div>
+                  <div className="mb-4">
+                    <span className="text-sm text-gray-600">Product: </span>
+                    <span className="text-sm font-medium text-green-700">{case_.product}</span>
+                  </div>
+                  <p className="text-sm text-gray-600 italic">
+                    "{case_.feedback}"
+                  </p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/agriculture-sustainable.jpeg"
-            alt="Sustainable Agriculture"
-            fill
-            className="object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/95 to-black/90"></div>
-        </div>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-medium mb-6" style={{ color: '#A1BA80' }}>
-                Making a Tangible Difference Through Biosynthesis
-              </h2>
-              <p className="text-lg mb-8" style={{ color: '#A1BA80', opacity: 0.85 }}>
-                At Enviko, we are committed to creating a positive impact on global health and sustainability. 
-                Our biosynthesis solutions are designed to address critical challenges.
-              </p>
-              <ul className="space-y-4">
-                {features.map((feature, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <CheckCircle className="w-6 h-6 flex-shrink-0 mt-0.5" style={{ color: '#A1BA80', opacity: 0.7 }} />
-                    <span style={{ color: '#A1BA80', opacity: 0.9 }}>{feature}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="rounded-2xl p-8 border border-white/20" style={{ backgroundColor: '#A1BA80' }}>
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
-                    <Beaker className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-white">Joint Research Programs</h3>
-                    <p className="text-sm text-white/80">Partnering with universities to explore novel pathways</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
-                    <Award className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-white">Technology Licensing</h3>
-                    <p className="text-sm text-white/80">Accessing advanced technologies for production efficiency</p>
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white/30 rounded-lg flex items-center justify-center">
-                    <TrendingUp className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <h3 className="font-medium text-white">Market Expansion</h3>
-                    <p className="text-sm text-white/80">Collaborating with distributors worldwide</p>
-                  </div>
-                </div>
+      {/* Resource Download - 资料留资诱饵 */}
+      <section className="py-16 bg-green-700 text-white">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-center">
+            <FileText className="w-12 h-12 mx-auto mb-6 opacity-80" />
+            <h2 className="text-3xl sm:text-4xl font-medium mb-4">
+              Free Download Resources
+            </h2>
+            <p className="text-lg opacity-90 max-w-2xl mx-auto mb-8">
+              Get comprehensive guides for cosmetic raw material import and formulation.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-4 mb-8">
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 rounded-lg">
+                <FileText className="w-4 h-4" />
+                <span>India Cosmetic Import Guide</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 rounded-lg">
+                <FileText className="w-4 h-4" />
+                <span>Full Product COA & TDS Package</span>
+              </div>
+              <div className="flex items-center gap-2 px-4 py-2 bg-white/20 rounded-lg">
+                <FileText className="w-4 h-4" />
+                <span>SEA Import Compliance Manual</span>
               </div>
             </div>
+
+            <Button asChild size="lg" className="bg-white text-green-700 hover:bg-gray-100">
+              <Link href="/resources">
+                Download Now <Download className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-medium text-gray-900 mb-6">
-            Ready to Partner with Enviko?
-          </h2>
-          <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join us as we continue to pioneer sustainable biotech solutions that transform industries 
-            and contribute to a healthier planet.
-          </p>
-          <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>
-            <Link href="/contact">
-              Get in Touch <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+      {/* Footer CTA - 底部咨询入口 */}
+      <section className="py-12 bg-white border-t">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+            <div>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Ready to Start?</h3>
+              <p className="text-gray-600">Get free samples or download product documents today.</p>
+            </div>
+            <div className="flex gap-4">
+              <Button asChild className="bg-green-600 hover:bg-green-700">
+                <Link href="/contact">
+                  Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </Button>
+              <a 
+                href="https://wa.me/8612345678900" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all"
+              >
+                <MessageCircle className="w-5 h-5" />
+                WhatsApp Us
+              </a>
+            </div>
+          </div>
         </div>
       </section>
     </>

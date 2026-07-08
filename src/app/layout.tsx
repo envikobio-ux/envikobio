@@ -3,6 +3,8 @@ import { Inspector } from 'react-dev-inspector';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import WhatsAppFloat from '@/components/layout/WhatsAppFloat';
+import ExitIntentPopup from '@/components/layout/ExitIntentPopup';
 import { OrganizationJsonLd, LocalBusinessJsonLd, WebsiteJsonLd } from '@/components/seo/JsonLd';
 
 export const metadata: Metadata = {
@@ -89,6 +91,8 @@ export default function RootLayout({
           <main className="flex-grow pt-16">{children}</main>
           <Footer />
         </div>
+        <WhatsAppFloat phoneNumber="8612345678900" />
+        <ExitIntentPopup />
       </body>
     </html>
   );
