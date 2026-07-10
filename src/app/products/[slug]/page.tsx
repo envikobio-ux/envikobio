@@ -27,7 +27,7 @@ import {
   ctaButtons,
   appearanceTypes,
   categoryToScenario,
-  EnvikoProduct,
+  AlvokorProduct,
 } from '@/data/standard-templates';
 
 // Import product data
@@ -53,7 +53,7 @@ export default function StandardProductPage() {
   const params = useParams();
   const slug = params.slug as string;
   
-  const [product, setProduct] = useState<EnvikoProduct | null>(null);
+  const [product, setProduct] = useState<AlvokorProduct | null>(null);
   const [formData, setFormData] = useState({
     company: '',
     email: '',
@@ -64,8 +64,8 @@ export default function StandardProductPage() {
 
   useEffect(() => {
     // Find product by slug
-    const found = (productDataJson as { products: EnvikoProduct[] }).products.find(
-      (p: EnvikoProduct) => p.slug === slug || p.cas.replace('-', '') === slug.split('-')[0]
+    const found = (productDataJson as { products: AlvokorProduct[] }).products.find(
+      (p: AlvokorProduct) => p.slug === slug || p.cas.replace('-', '') === slug.split('-')[0]
     );
     if (found) {
       setProduct(found);

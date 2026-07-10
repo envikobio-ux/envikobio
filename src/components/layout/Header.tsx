@@ -29,7 +29,7 @@ export default function Header() {
               <div className="w-14 h-14 relative flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
                 <Image
                   src="/logo.jpg"
-                  alt="Enviko Biotechnology"
+                  alt="Alvokor Biotechnology"
                   fill
                   className="object-contain"
                 />

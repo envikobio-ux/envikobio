@@ -19,7 +19,7 @@ const articles: Record<string, {
   'eco-friendly-cosmetic-supplier': {
     slug: 'eco-friendly-cosmetic-supplier',
     title: 'The Ultimate Buyer\'s Guide to Eco-Friendly Cosmetic Raw Materials Suppliers',
-    metaTitle: 'Eco-Friendly Cosmetic Raw Materials Supplier | Sustainable Bio-Catalysis | EnvikoBio',
+    metaTitle: 'Eco-Friendly Cosmetic Raw Materials Supplier | Sustainable Bio-Catalysis | AlvokorBio',
     metaDescription: 'Complete guide to sourcing sustainable cosmetic ingredients. Learn about green bio-catalysis, Ecocert/COSMOS certifications, and how to partner with eco-conscious suppliers.',
     category: 'Insights',
     date: '2026-03-29',
@@ -117,13 +117,13 @@ Consider annual contracts, volume commitments, joint development, transparency a
 
 The shift toward eco-friendly cosmetic raw materials is not a trend—it's the future of the entire industry. Brands that embrace sustainable sourcing today will reap the benefits of increased consumer trust, premium pricing power, regulatory compliance, supply chain resilience, and brand differentiation.
 
-EnvikoBio specializes in connecting brands with certified sustainable suppliers. Our professional solution platform delivers direct access to Ecocert/COSMOS/REACH-certified suppliers, 25-40% cost savings vs. European brokers, full regulatory documentation, flexible MOQs, and end-to-end supply chain transparency.
+AlvokorBio specializes in connecting brands with certified sustainable suppliers. Our professional solution platform delivers direct access to Ecocert/COSMOS/REACH-certified suppliers, 25-40% cost savings vs. European brokers, full regulatory documentation, flexible MOQs, and end-to-end supply chain transparency.
     `,
   },
   'cosmetic-peptides-supplier': {
     slug: 'cosmetic-peptides-supplier',
     title: 'The Ultimate Buyer Guide to Active Cosmetic Peptides: Sourcing, Quality, and Regulatory Compliance',
-    metaTitle: 'Cosmetic Peptides Supplier China | FDA DMF Certified | 50+ SKU | EnvikoBio',
+    metaTitle: 'Cosmetic Peptides Supplier China | FDA DMF Certified | 50+ SKU | AlvokorBio',
     metaDescription: 'Complete guide to sourcing cosmetic peptides from China. Learn about FDA DMF certifications, quality standards, and how to choose a reliable peptide supplier.',
     category: 'Insights',
     date: '2026-04-02',
@@ -205,7 +205,7 @@ Source cosmetic peptides with confidence by demanding ≥95% purity, verifying F
   'nag-supplier': {
     slug: 'nag-supplier',
     title: 'NAG Sourcing Manual: Fermentation vs. Crustacean Extraction',
-    metaTitle: 'N-Acetyl Glucosamine Supplier | Shellfish-Free Fermented NAG | EnvikoBio',
+    metaTitle: 'N-Acetyl Glucosamine Supplier | Shellfish-Free Fermented NAG | AlvokorBio',
     metaDescription: 'Complete guide to sourcing N-Acetyl Glucosamine (NAG). Compare fermentation vs. crustacean extraction, quality standards, and top suppliers.',
     category: 'Insights',
     date: '2026-04-05',
@@ -270,7 +270,7 @@ Choose fermentation-derived NAG for 2026 and beyond: superior purity (≥98%), z
   'biosynthesis-food-additives': {
     slug: 'biosynthesis-food-additives',
     title: 'Biosynthesis Food Additives Manufacturer: The Future of Clean-Label Food Production',
-    metaTitle: 'Biosynthesis Food Additives Manufacturer | Reb-M 95% | FDA GRAS | EnvikoBio',
+    metaTitle: 'Biosynthesis Food Additives Manufacturer | Reb-M 95% | FDA GRAS | AlvokorBio',
     metaDescription: 'Complete guide to biosynthetic food additives. Learn about enzymatic conversion, FDA GRAS status, and how to source clean-label ingredients.',
     category: 'Insights',
     date: '2026-04-08',
@@ -336,7 +336,7 @@ The biosynthetic food additives market is poised for explosive growth. Key trend
   'natural-supplement-raw-materials-china': {
     slug: 'natural-supplement-raw-materials-china',
     title: 'Natural Health Supplement Raw Materials: A Complete Sourcing Guide',
-    metaTitle: 'Natural Health Supplement Raw Materials China | USP Certified | Yeast Fermentation | EnvikoBio',
+    metaTitle: 'Natural Health Supplement Raw Materials China | USP Certified | Yeast Fermentation | AlvokorBio',
     metaDescription: 'Complete guide to sourcing natural supplement ingredients from China. Learn about yeast fermentation, USP certifications, and top suppliers for 5-HTP, Resveratrol, and more.',
     category: 'Insights',
     date: '2026-04-12',
@@ -418,7 +418,7 @@ China offers unmatched scale, cost advantage, and advanced fermentation technolo
   'proxylane-green-synthesis': {
     slug: 'proxylane-green-synthesis',
     title: 'Pro-Xylane Supplier China: The Complete Guide to Sourcing High-Purity Anti-Aging Actives',
-    metaTitle: 'Pro-Xylane Supplier China | 98% Purity | Green Enzymatic Synthesis | EnvikoBio',
+    metaTitle: 'Pro-Xylane Supplier China | 98% Purity | Green Enzymatic Synthesis | AlvokorBio',
     metaDescription: 'Complete guide to sourcing Pro-Xylane (Hydroxypropyl Tetrahydropyrantriol) from China. Learn about green enzymatic synthesis, quality standards, and top suppliers.',
     category: 'Insights',
     date: '2026-04-15',
@@ -495,7 +495,7 @@ Pro-Xylane has revolutionized anti-aging skincare. Green enzymatic synthesis mak
   'hyaluronic-acid-sourcing': {
     slug: 'hyaluronic-acid-sourcing',
     title: 'Hyaluronic Acid Sourcing Guide: Fermentation vs. Animal Extraction',
-    metaTitle: 'Hyaluronic Acid Supplier | Fermentation-Derived HA | High Purity | EnvikoBio',
+    metaTitle: 'Hyaluronic Acid Supplier | Fermentation-Derived HA | High Purity | AlvokorBio',
     metaDescription: 'Complete guide to sourcing hyaluronic acid. Compare microbial fermentation vs. animal extraction, quality standards, molecular weights, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-04-18',
@@ -662,7 +662,7 @@ Choose fermentation-derived hyaluronic acid for 2026 and beyond: superior purity
   'bakuchiol-natural-retinol': {
     slug: 'bakuchiol-natural-retinol',
     title: 'Bakuchiol: The Complete Guide to Sourcing the Natural Retinol Alternative',
-    metaTitle: 'Bakuchiol Supplier | Natural Retinol Alternative | Anti-Aging Active | EnvikoBio',
+    metaTitle: 'Bakuchiol Supplier | Natural Retinol Alternative | Anti-Aging Active | AlvokorBio',
     metaDescription: 'Complete guide to sourcing Bakuchiol. Learn about this natural retinol alternative, clinical efficacy, quality standards, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-04-22',
@@ -805,7 +805,7 @@ Bakuchiol offers a compelling natural alternative to retinol with clinical evide
   'collagen-peptides-sourcing': {
     slug: 'collagen-peptides-sourcing',
     title: 'Collagen Peptides Sourcing Guide: Marine vs. Bovine vs. Porcine',
-    metaTitle: 'Collagen Peptides Supplier | Marine Collagen | Bovine Collagen | EnvikoBio',
+    metaTitle: 'Collagen Peptides Supplier | Marine Collagen | Bovine Collagen | AlvokorBio',
     metaDescription: 'Complete guide to sourcing collagen peptides. Compare marine vs. bovine vs. porcine sources, quality standards, molecular weight, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-04-26',
@@ -995,7 +995,7 @@ Verify protein content (≥90%), molecular weight distribution, and source certi
   'ectoin-sourcing': {
     slug: 'ectoin-sourcing',
     title: 'Ectoin Sourcing Guide: The Complete Manual for Anti-Pollution Skin Protection',
-    metaTitle: 'Ectoin Supplier | Anti-Pollution Active | Extremolyte | EnvikoBio',
+    metaTitle: 'Ectoin Supplier | Anti-Pollution Active | Extremolyte | AlvokorBio',
     metaDescription: 'Complete guide to sourcing Ectoin. Learn about this extremolyte ingredient, anti-pollution protection, quality standards, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-05-02',
@@ -1155,7 +1155,7 @@ Ectoin offers unique anti-pollution and barrier protection benefits backed by cl
   'glutathione-sourcing': {
     slug: 'glutathione-sourcing',
     title: 'Glutathione: The Complete Guide to Sourcing the Master Antioxidant',
-    metaTitle: 'Glutathione Supplier | Master Antioxidant | Skin Brightening | EnvikoBio',
+    metaTitle: 'Glutathione Supplier | Master Antioxidant | Skin Brightening | AlvokorBio',
     metaDescription: 'Complete guide to sourcing Glutathione. Compare fermentation vs. chemical synthesis, quality standards, bioavailability, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-05-08',
@@ -1339,7 +1339,7 @@ Glutathione is a powerful antioxidant with growing applications in supplements a
   'nmn-sourcing': {
     slug: 'nmn-sourcing',
     title: 'NMN Sourcing Guide: The Complete Anti-Aging Molecule Manual',
-    metaTitle: 'NMN Supplier | Nicotinamide Mononucleotide | Anti-Aging | EnvikoBio',
+    metaTitle: 'NMN Supplier | Nicotinamide Mononucleotide | Anti-Aging | AlvokorBio',
     metaDescription: 'Complete guide to sourcing NMN. Compare enzymatic vs. chemical synthesis, quality standards, bioavailability, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-05-15',
@@ -1523,7 +1523,7 @@ NMN is a promising anti-aging molecule with growing clinical evidence. Key sourc
   'erythritol-monkfruit-sourcing': {
     slug: 'erythritol-monkfruit-sourcing',
     title: 'Erythritol & Monk Fruit Sweeteners: Complete Sourcing Guide for Natural Sugar Alternatives',
-    metaTitle: 'Erythritol Supplier | Monk Fruit Extract | Natural Sweeteners | EnvikoBio',
+    metaTitle: 'Erythritol Supplier | Monk Fruit Extract | Natural Sweeteners | AlvokorBio',
     metaDescription: 'Complete guide to sourcing erythritol and monk fruit sweeteners. Compare production methods, quality standards, applications, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-05-20',
@@ -1712,7 +1712,7 @@ Source from suppliers offering high purity (≥99% erythritol, standardized mogr
   'algae-omega3-sourcing': {
     slug: 'algae-omega3-sourcing',
     title: 'Algae Omega-3 Sourcing Guide: The Complete Manual for Sustainable DHA & EPA',
-    metaTitle: 'Algae Omega-3 Supplier | Vegan DHA & EPA | Sustainable | EnvikoBio',
+    metaTitle: 'Algae Omega-3 Supplier | Vegan DHA & EPA | Sustainable | AlvokorBio',
     metaDescription: 'Complete guide to sourcing algae omega-3. Compare microalgae vs. fish oil, quality standards, sustainability, and how to choose a reliable supplier.',
     category: 'Insights',
     date: '2026-05-28',
@@ -2079,13 +2079,13 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
           {/* CTA Box */}
           <div className="mt-12 p-8 rounded-lg" style={{ backgroundColor: '#f5f8f0' }}>
             <h3 className="text-xl font-normal text-gray-900 mb-3">Ready to Source Sustainable Ingredients?</h3>
-            <p className="text-gray-600 mb-4">EnvikoBio specializes in connecting brands with certified sustainable suppliers. Get direct access, competitive pricing, and full regulatory documentation.</p>
+            <p className="text-gray-600 mb-4">AlvokorBio specializes in connecting brands with certified sustainable suppliers. Get direct access, competitive pricing, and full regulatory documentation.</p>
             <div className="flex flex-wrap gap-4">
               <a href="/contact" className="inline-flex items-center px-5 py-2 rounded text-white text-sm font-normal transition-colors" style={{ backgroundColor: '#A1BA80' }}>
                 Contact Us
               </a>
-              <a href="mailto:BD@envikobio.com" className="inline-flex items-center px-5 py-2 rounded border text-sm font-normal transition-colors" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
-                BD@envikobio.com
+              <a href="mailto:BD@alvokorbiosolution.com" className="inline-flex items-center px-5 py-2 rounded border text-sm font-normal transition-colors" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
+                BD@alvokorbiosolution.com
               </a>
             </div>
           </div>

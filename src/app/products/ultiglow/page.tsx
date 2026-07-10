@@ -450,7 +450,7 @@ export default function UltiGlowPage() {
             Ready to create your skincare brand?
           </h2>
           <p className="text-lg text-white/80 mb-8">
-            Partner with Enviko for biosynthesis skincare solutions
+            Partner with Alvokor for biosynthesis skincare solutions
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" style={{ backgroundColor: '#A1BA80' }}>

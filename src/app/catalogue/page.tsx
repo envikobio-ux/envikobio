@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Product Catalogue | Enviko Bio',
+  title: 'Product Catalogue | Alvokor Bio',
   description: 'Explore UltiWell® and UltiGlow™ product series - premium biosynthesis-based health supplements and skincare products.',
 };
 
@@ -549,10 +549,10 @@ export default function CataloguePage() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             <a 
-              href="mailto:info@envikobio.com" 
+              href="mailto:info@alvokorbiosolution.com" 
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
             >
-              info@envikobio.com
+              info@alvokorbiosolution.com
             </a>
           </div>
         </div>

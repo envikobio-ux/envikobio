@@ -15,7 +15,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Shop | Enviko Bio',
+  title: 'Shop | Alvokor Bio',
   description: 'Purchase UltiWell® and UltiGlow™ products on ChemicalBook and ECHEMI - Your trusted B2B marketplaces for chemical and ingredient sourcing.',
 };
 

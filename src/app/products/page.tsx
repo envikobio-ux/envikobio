@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import envikoProducts from '@/data/enviko-products-91.json';
 
-interface EnvikoProduct {
+interface AlvokorProduct {
   id: number;
   slug: string;
   cas: string;
@@ -59,8 +59,8 @@ const scenarioLabels: Record<string, string> = {
   'pharmaceutical': 'Pharmaceutical Grade',
 };
 
-export default function EnvikoProductsCatalog() {
-  const products = (envikoProducts as { products: EnvikoProduct[] }).products;
+export default function AlvokorProductsCatalog() {
+  const products = (envikoProducts as { products: AlvokorProduct[] }).products;
   
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedGroup, setSelectedGroup] = useState<string>('all');
@@ -90,7 +90,7 @@ export default function EnvikoProductsCatalog() {
 
   // Group products by category
   const groupedProducts = useMemo(() => {
-    const grouped: Record<string, EnvikoProduct[]> = {};
+    const grouped: Record<string, AlvokorProduct[]> = {};
     filteredProducts.forEach(product => {
       if (!grouped[product.group]) {
         grouped[product.group] = [];
@@ -111,7 +111,7 @@ export default function EnvikoProductsCatalog() {
           </Link>
           
           <h1 className="text-3xl font-medium text-white mb-2">
-            Enviko Product Catalog
+            Alvokor Product Catalog
           </h1>
           <p className="text-green-100 mb-4">
             {products.length} premium raw materials for cosmetic, food, and pharmaceutical applications

@@ -29,14 +29,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     title: metaTitle,
     description: metaDescription,
     keywords: keywordsStr,
-    authors: [{ name: 'Enviko Bio R&D Team' }],
+    authors: [{ name: 'Alvokor Bio R&D Team' }],
     openGraph: {
       type: 'article',
       title: metaTitle,
       description: metaDescription,
       publishedTime: article.date,
       modifiedTime: article.date,
-      authors: ['Enviko Bio R&D Team'],
+      authors: ['Alvokor Bio R&D Team'],
       tags: article.tags,
     },
     twitter: {
@@ -47,7 +47,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     other: {
       'article:published_time': article.date,
       'article:modified_time': article.date,
-      'article:author': 'Enviko Bio R&D Team',
+      'article:author': 'Alvokor Bio R&D Team',
       'article:section': categoryInfo?.name || '',
       'article:tag': article.tags.join(','),
     },

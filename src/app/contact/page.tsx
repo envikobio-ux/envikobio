@@ -11,7 +11,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Enviko Biotechnology for inquiries about our products and solutions.',
+  description: 'Get in touch with Alvokor Biotechnology for inquiries about our products and solutions.',
 };
 
 const contactInfo = [
@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'info@envikobio.com',
-    href: 'mailto:info@envikobio.com',
+    content: 'info@alvokorbiosolution.com',
+    href: 'mailto:info@alvokorbiosolution.com',
   },
   {
     icon: Phone,
@@ -226,7 +226,7 @@ export default function ContactPage() {
               <a href="/faq">View FAQ</a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="mailto:info@envikobio.com">Email Support</a>
+              <a href="mailto:info@alvokorbiosolution.com">Email Support</a>
             </Button>
           </div>
         </div>

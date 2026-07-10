@@ -14,7 +14,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Solutions',
-  description: 'Explore Enviko\'s biosynthesis solutions for pharmaceuticals, cosmetics, and sustainable agriculture.',
+  description: 'Explore Alvokor\'s biosynthesis solutions for pharmaceuticals, cosmetics, and sustainable agriculture.',
 };
 
 const solutions = [
@@ -105,7 +105,7 @@ export default function SolutionsPage() {
               Custom Biosynthesis Solutions
             </h1>
             <p className="text-lg text-gray-600">
-              At Enviko, we leverage advanced technologies to deliver innovative biosynthesis solutions. 
+              At Alvokor, we leverage advanced technologies to deliver innovative biosynthesis solutions. 
               Our commitment to research and development ensures we remain at the forefront of the industry, 
               providing the most efficient and sustainable processes available.
             </p>
@@ -225,7 +225,7 @@ export default function SolutionsPage() {
             Ready to Transform Your Industry?
           </h2>
           <p className="text-lg text-brand-100 mb-8">
-            Partner with Enviko to develop sustainable biosynthesis solutions tailored to your specific needs.
+            Partner with Alvokor to develop sustainable biosynthesis solutions tailored to your specific needs.
           </p>
           <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">

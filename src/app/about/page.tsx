@@ -5,14 +5,14 @@ import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp, FlaskC
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Enviko Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
+  description: 'Learn about Alvokor Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
 };
 
 const timeline = [
   {
     year: '2023.07',
     title: 'Company Founded',
-    description: 'Shanghai Enviko Biotechnology Co., Ltd. was officially established, embarking on an innovative journey integrating biotechnology and nutrition science.',
+    description: 'Shanghai Alvokor Biotechnology Co., Ltd. was officially established, embarking on an innovative journey integrating biotechnology and nutrition science.',
   },
   {
     year: '2023.10',
@@ -85,10 +85,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-              About Enviko
+              About Alvokor
             </h1>
             <p className="text-lg text-gray-600">
-              Shanghai Enviko Biotechnology Co., Ltd. was founded in July 2023, integrating cutting-edge knowledge in bioscience and nutrition.
+              Shanghai Alvokor Biotechnology Co., Ltd. was founded in July 2023, integrating cutting-edge knowledge in bioscience and nutrition.
             </p>
           </div>
         </div>
@@ -135,7 +135,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <p className="text-lg text-gray-600">
-              Enviko's path of growth and innovation
+              Alvokor's path of growth and innovation
             </p>
           </div>
           <div className="relative max-w-4xl mx-auto">

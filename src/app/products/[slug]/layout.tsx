@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   
   if (!product) {
     return {
-      title: 'Product Not Found | Enviko Bio',
+      title: 'Product Not Found | Alvokor Bio',
     };
   }
 

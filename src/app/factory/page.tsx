@@ -22,8 +22,8 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Factory Strength & Production Capabilities | Enviko Bio',
-  description: 'Enviko Biotechnology production facility overview. Fermentation-based bioactive raw material manufacturing with ISO 9001 certification. Monthly capacity 10,000+ kg. Full export compliance for India and Southeast Asia.',
+  title: 'Factory Strength & Production Capabilities | Alvokor Bio',
+  description: 'Alvokor Biotechnology production facility overview. Fermentation-based bioactive raw material manufacturing with ISO 9001 certification. Monthly capacity 10,000+ kg. Full export compliance for India and Southeast Asia.',
 };
 
 // Factory stats
@@ -324,7 +324,7 @@ export default function FactoryPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
             <div>
-              <h3 className="text-xl font-medium text-gray-900 mb-2">Ready to Partner with Enviko?</h3>
+              <h3 className="text-xl font-medium text-gray-900 mb-2">Ready to Partner with Alvokor?</h3>
               <p className="text-gray-600">Contact us for factory audit, sample testing, or bulk partnership.</p>
             </div>
             <div className="flex gap-4">

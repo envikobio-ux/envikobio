@@ -93,23 +93,23 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
     "description": article.excerpt,
     "author": {
       "@type": "Organization",
-      "name": "Enviko Bio R&D Team",
-      "url": "https://www.envikobio.com/about"
+      "name": "Alvokor Bio R&D Team",
+      "url": "https://www.alvokorbiosolution.com/about"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Shanghai Envikobio Biotechnology Co., Ltd.",
-      "url": "https://www.envikobio.com",
+      "name": "Shanghai Alvokorbiosolution Biotechnology Co., Ltd.",
+      "url": "https://www.alvokorbiosolution.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.envikobio.com/logo.jpg"
+        "url": "https://www.alvokorbiosolution.com/logo.jpg"
       }
     },
     "datePublished": publishDate,
     "dateModified": publishDate,
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": `https://www.envikobio.com/tech/${article.slug}`
+      "@id": `https://www.alvokorbiosolution.com/tech/${article.slug}`
     },
     "keywords": article.keywords.join(','),
     "articleSection": categoryInfo?.name || article.category,
@@ -117,8 +117,8 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
     "inLanguage": "en",
     "isPartOf": {
       "@type": "Blog",
-      "name": "Enviko Bio Technical Articles",
-      "url": "https://www.envikobio.com/tech"
+      "name": "Alvokor Bio Technical Articles",
+      "url": "https://www.alvokorbiosolution.com/tech"
     },
     "about": article.tags.map(tag => ({
       "@type": "Thing",
@@ -151,9 +151,9 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Shanghai Envikobio Biotechnology Co., Ltd.",
-    "url": "https://www.envikobio.com",
-    "logo": "https://www.envikobio.com/logo.jpg",
+    "name": "Shanghai Alvokorbiosolution Biotechnology Co., Ltd.",
+    "url": "https://www.alvokorbiosolution.com",
+    "logo": "https://www.alvokorbiosolution.com/logo.jpg",
     "description": "Professional biotechnology company specializing in bioactive raw materials for cosmetic, food, and pharmaceutical applications. Holding FSSC22000, HALAL, KOSHER certifications.",
     "foundingDate": "2023",
     "address": {
@@ -162,8 +162,8 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
       "addressCountry": "CN"
     },
     "sameAs": [
-      "https://www.linkedin.com/company/envikobio",
-      "https://www.echemi.com/company/envikobio"
+      "https://www.linkedin.com/company/alvokorbio",
+      "https://www.echemi.com/company/alvokorbio"
     ],
     "award": [
       "ISO 9001:2015 Certified",

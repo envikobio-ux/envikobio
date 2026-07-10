@@ -1,5 +1,5 @@
 /**
- * Enviko 91款原料独立站单品页标准化模板配置
+ * Alvokor 91款原料独立站单品页标准化模板配置
  * 全站统一素材复用，避免页面割裂
  */
 
@@ -223,7 +223,7 @@ export interface StandardProductPage {
 }
 
 // ==================== 产品数据接口 ====================
-export interface EnvikoProduct {
+export interface AlvokorProduct {
   id: number;
   slug: string;
   cas: string;
@@ -240,4 +240,4 @@ export interface EnvikoProduct {
   shelf_life: string;
 }
 
-export type { StandardProductPage as StandardProductPageType, EnvikoProduct as EnvikoProductType };
+export type { StandardProductPage as StandardProductPageType, AlvokorProduct as AlvokorProductType };

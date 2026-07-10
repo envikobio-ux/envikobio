@@ -9,13 +9,13 @@ import { OrganizationJsonLd, LocalBusinessJsonLd, WebsiteJsonLd } from '@/compon
 
 export const metadata: Metadata = {
   title: {
-    default: 'Enviko Biotechnology | Sustainable Biosynthesis Solutions',
-    template: '%s | Enviko Biotechnology',
+    default: 'Alvokor Biotechnology | Sustainable Biosynthesis Solutions',
+    template: '%s | Alvokor Biotechnology',
   },
   description:
-    'Shanghai Enviko Biotechnology Co., Ltd. - Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture. Located in Shanghai Free Trade Zone, China.',
+    'Shanghai Alvokor Biotechnology Co., Ltd. - Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture. Located in Shanghai Free Trade Zone, China.',
   keywords: [
-    'Enviko Biotechnology',
+    'Alvokor Biotechnology',
     'Biosynthesis',
     'Biotechnology',
     'Shanghai Biotechnology',
@@ -30,24 +30,24 @@ export const metadata: Metadata = {
     'Sustainable Solutions',
     'China Biotechnology',
   ],
-  authors: [{ name: 'Enviko Biotechnology' }],
-  creator: 'Shanghai Enviko Biotechnology Co., Ltd.',
-  publisher: 'Enviko Biotechnology',
+  authors: [{ name: 'Alvokor Biotechnology' }],
+  creator: 'Shanghai Alvokor Biotechnology Co., Ltd.',
+  publisher: 'Alvokor Biotechnology',
   generator: 'Next.js',
   icons: {
     icon: '/favicon.ico',
   },
   openGraph: {
-    title: 'Enviko Biotechnology | Sustainable Biosynthesis Solutions',
+    title: 'Alvokor Biotechnology | Sustainable Biosynthesis Solutions',
     description:
       'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture. Based in Shanghai, China.',
     locale: 'en_US',
     type: 'website',
-    siteName: 'Enviko Biotechnology',
+    siteName: 'Alvokor Biotechnology',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Enviko Biotechnology | Sustainable Biosynthesis Solutions',
+    title: 'Alvokor Biotechnology | Sustainable Biosynthesis Solutions',
     description: 'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
   },
   robots: {
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://www.envikobio.com',
+    canonical: 'https://www.alvokorbiosolution.com',
   },
 };
 

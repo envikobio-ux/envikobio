@@ -162,7 +162,7 @@ export default function Home() {
               </div>
 
               <p className="text-lg text-gray-600 mb-8 max-w-xl">
-                Shanghai Enviko Biotechnology specializes in fermented bioactive ingredients for cosmetic and pharmaceutical applications. 
+                Shanghai Alvokor Biotechnology specializes in fermented bioactive ingredients for cosmetic and pharmaceutical applications. 
                 We support India, Southeast Asia, and European markets with complete compliance documents.
               </p>
 

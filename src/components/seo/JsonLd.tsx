@@ -4,10 +4,10 @@ export function OrganizationJsonLd() {
   const organizationData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Enviko Biotechnology',
-    alternateName: 'Shanghai Enviko Biotechnology Co., Ltd.',
-    url: 'https://www.envikobio.com',
-    logo: 'https://www.envikobio.com/logo.jpg',
+    name: 'Alvokor Biotechnology',
+    alternateName: 'Shanghai Alvokor Biotechnology Co., Ltd.',
+    url: 'https://www.alvokorbiosolution.com',
+    logo: 'https://www.alvokorbiosolution.com/logo.jpg',
     description: 'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture.',
     address: {
       '@type': 'PostalAddress',
@@ -24,7 +24,7 @@ export function OrganizationJsonLd() {
       availableLanguage: ['English', 'Chinese'],
       areaServed: 'Worldwide',
     },
-    email: 'info@envikobio.com',
+    email: 'info@alvokorbiosolution.com',
     sameAs: [],
     foundingDate: '2019',
     industry: 'Biotechnology',
@@ -48,9 +48,9 @@ export function LocalBusinessJsonLd() {
   const localBusinessData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://www.envikobio.com/#local-business',
-    name: 'Enviko Biotechnology',
-    image: 'https://www.envikobio.com/logo.jpg',
+    '@id': 'https://www.alvokorbiosolution.com/#local-business',
+    name: 'Alvokor Biotechnology',
+    image: 'https://www.alvokorbiosolution.com/logo.jpg',
     description: 'Sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
     address: {
       '@type': 'PostalAddress',
@@ -65,9 +65,9 @@ export function LocalBusinessJsonLd() {
       latitude: 31.2304,
       longitude: 121.4737,
     },
-    url: 'https://www.envikobio.com',
+    url: 'https://www.alvokorbiosolution.com',
     telephone: '+86-13918629532',
-    email: 'info@envikobio.com',
+    email: 'info@alvokorbiosolution.com',
     openingHours: 'Mo-Fr 09:00-18:00',
     priceRange: '$$',
     areaServed: {
@@ -93,20 +93,20 @@ export function WebsiteJsonLd() {
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Enviko Biotechnology',
-    url: 'https://www.envikobio.com',
+    name: 'Alvokor Biotechnology',
+    url: 'https://www.alvokorbiosolution.com',
     description: 'Sustainable biosynthesis solutions for a healthier planet',
     publisher: {
       '@type': 'Organization',
-      name: 'Enviko Biotechnology',
+      name: 'Alvokor Biotechnology',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.envikobio.com/logo.jpg',
+        url: 'https://www.alvokorbiosolution.com/logo.jpg',
       },
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.envikobio.com/search?q={search_term_string}',
+      target: 'https://www.alvokorbiosolution.com/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

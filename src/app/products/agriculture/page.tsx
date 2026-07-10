@@ -101,7 +101,7 @@ export default function AgriculturePage() {
                   </Link>
                 </Button>
                 <Button asChild variant="outline" size="lg">
-                  <a href="/Envikobio-Product-Catalogue-2026.pdf" download>
+                  <a href="/Alvokorbiosolution-Product-Catalogue-2026.pdf" download>
                     <Download className="mr-2 h-4 w-4" />
                     Download Catalogue
                   </a>

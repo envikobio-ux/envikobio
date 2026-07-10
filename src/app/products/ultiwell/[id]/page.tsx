@@ -1177,12 +1177,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!product) {
     return {
-      title: 'Product Not Found | UltiWell® | Enviko Bio',
+      title: 'Product Not Found | UltiWell® | Alvokor Bio',
     };
   }
 
   return {
-    title: `${product.name} | UltiWell® | Enviko Bio`,
+    title: `${product.name} | UltiWell® | Alvokor Bio`,
     description: product.fullDescription,
   };
 }

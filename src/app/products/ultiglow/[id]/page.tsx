@@ -1406,12 +1406,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!product) {
     return {
-      title: 'Product Not Found | UltiGlow™ | Enviko Bio',
+      title: 'Product Not Found | UltiGlow™ | Alvokor Bio',
     };
   }
 
   return {
-    title: `${product.name} | UltiGlow™ | Enviko Bio`,
+    title: `${product.name} | UltiGlow™ | Alvokor Bio`,
     description: product.fullDescription,
   };
 }

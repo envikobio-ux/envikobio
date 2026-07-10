@@ -155,7 +155,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: 'Shanghai Enviko Biotechnology Co., Ltd.',
+          text: 'Shanghai Alvokor Biotechnology Co., Ltd.',
           size: 22,
           color: '333333',
         }),
@@ -169,7 +169,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: 'www.envikobio.com | info@envikobio.com',
+          text: 'www.alvokorbiosolution.com | info@alvokorbiosolution.com',
           size: 20,
           color: '666666',
         }),
@@ -300,7 +300,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({ text: 'Email: ', size: 20 }),
-        new TextRun({ text: 'info@envikobio.com', size: 20, color: 'A1BA80' }),
+        new TextRun({ text: 'info@alvokorbiosolution.com', size: 20, color: 'A1BA80' }),
       ],
       spacing: { after: 50 },
     })
@@ -320,7 +320,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({ text: 'Website: ', size: 20 }),
-        new TextRun({ text: 'www.envikobio.com', size: 20, color: 'A1BA80' }),
+        new TextRun({ text: 'www.alvokorbiosolution.com', size: 20, color: 'A1BA80' }),
       ],
       spacing: { after: 50 },
     })
@@ -344,7 +344,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: '© 2026 Enviko Biotechnology. All rights reserved.',
+          text: '© 2026 Alvokor Biotechnology. All rights reserved.',
           size: 18,
           color: '999999',
         }),

@@ -2,10 +2,10 @@
 
 ## 项目概述
 
-**Enviko Bio 企业官网** - 上海Enviko生物技术有限公司官方网站，专注于可持续生物合成解决方案。
+**Alvokor Bio 企业官网** - 上海Alvokor生物技术有限公司官方网站，专注于可持续生物合成解决方案。
 
 ### 公司信息
-- **公司名称**: Shanghai Enviko Biotechnology Co., Ltd. (上海Enviko生物技术有限公司)
+- **公司名称**: Shanghai Alvokor Biotechnology Co., Ltd. (上海Alvokor生物技术有限公司)
 - **核心业务**: 生物合成技术、生物基产品研发
 - **服务领域**: 制药、化妆品、食品、农药、农业
 

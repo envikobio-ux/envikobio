@@ -382,9 +382,9 @@ export default function NewsPage() {
                 Contact Our Team
               </Button>
             </Link>
-            <a href="mailto:BD@envikobio.com">
+            <a href="mailto:BD@alvokorbiosolution.com">
               <Button variant="outline" className="font-normal px-6" style={{ borderColor: '#A1BA80', color: '#A1BA80' }}>
-                BD@envikobio.com
+                BD@alvokorbiosolution.com
               </Button>
             </a>
           </div>

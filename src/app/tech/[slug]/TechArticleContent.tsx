@@ -202,7 +202,7 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
                   EB
                 </div>
                 <div>
-                  <p className="font-medium text-gray-900">Enviko Bio R&D Team</p>
+                  <p className="font-medium text-gray-900">Alvokor Bio R&D Team</p>
                   <p className="text-sm text-gray-600">Specialized in bioactive raw materials technical R&D, 8+ years factory production experience</p>
                   <p className="text-sm text-gray-500 mt-1">Published: {article.date} | Updated: {article.date}</p>
                 </div>
@@ -427,7 +427,7 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600 mb-3">Prefer instant communication?</p>
                 <a 
-                  href="https://wa.me/8613800138000?text=I'm interested in ${article.tags[0]} products from Envikobio."
+                  href="https://wa.me/8613800138000?text=I'm interested in ${article.tags[0]} products from Alvokorbiosolution."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"
@@ -473,8 +473,8 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
               EB
             </div>
             <div>
-              <h4 className="font-bold text-gray-900">Enviko Bio R&D Team</h4>
-              <p className="text-gray-600 text-sm">Shanghai Envikobio Biotechnology Co., Ltd.</p>
+              <h4 className="font-bold text-gray-900">Alvokor Bio R&D Team</h4>
+              <p className="text-gray-600 text-sm">Shanghai Alvokorbiosolution Biotechnology Co., Ltd.</p>
               <p className="text-gray-500 text-sm mt-1">Specialized in rare sugar & bioactive raw materials technical R&D, 8+ years factory production experience, holding FSSC22000, HALAL, KOSHER full certification.</p>
             </div>
           </div>
@@ -482,7 +482,7 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
           {/* Update Info */}
           <div className="text-center text-gray-500 text-sm">
             <p>Published: {article.date} | Last Updated: {article.date}</p>
-            <p className="mt-2">Enviko Bio provides high-quality bioactive raw materials for cosmetic, food, and pharmaceutical applications.</p>
+            <p className="mt-2">Alvokor Bio provides high-quality bioactive raw materials for cosmetic, food, and pharmaceutical applications.</p>
             <p className="mt-2">
               <Link href="/about" className="text-blue-600 hover:underline">About Us</Link>
               <span className="mx-2">|</span>
