@@ -25,7 +25,7 @@ import {
   Download
 } from 'lucide-react';
 
-// Product categories by buyer industry (按买家行业分类)
+// Product categories by buyer industry (by buyer industry)
 const productCategories = [
   {
     icon: Sparkles,
@@ -61,7 +61,7 @@ const productCategories = [
   },
 ];
 
-// Featured products (询盘爆款单品)
+// Featured products (top inquiry products)
 const featuredProducts = [
   {
     name: 'L-Ergothioneine 99.9%',
@@ -95,7 +95,7 @@ const featuredProducts = [
   },
 ];
 
-// Factory capabilities (工厂实力)
+// Factory capabilities (factory strength)
 const factoryCapabilities = [
   { value: '10,000+', label: 'Monthly Capacity (kg)', icon: Factory },
   { value: 'ISO 9001', label: 'Quality System', icon: Award },
@@ -103,7 +103,7 @@ const factoryCapabilities = [
   { value: '48h', label: 'Sample Delivery', icon: Truck },
 ];
 
-// Certifications (资质认证)
+// Certifications (certifications)
 const certifications = [
   { name: 'REACH', desc: 'EU Compliance' },
   { name: 'SGS', desc: 'Quality Verified' },
@@ -111,7 +111,7 @@ const certifications = [
   { name: 'FDA', desc: 'US Standard' },
 ];
 
-// Client cases (客户案例)
+// Client cases (client cases)
 const clientCases = [
   { region: 'India', type: 'Cosmetic Factory', product: 'L-Ergothioneine', feedback: 'Stable batch quality, full customs documents' },
   { region: 'Vietnam', type: 'Skincare Brand', product: 'Plant Squalane', feedback: 'Fast delivery, competitive pricing' },
@@ -121,10 +121,10 @@ const clientCases = [
 export default function Home() {
   return (
     <>
-      {/* Hero Section - 买家利益型首屏 */}
+      {/* Hero Section - buyer-benefit hero section */}
       <section className="relative bg-gradient-to-b from-gray-50 to-white overflow-hidden">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
-          {/* Trust Bar - 资质认证 */}
+          {/* Trust Bar - certifications */}
           <div className="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in-up opacity-0" style={{animationFillMode: 'forwards'}}>
             {certifications.map((cert, index) => (
               <div key={index} className="flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm border border-gray-100">
@@ -145,7 +145,7 @@ export default function Home() {
                 <span className="text-gray-600">Full India Customs Documents, Free Sample, SGS/REACH Certified</span>
               </h1>
               
-              {/* Core Advantages - 核心优势 */}
+              {/* Core Advantages - core advantages */}
               <div className="flex flex-wrap gap-3 mb-6">
                 <span className="inline-flex items-center gap-1 px-3 py-1.5 bg-green-50 text-green-700 rounded-lg text-sm font-medium">
                   <CheckCircle className="w-4 h-4" /> High Purity ≥99%
@@ -166,7 +166,7 @@ export default function Home() {
                 We support India, Southeast Asia, and European markets with complete compliance documents.
               </p>
 
-              {/* Dual CTA Buttons - 双CTA */}
+              {/* Dual CTA Buttons - dual CTA */}
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="transition-all duration-300 hover:scale-105 hover:shadow-lg bg-green-600 hover:bg-green-700">
                   <Link href="/contact?type=sample">
@@ -220,7 +220,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Product Categories by Industry - 按买家行业分类 */}
+      {/* Product Categories by Industry - by buyer industry */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -263,7 +263,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products - 询盘爆款单品 */}
+      {/* Featured Products - top inquiry products */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -333,7 +333,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Factory Strength Module - 工厂实力信任模块 */}
+      {/* Factory Strength Module - factory strength信任模块 */}
       <section className="py-16 bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -388,7 +388,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client Cases - 客户案例 */}
+      {/* Client Cases - client cases */}
       <section className="py-16 bg-gray-50">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -425,7 +425,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Resource Download - 资料留资诱饵 */}
+      {/* Resource Download - resource download lead magnet */}
       <section className="py-16 bg-green-700 text-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center">
@@ -461,7 +461,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer CTA - 底部咨询入口 */}
+      {/* Footer CTA - footer CTA */}
       <section className="py-12 bg-white border-t">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-6">

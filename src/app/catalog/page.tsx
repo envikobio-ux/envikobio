@@ -60,7 +60,7 @@ export default function CatalogPage() {
 
   const products: Product[] = productsData.products;
 
-  // 筛选产品
+  // filter products
   const filteredProducts = useMemo(() => {
     return products.filter((product) => {
       const matchesSearch =
@@ -72,14 +72,14 @@ export default function CatalogPage() {
     });
   }, [searchQuery, selectedGroup]);
 
-  // 分页
+  // pagination
   const totalPages = Math.ceil(filteredProducts.length / itemsPerPage);
   const paginatedProducts = filteredProducts.slice(
     (currentPage - 1) * itemsPerPage,
     currentPage * itemsPerPage
   );
 
-  // 重置页码当筛选条件改变
+  // reset page when filters change
   const handleSearchChange = (value: string) => {
     setSearchQuery(value);
     setCurrentPage(1);
