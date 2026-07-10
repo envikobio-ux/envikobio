@@ -98,7 +98,7 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Shanghai Alvokorbiosolution Biotechnology Co., Ltd.",
+      "name": "Shanghai Alvokor Biotechnology Co., Ltd.",
       "url": "https://www.alvokorbiosolution.com",
       "logo": {
         "@type": "ImageObject",
@@ -151,7 +151,7 @@ export default function ArticleSchema({ article, categoryInfo }: { article: Arti
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "Shanghai Alvokorbiosolution Biotechnology Co., Ltd.",
+    "name": "Shanghai Alvokor Biotechnology Co., Ltd.",
     "url": "https://www.alvokorbiosolution.com",
     "logo": "https://www.alvokorbiosolution.com/logo.jpg",
     "description": "Professional biotechnology company specializing in bioactive raw materials for cosmetic, food, and pharmaceutical applications. Holding FSSC22000, HALAL, KOSHER certifications.",

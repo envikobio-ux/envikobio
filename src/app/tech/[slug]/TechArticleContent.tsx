@@ -474,7 +474,7 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
             </div>
             <div>
               <h4 className="font-bold text-gray-900">Alvokor Bio R&D Team</h4>
-              <p className="text-gray-600 text-sm">Shanghai Alvokorbiosolution Biotechnology Co., Ltd.</p>
+              <p className="text-gray-600 text-sm">Shanghai Alvokor Biotechnology Co., Ltd.</p>
               <p className="text-gray-500 text-sm mt-1">Specialized in rare sugar & bioactive raw materials technical R&D, 8+ years factory production experience, holding FSSC22000, HALAL, KOSHER full certification.</p>
             </div>
           </div>
