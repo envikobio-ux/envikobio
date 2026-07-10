@@ -169,7 +169,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: 'www.alvokorbiosolution.com | info@alvokorbiosolution.com',
+          text: 'www.alvokorbiosolution.com | info@alvokorbio.com',
           size: 20,
           color: '666666',
         }),
@@ -300,7 +300,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({ text: 'Email: ', size: 20 }),
-        new TextRun({ text: 'info@alvokorbiosolution.com', size: 20, color: 'A1BA80' }),
+        new TextRun({ text: 'info@alvokorbio.com', size: 20, color: 'A1BA80' }),
       ],
       spacing: { after: 50 },
     })

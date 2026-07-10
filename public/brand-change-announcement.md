@@ -21,7 +21,7 @@ This change reflects our commitment to building a stronger, more recognizable gl
 | **Company Name (English)** | Shanghai Enviko Biotechnology Co., Ltd. | Shanghai Alvokor Biotechnology Co., Ltd. |
 | **Brand Name** | Envikobio | Alvokorbio |
 | **Website** | www.envikobio.com | www.alvokorbiosolution.com |
-| **Email Domain** | @envikobio.com | @alvokorbiosolution.com |
+| **Email Domain** | @envikobio.com | @alvokorbio.com |
 
 ---
 
@@ -41,8 +41,8 @@ This change reflects our commitment to building a stronger, more recognizable gl
 
 1. **Update your records** with our new company name and contact information
 2. **Redirect future correspondence** to our new email addresses:
-   - General inquiries: info@alvokorbiosolution.com
-   - Business development: BD@alvokorbiosolution.com
+   - General inquiries: info@alvokorbio.com
+   - Business development: BD@alvokorbio.com
 3. **Update payment details** for future transactions (official invoices will reflect the new name)
 4. **Visit our new website**: www.alvokorbiosolution.com
 
@@ -54,7 +54,9 @@ All official documents including COA, TDS, MSDS, and certification files will no
 
 ## Transition Period
 
-During the transition period (July 10, 2026 - September 30, 2026):
+**新旧交替过渡时间为3个月（July 10, 2026 - October 10, 2026）**
+
+During this 3-month transition period:
 
 - Both old and new contact channels will remain active
 - Old website (www.envikobio.com) will redirect to the new website
@@ -68,7 +70,7 @@ During the transition period (July 10, 2026 - September 30, 2026):
 **Shanghai Alvokor Biotechnology Co., Ltd.**
 
 - **Website**: www.alvokorbiosolution.com
-- **Email**: info@alvokorbiosolution.com
+- **Email**: info@alvokorbio.com
 - **Phone**: +86-21-5XXX-XXXX
 - **Address**: [Company Address, Shanghai, China]
 
@@ -83,7 +85,7 @@ During the transition period (July 10, 2026 - September 30, 2026):
 
 We sincerely appreciate your continued trust and partnership during this transition. This name change marks an exciting new chapter in our company's growth, and we remain fully committed to serving you with the same excellence and dedication.
 
-If you have any questions regarding this change, please do not hesitate to contact us at info@alvokorbiosolution.com.
+If you have any questions regarding this change, please do not hesitate to contact us at info@alvokorbio.com.
 
 ---
 
@@ -101,7 +103,7 @@ We're excited to announce our new brand name: **Alvokorbio**
 Shanghai Enviko Biotechnology Co., Ltd. → Shanghai Alvokor Biotechnology Co., Ltd.
 
 New website: www.alvokorbiosolution.com
-New email: info@alvokorbiosolution.com
+New email: info@alvokorbio.com
 
 Our products, quality, and service remain unchanged. Thank you for your continued support!
 
@@ -126,9 +128,9 @@ Shanghai Enviko Biotechnology Co., Ltd. → Shanghai Alvokor Biotechnology Co., 
 - Our product quality and service standards remain unchanged
 - Please update your records with our new contact information:
   - Website: www.alvokorbiosolution.com
-  - Email: info@alvokorbiosolution.com
+  - Email: info@alvokorbio.com
 
-**During the transition period (July 10 - September 30, 2026):**
+**新旧交替过渡时间为3个月（July 10 - October 10, 2026）：**
 - Our old website and email will remain active and redirect to new channels
 - All shipments and communications will proceed without interruption
 
@@ -139,4 +141,4 @@ Please contact us if you have any questions.
 Best regards,
 
 Shanghai Alvokor Biotechnology Co., Ltd.
-info@alvokorbiosolution.com
+info@alvokorbio.com

@@ -549,10 +549,10 @@ export default function CataloguePage() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             <a 
-              href="mailto:info@alvokorbiosolution.com" 
+              href="mailto:info@alvokorbio.com" 
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
             >
-              info@alvokorbiosolution.com
+              info@alvokorbio.com
             </a>
           </div>
         </div>

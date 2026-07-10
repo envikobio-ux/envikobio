@@ -24,8 +24,8 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'info@alvokorbiosolution.com',
-    href: 'mailto:info@alvokorbiosolution.com',
+    content: 'info@alvokorbio.com',
+    href: 'mailto:info@alvokorbio.com',
   },
   {
     icon: Phone,
@@ -226,7 +226,7 @@ export default function ContactPage() {
               <a href="/faq">View FAQ</a>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <a href="mailto:info@alvokorbiosolution.com">Email Support</a>
+              <a href="mailto:info@alvokorbio.com">Email Support</a>
             </Button>
           </div>
         </div>

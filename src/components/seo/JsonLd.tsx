@@ -24,7 +24,7 @@ export function OrganizationJsonLd() {
       availableLanguage: ['English', 'Chinese'],
       areaServed: 'Worldwide',
     },
-    email: 'info@alvokorbiosolution.com',
+    email: 'info@alvokorbio.com',
     sameAs: [],
     foundingDate: '2019',
     industry: 'Biotechnology',
@@ -67,7 +67,7 @@ export function LocalBusinessJsonLd() {
     },
     url: 'https://www.alvokorbiosolution.com',
     telephone: '+86-13918629532',
-    email: 'info@alvokorbiosolution.com',
+    email: 'info@alvokorbio.com',
     openingHours: 'Mo-Fr 09:00-18:00',
     priceRange: '$$',
     areaServed: {
