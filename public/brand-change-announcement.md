@@ -54,7 +54,7 @@ All official documents including COA, TDS, MSDS, and certification files will no
 
 ## Transition Period
 
-**新旧交替过渡时间为3个月（July 10, 2026 - October 10, 2026）**
+**Transition Period: 3 months (July 10, 2026 - October 10, 2026)**
 
 During this 3-month transition period:
 
@@ -130,7 +130,7 @@ Shanghai Enviko Biotechnology Co., Ltd. → Shanghai Alvokor Biotechnology Co., 
   - Website: www.alvokorbiosolution.com
   - Email: info@alvokorbio.com
 
-**新旧交替过渡时间为3个月（July 10 - October 10, 2026）：**
+**Transition Period (July 10 - October 10, 2026):**
 - Our old website and email will remain active and redirect to new channels
 - All shipments and communications will proceed without interruption
 
