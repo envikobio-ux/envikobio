@@ -27,7 +27,7 @@ const timeline = [
   {
     year: '2025',
     title: 'Global Platform Expansion',
-    description: 'Expanded presence on LinkedIn, Instagram, Facebook, echemi and chemicalbook platforms for global marketing.',
+    description: 'Expanded presence on LinkedIn, Instagram, Facebook, and ECHEMI platforms for global marketing.',
   },
 ];
 
