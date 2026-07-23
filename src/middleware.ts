@@ -1,6 +1,6 @@
+import { NextRequest, NextResponse } from 'next/server';
 import createMiddleware from 'next-intl/middleware';
 import { locales } from './i18n';
-import { NextRequest, NextResponse } from 'next/server';
 
 const intlMiddleware = createMiddleware({
   locales,
@@ -10,33 +10,36 @@ const intlMiddleware = createMiddleware({
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
-  const url = request.nextUrl;
   
-  // Redirect envikobio.com to alvokorbiosolution.com
+  // PRIORITY 1: Redirect envikobio.com to alvokorbiosolution.com (301 permanent)
   if (host.includes('envikobio.com')) {
-    const newUrl = new URL(request.url);
-    newUrl.host = 'www.alvokorbiosolution.com';
-    return NextResponse.redirect(newUrl, 301);
+    const url = request.nextUrl.clone();
+    url.hostname = 'www.alvokorbiosolution.com';
+    url.port = '';
+    const response = NextResponse.redirect(url.toString(), 301);
+    // Add cache control headers
+    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+    return response;
   }
   
-  // Set locale based on domain
+  // PRIORITY 2: Set locale based on domain
   let locale = 'en';
   
-  // Chinese domain
-  if (host.includes('alvokorbiosolution.cn') || host.includes('.cn')) {
+  // Chinese domain → zh
+  if (host.includes('alvokorbiosolution.cn') || host.endsWith('.cn')) {
     locale = 'zh';
   }
   
-  // Create response with locale header
+  // Apply intl middleware
   const response = intlMiddleware(request);
-  response.headers.set('x-locale', locale);
   
-  // Also set cookie for client-side access
-  response.headers.set('Set-Cookie', `NEXT_LOCALE=${locale}; Path=/; SameSite=Lax`);
+  // Set locale headers and cookie
+  response.headers.set('x-locale', locale);
+  response.headers.append('Set-Cookie', `NEXT_LOCALE=${locale}; Path=/; SameSite=Lax`);
   
   return response;
 }
 
 export const config = {
-  matcher: ['/', '/(en|zh)/:path*', '/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };
