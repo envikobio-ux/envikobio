@@ -55,21 +55,25 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Detect locale from domain via cookie (set by middleware)
-  const cookieStore = await cookies();
+  // Detect locale from domain
   const headersList = await headers();
   const host = headersList.get('host') || '';
   
-  // Determine locale from domain or cookie
-  let locale: string;
-  if (host.includes('alvokorbiosolution.cn') || host.includes('.cn')) {
+  // Check cookie first, then domain
+  const cookieStore = await cookies();
+  const cookieLocale = cookieStore.get('NEXT_LOCALE')?.value;
+  
+  // Determine locale: cookie > domain > default
+  let locale: 'en' | 'zh' = 'en';
+  if (cookieLocale && (cookieLocale === 'en' || cookieLocale === 'zh')) {
+    locale = cookieLocale;
+  } else if (host.includes('alvokorbiosolution.cn') || host.endsWith('.cn') || host.includes('.cn:')) {
     locale = 'zh';
-  } else {
-    locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
   }
   
+  // Set locale for next-intl
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
@@ -83,7 +87,7 @@ export default async function RootLayout({
         <WebsiteJsonLd />
       </head>
       <body className="antialiased">
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider messages={messages} locale={locale}>
           <div className="flex flex-col min-h-screen">
             <Header />
             <main className="flex-grow pt-16">{children}</main>

@@ -1,21 +1,24 @@
 import { getRequestConfig } from 'next-intl/server';
-import { headers } from 'next/headers';
+import { headers, cookies } from 'next/headers';
 
 export const locales = ['en', 'zh'] as const;
 export type Locale = (typeof locales)[number];
 
 export default getRequestConfig(async () => {
-  // Get locale from headers (set by middleware based on domain)
   const headersList = await headers();
-  const localeHeader = headersList.get('x-locale');
+  const cookieStore = await cookies();
   
-  // Detect locale from domain
   const host = headersList.get('host') || '';
-  const detectedLocale = localeHeader || 
-    (host.includes('.cn') || host.includes('alvokorbiosolution.cn') ? 'zh' : 'en');
+  const cookieLocale = cookieStore.get('NEXT_LOCALE')?.value;
   
-  // Ensure locale is valid
-  const locale: Locale = (locales.includes(detectedLocale as Locale) ? detectedLocale : 'en') as Locale;
+  // Determine locale: cookie > domain > default
+  let locale: Locale = 'en';
+  
+  if (cookieLocale && (cookieLocale === 'en' || cookieLocale === 'zh')) {
+    locale = cookieLocale;
+  } else if (host.includes('alvokorbiosolution.cn') || host.endsWith('.cn') || host.includes('.cn:')) {
+    locale = 'zh';
+  }
   
   return {
     locale,
