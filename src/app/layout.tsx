@@ -1,14 +1,13 @@
 import { Metadata } from 'next';
-import { notFound } from 'next/navigation';
 import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
-import { locales } from '@/i18n';
-import '../globals.css';
+import { getMessages, setRequestLocale } from 'next-intl/server';
+import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/layout/WhatsAppFloat';
 import ExitIntentPopup from '@/components/layout/ExitIntentPopup';
 import { OrganizationJsonLd, LocalBusinessJsonLd, WebsiteJsonLd } from '@/components/seo/JsonLd';
+import { cookies, headers } from 'next/headers';
 
 export const metadata: Metadata = {
   title: {
@@ -51,25 +50,25 @@ export const metadata: Metadata = {
   },
 };
 
-type Locale = (typeof locales)[number];
-
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
-
-export default async function LocaleLayout({
+export default async function RootLayout({
   children,
-  params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
 }) {
-  const { locale } = await params;
+  // Detect locale from domain via cookie (set by middleware)
+  const cookieStore = await cookies();
+  const headersList = await headers();
+  const host = headersList.get('host') || '';
   
-  if (!locales.includes(locale as Locale)) {
-    notFound();
+  // Determine locale from domain or cookie
+  let locale: string;
+  if (host.includes('alvokorbiosolution.cn') || host.includes('.cn')) {
+    locale = 'zh';
+  } else {
+    locale = cookieStore.get('NEXT_LOCALE')?.value || 'en';
   }
-
+  
+  setRequestLocale(locale);
   const messages = await getMessages();
 
   return (

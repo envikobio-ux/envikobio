@@ -5,38 +5,31 @@ import { NextRequest, NextResponse } from 'next/server';
 const intlMiddleware = createMiddleware({
   locales,
   defaultLocale: 'en',
-  localePrefix: 'always'
+  localePrefix: 'never' // Never add /en or /zh prefix
 });
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
   
-  // Chinese domain → redirect to /zh
-  if (host.includes('alvokorbiosolution.cn')) {
-    const url = request.nextUrl;
-    // If already has locale prefix, continue
-    if (url.pathname.startsWith('/zh') || url.pathname.startsWith('/en')) {
-      return intlMiddleware(request);
-    }
-    // Redirect to Chinese version
-    url.pathname = `/zh${url.pathname === '/' ? '' : url.pathname}`;
-    return NextResponse.redirect(url);
+  // Set locale based on domain
+  let locale = 'en';
+  
+  // Chinese domain
+  if (host.includes('alvokorbiosolution.cn') || host.includes('.cn')) {
+    locale = 'zh';
   }
   
-  // English domain (alvokorbiosolution.com, envikobio.com) → redirect to /en
-  if (host.includes('alvokorbiosolution.com') || host.includes('envikobio.com')) {
-    const url = request.nextUrl;
-    // If already has locale prefix, continue
-    if (url.pathname.startsWith('/zh') || url.pathname.startsWith('/en')) {
-      return intlMiddleware(request);
-    }
-    // Redirect to English version
-    url.pathname = `/en${url.pathname === '/' ? '' : url.pathname}`;
-    return NextResponse.redirect(url);
-  }
+  // English domain (alvokorbiosolution.com, envikobio.com)
+  // default is already 'en'
   
-  // Default: use intl middleware
-  return intlMiddleware(request);
+  // Create response with locale header
+  const response = intlMiddleware(request);
+  response.headers.set('x-locale', locale);
+  
+  // Also set cookie for client-side access
+  response.headers.set('Set-Cookie', `NEXT_LOCALE=${locale}; Path=/; SameSite=Lax`);
+  
+  return response;
 }
 
 export const config = {

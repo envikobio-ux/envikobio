@@ -6,20 +6,15 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
-  Beaker, 
   Leaf, 
-  Microscope, 
-  Factory, 
-  Award,
-  ArrowRight,
+  Sparkles,
+  Heart,
+  Droplets,
   CheckCircle,
   FileText,
   Globe,
   ShieldCheck,
   Truck,
-  Sparkles,
-  Heart,
-  Droplets,
   MessageCircle,
   Download
 } from 'lucide-react';

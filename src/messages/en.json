@@ -15,26 +15,83 @@
     "tech": "Tech Articles",
     "shop": "Shop"
   },
-  "hero": {
-    "title": "Cosmetic Grade Bioactive Raw Material",
-    "subtitle": "Full India Customs Documents, Free Sample, SGS/REACH Certified",
-    "badge1": "High Purity ≥99%",
-    "badge2": "In Stock 100kg+",
-    "badge3": "India/SEA Customs Support",
-    "badge4": "Free Sample 10-50g",
-    "cta1": "Request Free Sample",
-    "cta2": "Download COA Package"
-  },
-  "categories": {
-    "title": "Product Categories by Industry",
-    "whitening": "Whitening Raw Materials",
-    "whiteningDesc": "Alpha-Arbutin, Tranexamic Acid, Kojic Acid, Resveratrol",
-    "antiaging": "Anti-aging & Antioxidant",
-    "antiagingDesc": "L-Ergothioneine, Squalane, Bisabolol, Ectoin",
-    "moisturizing": "Moisturizing & Repair",
-    "moisturizingDesc": "Ceramides, Peptides, Hyaluronic Acid",
-    "plant": "Plant Extracts",
-    "plantDesc": "Pomegranate, Green Tea, Resveratrol, natural antioxidants"
+  "home": {
+    "hero": {
+      "title": "Cosmetic Grade Bioactive Raw Materials",
+      "subtitle": "Full India/SEA Customs Documents, Free Sample, SGS/REACH Certified",
+      "features": {
+        "purity": "High Purity ≥99%",
+        "stock": "In Stock 100kg+",
+        "customs": "India/SEA Customs Support",
+        "sample": "Free Sample 10-50g"
+      },
+      "cta": {
+        "sample": "Request Free Sample",
+        "download": "Download COA Package"
+      }
+    },
+    "categories": {
+      "title": "Product Categories by Industry",
+      "whitening": {
+        "title": "Whitening Raw Materials",
+        "subtitle": "Skin brightening active ingredients"
+      },
+      "antiAging": {
+        "title": "Anti-aging & Antioxidant",
+        "subtitle": "Anti-aging active ingredients"
+      },
+      "moisturizing": {
+        "title": "Moisturizing & Repair",
+        "subtitle": "Hydration and barrier repair"
+      },
+      "plantExtracts": {
+        "title": "Plant Extracts",
+        "subtitle": "Natural bioactive extracts"
+      }
+    },
+    "products": {
+      "arbutin": "Alpha-Arbutin",
+      "tranexamic": "Tranexamic Acid",
+      "kojic": "Kojic Acid",
+      "niacinamide": "Niacinamide",
+      "ergothioneine": "L-Ergothioneine",
+      "resveratrol": "Resveratrol",
+      "bakuchiol": "Bakuchiol",
+      "coenzyme": "Coenzyme Q10",
+      "squalane": "Squalane",
+      "bisabolol": "Bisabolol",
+      "ectoin": "Ectoin",
+      "hyaluronic": "Hyaluronic Acid",
+      "pomegranate": "Pomegranate Extract",
+      "greenTea": "Green Tea Extract",
+      "centella": "Centella Asiatica",
+      "aloe": "Aloe Vera Extract"
+    },
+    "advantages": {
+      "title": "Core Advantages",
+      "purity": {
+        "title": "High Purity",
+        "desc": "≥99% purity, strict QC for every batch"
+      },
+      "stock": {
+        "title": "In Stock",
+        "desc": "100kg+ ready stock, fast delivery"
+      },
+      "customs": {
+        "title": "Customs Support",
+        "desc": "Full documents for India/SEA import"
+      },
+      "sample": {
+        "title": "Free Sample",
+        "desc": "10-50g free sample available"
+      }
+    },
+    "cta": {
+      "title": "Ready to Order?",
+      "subtitle": "Get in touch for samples, pricing, or technical support.",
+      "browse": "Browse Products",
+      "contact": "Contact Us"
+    }
   },
   "certifications": {
     "title": "Quality Certifications",

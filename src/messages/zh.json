@@ -15,26 +15,83 @@
     "tech": "技术文章",
     "shop": "在线商城"
   },
-  "hero": {
-    "title": "化妆品级生物活性原料",
-    "subtitle": "印度/东南亚清关文件齐全，免费样品，REACH/SGS认证",
-    "badge1": "高纯度 ≥99%",
-    "badge2": "现货 100kg+",
-    "badge3": "印度/东南亚清关支持",
-    "badge4": "免费样品 10-50g",
-    "cta1": "申请免费样品",
-    "cta2": "下载COA资质包"
-  },
-  "categories": {
-    "title": "按行业分类产品",
-    "whitening": "美白原料",
-    "whiteningDesc": "α-熊果苷、传明酸、曲酸、白藜芦醇",
-    "antiaging": "抗衰抗氧化",
-    "antiagingDesc": "麦角硫因、角鲨烷、红没药醇、依克多因",
-    "moisturizing": "保湿修复",
-    "moisturizingDesc": "神经酰胺、多肽、透明质酸",
-    "plant": "植物提取物",
-    "plantDesc": "石榴、绿茶、白藜芦醇等天然抗氧化剂"
+  "home": {
+    "hero": {
+      "title": "化妆品级生物活性原料",
+      "subtitle": "印度/东南亚清关文件齐全，免费样品，REACH/SGS认证",
+      "features": {
+        "purity": "高纯度 ≥99%",
+        "stock": "现货 100kg+",
+        "customs": "印度/东南亚清关支持",
+        "sample": "免费样品 10-50g"
+      },
+      "cta": {
+        "sample": "申请免费样品",
+        "download": "下载COA资质包"
+      }
+    },
+    "categories": {
+      "title": "按行业分类产品",
+      "whitening": {
+        "title": "美白原料",
+        "subtitle": "α-熊果苷、传明酸、曲酸、白藜芦醇"
+      },
+      "antiAging": {
+        "title": "抗衰抗氧化",
+        "subtitle": "麦角硫因、角鲨烷、红没药醇、依克多因"
+      },
+      "moisturizing": {
+        "title": "保湿修复",
+        "subtitle": "神经酰胺、多肽、透明质酸"
+      },
+      "plantExtracts": {
+        "title": "植物提取物",
+        "subtitle": "石榴、绿茶、白藜芦醇等天然抗氧化剂"
+      }
+    },
+    "products": {
+      "arbutin": "α-熊果苷",
+      "tranexamic": "传明酸",
+      "kojic": "曲酸",
+      "niacinamide": "烟酰胺",
+      "ergothioneine": "麦角硫因",
+      "resveratrol": "白藜芦醇",
+      "bakuchiol": "补骨脂酚",
+      "coenzyme": "辅酶Q10",
+      "squalane": "角鲨烷",
+      "bisabolol": "红没药醇",
+      "ectoin": "依克多因",
+      "hyaluronic": "透明质酸",
+      "pomegranate": "石榴提取物",
+      "greenTea": "绿茶提取物",
+      "centella": "积雪草提取物",
+      "aloe": "芦荟提取物"
+    },
+    "advantages": {
+      "title": "核心优势",
+      "purity": {
+        "title": "高纯度",
+        "desc": "≥99%纯度，每批次严格质检"
+      },
+      "stock": {
+        "title": "现货供应",
+        "desc": "100kg+现货库存，快速发货"
+      },
+      "customs": {
+        "title": "清关支持",
+        "desc": "印度/东南亚完整清关文件"
+      },
+      "sample": {
+        "title": "免费样品",
+        "desc": "提供10-50g免费样品"
+      }
+    },
+    "cta": {
+      "title": "准备订购？",
+      "subtitle": "联系我们获取样品、报价或技术支持。",
+      "browse": "浏览产品",
+      "contact": "联系我们"
+    }
   },
   "certifications": {
     "title": "质量认证",
