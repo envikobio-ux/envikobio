@@ -138,11 +138,32 @@
   },
   "footer": {
     "company": "上海Alvokor生物技术有限公司",
-    "description": "专业从事化妆品、医药及食品级生物活性原料研发生产。",
-    "quickLinks": "快速链接",
-    "contactUs": "联系我们",
-    "followUs": "关注我们",
-    "rights": "版权所有。"
+    "description": "专注于可持续生物合成解决方案，为地球健康和创新生物基产品开拓前行。",
+    "address": "中国上海市浦东新区自由贸易区嘉丰路20号207-2室",
+    "companyLinks": "公司",
+    "industries": {
+      "title": "行业",
+      "pharmaceuticals": "制药",
+      "cosmetics": "化妆品",
+      "food": "食品与农业"
+    },
+    "newsletter": {
+      "title": "订阅通讯",
+      "desc": "订阅获取最新新闻和动态。",
+      "placeholder": "输入您的邮箱",
+      "subscribe": "订阅",
+      "subscribing": "订阅中...",
+      "success": "感谢您的订阅！"
+    },
+    "nav": {
+      "about": "关于我们",
+      "products": "产品中心",
+      "solutions": "解决方案",
+      "news": "新闻动态"
+    },
+    "rights": "版权所有。",
+    "privacy": "隐私政策",
+    "terms": "服务条款"
   },
   "contact": {
     "title": "联系我们",

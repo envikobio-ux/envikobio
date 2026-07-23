@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 
 const socialLinks = [
   { 
@@ -53,24 +54,25 @@ const socialLinks = [
   },
 ];
 
-const footerNavigation = {
-  company: [
-    { name: 'About Us', href: '/about' },
-    { name: 'Products', href: '/products' },
-    { name: 'Solutions', href: '/solutions' },
-    { name: 'News', href: '/news' },
-  ],
-  industries: [
-    { name: 'Pharmaceuticals', href: '/solutions#pharmaceuticals' },
-    { name: 'Cosmetics', href: '/solutions#cosmetics' },
-    { name: 'Food & Agriculture', href: '/solutions#agriculture' },
-  ],
-};
-
 export default function Footer() {
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubscribed, setIsSubscribed] = useState(false);
+  const t = useTranslations('footer');
+
+  const footerNavigation = {
+    company: [
+      { name: t('nav.about'), href: '/about' },
+      { name: t('nav.products'), href: '/products' },
+      { name: t('nav.solutions'), href: '/solutions' },
+      { name: t('nav.news'), href: '/news' },
+    ],
+    industries: [
+      { name: t('industries.pharmaceuticals'), href: '/solutions#pharmaceuticals' },
+      { name: t('industries.cosmetics'), href: '/solutions#cosmetics' },
+      { name: t('industries.food'), href: '/solutions#agriculture' },
+    ],
+  };
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -91,16 +93,16 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <h3 className="text-xl font-normal text-white tracking-wide">
-                Shanghai Alvokor Biotechnology Co., Ltd.
+                {t('company')}
               </h3>
             </div>
             <p className="text-sm mb-4 max-w-sm" style={{ color: '#D9D9D9' }}>
-              Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.
+              {t('description')}
             </p>
             <div className="space-y-2 text-sm text-white/80">
               <div className="flex items-start gap-2">
                 <MapPin className="h-4 w-4 text-white/60 mt-0.5 flex-shrink-0" />
-                <span>Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China</span>
+                <span>{t('address')}</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-white/60 flex-shrink-0" />
@@ -139,7 +141,7 @@ export default function Footer() {
           {/* Company Links */}
           <div>
             <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
-              Company
+              {t('companyLinks')}
             </h3>
             <ul className="space-y-2">
               {footerNavigation.company.map((item) => (
@@ -158,7 +160,7 @@ export default function Footer() {
           {/* Industries */}
           <div>
             <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
-              Industries
+              {t('industries.title')}
             </h3>
             <ul className="space-y-2">
               {footerNavigation.industries.map((item) => (
@@ -177,14 +179,14 @@ export default function Footer() {
           {/* Newsletter */}
           <div>
             <h3 className="text-sm font-normal text-white uppercase tracking-wider mb-4">
-              Newsletter
+              {t('newsletter.title')}
             </h3>
             <p className="text-sm text-white/80 mb-4">
-              Subscribe to get the latest news and updates.
+              {t('newsletter.desc')}
             </p>
             {isSubscribed ? (
               <div className="bg-white/20 border border-white/30 rounded-lg p-3 text-sm text-white">
-                ✓ Thank you for subscribing!
+                ✓ {t('newsletter.success')}
               </div>
             ) : (
               <form onSubmit={handleSubscribe} className="space-y-3">
@@ -193,7 +195,7 @@ export default function Footer() {
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    placeholder="Enter your email"
+                    placeholder={t('newsletter.placeholder')}
                     required
                     className="w-full px-4 py-2.5 border border-white/30 rounded-lg text-sm text-[#8C8C8C] placeholder-[#8C8C8C]/60 focus:outline-none focus:ring-2 focus:ring-white focus:border-transparent transition-all"
                     style={{ backgroundColor: '#D9D9D9' }}
@@ -206,10 +208,10 @@ export default function Footer() {
                   style={{ backgroundColor: '#A1BA80' }}
                 >
                   {isSubmitting ? (
-                    'Subscribing...'
+                    t('newsletter.subscribing')
                   ) : (
                     <>
-                      Subscribe <Send className="ml-2 h-4 w-4" />
+                      {t('newsletter.subscribe')} <Send className="ml-2 h-4 w-4" />
                     </>
                   )}
                 </Button>
@@ -221,14 +223,14 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white">
-              © {new Date().getFullYear()} Alvokor Biotechnology. All rights reserved.
+              © {new Date().getFullYear()} Alvokor Biotechnology. {t('rights')}
             </p>
             <div className="flex gap-4 text-sm text-white">
               <Link href="/privacy" className="hover:opacity-80 transition-opacity">
-                Privacy Policy
+                {t('privacy')}
               </Link>
               <Link href="/terms" className="hover:opacity-80 transition-opacity">
-                Terms of Service
+                {t('terms')}
               </Link>
             </div>
           </div>

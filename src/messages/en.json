@@ -138,11 +138,32 @@
   },
   "footer": {
     "company": "Shanghai Alvokor Biotechnology Co., Ltd.",
-    "description": "Professional bioactive raw materials manufacturer for cosmetics, pharmaceuticals, and food industries.",
-    "quickLinks": "Quick Links",
-    "contactUs": "Contact Us",
-    "followUs": "Follow Us",
-    "rights": "All rights reserved."
+    "description": "Pioneering sustainable biosynthesis solutions for a healthier planet and innovative bio-based products.",
+    "address": "Room 207-2, No. 20 Jiafeng Road, Shanghai Free Trade Zone, Pudong District, Shanghai, China",
+    "companyLinks": "Company",
+    "industries": {
+      "title": "Industries",
+      "pharmaceuticals": "Pharmaceuticals",
+      "cosmetics": "Cosmetics",
+      "food": "Food & Agriculture"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "desc": "Subscribe to get the latest news and updates.",
+      "placeholder": "Enter your email",
+      "subscribe": "Subscribe",
+      "subscribing": "Subscribing...",
+      "success": "Thank you for subscribing!"
+    },
+    "nav": {
+      "about": "About Us",
+      "products": "Products",
+      "solutions": "Solutions",
+      "news": "News"
+    },
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "contact": {
     "title": "Contact Us",
