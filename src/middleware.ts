@@ -5,11 +5,19 @@ import { NextRequest, NextResponse } from 'next/server';
 const intlMiddleware = createMiddleware({
   locales,
   defaultLocale: 'en',
-  localePrefix: 'never' // Never add /en or /zh prefix
+  localePrefix: 'never'
 });
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
+  const url = request.nextUrl;
+  
+  // Redirect envikobio.com to alvokorbiosolution.com
+  if (host.includes('envikobio.com')) {
+    const newUrl = new URL(request.url);
+    newUrl.host = 'www.alvokorbiosolution.com';
+    return NextResponse.redirect(newUrl, 301);
+  }
   
   // Set locale based on domain
   let locale = 'en';
@@ -18,9 +26,6 @@ export function middleware(request: NextRequest) {
   if (host.includes('alvokorbiosolution.cn') || host.includes('.cn')) {
     locale = 'zh';
   }
-  
-  // English domain (alvokorbiosolution.com, envikobio.com)
-  // default is already 'en'
   
   // Create response with locale header
   const response = intlMiddleware(request);
