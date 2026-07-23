@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "title": "Alvokor Bio | 化妆品及医药原料生产商",
+    "description": "上海Alvokor生物技术有限公司 - 专业从事化妆品、医药及食品级生物活性原料研发生产。REACH、SGS、ISO认证，免费样品。"
+  },
+  "nav": {
+    "home": "首页",
+    "about": "关于我们",
+    "products": "产品中心",
+    "solutions": "解决方案",
+    "news": "新闻动态",
+    "contact": "联系我们",
+    "factory": "工厂实力",
+    "resources": "资料下载",
+    "tech": "技术文章",
+    "shop": "在线商城"
+  },
+  "hero": {
+    "title": "化妆品级生物活性原料",
+    "subtitle": "印度/东南亚清关文件齐全，免费样品，REACH/SGS认证",
+    "badge1": "高纯度 ≥99%",
+    "badge2": "现货 100kg+",
+    "badge3": "印度/东南亚清关支持",
+    "badge4": "免费样品 10-50g",
+    "cta1": "申请免费样品",
+    "cta2": "下载COA资质包"
+  },
+  "categories": {
+    "title": "按行业分类产品",
+    "whitening": "美白原料",
+    "whiteningDesc": "α-熊果苷、传明酸、曲酸、白藜芦醇",
+    "antiaging": "抗衰抗氧化",
+    "antiagingDesc": "麦角硫因、角鲨烷、红没药醇、依克多因",
+    "moisturizing": "保湿修复",
+    "moisturizingDesc": "神经酰胺、多肽、透明质酸",
+    "plant": "植物提取物",
+    "plantDesc": "石榴、绿茶、白藜芦醇等天然抗氧化剂"
+  },
+  "certifications": {
+    "title": "质量认证",
+    "reach": "REACH认证",
+    "sgs": "SGS检测",
+    "iso": "ISO 9001",
+    "fda": "FDA注册"
+  },
+  "factory": {
+    "title": "工厂实力",
+    "subtitle": "月产能10,000+公斤 | 发酵生产线",
+    "capacity": "月产能",
+    "capacityValue": "10,000+ kg",
+    "export": "出口市场",
+    "exportValue": "印度40%、越南25%、泰国15%",
+    "qc": "质量控制",
+    "qcValue": "5步QC流程"
+  },
+  "productDetail": {
+    "parameters": "产品参数",
+    "cas": "CAS号",
+    "purity": "纯度",
+    "appearance": "外观",
+    "packing": "标准包装",
+    "shelfLife": "保质期",
+    "grade": "品级",
+    "advantages": "核心优势",
+    "applications": "应用场景",
+    "documents": "资料下载",
+    "documentsDesc": "一键免费下载：COA、TDS、MSDS、REACH注册、HALAL/KOSHER/FSSC22000认证",
+    "sample": "样品政策",
+    "sampleDesc": "化妆品原料提供10-50g免费样品，客户仅需承担国际快递费用。首次批量订单可全额抵扣运费。",
+    "faq": "常见问题",
+    "faq1q": "样品到印度/东南亚需要几天？",
+    "faq1a": "DHL门到门配送，4-6个工作日。",
+    "faq2q": "可以提供印度进口清关文件吗？",
+    "faq2a": "可以，我们提供商业发票、原产地证、SGS检测报告等清关所需文件。",
+    "faq3q": "最小起订量是多少？",
+    "faq3a": "现货支持1kg试单，批量标准包装20kg/25kg桶装/袋装。",
+    "faq4q": "批次稳定性如何？",
+    "faq4a": "每批次独立实验室全检，提供完整检测记录。",
+    "cta1": "下载完整COA和TDS",
+    "cta2": "申请免费样品"
+  },
+  "footer": {
+    "company": "上海Alvokor生物技术有限公司",
+    "description": "专业从事化妆品、医药及食品级生物活性原料研发生产。",
+    "quickLinks": "快速链接",
+    "contactUs": "联系我们",
+    "followUs": "关注我们",
+    "rights": "版权所有。"
+  },
+  "contact": {
+    "title": "联系我们",
+    "subtitle": "与我们团队取得联系，获取询盘、样品或合作机会。",
+    "name": "您的姓名",
+    "email": "邮箱地址",
+    "company": "公司名称",
+    "message": "留言内容",
+    "submit": "发送消息",
+    "whatsapp": "WhatsApp咨询",
+    "address": "地址",
+    "phone": "电话",
+    "emailLabel": "邮箱"
+  },
+  "about": {
+    "title": "关于Alvokor Bio",
+    "mission": "我们的使命",
+    "missionText": "为全球化妆品、医药及食品行业提供高品质生物活性原料。",
+    "values": "核心价值观",
+    "quality": "质量为先",
+    "qualityText": "每批次严格质量控制",
+    "innovation": "创新驱动",
+    "innovationText": "持续研发投入，打造更优产品",
+    "service": "客户服务",
+    "serviceText": "从询盘到交付的专业支持"
+  }
+}

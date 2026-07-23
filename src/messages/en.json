@@ -1,0 +1,115 @@
+{
+  "metadata": {
+    "title": "Alvokor Bio | Cosmetic & Pharmaceutical Raw Materials Manufacturer",
+    "description": "Shanghai Alvokor Biotechnology Co., Ltd. - Professional bioactive raw materials manufacturer for cosmetics, pharmaceuticals, and food industries. REACH, SGS, ISO certified. Free samples available."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "products": "Products",
+    "solutions": "Solutions",
+    "news": "News",
+    "contact": "Contact",
+    "factory": "Factory",
+    "resources": "Resources",
+    "tech": "Tech Articles",
+    "shop": "Shop"
+  },
+  "hero": {
+    "title": "Cosmetic Grade Bioactive Raw Material",
+    "subtitle": "Full India Customs Documents, Free Sample, SGS/REACH Certified",
+    "badge1": "High Purity ≥99%",
+    "badge2": "In Stock 100kg+",
+    "badge3": "India/SEA Customs Support",
+    "badge4": "Free Sample 10-50g",
+    "cta1": "Request Free Sample",
+    "cta2": "Download COA Package"
+  },
+  "categories": {
+    "title": "Product Categories by Industry",
+    "whitening": "Whitening Raw Materials",
+    "whiteningDesc": "Alpha-Arbutin, Tranexamic Acid, Kojic Acid, Resveratrol",
+    "antiaging": "Anti-aging & Antioxidant",
+    "antiagingDesc": "L-Ergothioneine, Squalane, Bisabolol, Ectoin",
+    "moisturizing": "Moisturizing & Repair",
+    "moisturizingDesc": "Ceramides, Peptides, Hyaluronic Acid",
+    "plant": "Plant Extracts",
+    "plantDesc": "Pomegranate, Green Tea, Resveratrol, natural antioxidants"
+  },
+  "certifications": {
+    "title": "Quality Certifications",
+    "reach": "REACH Certified",
+    "sgs": "SGS Tested",
+    "iso": "ISO 9001",
+    "fda": "FDA Registered"
+  },
+  "factory": {
+    "title": "Factory Strength",
+    "subtitle": "Monthly Capacity 10,000+ kg | Fermentation Production Line",
+    "capacity": "Monthly Capacity",
+    "capacityValue": "10,000+ kg",
+    "export": "Export Markets",
+    "exportValue": "India 40%, Vietnam 25%, Thailand 15%",
+    "qc": "Quality Control",
+    "qcValue": "5-Step QC Process"
+  },
+  "productDetail": {
+    "parameters": "Product Parameters",
+    "cas": "CAS No.",
+    "purity": "Purity",
+    "appearance": "Appearance",
+    "packing": "Standard Packing",
+    "shelfLife": "Shelf Life",
+    "grade": "Grade",
+    "advantages": "Core Advantages",
+    "applications": "Application Scenarios",
+    "documents": "Document Download",
+    "documentsDesc": "Free one-click download: COA, TDS, MSDS, REACH registration, HALAL/KOSHER/FSSC22000",
+    "sample": "Sample Policy",
+    "sampleDesc": "We provide free 10g-50g test samples for cosmetic raw materials. Customers only bear international DHL freight. All courier cost will be fully deducted from your first bulk order.",
+    "faq": "FAQ",
+    "faq1q": "How many days sample delivery to India/SEA?",
+    "faq1a": "DHL delivery 4-6 working days, door to door.",
+    "faq2q": "Can you provide full customs clearance documents for India import?",
+    "faq2a": "Yes, we supply commercial invoice, CO, SGS test report, origin statement as customs demand.",
+    "faq3q": "What's your MOQ?",
+    "faq3a": "In-stock goods support 1kg trial order; bulk standard package 20kg/25kg drum/bag.",
+    "faq4q": "Are your goods stable batch with consistent purity?",
+    "faq4a": "Independent laboratory full inspection for every batch, complete test record provided.",
+    "cta1": "Download Full COA & TDS",
+    "cta2": "Request Free Test Sample"
+  },
+  "footer": {
+    "company": "Shanghai Alvokor Biotechnology Co., Ltd.",
+    "description": "Professional bioactive raw materials manufacturer for cosmetics, pharmaceuticals, and food industries.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "followUs": "Follow Us",
+    "rights": "All rights reserved."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with our team for inquiries, samples, or collaboration opportunities.",
+    "name": "Your Name",
+    "email": "Email Address",
+    "company": "Company Name",
+    "message": "Your Message",
+    "submit": "Send Message",
+    "whatsapp": "Chat on WhatsApp",
+    "address": "Address",
+    "phone": "Phone",
+    "emailLabel": "Email"
+  },
+  "about": {
+    "title": "About Alvokor Bio",
+    "mission": "Our Mission",
+    "missionText": "To provide high-quality bioactive raw materials for cosmetics, pharmaceuticals, and food industries worldwide.",
+    "values": "Core Values",
+    "quality": "Quality First",
+    "qualityText": "Strict quality control for every batch",
+    "innovation": "Innovation Driven",
+    "innovationText": "Continuous R&D investment for better products",
+    "service": "Customer Service",
+    "serviceText": "Professional support from inquiry to delivery"
+  }
+}

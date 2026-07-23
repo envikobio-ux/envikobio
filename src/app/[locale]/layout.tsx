@@ -1,6 +1,9 @@
-import type { Metadata } from 'next';
-import { Inspector } from 'react-dev-inspector';
-import './globals.css';
+import { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
+import { locales } from '@/i18n';
+import '../globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppFloat from '@/components/layout/WhatsAppFloat';
@@ -13,7 +16,7 @@ export const metadata: Metadata = {
     template: '%s | Alvokor Biotechnology',
   },
   description:
-    'Shanghai Alvokor Biotechnology Co., Ltd. - Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture. Located in Shanghai Free Trade Zone, China.',
+    'Shanghai Alvokor Biotechnology Co., Ltd. - Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture.',
   keywords: [
     'Alvokor Biotechnology',
     'Biosynthesis',
@@ -24,57 +27,53 @@ export const metadata: Metadata = {
     'Sustainable Agriculture',
     'Bio-based Products',
     'Green Chemistry',
-    'Biopharmaceuticals',
-    'Bio-cosmetics',
-    'Bio-fertilizers',
-    'Sustainable Solutions',
-    'China Biotechnology',
   ],
   authors: [{ name: 'Alvokor Biotechnology' }],
   creator: 'Shanghai Alvokor Biotechnology Co., Ltd.',
   publisher: 'Alvokor Biotechnology',
-  generator: 'Next.js',
   icons: {
     icon: '/favicon.ico',
   },
   openGraph: {
     title: 'Alvokor Biotechnology | Sustainable Biosynthesis Solutions',
     description:
-      'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture. Based in Shanghai, China.',
+      'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
     locale: 'en_US',
     type: 'website',
     siteName: 'Alvokor Biotechnology',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Alvokor Biotechnology | Sustainable Biosynthesis Solutions',
-    description: 'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
-  },
   robots: {
     index: true,
     follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
   },
   alternates: {
     canonical: 'https://www.alvokorbiosolution.com',
   },
 };
 
-export default function RootLayout({
+type Locale = (typeof locales)[number];
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
+
+export default async function LocaleLayout({
   children,
-}: Readonly<{
+  params,
+}: {
   children: React.ReactNode;
-}>) {
-  const isDev = process.env.COZE_PROJECT_ENV === 'DEV';
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  
+  if (!locales.includes(locale as Locale)) {
+    notFound();
+  }
+
+  const messages = await getMessages();
 
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
         <meta name="geo.region" content="CN-SH" />
         <meta name="geo.placename" content="Shanghai" />
@@ -85,14 +84,15 @@ export default function RootLayout({
         <WebsiteJsonLd />
       </head>
       <body className="antialiased">
-        {isDev && <Inspector />}
-        <div className="flex flex-col min-h-screen">
-          <Header />
-          <main className="flex-grow pt-16">{children}</main>
-          <Footer />
-        </div>
-        <WhatsAppFloat phoneNumber="8612345678900" />
-        <ExitIntentPopup />
+        <NextIntlClientProvider messages={messages}>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-grow pt-16">{children}</main>
+            <Footer />
+          </div>
+          <WhatsAppFloat phoneNumber="8612345678900" />
+          <ExitIntentPopup />
+        </NextIntlClientProvider>
       </body>
     </html>
   );

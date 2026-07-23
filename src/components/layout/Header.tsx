@@ -4,20 +4,23 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X } from 'lucide-react';
-
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
-  { name: 'Products', href: '/catalogue' },
-  { name: 'Shop', href: '/shop' },
-  { name: 'Solutions', href: '/solutions' },
-  { name: 'News', href: '/news' },
-  { name: 'Contact', href: '/contact' },
-];
+import { Menu, X, Globe } from 'lucide-react';
+import { useTranslations } from 'next-intl';
+import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const t = useTranslations('nav');
+
+  const navigation = [
+    { name: t('home'), href: '/' },
+    { name: t('about'), href: '/about' },
+    { name: t('products'), href: '/catalogue' },
+    { name: t('shop'), href: '/shop' },
+    { name: t('solutions'), href: '/solutions' },
+    { name: t('news'), href: '/news' },
+    { name: t('contact'), href: '/contact' },
+  ];
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
@@ -50,10 +53,11 @@ export default function Header() {
             ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button & Language Switcher */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
+            <LanguageSwitcher />
             <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#A1BA80' }}>
-              <Link href="/contact">Get in Touch</Link>
+              <Link href="/contact">{t('getInTouch')}</Link>
             </Button>
           </div>
 
@@ -86,9 +90,10 @@ export default function Header() {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2">
-                <Button asChild className="w-full" style={{ backgroundColor: '#A1BA80' }}>
-                  <Link href="/contact">Get in Touch</Link>
+              <div className="flex items-center gap-2 pt-2">
+                <LanguageSwitcher />
+                <Button asChild className="flex-1" style={{ backgroundColor: '#A1BA80' }}>
+                  <Link href="/contact">{t('getInTouch')}</Link>
                 </Button>
               </div>
             </div>
