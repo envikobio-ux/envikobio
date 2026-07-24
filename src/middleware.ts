@@ -17,18 +17,22 @@ export function middleware(request: NextRequest) {
     url.hostname = 'www.alvokorbiosolution.com';
     url.port = '';
     const response = NextResponse.redirect(url.toString(), 301);
-    // Add cache control headers
     response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
     return response;
   }
   
-  // PRIORITY 2: Set locale based on domain
-  let locale = 'en';
-  
-  // Chinese domain → zh
-  if (host.includes('alvokorbiosolution.cn') || host.endsWith('.cn')) {
-    locale = 'zh';
+  // PRIORITY 2: Redirect alvokorbiosolution.cn to alvokorbiosolution.com (临时关闭中文版)
+  // 备案完成后移除此段代码
+  if (host.includes('alvokorbiosolution.cn')) {
+    const url = request.nextUrl.clone();
+    url.hostname = 'www.alvokorbiosolution.com';
+    url.port = '';
+    const response = NextResponse.redirect(url.toString(), 302);
+    return response;
   }
+  
+  // All domains show English by default
+  const locale = 'en';
   
   // Apply intl middleware
   const response = intlMiddleware(request);

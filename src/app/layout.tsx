@@ -55,21 +55,8 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  // Detect locale from domain
-  const headersList = await headers();
-  const host = headersList.get('host') || '';
-  
-  // Check cookie first, then domain
-  const cookieStore = await cookies();
-  const cookieLocale = cookieStore.get('NEXT_LOCALE')?.value;
-  
-  // Determine locale: cookie > domain > default
-  let locale: 'en' | 'zh' = 'en';
-  if (cookieLocale && (cookieLocale === 'en' || cookieLocale === 'zh')) {
-    locale = cookieLocale;
-  } else if (host.includes('alvokorbiosolution.cn') || host.endsWith('.cn') || host.includes('.cn:')) {
-    locale = 'zh';
-  }
+  // Default to English (中文版暂未开放)
+  const locale: 'en' | 'zh' = 'en';
   
   // Set locale for next-intl
   setRequestLocale(locale);
