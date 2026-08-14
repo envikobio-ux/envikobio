@@ -1,5 +1,5 @@
 ================================================================================
-  Software Name: Enviko Biotechnology Official Website System
+  Software Name: Alvokor Biotechnology Official Website System
   Software Version: V1.0
   Development Complete Date: 2026-04-28
   First Published Date: 2026-04-28
@@ -19,14 +19,14 @@ import { Award, Target, Users, Lightbulb, Beaker, Microscope, TrendingUp, FlaskC
 
 export const metadata: Metadata = {
   title: 'About Us',
-  description: 'Learn about Enviko Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
+  description: 'Learn about Alvokor Biotechnology - a technology company integrating bioscience and nutrition expertise, dedicated to providing high-quality health products.',
 };
 
 const timeline = [
   {
     year: '2023.07',
     title: 'Company Founded',
-    description: 'Shanghai Enviko Biotechnology Co., Ltd. was officially established, embarking on an innovative journey integrating biotechnology and nutrition science.',
+    description: 'Shanghai Alvokor Biotechnology Co., Ltd. was officially established, embarking on an innovative journey integrating biotechnology and nutrition science.',
   },
   {
     year: '2023.10',
@@ -101,10 +101,10 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl sm:text-5xl font-normal text-gray-900 mb-4">
-              About Enviko
+              About Alvokor
             </h1>
             <p className="text-lg text-gray-600">
-              Shanghai Enviko Biotechnology Co., Ltd. was founded in July 2023, integrating cutting-edge knowledge in bioscience and nutrition.
+              Shanghai Alvokor Biotechnology Co., Ltd. was founded in July 2023, integrating cutting-edge knowledge in bioscience and nutrition.
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@ export default function AboutPage() {
               Our Journey
             </h2>
             <p className="text-lg text-gray-600">
-              Enviko's path of growth and innovation
+              Alvokor's path of growth and innovation
             </p>
           </div>
           <div className="relative max-w-4xl mx-auto">
@@ -431,7 +431,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: 'Shanghai Enviko Biotechnology Co., Ltd.',
+          text: 'Shanghai Alvokor Biotechnology Co., Ltd.',
           size: 22,
           color: '333333',
         }),
@@ -445,7 +445,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: 'www.envikobio.com | info@envikobio.com',
+          text: 'www.alvokorbio.com | info@alvokorbio.com',
           size: 20,
           color: '666666',
         }),
@@ -580,7 +580,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({ text: 'Email: ', size: 20 }),
-        new TextRun({ text: 'info@envikobio.com', size: 20, color: 'A1BA80' }),
+        new TextRun({ text: 'info@alvokorbio.com', size: 20, color: 'A1BA80' }),
 
 -------------------- Page 12 --------------------
       ],
@@ -602,7 +602,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({ text: 'Website: ', size: 20 }),
-        new TextRun({ text: 'www.envikobio.com', size: 20, color: 'A1BA80' }),
+        new TextRun({ text: 'www.alvokorbio.com', size: 20, color: 'A1BA80' }),
       ],
       spacing: { after: 50 },
     })
@@ -626,7 +626,7 @@ export async function GET() {
     new Paragraph({
       children: [
         new TextRun({
-          text: '© 2026 Enviko Biotechnology. All rights reserved.',
+          text: '© 2026 Alvokor Biotechnology. All rights reserved.',
           size: 18,
           color: '999999',
         }),
@@ -932,7 +932,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Product Catalogue | Enviko Bio',
+  title: 'Product Catalogue | Alvokor Bio',
   description: 'Explore UltiWell® and UltiGlow™ product series - premium biosynthesis-based health supplements and skincare products.',
 };
 
@@ -1477,10 +1477,10 @@ export default function CataloguePage() {
               <ArrowRight className="ml-2 w-4 h-4" />
             </a>
             <a 
-              href="mailto:info@envikobio.com" 
+              href="mailto:info@alvokorbio.com" 
               className="inline-flex items-center justify-center px-6 py-3 rounded-lg border border-gray-300 text-gray-700 transition-all duration-300 hover:border-gray-400"
             >
-              info@envikobio.com
+              info@alvokorbio.com
             </a>
           </div>
         </div>
@@ -1503,7 +1503,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Contact Us',
-  description: 'Get in touch with Enviko Biotechnology for inquiries about our products and solutions.',
+  description: 'Get in touch with Alvokor Biotechnology for inquiries about our products and solutions.',
 };
 
 const contactInfo = [
@@ -1516,10 +1516,10 @@ const contactInfo = [
   {
     icon: Mail,
     title: 'Email',
-    content: 'info@envikobio.com',
+    content: 'info@alvokorbio.com',
 
 -------------------- Page 30 --------------------
-    href: 'mailto:info@envikobio.com',
+    href: 'mailto:info@alvokorbio.com',
   },
   {
     icon: Phone,
@@ -1762,12 +1762,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   
   if (!product) {
     return {
-      title: 'Product Not Found | UltiWell® | Enviko Bio',
+      title: 'Product Not Found | UltiWell® | Alvokor Bio',
     };
   }
 
   return {
-    title: `${product.name} | UltiWell® | Enviko Bio`,
+    title: `${product.name} | UltiWell® | Alvokor Bio`,
     description: product.fullDescription,
   };
 }
@@ -1991,7 +1991,7 @@ export default function robots(): MetadataRoute.Robots {
 
 -------------------- Page 39 --------------------
     },
-    sitemap: 'https://www.envikobio.com/sitemap.xml',
+    sitemap: 'https://www.alvokorbio.com/sitemap.xml',
   };
 }
 
@@ -2010,7 +2010,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Shop | Enviko Bio',
+  title: 'Shop | Alvokor Bio',
   description: 'Purchase UltiWell® and UltiGlow™ products on ChemicalBook - Your trusted B2B chemical marketplace.',
 };
 
@@ -2262,7 +2262,7 @@ export default function ShopPage() {
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.envikobio.com';
+  const baseUrl = 'https://www.alvokorbio.com';
 
   return [
     {
@@ -2347,7 +2347,7 @@ import {
 
 export const metadata: Metadata = {
   title: 'Solutions',
-  description: 'Explore Enviko\'s biosynthesis solutions for pharmaceuticals, cosmetics, and sustainable agriculture.',
+  description: 'Explore Alvokor\'s biosynthesis solutions for pharmaceuticals, cosmetics, and sustainable agriculture.',
 };
 
 const solutions = [
@@ -2442,7 +2442,7 @@ export default function SolutionsPage() {
               Custom Biosynthesis Solutions
             </h1>
             <p className="text-lg text-gray-600">
-              At Enviko, we leverage advanced technologies to deliver innovative biosynthesis solutions. 
+              At Alvokor, we leverage advanced technologies to deliver innovative biosynthesis solutions. 
               Our commitment to research and development ensures we remain at the forefront of the industry, 
               providing the most efficient and sustainable processes available.
             </p>
@@ -2568,7 +2568,7 @@ export default function SolutionsPage() {
             Ready to Transform Your Industry?
           </h2>
           <p className="text-lg text-brand-100 mb-8">
-            Partner with Enviko to develop sustainable biosynthesis solutions tailored to your specific needs.
+            Partner with Alvokor to develop sustainable biosynthesis solutions tailored to your specific needs.
           </p>
           <Button asChild size="lg" className="bg-white text-brand-600 hover:bg-brand-50">
             <Link href="/contact">
@@ -2592,7 +2592,7 @@ import { Button } from '@/components/ui/button';
 const socialLinks = [
   { 
     name: 'Instagram', 
-    href: 'https://instagram.com/envikobio', 
+    href: 'https://instagram.com/alvokorbio', 
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
@@ -2601,7 +2601,7 @@ const socialLinks = [
   },
   { 
     name: 'Facebook', 
-    href: 'https://facebook.com/envikobio', 
+    href: 'https://facebook.com/alvokorbio', 
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
         <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
@@ -2610,7 +2610,7 @@ const socialLinks = [
   },
   { 
     name: 'LinkedIn', 
-    href: 'https://linkedin.com/company/envikobio', 
+    href: 'https://linkedin.com/company/alvokorbio', 
     icon: (
 
 -------------------- Page 51 --------------------
@@ -2621,7 +2621,7 @@ const socialLinks = [
   },
   { 
     name: 'YouTube', 
-    href: 'https://youtube.com/@envikobio', 
+    href: 'https://youtube.com/@alvokorbio', 
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
@@ -2630,7 +2630,7 @@ const socialLinks = [
   },
   { 
     name: 'TikTok', 
-    href: 'https://tiktok.com/@envikobio', 
+    href: 'https://tiktok.com/@alvokorbio', 
     icon: (
       <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4">
         <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
@@ -2679,7 +2679,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <h3 className="text-xl font-normal text-white tracking-wide">
-                Shanghai Enviko Biotechnology Co., Ltd.
+                Shanghai Alvokor Biotechnology Co., Ltd.
               </h3>
             </div>
             <p className="text-sm mb-4 max-w-sm" style={{ color: '#D9D9D9' }}>
@@ -2692,8 +2692,8 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-white/60 flex-shrink-0" />
-                <a href="mailto:info@envikobio.com" className="hover:text-white transition-colors">
-                  info@envikobio.com
+                <a href="mailto:info@alvokorbio.com" className="hover:text-white transition-colors">
+                  info@alvokorbio.com
                 </a>
               </div>
               <div className="flex items-center gap-2">
@@ -2813,7 +2813,7 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-white">
-              © {new Date().getFullYear()} Enviko Biotechnology. All rights reserved.
+              © {new Date().getFullYear()} Alvokor Biotechnology. All rights reserved.
             </p>
             <div className="flex gap-4 text-sm text-white">
               <Link href="/privacy" className="hover:opacity-80 transition-opacity">
@@ -2864,7 +2864,7 @@ export default function Header() {
               <div className="w-14 h-14 relative flex-shrink-0 transition-all duration-500 group-hover:scale-110 group-hover:rotate-3">
                 <Image
                   src="/logo.jpg"
-                  alt="Enviko Biotechnology"
+                  alt="Alvokor Biotechnology"
                   fill
                   className="object-contain"
                 />
@@ -2945,10 +2945,10 @@ export function OrganizationJsonLd() {
   const organizationData = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Enviko Biotechnology',
-    alternateName: 'Shanghai Enviko Biotechnology Co., Ltd.',
-    url: 'https://www.envikobio.com',
-    logo: 'https://www.envikobio.com/logo.jpg',
+    name: 'Alvokor Biotechnology',
+    alternateName: 'Shanghai Alvokor Biotechnology Co., Ltd.',
+    url: 'https://www.alvokorbio.com',
+    logo: 'https://www.alvokorbio.com/logo.jpg',
     description: 'Leading provider of sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food nutrition, and agriculture.',
     address: {
       '@type': 'PostalAddress',
@@ -2965,7 +2965,7 @@ export function OrganizationJsonLd() {
       availableLanguage: ['English', 'Chinese'],
       areaServed: 'Worldwide',
     },
-    email: 'info@envikobio.com',
+    email: 'info@alvokorbio.com',
     sameAs: [],
     foundingDate: '2019',
     industry: 'Biotechnology',
@@ -2991,9 +2991,9 @@ export function LocalBusinessJsonLd() {
   const localBusinessData = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://www.envikobio.com/#local-business',
-    name: 'Enviko Biotechnology',
-    image: 'https://www.envikobio.com/logo.jpg',
+    '@id': 'https://www.alvokorbio.com/#local-business',
+    name: 'Alvokor Biotechnology',
+    image: 'https://www.alvokorbio.com/logo.jpg',
     description: 'Sustainable biosynthesis solutions for pharmaceuticals, cosmetics, food, and agriculture.',
     address: {
       '@type': 'PostalAddress',
@@ -3008,9 +3008,9 @@ export function LocalBusinessJsonLd() {
       latitude: 31.2304,
       longitude: 121.4737,
     },
-    url: 'https://www.envikobio.com',
+    url: 'https://www.alvokorbio.com',
     telephone: '+86-13918629532',
-    email: 'info@envikobio.com',
+    email: 'info@alvokorbio.com',
     openingHours: 'Mo-Fr 09:00-18:00',
     priceRange: '$$',
     areaServed: {
@@ -3038,20 +3038,20 @@ export function WebsiteJsonLd() {
   const websiteData = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Enviko Biotechnology',
-    url: 'https://www.envikobio.com',
+    name: 'Alvokor Biotechnology',
+    url: 'https://www.alvokorbio.com',
     description: 'Sustainable biosynthesis solutions for a healthier planet',
     publisher: {
       '@type': 'Organization',
-      name: 'Enviko Biotechnology',
+      name: 'Alvokor Biotechnology',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://www.envikobio.com/logo.jpg',
+        url: 'https://www.alvokorbio.com/logo.jpg',
       },
     },
     potentialAction: {
       '@type': 'SearchAction',
-      target: 'https://www.envikobio.com/search?q={search_term_string}',
+      target: 'https://www.alvokorbio.com/search?q={search_term_string}',
       'query-input': 'required name=search_term_string',
     },
   };

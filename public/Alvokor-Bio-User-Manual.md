@@ -1,4 +1,4 @@
-# Enviko Biotechnology Official Website System
+# Alvokor Biotechnology Official Website System
 # User Operation Manual
 # Version: V1.0
 
@@ -19,7 +19,7 @@
 
 ### 1.1 Software Information
 
-- **Software Name**: Enviko Biotechnology Official Website System
+- **Software Name**: Alvokor Biotechnology Official Website System
 - **Software Version**: V1.0
 - **Development Complete Date**: 2026-04-28
 - **First Published Date**: 2026-04-28
@@ -30,7 +30,7 @@
 
 ### 1.2 Software Purpose
 
-Enviko Biotechnology Official Website System is the official web platform for Shanghai Enviko Biotechnology Co., Ltd. The system provides comprehensive corporate information display, product browsing, solution introduction, news publication, and customer contact functions. It serves as the primary digital portal for the company's global B2B business operations.
+Alvokor Biotechnology Official Website System is the official web platform for Shanghai Alvokor Biotechnology Co., Ltd. The system provides comprehensive corporate information display, product browsing, solution introduction, news publication, and customer contact functions. It serves as the primary digital portal for the company's global B2B business operations.
 
 ### 1.3 Main Functions
 
