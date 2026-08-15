@@ -346,7 +346,7 @@ export default function ResourcesPage() {
             Need immediate assistance? Chat with our team directly.
           </p>
           <a 
-            href="https://wa.me/8612345678900?text=Hi, I'm interested in downloading your resources and learning more about your products."
+            href="https://wa.me/8613918629532?text=Hi, I'm interested in downloading your resources and learning more about your products."
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-all hover:scale-105"

@@ -149,7 +149,7 @@ export const ctaButtons = {
   },
   whatsapp: {
     text: 'Chat Via WhatsApp Instantly',
-    phoneNumber: '+8613800138000', // 替换为实际WhatsApp号码
+    phoneNumber: '+8613918629532', // 替换为实际WhatsApp号码
   },
 };
 

@@ -427,7 +427,7 @@ export default function TechArticleContent({ article, relatedArticles, categoryI
               <div className="mt-6 pt-6 border-t border-gray-200">
                 <p className="text-sm text-gray-600 mb-3">Prefer instant communication?</p>
                 <a 
-                  href="https://wa.me/8613800138000?text=I'm interested in ${article.tags[0]} products from Alvokorbiosolution."
+                  href="https://wa.me/8613918629532?text=I'm interested in ${article.tags[0]} products from Alvokorbiosolution."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition"

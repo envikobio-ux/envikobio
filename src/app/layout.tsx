@@ -80,7 +80,7 @@ export default async function RootLayout({
             <main className="flex-grow pt-16">{children}</main>
             <Footer />
           </div>
-          <WhatsAppFloat phoneNumber="8612345678900" />
+          <WhatsAppFloat phoneNumber="8613918629532" />
           <ExitIntentPopup />
         </NextIntlClientProvider>
       </body>
