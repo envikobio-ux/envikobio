@@ -23,7 +23,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-200">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-[#0F4C81]/10">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
@@ -46,7 +46,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-sm font-normal text-gray-600 hover:text-gray-900 transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gray-900 after:transition-all after:duration-300 hover:after:w-full"
+                className="text-sm font-medium text-[#333333] hover:text-[#0F4C81] transition-all duration-300 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-[#0F4C81] after:transition-all after:duration-300 hover:after:w-full"
               >
                 {item.name}
               </Link>
@@ -56,7 +56,7 @@ export default function Header() {
           {/* CTA Button & Language Switcher */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
             <LanguageSwitcher />
-            <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#A1BA80' }}>
+            <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#0F4C81' }}>
               <Link href="/contact">{t('getInTouch')}</Link>
             </Button>
           </div>
@@ -92,7 +92,7 @@ export default function Header() {
               ))}
               <div className="flex items-center gap-2 pt-2">
                 <LanguageSwitcher />
-                <Button asChild className="flex-1" style={{ backgroundColor: '#A1BA80' }}>
+                <Button asChild className="flex-1" style={{ backgroundColor: '#0F4C81' }}>
                   <Link href="/contact">{t('getInTouch')}</Link>
                 </Button>
               </div>
