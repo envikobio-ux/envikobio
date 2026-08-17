@@ -1,7 +1,7 @@
 'use client';
 
 import { useRouter, usePathname } from 'next/navigation';
-import { locales, type Locale } from '@/i18n';
+import { locales, type Locale } from '@/i18n/request';
 
 const languageNames: Record<Locale, string> = {
   en: 'EN',

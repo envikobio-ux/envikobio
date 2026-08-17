@@ -13,7 +13,9 @@
     "factory": "Factory",
     "resources": "Resources",
     "tech": "Tech Articles",
-    "shop": "Shop"
+    "shop": "Shop",
+    "blog": "Blog",
+    "getInTouch": "Get in Touch"
   },
   "home": {
     "hero": {

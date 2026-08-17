@@ -18,6 +18,7 @@ export default function Header() {
     { name: t('products'), href: '/catalogue' },
     { name: t('shop'), href: '/shop' },
     { name: t('solutions'), href: '/solutions' },
+    { name: t('blog'), href: '/blog' },
     { name: t('news'), href: '/news' },
     { name: t('contact'), href: '/contact' },
   ];

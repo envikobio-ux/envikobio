@@ -13,7 +13,9 @@
     "factory": "工厂实力",
     "resources": "资料下载",
     "tech": "技术文章",
-    "shop": "在线商城"
+    "shop": "在线商城",
+    "blog": "博客",
+    "getInTouch": "联系我们"
   },
   "home": {
     "hero": {
