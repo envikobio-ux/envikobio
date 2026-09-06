@@ -4,9 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Menu, X, Globe } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useTranslations } from 'next-intl';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -54,9 +53,8 @@ export default function Header() {
             ))}
           </div>
 
-          {/* CTA Button & Language Switcher */}
+          {/* CTA Button */}
           <div className="hidden md:flex md:items-center md:gap-x-4">
-            <LanguageSwitcher />
             <Button asChild className="transition-all duration-300 hover:scale-105 hover:shadow-lg" style={{ backgroundColor: '#0F4C81' }}>
               <Link href="/contact">{t('getInTouch')}</Link>
             </Button>
@@ -92,7 +90,6 @@ export default function Header() {
                 </Link>
               ))}
               <div className="flex items-center gap-2 pt-2">
-                <LanguageSwitcher />
                 <Button asChild className="flex-1" style={{ backgroundColor: '#0F4C81' }}>
                   <Link href="/contact">{t('getInTouch')}</Link>
                 </Button>

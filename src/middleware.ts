@@ -1,35 +1,29 @@
 import { NextRequest, NextResponse } from 'next/server';
 
-export function middleware(request: NextRequest) {
-  const host = request.headers.get('host') || '';
-  
-  // PRIORITY 1: Redirect envikobio.com to alvokorbiosolution.com (301 permanent)
-  if (host.includes('envikobio.com')) {
-    const url = request.nextUrl.clone();
-    url.hostname = 'www.alvokorbiosolution.com';
-    url.port = '';
-    const response = NextResponse.redirect(url.toString(), 301);
-    response.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
-    return response;
+export default function middleware(request: NextRequest) {
+  const { pathname, hostname } = request.nextUrl;
+
+  // envikobio.com → alvokorbiosolution.com 301 redirect
+  if (hostname === 'envikobio.com' || hostname === 'www.envikobio.com') {
+    return NextResponse.redirect(
+      `https://www.alvokorbiosolution.com${pathname}`,
+      301
+    );
   }
-  
-  // PRIORITY 2: Redirect alvokorbiosolution.cn to alvokorbiosolution.com (临时关闭中文版)
-  if (host.includes('alvokorbiosolution.cn')) {
-    const url = request.nextUrl.clone();
-    url.hostname = 'www.alvokorbiosolution.com';
-    url.port = '';
-    const response = NextResponse.redirect(url.toString(), 302);
-    return response;
-  }
-  
-  // Set locale to English for all requests
+
+  // Set English locale
   const response = NextResponse.next();
-  response.headers.set('x-locale', 'en');
-  response.cookies.set('NEXT_LOCALE', 'en', { path: '/' });
-  
+  response.cookies.set('NEXT_LOCALE', 'en', {
+    path: '/',
+    maxAge: 60 * 60 * 24 * 365,
+    sameSite: 'lax',
+  });
+
   return response;
 }
 
 export const config = {
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: [
+    '/((?!api|_next/static|_next/image|favicon.ico|logo.jpg|.*\\.pdf|.*\\.png|.*\\.svg|.*\\.ico).*)',
+  ],
 };
