@@ -83,7 +83,7 @@ export default function AboutPage() {
               About Alvokor
             </h1>
             <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
-              Shanghai Alvokor Biotechnology Co., Ltd. is a specialized sourcing and supply chain partner 
+              Shanghai Alvokor Biotechnology Co., Ltd. (formerly Enviko Bio) is a specialized sourcing and supply chain partner 
               for high-value biosynthetic ingredients. We collaborate with a network of GMP-certified 
               manufacturing partners across China to deliver premium raw materials for cosmetic, 
               nutraceutical, and feed applications worldwide.

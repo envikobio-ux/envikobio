@@ -225,6 +225,9 @@ export default function Footer() {
             <p className="text-sm text-white">
               © {new Date().getFullYear()} Alvokor Biotechnology. {t('rights')}
             </p>
+            <p className="text-xs text-white/60 mt-1">
+              Formerly Enviko Bio | Shanghai Alvokor Biotechnology Co., Ltd.
+            </p>
             <div className="flex gap-4 text-sm text-white">
               <Link href="/privacy" className="hover:opacity-80 transition-opacity">
                 {t('privacy')}

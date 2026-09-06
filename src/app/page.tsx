@@ -46,8 +46,8 @@ export default function HomePage() {
   const productCategories = [
     {
       icon: Leaf,
-      title: 'Natural Extracts',
-      subtitle: '天然提取物',
+      title: 'Botanicals & Plant Actives',
+      subtitle: 'Plant-Based Bioactives & Extracts',
       products: [
         { name: 'Pomegranate Extract', cas: '84961-57-9' },
         { name: 'Green Tea Extract', cas: '84650-60-2' },
@@ -58,8 +58,8 @@ export default function HomePage() {
     },
     {
       icon: Sparkles,
-      title: 'Cosmetic Peptides',
-      subtitle: '化妆品多肽',
+      title: 'Cosmetic Peptides & Actives',
+      subtitle: 'Skin & Hair Active Ingredients',
       products: [
         { name: 'Acetyl Hexapeptide-8', cas: '616204-22-9' },
         { name: 'Palmitoyl Pentapeptide-4', cas: '214047-00-4' },
@@ -70,8 +70,8 @@ export default function HomePage() {
     },
     {
       icon: Droplets,
-      title: 'Functional Sugars',
-      subtitle: '功能糖/氨基糖',
+      title: 'Functional Sugars & Aminos',
+      subtitle: 'Sugar & Amino Derivatives',
       products: [
         { name: 'N-Acetylglucosamine', cas: '7512-17-6' },
         { name: 'Hyaluronic Acid', cas: '9004-61-9' },
@@ -83,7 +83,7 @@ export default function HomePage() {
     {
       icon: Heart,
       title: 'Food & Feed Additives',
-      subtitle: '食品饲料添加剂',
+      subtitle: 'Nutritional & Feed Grade Ingredients',
       products: [
         { name: 'L-Arginine', cas: '74-79-3' },
         { name: 'L-Glutamine', cas: '56-85-9' },
@@ -136,6 +136,13 @@ export default function HomePage() {
               <span className="flex items-center gap-1"><CheckCircle2 className="w-3.5 h-3.5 text-green-400" /> FDA GRAS</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-3.5 h-3.5 text-green-400" /> ISO 22000</span>
               <span className="flex items-center gap-1"><CheckCircle2 className="w-3.5 h-3.5 text-green-400" /> Kosher &amp; Halal</span>
+            </div>
+
+            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm text-white/80">
+              <span className="flex items-center gap-1.5"><Mail className="w-4 h-4" /> info@alvokorbio.com</span>
+              <span className="flex items-center gap-1.5"><MessageCircle className="w-4 h-4" /> +86 13918629532</span>
+              <span className="text-white/50">|</span>
+              <span className="text-white/60 italic">Formerly Enviko Bio</span>
             </div>
           </div>
         </div>

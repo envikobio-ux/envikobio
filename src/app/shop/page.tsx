@@ -319,6 +319,16 @@ export default function ShopPage() {
           </div>
         </div>
       </section>
+
+      {/* Brand Transition Notice */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+        <div className="p-4 bg-amber-50 border border-amber-200 rounded-lg text-center">
+          <p className="text-sm text-amber-800">
+            <span className="font-medium">Brand Transition Note:</span> Our ECHEMI storefront is currently being updated from "Enviko Bio" to "Alvokor BioSolution". 
+            All products and services remain the same. For any questions, please contact us at <a href="mailto:info@alvokorbio.com" className="underline hover:text-amber-900">info@alvokorbio.com</a>
+          </p>
+        </div>
+      </div>
     </>
   );
 }
