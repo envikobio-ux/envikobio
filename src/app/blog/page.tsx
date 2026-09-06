@@ -20,7 +20,7 @@ export default function BlogPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="bg-[#0F4C81] py-20">
+      <section className="bg-[#A1BA80] py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl font-bold text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Alvokor BioSolution Blog
@@ -38,8 +38,8 @@ export default function BlogPage() {
             {BLOG_ARTICLES.map((article) => (
               <Link href={`/blog/${article.slug}`} key={article.slug} className="group">
                 <Card className="h-full bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
-                  <div className="h-48 bg-gradient-to-br from-[#0F4C81]/10 to-[#4A90C2]/10 flex items-center justify-center">
-                    <BookOpen className="w-16 h-16 text-[#0F4C81]/30" />
+                  <div className="h-48 bg-gradient-to-br from-[#A1BA80]/10 to-[#4A90C2]/10 flex items-center justify-center">
+                    <BookOpen className="w-16 h-16 text-[#A1BA80]/30" />
                   </div>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-4 text-sm text-[#999999] mb-3">
@@ -52,13 +52,13 @@ export default function BlogPage() {
                         {article.readTime}
                       </span>
                     </div>
-                    <h2 className="text-lg font-bold text-[#333333] mb-3 group-hover:text-[#0F4C81] transition-colors line-clamp-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+                    <h2 className="text-lg font-bold text-[#333333] mb-3 group-hover:text-[#A1BA80] transition-colors line-clamp-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       {article.title}
                     </h2>
                     <p className="text-sm text-[#666666] mb-4 line-clamp-3" style={{ fontFamily: 'Montserrat, sans-serif' }}>
                       {article.excerpt}
                     </p>
-                    <div className="flex items-center text-[#0F4C81] text-sm font-semibold group-hover:text-[#4A90C2] transition-colors">
+                    <div className="flex items-center text-[#A1BA80] text-sm font-semibold group-hover:text-[#4A90C2] transition-colors">
                       Read More <ArrowRight className="w-4 h-4 ml-1" />
                     </div>
                   </CardContent>
@@ -70,7 +70,7 @@ export default function BlogPage() {
       </section>
 
       {/* Newsletter CTA */}
-      <section className="py-16 bg-[#0F4C81]">
+      <section className="py-16 bg-[#A1BA80]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
             Stay Updated
@@ -81,7 +81,7 @@ export default function BlogPage() {
           <div className="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
             <a
               href="mailto:info@alvokorbio.com?subject=Blog%20Subscription%20Request"
-              className="flex-1 bg-white text-[#0F4C81] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
+              className="flex-1 bg-white text-[#A1BA80] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors text-center"
             >
               Subscribe via Email
             </a>

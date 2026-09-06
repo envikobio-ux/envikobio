@@ -59,7 +59,7 @@ const CATEGORIES = [
   {
     key: 'Functional Sugars & Amino Acids',
     icon: Droplets,
-    color: '#0F4C81',
+    color: '#A1BA80',
     groups: ['Amino Acid(c2111)', 'Sweetener(c2111)', 'Vitamin(c2111)'],
   },
   {
@@ -127,7 +127,7 @@ export default function AlvokorProductsCatalog() {
   return (
     <div className="min-h-screen bg-[#F5F7FA]">
       {/* Page Header */}
-      <div className="bg-[#0F4C81] py-10">
+      <div className="bg-[#A1BA80] py-10">
         <div className="mx-auto max-w-7xl px-4">
           <Link href="/" className="inline-flex items-center text-white/70 hover:text-white mb-3 text-sm transition-colors">
             ← Back to Home
@@ -189,7 +189,7 @@ export default function AlvokorProductsCatalog() {
               <div className="p-2">
                 <button
                   onClick={() => { setSelectedGroup('all'); setSelectedGrade('all'); setSearchTerm(''); }}
-                  className={`w-full text-left px-3 py-2 rounded text-sm transition-colors mb-1 ${selectedGroup === 'all' && selectedGrade === 'all' ? 'bg-[#0F4C81] text-white' : 'text-[#333333] hover:bg-[#F5F7FA]'}`}
+                  className={`w-full text-left px-3 py-2 rounded text-sm transition-colors mb-1 ${selectedGroup === 'all' && selectedGrade === 'all' ? 'bg-[#A1BA80] text-white' : 'text-[#333333] hover:bg-[#F5F7FA]'}`}
                 >
                   All Products
                   <span className="float-right text-xs opacity-70">{products.length}</span>
@@ -209,7 +209,7 @@ export default function AlvokorProductsCatalog() {
                             toggleCategory(cat.key);
                           }
                         }}
-                        className={`w-full text-left px-3 py-2 rounded text-sm transition-colors flex items-center gap-2 ${isActive ? 'bg-[#0F4C81]/10 text-[#0F4C81]' : 'text-[#333333] hover:bg-[#F5F7FA]'}`}
+                        className={`w-full text-left px-3 py-2 rounded text-sm transition-colors flex items-center gap-2 ${isActive ? 'bg-[#A1BA80]/10 text-[#A1BA80]' : 'text-[#333333] hover:bg-[#F5F7FA]'}`}
                       >
                         <Icon className="w-4 h-4" style={{ color: cat.color }} />
                         <span className="flex-1">{cat.key}</span>
@@ -224,7 +224,7 @@ export default function AlvokorProductsCatalog() {
                             <button
                               key={g}
                               onClick={() => setSelectedGroup(selectedGroup === g ? 'all' : g)}
-                              className={`w-full text-left px-3 py-1.5 rounded text-xs transition-colors ${selectedGroup === g ? 'bg-[#0F4C81]/10 text-[#0F4C81] font-medium' : 'text-[#666666] hover:bg-[#F5F7FA]'}`}
+                              className={`w-full text-left px-3 py-1.5 rounded text-xs transition-colors ${selectedGroup === g ? 'bg-[#A1BA80]/10 text-[#A1BA80] font-medium' : 'text-[#666666] hover:bg-[#F5F7FA]'}`}
                             >
                               {g}
                             </button>
@@ -237,7 +237,7 @@ export default function AlvokorProductsCatalog() {
               </div>
               <div className="p-4 border-t border-[#E5E7EB]">
                 <Link href="/contact">
-                  <Button className="w-full bg-[#0F4C81] hover:bg-[#0F4C81]/90 text-sm">
+                  <Button className="w-full bg-[#A1BA80] hover:bg-[#A1BA80]/90 text-sm">
                     Request Custom Quote
                   </Button>
                 </Link>
@@ -318,11 +318,11 @@ export default function AlvokorProductsCatalog() {
 
                           {/* Action Buttons */}
                           <div className="flex gap-2 pt-2 border-t border-[#E5E7EB]">
-                            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] border-[#E5E7EB] text-[#666666] hover:text-[#0F4C81]">
+                            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] border-[#E5E7EB] text-[#666666] hover:text-[#A1BA80]">
                               <FileText className="w-3 h-3 mr-1" />
                               Spec Sheet
                             </Button>
-                            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] border-[#E5E7EB] text-[#666666] hover:text-[#0F4C81]">
+                            <Button size="sm" variant="outline" className="flex-1 h-8 text-[11px] border-[#E5E7EB] text-[#666666] hover:text-[#A1BA80]">
                               <Download className="w-3 h-3 mr-1" />
                               MSDS
                             </Button>
@@ -339,7 +339,7 @@ export default function AlvokorProductsCatalog() {
       </div>
 
       {/* Bottom CTA */}
-      <div className="bg-[#0F4C81] py-12">
+      <div className="bg-[#A1BA80] py-12">
         <div className="mx-auto max-w-7xl px-4 text-center">
           <h2 className="text-[22px] font-bold text-white mb-3 font-[family-name:var(--font-montserrat)]">
             Need Help Finding the Right Product?
@@ -349,7 +349,7 @@ export default function AlvokorProductsCatalog() {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link href="/contact">
-              <Button size="lg" className="bg-white text-[#0F4C81] hover:bg-gray-100 font-semibold px-8">
+              <Button size="lg" className="bg-white text-[#A1BA80] hover:bg-gray-100 font-semibold px-8">
                 Request Free Sample
               </Button>
             </Link>

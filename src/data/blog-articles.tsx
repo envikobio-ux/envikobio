@@ -34,7 +34,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     contentHtml: (
       <div className="space-y-8 text-[#333333]">
         {/* Introduction */}
-        <div className="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-[#0F4C81]">
+        <div className="bg-[#F5F7FA] rounded-lg p-8 border-l-4 border-[#A1BA80]">
           <p className="text-lg leading-relaxed">
             Selecting a biosynthetic ingredient supplier is one of the most consequential decisions an organization can make in its supply chain strategy. Unlike commodity chemical sourcing, biosynthetic ingredients — produced through precision fermentation, enzymatic biocatalysis, and cell-free synthesis — require a fundamentally different evaluation framework. The stakes are high: the wrong choice can delay product launches, compromise regulatory compliance, and destabilize production pipelines for months or even years.
           </p>
@@ -45,8 +45,8 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Table of Contents */}
         <div className="bg-white rounded-lg border border-gray-200 p-6">
-          <h2 className="text-xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>Table of Contents</h2>
-          <ul className="space-y-2 text-[#0F4C81]">
+          <h2 className="text-xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>Table of Contents</h2>
+          <ul className="space-y-2 text-[#A1BA80]">
             <li><a href="#section1" className="hover:text-[#4A90C2] transition-colors">1. Why R&D Directors Prioritize Custom Formulation & Dossier Support</a></li>
             <li><a href="#section2" className="hover:text-[#4A90C2] transition-colors">2. What Procurement Managers Need: Low MOQ, Stable Pricing & Supply Security</a></li>
             <li><a href="#section3" className="hover:text-[#4A90C2] transition-colors">3. What Production Heads Demand: Fermentation Efficiency & Technology Transfer</a></li>
@@ -60,7 +60,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 1 */}
         <section id="section1">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>1. Why R&D Directors Prioritize Custom Formulation & Dossier Support</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>1. Why R&D Directors Prioritize Custom Formulation & Dossier Support</h2>
           <p className="leading-relaxed mb-4">
             For R&D Directors, the primary concern is <strong>innovation velocity</strong> — how quickly can a new ingredient be integrated into a product formulation and brought to market? Biosynthetic ingredients offer unique advantages over traditional extraction or petrochemical-derived alternatives, but they also require specialized knowledge to formulate effectively.
           </p>
@@ -95,7 +95,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 2 */}
         <section id="section2" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>2. What Procurement Managers Need: Low MOQ, Stable Pricing & Supply Security</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>2. What Procurement Managers Need: Low MOQ, Stable Pricing & Supply Security</h2>
           <p className="leading-relaxed mb-4">
             Procurement Managers evaluate suppliers through a fundamentally different lens. Their primary concerns are <strong>cost predictability</strong>, <strong>supply continuity</strong>, and <strong>risk mitigation</strong>. For biosynthetic ingredients, these factors take on additional complexity due to the biological nature of the production process.
           </p>
@@ -129,7 +129,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 3 */}
         <section id="section3" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>3. What Production Heads Demand: Fermentation Efficiency & Technology Transfer</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>3. What Production Heads Demand: Fermentation Efficiency & Technology Transfer</h2>
           <p className="leading-relaxed mb-4">
             Production Heads are responsible for ensuring that raw materials can be processed efficiently, consistently, and safely within existing manufacturing infrastructure. For biosynthetic ingredients, this requires a deep understanding of the supplier&apos;s production capabilities and quality systems.
           </p>
@@ -172,7 +172,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 4 */}
         <section id="section4" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>4. Clean Beauty Compliance & ESG Supply Chain</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>4. Clean Beauty Compliance & ESG Supply Chain</h2>
           <p className="leading-relaxed mb-4">
             The global beauty and personal care industry is undergoing a fundamental transformation driven by <strong>Clean Beauty</strong> standards and <strong>ESG (Environmental, Social, and Governance)</strong> requirements. Biosynthetic ingredients are uniquely positioned to address both trends simultaneously.
           </p>
@@ -207,7 +207,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 5 */}
         <section id="section5" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>5. Registration Dossier Preparation: A Critical Supplier Capability</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>5. Registration Dossier Preparation: A Critical Supplier Capability</h2>
           <p className="leading-relaxed mb-4">
             Navigating the regulatory landscape for biosynthetic ingredients across different markets requires comprehensive <strong>registration dossier preparation</strong>. This is particularly critical for ingredient suppliers serving the pharmaceutical, cosmetic, and food industries, where regulatory compliance is non-negotiable.
           </p>
@@ -217,9 +217,9 @@ export const BLOG_ARTICLES: BlogArticle[] = [
             <table className="w-full border-collapse border border-gray-200 text-sm">
               <thead>
                 <tr className="bg-[#F5F7FA]">
-                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#0F4C81]">Document Type</th>
-                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#0F4C81]">Content</th>
-                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#0F4C81]">Regulatory Relevance</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#A1BA80]">Document Type</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#A1BA80]">Content</th>
+                  <th className="border border-gray-200 px-4 py-3 text-left font-bold text-[#A1BA80]">Regulatory Relevance</th>
                 </tr>
               </thead>
               <tbody>
@@ -255,7 +255,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 6 */}
         <section id="section6" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>6. Nine Dosage Form Patents: What They Mean for Your Formulation</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>6. Nine Dosage Form Patents: What They Mean for Your Formulation</h2>
           <p className="leading-relaxed mb-4">
             A supplier with <strong>nine dosage form patents</strong> brings a level of formulation expertise that directly benefits their customers. These patents represent documented, proven solutions to common formulation challenges, including:
           </p>
@@ -279,7 +279,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* Section 7 */}
         <section id="section7" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>7. The One-Stop Supplier Advantage</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>7. The One-Stop Supplier Advantage</h2>
           <p className="leading-relaxed mb-4">
             A <strong>one-stop biosynthetic raw material supplier</strong> offers significant advantages over working with multiple specialized suppliers. These include:
           </p>
@@ -297,13 +297,13 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* FAQ Section */}
         <section id="faq" className="pt-8 border-t border-gray-200">
-          <h2 className="text-2xl font-bold text-[#0F4C81] mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-bold text-[#A1BA80] mb-6" style={{ fontFamily: 'Montserrat, sans-serif' }}>Frequently Asked Questions</h2>
 
           <div className="space-y-6">
             <div className="bg-[#F5F7FA] rounded-lg p-6">
               <h3 className="text-lg font-bold text-[#333333] mb-2">Where can I buy fermentation squalane with CosIng file?</h3>
               <p className="text-[#666666] leading-relaxed">
-                <strong>Alvokor BioSolution</strong> offers fermented squalane (CAS 111-01-3) with complete CosIng registration documentation. Our fermentation-derived squalane is vegan, sustainable, and meets EU cosmetic ingredient requirements. Contact us at <a href="mailto:info@alvokorbio.com" className="text-[#0F4C81] hover:text-[#4A90C2]">info@alvokorbio.com</a> for the full CosIng dossier and free samples.
+                <strong>Alvokor BioSolution</strong> offers fermented squalane (CAS 111-01-3) with complete CosIng registration documentation. Our fermentation-derived squalane is vegan, sustainable, and meets EU cosmetic ingredient requirements. Contact us at <a href="mailto:info@alvokorbio.com" className="text-[#A1BA80] hover:text-[#4A90C2]">info@alvokorbio.com</a> for the full CosIng dossier and free samples.
               </p>
             </div>
 
@@ -317,14 +317,14 @@ export const BLOG_ARTICLES: BlogArticle[] = [
             <div className="bg-[#F5F7FA] rounded-lg p-6">
               <h3 className="text-lg font-bold text-[#333333] mb-2">How do I verify a biosynthetic ingredient supplier's quality certifications?</h3>
               <p className="text-[#666666] leading-relaxed">
-                Reputable biosynthetic ingredient suppliers should provide <strong>certified quality documentation</strong> including ISO 9001:2015, FSSC 22000, HALAL, and KOSHER certificates. <strong>Alvokor BioSolution</strong> maintains all certifications and provides complete batch traceability. We recommend requesting: (1) current certification copies, (2) three consecutive batch COAs, (3) third-party audit reports, and (4) customer reference contacts. Visit our <a href="/about" className="text-[#0F4C81] hover:text-[#4A90C2]">About Us</a> page for our certification details.
+                Reputable biosynthetic ingredient suppliers should provide <strong>certified quality documentation</strong> including ISO 9001:2015, FSSC 22000, HALAL, and KOSHER certificates. <strong>Alvokor BioSolution</strong> maintains all certifications and provides complete batch traceability. We recommend requesting: (1) current certification copies, (2) three consecutive batch COAs, (3) third-party audit reports, and (4) customer reference contacts. Visit our <a href="/about" className="text-[#A1BA80] hover:text-[#4A90C2]">About Us</a> page for our certification details.
               </p>
             </div>
 
             <div className="bg-[#F5F7FA] rounded-lg p-6">
               <h3 className="text-lg font-bold text-[#333333] mb-2">Can biosynthetic ingredients replace petrochemical-derived ingredients without production line changes?</h3>
               <p className="text-[#666666] leading-relaxed">
-                Yes — one of the key advantages of biosynthetic ingredients is <strong>drop-in compatibility</strong> with existing production lines. Fermentation-derived ingredients are chemically identical to their petrochemical counterparts, meaning they can be substituted directly without equipment modifications. <strong>Alvokor BioSolution</strong> provides compatibility testing support and formulation guidance to ensure seamless integration. For more details, see our guide on <a href="/blog/fermentation-replace-petrochemical-no-line-renovation" className="text-[#0F4C81] hover:text-[#4A90C2]">fermentation ingredients replacing petrochemical raw materials</a>.
+                Yes — one of the key advantages of biosynthetic ingredients is <strong>drop-in compatibility</strong> with existing production lines. Fermentation-derived ingredients are chemically identical to their petrochemical counterparts, meaning they can be substituted directly without equipment modifications. <strong>Alvokor BioSolution</strong> provides compatibility testing support and formulation guidance to ensure seamless integration. For more details, see our guide on <a href="/blog/fermentation-replace-petrochemical-no-line-renovation" className="text-[#A1BA80] hover:text-[#4A90C2]">fermentation ingredients replacing petrochemical raw materials</a>.
               </p>
             </div>
 
@@ -339,7 +339,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
 
         {/* CTA Section (inline) */}
         <section className="pt-8">
-          <div className="bg-[#0F4C81] rounded-lg p-8 text-center">
+          <div className="bg-[#A1BA80] rounded-lg p-8 text-center">
             <h3 className="text-2xl font-bold text-white mb-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
               Ready to Evaluate Our Biosynthetic Ingredients?
             </h3>
@@ -349,7 +349,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="mailto:info@alvokorbio.com?subject=COA%20%26%20Trial%20Samples%20Request"
-                className="bg-white text-[#0F4C81] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center gap-2"
+                className="bg-white text-[#A1BA80] px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-flex items-center justify-center gap-2"
               >
                 <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
                 info@alvokorbio.com

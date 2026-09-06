@@ -75,7 +75,7 @@ export default function AboutPage() {
       {/* ========== Module 1: Hero Banner ========== */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0F4C81]/85 via-[#0F4C81]/60 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/85 via-[#A1BA80]/60 to-transparent z-10" />
           <div 
             className="w-full h-full bg-cover bg-center"
             style={{ backgroundImage: "url('/hero-factory.jpg')" }}
@@ -127,8 +127,8 @@ export default function AboutPage() {
             {facilities.map((item, index) => (
               <Card key={index} className="border-none shadow-sm hover:shadow-md transition-all duration-300">
                 <CardContent className="p-8">
-                  <div className="w-14 h-14 rounded-lg bg-[#0F4C81]/5 flex items-center justify-center mb-5">
-                    <item.icon className="w-7 h-7 text-[#0F4C81]" />
+                  <div className="w-14 h-14 rounded-lg bg-[#A1BA80]/5 flex items-center justify-center mb-5">
+                    <item.icon className="w-7 h-7 text-[#A1BA80]" />
                   </div>
                   <h3 className="text-[22px] font-semibold text-[#333333] mb-2 font-[family-name:var(--font-montserrat)]">
                     {item.title}
@@ -174,7 +174,7 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="mt-8 flex items-center gap-4 p-4 bg-[#F5F7FA] rounded-lg">
-                <GraduationCap className="w-8 h-8 text-[#0F4C81]" />
+                <GraduationCap className="w-8 h-8 text-[#A1BA80]" />
                 <div>
                   <div className="text-sm font-medium text-[#333333]">Jiangnan University</div>
                   <div className="text-xs text-[#999999]">Joint Synthetic Biology Research Program</div>
@@ -199,7 +199,7 @@ export default function AboutPage() {
                 key={index}
                 className="bg-white rounded-lg shadow-sm border border-[#E5E7EB] p-5 text-center hover:shadow-md transition-shadow"
               >
-                <Shield className="w-8 h-8 mx-auto mb-2 text-[#0F4C81]" />
+                <Shield className="w-8 h-8 mx-auto mb-2 text-[#A1BA80]" />
                 <span className="text-sm font-semibold text-[#333333]">{cert}</span>
               </div>
             ))}
@@ -216,8 +216,8 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-3 gap-8">
             {corporateValues.map((item, index) => (
               <div key={index} className="text-center p-8 rounded-lg bg-[#F5F7FA] hover:shadow-md transition-shadow">
-                <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-[#0F4C81]/10 flex items-center justify-center">
-                  <item.icon className="w-8 h-8 text-[#0F4C81]" />
+                <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-[#A1BA80]/10 flex items-center justify-center">
+                  <item.icon className="w-8 h-8 text-[#A1BA80]" />
                 </div>
                 <h3 className="text-[22px] font-semibold text-[#333333] mb-4 font-[family-name:var(--font-montserrat)]">
                   {item.title}
@@ -232,7 +232,7 @@ export default function AboutPage() {
       </section>
 
       {/* Bottom CTA */}
-      <section className="py-16 px-4 bg-[#0F4C81]">
+      <section className="py-16 px-4 bg-[#A1BA80]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-[32px] font-bold text-white mb-4 font-[family-name:var(--font-montserrat)]">
             Partner with Alvokor
@@ -241,7 +241,7 @@ export default function AboutPage() {
             Explore how our biomanufacturing capabilities can support your raw material needs
           </p>
           <Link href="/contact">
-            <Button size="lg" className="bg-white text-[#0F4C81] hover:bg-gray-100 font-semibold px-10">
+            <Button size="lg" className="bg-white text-[#A1BA80] hover:bg-gray-100 font-semibold px-10">
               Contact Our Team <ChevronRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>

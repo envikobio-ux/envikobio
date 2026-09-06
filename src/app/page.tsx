@@ -100,7 +100,7 @@ export default function HomePage() {
       <section className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0F4C81]/90 via-[#0F4C81]/70 to-transparent z-10" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/90 via-[#A1BA80]/70 to-transparent z-10" />
           <div 
             className="w-full h-full bg-cover bg-center"
             style={{ backgroundImage: "url('/hero-factory.jpg')" }}
@@ -120,7 +120,7 @@ export default function HomePage() {
               <Link href="/products">
                 <Button 
                   size="lg" 
-                  className="bg-white text-[#0F4C81] hover:bg-gray-100 border-2 border-white font-semibold px-8 text-base"
+                  className="bg-white text-[#A1BA80] hover:bg-gray-100 border-2 border-white font-semibold px-8 text-base"
                 >
                   View All Products
                   <ArrowRight className="w-4 h-4 ml-2" />
@@ -129,7 +129,7 @@ export default function HomePage() {
               <Link href="/contact">
                 <Button 
                   size="lg" 
-                  className="bg-[#0F4C81] text-white hover:bg-[#0F4C81]/90 border-2 border-white/30 font-semibold px-8 text-base"
+                  className="bg-[#A1BA80] text-white hover:bg-[#A1BA80]/90 border-2 border-white/30 font-semibold px-8 text-base"
                 >
                   Request Free Quote
                   <MessageCircle className="w-4 h-4 ml-2" />
@@ -163,8 +163,8 @@ export default function HomePage() {
                 className="group border-none shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1"
               >
                 <CardContent className="p-8 text-center">
-                  <div className="w-14 h-14 mx-auto mb-5 rounded-lg bg-[#0F4C81]/5 flex items-center justify-center">
-                    <item.icon className="w-7 h-7 text-[#0F4C81]" />
+                  <div className="w-14 h-14 mx-auto mb-5 rounded-lg bg-[#A1BA80]/5 flex items-center justify-center">
+                    <item.icon className="w-7 h-7 text-[#A1BA80]" />
                   </div>
                   <h3 className="text-[22px] font-semibold text-[#333333] mb-3 font-[family-name:var(--font-montserrat)]">
                     {item.title}
@@ -197,9 +197,9 @@ export default function HomePage() {
                 <Card className="border-none shadow-sm hover:shadow-lg transition-all duration-300 h-full">
                   <CardContent className="p-0">
                     <div className="h-48 bg-[#F5F7FA] relative overflow-hidden rounded-t-lg">
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0F4C81]/10 to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#A1BA80]/10 to-transparent" />
                       <div className="absolute bottom-3 left-3">
-                        <category.icon className="w-8 h-8 text-[#0F4C81]" />
+                        <category.icon className="w-8 h-8 text-[#A1BA80]" />
                       </div>
                     </div>
                     <div className="p-5">
@@ -215,7 +215,7 @@ export default function HomePage() {
                           </div>
                         ))}
                       </div>
-                      <span className="text-sm text-[#0F4C81] font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
+                      <span className="text-sm text-[#A1BA80] font-medium inline-flex items-center gap-1 group-hover:gap-2 transition-all">
                         View Category <ChevronRight className="w-4 h-4" />
                       </span>
                     </div>
@@ -228,7 +228,7 @@ export default function HomePage() {
       </section>
 
       {/* ========== Module 4: Factory Stats & R&D Data ========== */}
-      <section className="py-20 px-4 bg-[#0F4C81] text-white relative overflow-hidden">
+      <section className="py-20 px-4 bg-[#A1BA80] text-white relative overflow-hidden">
         {/* Molecular texture background */}
         <div className="absolute inset-0 opacity-5">
           <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
@@ -292,7 +292,7 @@ export default function HomePage() {
                   key={index}
                   className="flex-shrink-0 w-36 h-16 bg-white rounded-lg shadow-sm flex items-center justify-center border border-gray-100"
                 >
-                  <span className="text-sm font-semibold text-[#0F4C81]">{cert}</span>
+                  <span className="text-sm font-semibold text-[#A1BA80]">{cert}</span>
                 </div>
               ))}
             </div>
@@ -301,7 +301,7 @@ export default function HomePage() {
       </section>
 
       {/* ========== Module 6: Bottom CTA / Inquiry Section ========== */}
-      <section className="py-20 px-4 bg-[#0F4C81] text-white">
+      <section className="py-20 px-4 bg-[#A1BA80] text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-[32px] font-bold mb-4 font-[family-name:var(--font-montserrat)]">
             Get Your Custom Formula & Bulk Price
@@ -312,7 +312,7 @@ export default function HomePage() {
           <Link href="/contact">
             <Button 
               size="lg" 
-              className="bg-white text-[#0F4C81] hover:bg-gray-100 font-semibold px-10 py-6 text-lg"
+              className="bg-white text-[#A1BA80] hover:bg-gray-100 font-semibold px-10 py-6 text-lg"
             >
               Contact Us For Quote
               <MessageCircle className="w-5 h-5 ml-2" />
