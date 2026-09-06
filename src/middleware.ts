@@ -1,13 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server';
-import createMiddleware from 'next-intl/middleware';
-
-const locales = ['en', 'zh'] as const;
-
-const intlMiddleware = createMiddleware({
-  locales,
-  defaultLocale: 'en',
-  localePrefix: 'never'
-});
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
@@ -23,7 +14,6 @@ export function middleware(request: NextRequest) {
   }
   
   // PRIORITY 2: Redirect alvokorbiosolution.cn to alvokorbiosolution.com (临时关闭中文版)
-  // 备案完成后移除此段代码
   if (host.includes('alvokorbiosolution.cn')) {
     const url = request.nextUrl.clone();
     url.hostname = 'www.alvokorbiosolution.com';
@@ -32,15 +22,10 @@ export function middleware(request: NextRequest) {
     return response;
   }
   
-  // All domains show English by default
-  const locale = 'en';
-  
-  // Apply intl middleware
-  const response = intlMiddleware(request);
-  
-  // Set locale headers and cookie
-  response.headers.set('x-locale', locale);
-  response.headers.append('Set-Cookie', `NEXT_LOCALE=${locale}; Path=/; SameSite=Lax`);
+  // Set locale to English for all requests
+  const response = NextResponse.next();
+  response.headers.set('x-locale', 'en');
+  response.cookies.set('NEXT_LOCALE', 'en', { path: '/' });
   
   return response;
 }
