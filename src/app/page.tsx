@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
@@ -99,7 +100,17 @@ export default function HomePage() {
       {/* ========== Module 1: Hero Banner ========== */}
       <section className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#A1BA80] via-[#8BA865] to-[#6B8E4A]" />
+        <div className="absolute inset-0">
+          <Image
+            src="/hero-lab.jpg"
+            alt="Alvokor Biosolution Laboratory"
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/90 via-[#A1BA80]/70 to-transparent" />
+        </div>
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 w-full">
           <div className="max-w-3xl">

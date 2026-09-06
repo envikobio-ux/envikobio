@@ -32,18 +32,33 @@ export default function ExitIntentPopup({
     }
   }, []);
 
-  // Exit intent detection - only runs when shouldRender is true
+  // Exit intent detection - only after 30s on page + mouse leaves top
   useEffect(() => {
     if (!shouldRender) return;
 
+    let timeElapsed = false;
+    const timer = setTimeout(() => { timeElapsed = true; }, 30000);
+
     const handleMouseMove = (e: MouseEvent) => {
-      if (e.clientY <= 50 && !isSubmitted) {
+      if (timeElapsed && e.clientY <= 50 && !isSubmitted) {
+        setIsVisible(true);
+      }
+    };
+
+    const handleTouchEnd = () => {
+      // Mobile back-swipe detection fallback
+      if (timeElapsed && !isSubmitted) {
         setIsVisible(true);
       }
     };
 
     document.addEventListener('mousemove', handleMouseMove);
-    return () => document.removeEventListener('mousemove', handleMouseMove);
+    document.addEventListener('touchend', handleTouchEnd);
+    return () => {
+      clearTimeout(timer);
+      document.removeEventListener('mousemove', handleMouseMove);
+      document.removeEventListener('touchend', handleTouchEnd);
+    };
   }, [shouldRender, isSubmitted]);
 
   const handleDismiss = () => {
