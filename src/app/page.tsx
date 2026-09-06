@@ -243,7 +243,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-[32px] font-bold mb-4 font-[family-name:var(--font-montserrat)]">
-                Manufacturing & R&D Capabilities
+                Supply Network & Quality Capabilities
               </h2>
               <p className="text-white/70 mb-8">
                 Trusted supply chain network with rigorous quality control across all partners

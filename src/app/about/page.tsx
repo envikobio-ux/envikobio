@@ -23,17 +23,17 @@ import Link from 'next/link';
 const facilities = [
   {
     icon: Factory,
-    title: 'Fermentation Workshop',
-    desc: '50,000L total fermentation capacity with stainless steel bioreactors, automated control systems for precise temperature, pH, and dissolved oxygen monitoring.',
-    metric: '50,000L',
-    metricLabel: 'Fermentation Capacity',
+    title: 'Certified Partner Network',
+    desc: 'We collaborate with 8 GMP-certified manufacturing partners across China, offering fermentation capacities from 10,000L to 50,000L per facility.',
+    metric: '8 Partners',
+    metricLabel: 'Certified Manufacturers',
   },
   {
     icon: Microscope,
-    title: 'cGMP Clean Laboratory',
-    desc: '2,000m² 100,000-level purified laboratory with complete QC testing equipment including HPLC, GC-MS, and microbiology analysis.',
-    metric: '2,000m²',
-    metricLabel: 'Lab Area',
+    title: 'Quality Control Network',
+    desc: 'Each partner maintains independent QC labs with HPLC, GC-MS, and microbiology testing. Third-party testing for every batch before shipment.',
+    metric: '100%',
+    metricLabel: 'Batch Tested Before Shipment',
   },
   {
     icon: Warehouse,
@@ -54,17 +54,17 @@ const corporateValues = [
   {
     icon: Lightbulb,
     title: 'Vision',
-    desc: 'To become a global leader in synthetic biology, driving sustainable biomanufacturing through continuous innovation in fermentation science and enzyme engineering.',
+    desc: 'To be the most trusted sourcing partner for bioactive ingredients — connecting global buyers with certified manufacturers across China.',
   },
   {
     icon: Target,
-    title: 'Technology',
-    desc: 'Core expertise in strain construction, fermentation process optimization, and green extraction technologies, with 28+ active patents and ongoing R&D investment.',
+    title: 'Sourcing Network',
+    desc: 'Curated partnerships with 8 certified manufacturing facilities, each audited for quality, compliance, and production consistency.',
   },
   {
     icon: Award,
     title: 'Quality',
-    desc: 'End-to-end quality management system from raw material sourcing to final product release, with full traceability and batch-to-batch consistency.',
+    desc: 'End-to-end quality management from supplier audit to final product release, with full batch traceability and third-party testing.',
   },
 ];
 
@@ -74,11 +74,8 @@ export default function AboutPage() {
       {/* ========== Module 1: Hero Banner ========== */}
       <section className="relative h-[70vh] min-h-[500px] flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/85 via-[#A1BA80]/60 to-transparent z-10" />
-          <div 
-            className="w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/hero-factory.jpg')" }}
-          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/90 via-[#A1BA80]/60 to-[#A1BA80]/30 z-10" />
+          <div className="w-full h-full bg-gradient-to-br from-[#A1BA80] to-[#7A9A60]" />
         </div>
         <div className="relative z-20 max-w-7xl mx-auto px-4 w-full">
           <div className="max-w-3xl">
@@ -93,20 +90,20 @@ export default function AboutPage() {
             </p>
             <div className="flex gap-6 mt-8">
               <div className="text-white">
-                <div className="text-2xl font-bold text-[#4A90C2]">50,000L</div>
-                <div className="text-xs text-white/60">Fermentation Capacity</div>
+                <div className="text-2xl font-bold text-white">8</div>
+                <div className="text-xs text-white/60">Certified Partners</div>
               </div>
               <div className="text-white">
-                <div className="text-2xl font-bold text-[#4A90C2]">2,000m²</div>
-                <div className="text-xs text-white/60">cGMP Lab</div>
+                <div className="text-2xl font-bold text-white">50,000L</div>
+                <div className="text-xs text-white/60">Total Capacity</div>
               </div>
               <div className="text-white">
-                <div className="text-2xl font-bold text-[#4A90C2]">28+</div>
-                <div className="text-xs text-white/60">Patents</div>
+                <div className="text-2xl font-bold text-white">5,000T</div>
+                <div className="text-xs text-white/60">Annual Throughput</div>
               </div>
               <div className="text-white">
-                <div className="text-2xl font-bold text-[#4A90C2]">5,000T</div>
-                <div className="text-xs text-white/60">Annual Output</div>
+                <div className="text-2xl font-bold text-white">15+</div>
+                <div className="text-xs text-white/60">Export Markets</div>
               </div>
             </div>
           </div>
@@ -117,10 +114,10 @@ export default function AboutPage() {
       <section className="py-20 px-4 bg-[#F5F7FA]">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-[32px] font-bold text-center text-[#333333] mb-4 font-[family-name:var(--font-montserrat)]">
-            Manufacturing Facilities
+            Partner Manufacturing Network
           </h2>
           <p className="text-center text-[#666666] mb-12 max-w-2xl mx-auto">
-            State-of-the-art production infrastructure for industrial-scale biomanufacturing
+            Aggregated production capacity from 8 certified manufacturing partners across China
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             {facilities.map((item, index) => (
@@ -136,7 +133,7 @@ export default function AboutPage() {
                     {item.desc}
                   </p>
                   <div className="pt-4 border-t border-[#E5E7EB]">
-                    <span className="text-2xl font-bold text-[#4A90C2]">{item.metric}</span>
+                    <span className="text-2xl font-bold text-[#A1BA80]">{item.metric}</span>
                     <span className="block text-xs text-[#999999] mt-1">{item.metricLabel}</span>
                   </div>
                 </CardContent>
@@ -164,7 +161,7 @@ export default function AboutPage() {
               <ul className="space-y-3">
                 {[
                   'Third-party lab testing for purity & stability',
-                  'Full regulatory documentation (COA, MSDS, TDS)',
+                  'Full regulatory documentation (COA, MSDS, TDS, REACH)',
                   'Formulation & application technical support',
                   'Global logistics & customs clearance assistance',
                 ].map((item, i) => (
@@ -182,7 +179,12 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="h-80 rounded-lg bg-[#F5F7FA] bg-cover bg-center" style={{ backgroundImage: "url('/lab-instruments.jpg')" }} />
+            <div className="h-80 rounded-lg bg-gradient-to-br from-[#A1BA80]/20 to-[#F5F7FA] flex items-center justify-center">
+              <div className="text-center p-8">
+                <Shield className="w-16 h-16 text-[#A1BA80] mx-auto mb-4" />
+                <p className="text-sm text-[#666666]">Trusted Quality Control</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -239,7 +241,7 @@ export default function AboutPage() {
             Partner with Alvokor
           </h2>
           <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Explore how our biomanufacturing capabilities can support your raw material needs
+            Explore how our sourcing network can support your raw material needs
           </p>
           <Link href="/contact">
             <Button size="lg" className="bg-white text-[#A1BA80] hover:bg-gray-100 font-semibold px-10">
