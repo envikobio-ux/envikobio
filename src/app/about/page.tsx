@@ -12,7 +12,6 @@ import {
   Award,
   Globe,
   ChevronRight,
-  GraduationCap,
   FileText,
   Users,
   CheckCircle2,
@@ -87,10 +86,10 @@ export default function AboutPage() {
               About Alvokor
             </h1>
             <p className="text-lg text-white/80 leading-relaxed max-w-2xl">
-              Shanghai Alvokor Biotechnology Co., Ltd. is a synthetic biology company specializing in 
-              the full-chain biomanufacturing of high-value natural ingredients. From strain construction 
-              and fermentation to extraction and purification, we deliver premium raw materials for 
-              cosmetic, nutraceutical, and feed applications worldwide.
+              Shanghai Alvokor Biotechnology Co., Ltd. is a specialized sourcing and supply chain partner 
+              for high-value biosynthetic ingredients. We collaborate with a network of GMP-certified 
+              manufacturing partners across China to deliver premium raw materials for cosmetic, 
+              nutraceutical, and feed applications worldwide.
             </p>
             <div className="flex gap-6 mt-8">
               <div className="text-white">
@@ -147,25 +146,27 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ========== Module 3: R&D & University Collaboration ========== */}
+      {/* ========== Module 3: Quality Assurance & Technical Support ========== */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-[32px] font-bold text-[#333333] mb-6 font-[family-name:var(--font-montserrat)]">
-                R&D & University Partnerships
+                Quality Assurance & Technical Support
               </h2>
               <p className="text-[#666666] leading-relaxed mb-6">
-                Alvokor collaborates with leading Chinese universities including Jiangnan University 
-                (江南大学) on joint research programs in synthetic biology, fermentation engineering, 
-                and enzyme discovery. Our R&D team of 15+ scientists focuses on:
+                Alvokor provides rigorous quality control across our entire supply network. 
+                Every batch is tested for purity, stability, and compliance before shipment. 
+                Our technical team offers formulation support, regulatory documentation 
+                (COA, MSDS, TDS, allergen & non-GMO statements), and logistics coordination 
+                to ensure smooth delivery worldwide.
               </p>
               <ul className="space-y-3">
                 {[
-                  'Strain engineering & high-throughput screening',
-                  'Fermentation process optimization & scale-up',
-                  'Green extraction & purification technologies',
-                  'Analytical method development & validation',
+                  'Third-party lab testing for purity & stability',
+                  'Full regulatory documentation (COA, MSDS, TDS)',
+                  'Formulation & application technical support',
+                  'Global logistics & customs clearance assistance',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-sm text-[#666666]">
                     <CheckCircle2 className="w-4 h-4 text-[#3A9973] mt-0.5 flex-shrink-0" />
@@ -174,10 +175,10 @@ export default function AboutPage() {
                 ))}
               </ul>
               <div className="mt-8 flex items-center gap-4 p-4 bg-[#F5F7FA] rounded-lg">
-                <GraduationCap className="w-8 h-8 text-[#A1BA80]" />
+                <Shield className="w-8 h-8 text-[#A1BA80]" />
                 <div>
-                  <div className="text-sm font-medium text-[#333333]">Jiangnan University</div>
-                  <div className="text-xs text-[#999999]">Joint Synthetic Biology Research Program</div>
+                  <div className="text-sm font-medium text-[#333333]">Quality First</div>
+                  <div className="text-xs text-[#999999]">Rigorous QC Across Every Batch</div>
                 </div>
               </div>
             </div>

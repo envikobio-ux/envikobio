@@ -6,9 +6,9 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { 
   FlaskConical, 
-  Factory, 
+  Warehouse, 
   ShieldCheck,
-  Beaker,
+  Globe,
   ArrowRight,
   Star,
   ChevronRight,
@@ -37,10 +37,10 @@ export default function HomePage() {
   ];
 
   const advantages = [
-    { icon: Factory, title: 'Full Fermentation Chain', desc: 'From strain construction to large-scale fermentation, integrated biomanufacturing under one roof' },
-    { icon: Building2, title: 'cGMP Clean Workshop', desc: '100,000-level purified洁净车间 with strict environmental controls & batch traceability' },
-    { icon: ShieldCheck, title: 'Global Certifications', desc: 'FDA, REACH, KOSHER, HALAL, ISO 22000, FSSC 22000 — fully export-ready documentation' },
-    { icon: Beaker, title: 'Custom CDMO/OEM', desc: 'End-to-end R&D to commercial production: strain engineering, process optimization, scale-up' },
+    { icon: Warehouse, title: 'Multi-Supplier Sourcing', desc: 'Aggregated supply from 8+ partner factories, offering competitive pricing and flexible MOQ options' },
+    { icon: ShieldCheck, title: 'Quality Control & Compliance', desc: 'All products backed by cGMP, FDA, REACH, KOSHER, HALAL, ISO 22000 — full documentation package' },
+    { icon: Globe, title: 'Global Logistics Network', desc: 'Reliable shipping via DHL, FedEx, sea freight; warehouses in Shanghai, Guangzhou & overseas hubs' },
+    { icon: MessageCircle, title: 'Technical & Regulatory Support', desc: 'Registration dossiers, spec sheets, MSDS, COA, and customs clearance assistance for all markets' },
   ];
 
   const productCategories = [
@@ -99,20 +99,14 @@ export default function HomePage() {
       {/* ========== Module 1: Hero Banner ========== */}
       <section className="relative h-[90vh] min-h-[600px] flex items-center overflow-hidden">
         {/* Background Image */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#A1BA80]/90 via-[#A1BA80]/70 to-transparent z-10" />
-          <div 
-            className="w-full h-full bg-cover bg-center"
-            style={{ backgroundImage: "url('/hero-factory.jpg')" }}
-          />
-        </div>
+        <div className="absolute inset-0 bg-gradient-to-br from-[#A1BA80] via-[#8BA865] to-[#6B8E4A]" />
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 w-full">
           <div className="max-w-3xl">
             <h1 className="text-4xl md:text-5xl lg:text-[48px] font-bold text-white leading-tight mb-6 font-[family-name:var(--font-montserrat)]">
-              Synthetic Biology Manufacturer for Cosmetic, Nutraceutical & Feed Raw Materials
+              Synthetic Biology Raw Material Supplier for Cosmetic, Nutraceutical & Feed Industries
               <span className="block text-[#4A90C2] text-xl md:text-2xl font-normal mt-3">
-                OEM & ODM Custom Fermentation
+                OEM & ODM Custom Sourcing & Supply Chain Management
               </span>
             </h1>
 
@@ -252,28 +246,34 @@ export default function HomePage() {
                 Manufacturing & R&D Capabilities
               </h2>
               <p className="text-white/70 mb-8">
-                State-of-the-art fermentation facilities with complete quality control systems
+                Trusted supply chain network with rigorous quality control across all partners
               </p>
               <div className="grid grid-cols-2 gap-6">
                 <div className="p-5 border border-white/10 rounded-lg">
-                  <div className="text-3xl font-bold text-[#4A90C2] mb-1">50,000L</div>
-                  <div className="text-sm text-white/60">Fermentation Capacity</div>
+                  <div className="text-3xl font-bold text-[#A1BA80] mb-1">8+</div>
+                  <div className="text-sm text-white/60">Partner Factories</div>
                 </div>
                 <div className="p-5 border border-white/10 rounded-lg">
-                  <div className="text-3xl font-bold text-[#4A90C2] mb-1">2,000m²</div>
-                  <div className="text-sm text-white/60">cGMP Lab Area</div>
+                  <div className="text-3xl font-bold text-[#A1BA80] mb-1">500+</div>
+                  <div className="text-sm text-white/60">Products Supplied</div>
                 </div>
                 <div className="p-5 border border-white/10 rounded-lg">
-                  <div className="text-3xl font-bold text-[#4A90C2] mb-1">28+</div>
-                  <div className="text-sm text-white/60">Active Patents</div>
+                  <div className="text-3xl font-bold text-[#A1BA80] mb-1">15+</div>
+                  <div className="text-sm text-white/60">Years Experience</div>
                 </div>
                 <div className="p-5 border border-white/10 rounded-lg">
-                  <div className="text-3xl font-bold text-[#4A90C2] mb-1">5,000T</div>
-                  <div className="text-sm text-white/60">Annual Output</div>
+                  <div className="text-3xl font-bold text-[#A1BA80] mb-1">30+</div>
+                  <div className="text-sm text-white/60">Export Countries</div>
                 </div>
               </div>
             </div>
-            <div className="h-80 rounded-lg bg-cover bg-center" style={{ backgroundImage: "url('/lab-instruments.jpg')" }} />
+            <div className="h-80 rounded-lg bg-gradient-to-br from-[#A1BA80]/20 to-[#F5F7FA] flex items-center justify-center">
+              <div className="text-center p-8">
+                <Globe className="w-16 h-16 text-[#A1BA80] mx-auto mb-4" />
+                <p className="text-[#333] font-medium">Global Sourcing Network</p>
+                <p className="text-sm text-[#999] mt-2">Serving 30+ countries worldwide</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
