@@ -27,6 +27,7 @@
 │   ├── dev.sh              # 开发环境启动脚本
 │   ├── prepare.sh          # 预处理脚本
 │   └── start.sh            # 生产环境启动脚本
+├── assets/                 # GEO文章原始Markdown文件（01-10）
 ├── src/
 │   ├── app/                # 页面路由与布局
 │   │   ├── api/            # API路由
@@ -35,12 +36,19 @@
 │   │   ├── products/       # 产品页面
 │   │   ├── solutions/      # 解决方案页面
 │   │   ├── news/           # 新闻页面
-│   │   └── contact/        # 联系我们页面
+│   │   ├── contact/        # 联系我们页面
+│   │   └── blog/           # Blog系统（10篇GEO文章）
+│   │       ├── page.tsx    # Blog列表页（按日期降序）
+│   │       └── [slug]/     # 文章详情页
 │   ├── components/         # 组件目录
 │   │   ├── layout/         # 布局组件
 │   │   │   ├── Header.tsx  # 导航栏
 │   │   │   └── Footer.tsx  # 页脚
+│   │   ├── MarkdownRenderer.tsx  # Markdown转JSX渲染器
 │   │   └── ui/             # Shadcn UI 组件库
+│   ├── data/               # 数据层
+│   │   ├── blog-articles.tsx    # Blog文章元数据（10篇完整配置）
+│   │   └── blog-content.ts     # 文章Markdown正文内容
 │   ├── hooks/              # 自定义 Hooks
 │   ├── lib/                # 工具库
 │   │   └── utils.ts        # 通用工具函数 (cn)
