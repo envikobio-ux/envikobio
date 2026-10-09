@@ -1,9 +1,11 @@
 import { MetadataRoute } from 'next';
+import { blogArticles } from '@/data/blog-articles';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.alvokorbiosolution.com';
+  const now = Date.now();
 
-  return [
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
@@ -64,5 +66,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${baseUrl}/blog`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.8,
+    },
   ];
+
+  // Include only published blog articles (scheduled posts are omitted).
+  const blogPages: MetadataRoute.Sitemap = blogArticles
+    .filter((a) => new Date(a.publishDate).getTime() <= now)
+    .map((a) => ({
+      url: `${baseUrl}/blog/${a.slug}`,
+      lastModified: new Date(a.publishDate),
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    }));
+
+  return [...staticPages, ...blogPages];
 }

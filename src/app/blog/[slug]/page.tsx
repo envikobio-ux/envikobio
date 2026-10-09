@@ -43,9 +43,19 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
-  // Find related articles (same category, excluding current)
+  // Scheduled-publish guard: articles dated in the future return 404.
+  if (new Date(article.publishDate).getTime() > Date.now()) {
+    notFound();
+  }
+
+  // Find related published articles (same category, excluding current)
   const relatedArticles = blogArticles
-    .filter((a) => a.category === article.category && a.slug !== article.slug)
+    .filter(
+      (a) =>
+        a.category === article.category &&
+        a.slug !== article.slug &&
+        new Date(a.publishDate).getTime() <= Date.now()
+    )
     .slice(0, 3);
 
   return (

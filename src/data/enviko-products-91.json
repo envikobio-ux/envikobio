@@ -1776,6 +1776,446 @@
       "supplier": "Shandong Futian (山东福田)",
       "app_scenario": "food",
       "shelf_life": "24 months"
+    },
+    {
+      "id": 113,
+      "slug": "543486-retinal-retinaldehyde",
+      "cas": "543-48-6",
+      "name": "Retinal (Retinaldehyde)",
+      "inci_name": "Retinal",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥99%",
+      "packages": "1kg/Bottle",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 114,
+      "slug": "823202999-syn-ake-dipeptide-diaminobutyroyl-benzylamide",
+      "cas": "823202-99-9",
+      "name": "Syn-Ake (Dipeptide Diaminobutyroyl Benzylamide)",
+      "inci_name": "Dipeptide Diaminobutyroyl Benzylamide Diacetate",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bottle",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide China (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 115,
+      "slug": "-red-scorpion-peptide",
+      "cas": "-",
+      "name": "Red Scorpion Peptide",
+      "inci_name": "Red Scorpion Peptide",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥95%",
+      "packages": "1kg/Bottle",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide China (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 116,
+      "slug": "623172565-palmitoyl-tripeptide-5",
+      "cas": "623172-56-5",
+      "name": "Palmitoyl Tripeptide-5",
+      "inci_name": "Palmitoyl Tripeptide-5",
+      "group": "Cosmetic Raw Material",
+      "grade": "Cosmetic Grade",
+      "purity": "≥95%",
+      "packages": "1kg/Bottle",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Peptide China (湃肽)",
+      "app_scenario": "cosmetic",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 117,
+      "slug": "133876923-nattokinase",
+      "cas": "133876-92-3",
+      "name": "Nattokinase",
+      "inci_name": "Nattokinase",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "20,000 FU/g",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 118,
+      "slug": "9051972-yeast-beta-glucan-1-3-1-6",
+      "cas": "9051-97-2",
+      "name": "Yeast Beta-Glucan (β-1,3/1,6)",
+      "inci_name": "Yeast Beta-Glucan",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "70%-85%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 119,
+      "slug": "9072199-fucoidan",
+      "cas": "9072-19-9",
+      "name": "Fucoidan",
+      "inci_name": "Fucoidan",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥85%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 120,
+      "slug": "-antarctic-krill-peptide",
+      "cas": "-",
+      "name": "Antarctic Krill Peptide",
+      "inci_name": "Antarctic Krill Peptide",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥90%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 121,
+      "slug": "72909343-pqq-pyrroloquinoline-quinone-disodium",
+      "cas": "72909-34-3",
+      "name": "PQQ (Pyrroloquinoline Quinone Disodium)",
+      "inci_name": "Pyrroloquinoline Quinone Disodium Salt",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥98%",
+      "packages": "1kg/Bottle",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 122,
+      "slug": "9057027-pullulan",
+      "cas": "9057-02-7",
+      "name": "Pullulan",
+      "inci_name": "Pullulan",
+      "group": "Nutritional Enhancer(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥90%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Rolvanferm (润涵)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 123,
+      "slug": "-mpl-monophosphoryl-lipid-a",
+      "cas": "-",
+      "name": "MPL (Monophosphoryl Lipid A)",
+      "inci_name": "Monophosphoryl Lipid A",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "Research grade",
+      "packages": "1mg/Vial",
+      "certificates": [
+        "COA"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "12 months"
+    },
+    {
+      "id": 124,
+      "slug": "141256022-qs-21-saponin-adjuvant",
+      "cas": "141256-02-2",
+      "name": "QS-21 Saponin Adjuvant",
+      "inci_name": "QS-21 Saponin",
+      "group": "Pharmaceutical API",
+      "grade": "Pharmaceutical Grade",
+      "purity": "≥98%",
+      "packages": "1mg/Vial",
+      "certificates": [
+        "COA"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "BioCatSyn (百开盛)",
+      "app_scenario": "pharmaceutical",
+      "shelf_life": "12 months"
+    },
+    {
+      "id": 125,
+      "slug": "71010521-gellan-gum-high-acyl",
+      "cas": "71010-52-1",
+      "name": "Gellan Gum (High Acyl)",
+      "inci_name": "Gellan Gum",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥85%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Deosen (中轩生化)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 126,
+      "slug": "71010521-gellan-gum-low-acyl",
+      "cas": "71010-52-1",
+      "name": "Gellan Gum (Low Acyl)",
+      "inci_name": "Gellan Gum",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥85%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Deosen (中轩生化)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 127,
+      "slug": "96949223-welan-gum",
+      "cas": "96949-22-3",
+      "name": "Welan Gum",
+      "inci_name": "Welan Gum",
+      "group": "Food Additive(c2111)",
+      "grade": "Industrial Grade",
+      "purity": "≥85%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Deosen (中轩生化)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 128,
+      "slug": "657272-l-lysine-hcl",
+      "cas": "657-27-2",
+      "name": "L-Lysine HCl",
+      "inci_name": "L-Lysine Hydrochloride",
+      "group": "Amino Acid(c2111)",
+      "grade": "Feed Grade",
+      "purity": "≥98.5%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "FAMI-QS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 129,
+      "slug": "72184-l-valine",
+      "cas": "72-18-4",
+      "name": "L-Valine",
+      "inci_name": "L-Valine",
+      "group": "Amino Acid(c2111)",
+      "grade": "Feed Grade",
+      "purity": "≥98%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "FAMI-QS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 130,
+      "slug": "73223-l-tryptophan",
+      "cas": "73-22-3",
+      "name": "L-Tryptophan",
+      "inci_name": "L-Tryptophan",
+      "group": "Amino Acid(c2111)",
+      "grade": "Feed Grade",
+      "purity": "≥98%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "FAMI-QS"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 131,
+      "slug": "56859-l-glutamine",
+      "cas": "56-85-9",
+      "name": "L-Glutamine",
+      "inci_name": "L-Glutamine",
+      "group": "Amino Acid(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥98.5%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 132,
+      "slug": "61905-l-leucine-bcaa",
+      "cas": "61-90-5",
+      "name": "L-Leucine (BCAA)",
+      "inci_name": "L-Leucine",
+      "group": "Amino Acid(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥98.5%",
+      "packages": "25kg/Drum",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL",
+        "KOSHER"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 133,
+      "slug": "142472-monosodium-glutamate-msg",
+      "cas": "142-47-2",
+      "name": "Monosodium Glutamate (MSG)",
+      "inci_name": "Monosodium Glutamate",
+      "group": "Food Additive(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥99%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
+    },
+    {
+      "id": 134,
+      "slug": "5996101-dextrose-monohydrate",
+      "cas": "5996-10-1",
+      "name": "Dextrose Monohydrate",
+      "inci_name": "Dextrose Monohydrate",
+      "group": "Sweetener(c2111)",
+      "grade": "Food Grade",
+      "purity": "≥99.5%",
+      "packages": "25kg/Bag",
+      "certificates": [
+        "COA",
+        "MSDS",
+        "HALAL"
+      ],
+      "appearance_type": "Powder",
+      "supplier": "Fufeng (阜丰)",
+      "app_scenario": "food",
+      "shelf_life": "24 months"
     }
   ],
   "metadata": {

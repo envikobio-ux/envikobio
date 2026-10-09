@@ -1,16 +1,24 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { blogArticles } from '@/data/blog-articles';
 
 export default function BlogPage() {
   const [visibleCount, setVisibleCount] = useState(6);
+  // Current date is set only on the client to avoid hydration mismatch.
+  const [now, setNow] = useState<Date | null>(null);
 
-  // Sort by publish date descending (newest first)
-  const sortedArticles = [...blogArticles].sort(
-    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
-  );
+  useEffect(() => {
+    setNow(new Date());
+  }, []);
+
+  // Only show articles whose publish date has arrived; sort newest first.
+  const sortedArticles = [...blogArticles]
+    .filter((a) => (now ? new Date(a.publishDate).getTime() <= now.getTime() : false))
+    .sort(
+      (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+    );
 
   const visibleArticles = sortedArticles.slice(0, visibleCount);
   const hasMore = visibleCount < sortedArticles.length;
