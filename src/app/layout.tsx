@@ -5,6 +5,7 @@ import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import ApolloTracker from '@/components/ApolloTracker';
+import GtmTracker from '@/components/GtmTracker';
 import WhatsAppFloat from '@/components/layout/WhatsAppFloat';
 import ExitIntentPopup from '@/components/layout/ExitIntentPopup';
 import { OrganizationJsonLd, LocalBusinessJsonLd, WebsiteJsonLd } from '@/components/seo/JsonLd';
@@ -85,6 +86,7 @@ export default async function RootLayout({
           <ExitIntentPopup />
         </NextIntlClientProvider>
         <ApolloTracker />
+        <GtmTracker />
       </body>
     </html>
   );
